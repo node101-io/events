@@ -1,0 +1,22 @@
+{
+  "name": "events.node101",
+  "version": "1.0.0",
+  "description": "https://events.node101.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yunus Gürlek",
+  "license": "MIT",
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "dotenv": "^16.1.2",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "i18n": "^0.15.1",
+    "mongoose": "^6.6.5",
+    "os": "^0.1.2",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
+  }
+}

@@ -1,0 +1,119 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+	background-size: cover;
+	background: var(--background-color);
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--background-color);
+}
+
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+textarea, input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+:root {
+  --page-horizontal-padding: 80px;
+  --content-horizontal-padding: 170px;
+  --box-padding: 30px;
+  --space-character-width: 6px;
+
+  --main-color: rgba(120, 169, 255, 1);
+  --box-color: rgba(6, 6, 9, 1);
+  --background-color: rgba(13, 13, 15, 1);
+  --background-color-two: rgba(8, 8, 10, 1);
+  --border-color: rgba(248, 248, 248, 0.2);
+  --hover-color: rgba(148, 148, 148, 0.2);
+  --hover-color-light: rgba(254, 254, 254, 0.8);
+  --button-text-color: rgba(250, 250, 250, 1);
+  --text-color: rgba(254, 254, 254, 1);
+  --text-color-two: rgba(236, 236, 236, 1);
+  --placeholder-color: rgba(248, 248, 248, 0.6);
+}
+
+.display-none {
+  display: none !important;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1900px) {
+  :root {
+    --page-horizontal-padding: calc((100vw - 1900px) / 2 + 80px);
+    --content-horizontal-padding: calc((100vw - 1900px) / 2 + 170px);
+  }
+}
+@media only screen and (max-width: 1700px) {
+  :root {
+    --page-horizontal-padding: 70px;
+    --content-horizontal-padding: 150px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  :root {
+    --page-horizontal-padding: 60px;
+    --content-horizontal-padding: 110px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    --page-horizontal-padding: 40px;
+    --content-horizontal-padding: 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  :root {
+    --box-padding: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  :root {
+    --page-horizontal-padding: 25px;
+    --content-horizontal-padding: 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --page-horizontal-padding: 20px;
+    --content-horizontal-padding: 20px;
+  }
+}
