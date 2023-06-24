@@ -1,2 +1,35 @@
 extends ../partials/header
 block main
+  .all-content-inner-wrapper
+    .events-slider-outer-wrapper
+      .events-slider-wrapper
+        .each-event-slider-wrapper#each-event-slider-left-back
+          img.each-event-slider-image(src=`${URL}/img/nym/main` alt='')
+          h1.each-event-slider-text= __('')
+        a.each-event-slider-wrapper#each-event-slider-active(href='')
+          img.each-event-slider-image(src='' alt='')
+          h1.each-event-slider-text= __('')
+        a.each-event-slider-wrapper#each-event-slider-right-back(href='')
+          img.each-event-slider-image(src='' alt='')
+          h1.each-event-slider-text= __('')
+        a.each-event-slider-wrapper(href='')
+          img.each-event-slider-image(src='' alt='')
+          h1.each-event-slider-text= __('')
+        a.each-event-slider-wrapper(href='')
+          img.each-event-slider-image(src='' alt='')
+          h1.each-event-slider-text= __('')
+        a.each-event-slider-wrapper(href='')
+          img.each-event-slider-image(src='' alt='')
+          h1.each-event-slider-text= __('')
+      .events-slider-bullets-wrapper
+        .each-event-slider-bullet#cryptist-event-slider-bullet(class=(active_page == 'cryptist' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#moda-event-slider-bullet(class=(active_page == 'moda' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#sui-event-slider-bullet(class=(active_page == 'sui' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#nym-event-slider-bullet(class=(active_page == 'nym' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#aleo-event-slider-bullet(class=(active_page == 'aleo' ? 'each-event-slider-bullet-filled' : ''))
+    .all-content-footer-wrapepr
+  .crytist-wrapper
+  .moda-wrapper
+  .sui-wrapper
+  .nym-wrapper
+  .aleo-wrapper

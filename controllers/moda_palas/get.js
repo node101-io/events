@@ -14,6 +14,7 @@ module.exports = (req, res) => {
         twitter: true
       }
     },
+    url: '/moda_palas',
     active_page: 'moda'
   });
 }

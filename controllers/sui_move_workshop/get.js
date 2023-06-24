@@ -14,6 +14,7 @@ module.exports = (req, res) => {
         twitter: true
       }
     },
+    url: '/sui_move_workshop',
     active_page: 'sui'
   });
 }

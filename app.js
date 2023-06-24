@@ -47,6 +47,8 @@ if (cluster.isMaster) {
     if (!req.query || typeof req.query != 'object')
       req.query = {};
 
+    res.locals.URL = URL;
+
     next();
   });
 

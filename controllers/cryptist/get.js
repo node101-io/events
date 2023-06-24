@@ -14,6 +14,7 @@ module.exports = (req, res) => {
         twitter: true
       }
     },
+    url: '/cryptist',
     active_page: 'cryptist'
   });
 }

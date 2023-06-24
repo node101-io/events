@@ -14,6 +14,7 @@ module.exports = (req, res) => {
         twitter: true
       }
     },
+    url: '/nym_community_gathering',
     active_page: 'nym'
   });
 }

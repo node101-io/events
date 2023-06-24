@@ -14,6 +14,7 @@ module.exports = (req, res) => {
         twitter: true
       }
     },
+    url: '/aleo_tour_of_turkiye',
     active_page: 'aleo'
   });
 }
