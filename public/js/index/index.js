@@ -117,4 +117,22 @@ window.addEventListener('load', () => {
   document.querySelectorAll('.each-team-member-wrapper').forEach((member, index) => {
     member.style.animationDelay = `calc(${index} * 0.3s)`;
   });
+
+
+
+  const mottoLines = document.querySelectorAll('.each-motto-line');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('item-appear-animation');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  for (let i = 0; i < mottoLines.length; i++) {
+    observer.observe(mottoLines[i]);
+  }
+  observer.observe(document.querySelector('.all-content-team-members-wrapper'));
 });

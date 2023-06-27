@@ -7,17 +7,17 @@ block main
           img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('CRYPTIST')
         a.each-event-slider-wrapper#each-event-slider-right-back(href='')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
-          h1.each-event-slider-text= __('CRYPTIST')
+          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/gathered.webp` alt='' loading="lazy")
+          h1.each-event-slider-text= __('SUI MOVE WORKSHOP')
         a.each-event-slider-wrapper(href='')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
-          h1.each-event-slider-text= __('CRYPTIST')
+          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp` alt='' loading="lazy")
+          h1.each-event-slider-text= __('ALEO - TOUR OF TURKIYE')
         a.each-event-slider-wrapper(href='')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
-          h1.each-event-slider-text= __('CRYPTIST')
+          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/gathered.webp` alt='' loading="lazy")
+          h1.each-event-slider-text= __('NYM COMMUNITY GATHERING')
         a.each-event-slider-wrapper(href='')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
-          h1.each-event-slider-text= __('CRYPTIST')
+          img.each-event-slider-image(src=`${URL}/img/moda-palas/gathered.webp` alt='' loading="lazy")
+          h1.each-event-slider-text= __('MODA PALAS')
       - const active_page = 'cryptist'
       .events-slider-bullets-wrapper
         .each-event-slider-bullet#cryptist-event-slider-bullet(class=(active_page == 'cryptist' ? 'each-event-slider-bullet-filled' : ''))
@@ -25,7 +25,7 @@ block main
         .each-event-slider-bullet#sui-event-slider-bullet(class=(active_page == 'sui' ? 'each-event-slider-bullet-filled' : ''))
         .each-event-slider-bullet#nym-event-slider-bullet(class=(active_page == 'nym' ? 'each-event-slider-bullet-filled' : ''))
         .each-event-slider-bullet#aleo-event-slider-bullet(class=(active_page == 'aleo' ? 'each-event-slider-bullet-filled' : ''))
-    .all-spot-wrapper
+    .all-content-spot-wrapper
       img.spot-background(src=`${URL}/img/istanbul.webp`)
       .all-spot-rectangles-top-wrapper
         .each-spot-rectangle-top(style="height: 80px; min-height: 80px;")
@@ -94,18 +94,18 @@ block main
         .each-spot-rectangle-bottom(style="height: 255px; min-height: 255px; margin-top: -255px;")
         .each-spot-rectangle-bottom(style="height: 285px; min-height: 285px; margin-top: -285px;")
         .each-spot-rectangle-bottom(style="height: 375px; min-height: 375px; margin-top: -375px;")
-    .all-motto-wrapper
-      .all-motto-top-wrapper
-        .all-motto-top-left-wrapper
+    .all-content-motto-wrapper
+      .all-content-motto-top-wrapper
+        .all-content-motto-top-left-wrapper
           .each-motto-line= __('THE BRIDGE THAT')
           .each-motto-line= __('LEADS YOU')
-        .all-motto-top-right-text= __('In Istanbul, thousands of developers develop products on blockchain, and millions of people use crypto daily. Reach university student clubs, blockchain communities, and developers that drive the ecosystem with node101 events.')
+        .all-content-motto-top-right-text= __('In Istanbul, thousands of developers develop products on blockchain, and millions of people use crypto daily. Reach university student clubs, blockchain communities, and developers that drive the ecosystem with node101 events.')
       .each-motto-line= __('TO ')
         span= __('THE TURKISH ECOSYSTEM')
-    .all-team-wrapper
-      .all-team-title= __('TEAM OF AWESOMENESS')
-      .all-team-text= __('node101 is a proof of stake validator that produces user-friendly solutions to the problems of the decentralized internet. In addition to the technical solutions and pain-point solver products it offers to blockchain projects, it organizes gatherings, summits, and workshops that feed the Turkish developer ecosystem. Moreover, It provides content to the ecosystem with blog posts, podcast episodes, and video content published on Library node101.') 
-      .all-team-members-wrapper
+    .all-content-team-wrapper
+      .all-content-team-title= __('TEAM OF AWESOMENESS')
+      .all-content-team-text= __('node101 is a proof of stake validator that produces user-friendly solutions to the problems of the decentralized internet. In addition to the technical solutions and pain-point solver products it offers to blockchain projects, it organizes gatherings, summits, and workshops that feed the Turkish developer ecosystem. Moreover, It provides content to the ecosystem with blog posts, podcast episodes, and video content published on Library node101.') 
+      .all-content-team-members-wrapper
         .each-team-members-column
           .each-team-member-wrapper(style='background: var(--member-1-background-color);')
             img.each-team-member-image(src=`${URL}/img/team/aleyna.webp`)
@@ -172,6 +172,55 @@ block main
               .each-team-member-name(style='color: var(--member-12-name-color);') Member 1
               .each-team-member-title= __('Co-Founder') 
     .all-content-footer-wrapper
+      .all-content-footer-left-wrapper
+        .all-content-footer-title= __('Do you want to organize an event with node101?')
+        .all-content-footer-text= __('node101 can help you organize your dream web3 event! Contact us!')
+        .all-content-footer-subtitle= __('Contact Us')
+        form.all-content-footer-form
+          label.all-content-footer-input-label(for='all-content-footer-name-input')= __('Name:')
+          input.all-content-footer-input#all-content-footer-name-input(type='text')
+          .all-content-footer-input-border-bottom
+          label.all-content-footer-input-label(for='all-content-footer-email-input')= __('Email:')
+          input.all-content-footer-input#all-content-footer-email-input(type='email')
+          .all-content-footer-input-border-bottom
+          label.all-content-footer-input-label(for='all-content-footer-message-input')= __('Message:')
+          textarea.all-content-footer-input#all-content-footer-message-input(oninput='this.style.height = ""; this.style.height = this.scrollHeight + 3 + "px"', rows='1')
+          .all-content-footer-input-border-bottom
+          button.all-content-footer-button= __('Submit')
+            svg.all-content-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+      .all-content-footer-right-wrapper
+        a.each-footer-right-button(href='#cryptist')= __('CryptIst')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='#moda-palas')= __('Moda Palas')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='#nym-community-gathering')= __('NYM Community Gathering')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='#aleo-tour-of-turkey')= __('Aleo Tour of Türkiye')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='#sui-move-workshop')= __('Sui Move Workshop')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='https://t.me/node101', target='_blank')= __('Telegram')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='https://twitter.com/node101org', target='_blank')= __('Twitter')
+          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-footer-right-button-border-bottom
+        a.each-footer-right-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
+          .each-footer-right-button-secondary-text hello@node101.io
+        .each-footer-right-button-border-bottom
   .crytist-wrapper
   .moda-wrapper
   .sui-wrapper

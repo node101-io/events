@@ -1,4 +1,9 @@
 :root {
+    --cryptist-color: rgba(97, 214, 214, 1);
+    --sui-move-workshop-color: rgba(76, 163, 255, 1);
+    --aleo-tour-of-turkiye-color: rgba(178, 178, 255, 1);
+    --nym-community-gathering-color: rgba(241, 46, 79, 1);
+    --moda-palas-color: rgba(161, 161, 161, 1);
     --all-header-top-wrapper-height: 100px;
     --all-header-logo-width: 138px;
     --all-header-logo-height: 24px;
@@ -36,6 +41,14 @@
     display: flex;
     align-items: center;
     gap: calc(var(--box-padding) / 3);
+    padding: calc(var(--box-padding) / 4) calc(var(--box-padding) / 3);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.all-header-language-button:hover {
+    border: 1px solid var(--border-color);
 }
 
 .all-header-language-button {
@@ -69,8 +82,27 @@
 }
 
 .each-all-header-button {
+    position: relative;
     text-decoration: none;
     font-size: 17px;
     font-family: 'Atyp', sans-serif;
     color: var(--text-color);
+}
+
+.each-all-header-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.each-all-header-button:hover::after,
+.each-all-header-button:focus::after {
+    width: 100%;
 }
