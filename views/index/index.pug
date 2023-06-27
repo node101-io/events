@@ -3,19 +3,19 @@ block main
   .all-content-inner-wrapper
     .events-slider-outer-wrapper
       .events-slider-wrapper
-        a.each-event-slider-wrapper#each-event-slider-active(href='')
+        a.each-event-slider-wrapper#each-event-slider-active(href='#cryptist')
           img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('CRYPTIST')
-        a.each-event-slider-wrapper#each-event-slider-right-back(href='')
+        a.each-event-slider-wrapper#each-event-slider-right-back(href='#moda-palas')
           img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/gathered.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('SUI MOVE WORKSHOP')
-        a.each-event-slider-wrapper(href='')
+        a.each-event-slider-wrapper(href='#sui-move-workshop')
           img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('ALEO - TOUR OF TURKIYE')
-        a.each-event-slider-wrapper(href='')
+        a.each-event-slider-wrapper(href='#nym-community-gathering')
           img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/gathered.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('NYM COMMUNITY GATHERING')
-        a.each-event-slider-wrapper(href='')
+        a.each-event-slider-wrapper(href='#moda-palas')
           img.each-event-slider-image(src=`${URL}/img/moda-palas/gathered.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('MODA PALAS')
       - const active_page = 'cryptist'
@@ -184,7 +184,7 @@ block main
           input.all-content-footer-input#all-content-footer-email-input(type='email')
           .all-content-footer-input-border-bottom
           label.all-content-footer-input-label(for='all-content-footer-message-input')= __('Message:')
-          textarea.all-content-footer-input#all-content-footer-message-input(oninput='this.style.height = ""; this.style.height = this.scrollHeight + 3 + "px"', rows='1')
+          textarea.all-content-footer-input#all-content-footer-message-input(oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"', rows='1')
           .all-content-footer-input-border-bottom
           button.all-content-footer-button= __('Submit')
             svg.all-content-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
@@ -221,8 +221,8 @@ block main
         a.each-footer-right-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
           .each-footer-right-button-secondary-text hello@node101.io
         .each-footer-right-button-border-bottom
-  .crytist-wrapper
-  .moda-wrapper
-  .sui-wrapper
-  .nym-wrapper
-  .aleo-wrapper
+  .all-cryptist-wrapper
+  .all-moda-palas-wrapper
+  .al-sui-move-workshop-wrapper
+  .nym-community-gathering-wrapper
+  .aleo-tour-of-turkiye-wrapper

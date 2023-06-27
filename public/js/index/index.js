@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
       if (sliders[sliderIndex + 1])
         sliders[sliderIndex + 1].id = 'each-event-slider-right-back';
 
-      const range = document.querySelector('.each-event-slider-image').offsetWidth + 180;
+      const range = document.querySelector('.each-event-slider-image').offsetWidth + getComputedStyle(document.documentElement).getPropertyValue('--box-padding').split('px')[0] * 6;
       document.querySelector('.events-slider-wrapper').scrollBy(range, 0)
 
       if (bullets[sliderIndex]) {
@@ -57,7 +57,7 @@ window.addEventListener('load', () => {
       if (sliders[sliderIndex - 1])
         sliders[sliderIndex - 1].id = 'each-event-slider-left-back';
 
-      const range = document.querySelector('.each-event-slider-image').offsetWidth + 180;
+      const range = document.querySelector('.each-event-slider-image').offsetWidth + getComputedStyle(document.documentElement).getPropertyValue('--box-padding').split('px')[0] * 6;
       document.querySelector('.events-slider-wrapper').scrollBy(range * -1, 0)
 
       if (bullets[sliderIndex]) {
@@ -100,7 +100,7 @@ window.addEventListener('load', () => {
       if (sliders[sliderIndex + 1])
         sliders[sliderIndex + 1].id = 'each-event-slider-right-back';
 
-      const range = (document.querySelector('.each-event-slider-image').offsetWidth + 180) * (sliderIndex - oldSliderIndex);
+      const range = (document.querySelector('.each-event-slider-image').offsetWidth + getComputedStyle(document.documentElement).getPropertyValue('--box-padding').split('px')[0] * 6) * (sliderIndex - oldSliderIndex);
       document.querySelector('.events-slider-wrapper').scrollBy(range, 0);
 
       document.querySelector('.each-event-slider-bullet-filled').classList.remove('each-event-slider-bullet-filled');
@@ -118,8 +118,6 @@ window.addEventListener('load', () => {
     member.style.animationDelay = `calc(${index} * 0.3s)`;
   });
 
-
-
   const mottoLines = document.querySelectorAll('.each-motto-line');
 
   const observer = new IntersectionObserver((entries) => {
@@ -135,4 +133,12 @@ window.addEventListener('load', () => {
     observer.observe(mottoLines[i]);
   }
   observer.observe(document.querySelector('.all-content-team-members-wrapper'));
+
+
+  if (location.hash)
+    document.querySelector('.all-' + location.hash.split('#')[1] + '-wrapper').style.display = 'flex';
+
+  window.addEventListener("hashchange", () => {
+    document.querySelector('.all-' + location.hash.split('#')[1] + '-wrapper').style.display = 'flex';
+  });
 });

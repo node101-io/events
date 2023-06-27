@@ -1,15 +1,15 @@
 module.exports = (req, res) => {
   return res.render('index/index', {
     page: 'index/index',
-    title: res.__('Türkiye Merkezli Blogzincir Etkinlik Organizatörü'),
+    title: res.__('Blockchain Event Organizer Based in Turkey'),
     includes: {
       external: {
-        css: ['aleo', 'cryptist', 'general', 'header', 'moda', 'nym', 'page', 'sui'],
-        js: ['aleo', 'ancestorWithClassName', 'cryptist', 'header', 'getQuery', 'moda', 'nym', 'page', 'serverRequest', 'sui']
+        css: ['cryptist', 'general', 'header', 'moda-palas', 'nym-community-gathering', 'page', 'sui-move-workshop', 'aleo-tour-of-turkiye'],
+        js: ['ancestorWithClassName', 'cryptist', 'header', 'moda-palas', 'nym-community-gathering', 'page', 'serverRequest', 'sui-move-workshop', 'aleo-tour-of-turkiye']
       },
       meta: {
-        title: res.__('Türkiye Merkezli Blogzincir Etkinlik Organizatörü'),
-        description: res.__('Bir etkinlik organize'),
+        title: res.__('Blockchain Event Organizer Based in Turkey'),
+        description: res.__('An event organizer based in Turkey that focuses on blockchain technology and cryptocurrencies.'),
         image: '/img/meta/header.png',
         twitter: true
       }

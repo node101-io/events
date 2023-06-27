@@ -1,0 +1,13 @@
+.all-cryptist-wrapper {
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vh;
+  background-color: blue;
+  z-index: 105;
+}
