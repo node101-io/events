@@ -10,16 +10,16 @@ html {
   height: 100vh;
   margin: 0px;
   padding: 0px;
-  /* overflow: hidden; */
 	background-size: cover;
 	background: var(--background-color);
+  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
   padding: 0px;
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  overflow-x: hidden;
   overscroll-behavior: none;
   background: var(--background-color);
 }
@@ -58,6 +58,8 @@ input[type=number] {
   --space-character-width: 6px;
 
   --main-color: rgba(120, 169, 255, 1);
+  --secondary-color: rgba(87, 87, 252, 1);
+  --third-color: rgba(158, 240, 240, 1);
   --box-color: rgba(6, 6, 9, 1);
   --background-color: rgb(17, 17, 17);
   --background-color-two: rgba(8, 8, 10, 1);

@@ -3,97 +3,36 @@ block main
   .all-content-inner-wrapper
     .events-slider-outer-wrapper
       .events-slider-wrapper
-        a.each-event-slider-wrapper#each-event-slider-active(href='#cryptist')
+        a.each-event-slider-wrapper.each-event-slider-active(href='#cryptist')
           img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('CRYPTIST')
-        a.each-event-slider-wrapper#each-event-slider-right-back(href='#moda-palas')
-          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/gathered.webp` alt='' loading="lazy")
-          h1.each-event-slider-text= __('SUI MOVE WORKSHOP')
         a.each-event-slider-wrapper(href='#sui-move-workshop')
-          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp` alt='' loading="lazy")
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
+          h1.each-event-slider-text= __('SUI MOVE WORKSHOP')
+        a.each-event-slider-wrapper(href='#aleo-tour-of-turkiye')
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('ALEO - TOUR OF TURKIYE')
         a.each-event-slider-wrapper(href='#nym-community-gathering')
-          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/gathered.webp` alt='' loading="lazy")
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('NYM COMMUNITY GATHERING')
         a.each-event-slider-wrapper(href='#moda-palas')
-          img.each-event-slider-image(src=`${URL}/img/moda-palas/gathered.webp` alt='' loading="lazy")
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` alt='' loading="lazy")
           h1.each-event-slider-text= __('MODA PALAS')
       - const active_page = 'cryptist'
       .events-slider-bullets-wrapper
-        .each-event-slider-bullet#cryptist-event-slider-bullet(class=(active_page == 'cryptist' ? 'each-event-slider-bullet-filled' : ''))
-        .each-event-slider-bullet#moda-event-slider-bullet(class=(active_page == 'moda' ? 'each-event-slider-bullet-filled' : ''))
-        .each-event-slider-bullet#sui-event-slider-bullet(class=(active_page == 'sui' ? 'each-event-slider-bullet-filled' : ''))
-        .each-event-slider-bullet#nym-event-slider-bullet(class=(active_page == 'nym' ? 'each-event-slider-bullet-filled' : ''))
-        .each-event-slider-bullet#aleo-event-slider-bullet(class=(active_page == 'aleo' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#cryptist-event-slider-bullet(data-index=0 class=(active_page == 'cryptist' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#moda-event-slider-bullet(data-index=1 class=(active_page == 'moda' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#sui-event-slider-bullet(data-index=2 class=(active_page == 'sui' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#nym-event-slider-bullet(data-index=3 class=(active_page == 'nym' ? 'each-event-slider-bullet-filled' : ''))
+        .each-event-slider-bullet#aleo-event-slider-bullet(data-index=4 class=(active_page == 'aleo' ? 'each-event-slider-bullet-filled' : ''))
     .all-content-spot-wrapper
       img.spot-background(src=`${URL}/img/istanbul.webp`)
       .all-spot-rectangles-top-wrapper
-        .each-spot-rectangle-top(style="height: 80px; min-height: 80px;")
-        .each-spot-rectangle-top(style="height: 20px; min-height: 20px;")
-        .each-spot-rectangle-top(style="height: 80px; min-height: 80px;")
-        .each-spot-rectangle-top(style="height: 50px; min-height: 50px;")
-        .each-spot-rectangle-top(style="height: 108px; min-height: 108px;")
-        .each-spot-rectangle-top(style="height: 138px; min-height: 138px;")
-        .each-spot-rectangle-top(style="height: 200px; min-height: 200px;")
-        .each-spot-rectangle-top(style="height: 88px; min-height: 88px;")
-        .each-spot-rectangle-top(style="height: 58px; min-height: 58px;")
-        .each-spot-rectangle-top(style="height: 126px; min-height: 126px;")
-        .each-spot-rectangle-top(style="height: 140px; min-height: 140px;")
-        .each-spot-rectangle-top(style="height: 80px; min-height: 80px;")
-        .each-spot-rectangle-top(style="height: 108px; min-height: 108px;")
-        .each-spot-rectangle-top(style="height: 80px; min-height: 80px;")
-        .each-spot-rectangle-top(style="height: 250px; min-height: 250px;")
-        .each-spot-rectangle-top(style="height: 212px; min-height: 212px;")
-        .each-spot-rectangle-top(style="height: 126px; min-height: 126px;")
-        .each-spot-rectangle-top(style="height: 250px; min-height: 250px;")
-        .each-spot-rectangle-top(style="height: 89px; min-height: 89px;")
-        .each-spot-rectangle-top(style="height: 250px; min-height: 250px;")
-        .each-spot-rectangle-top(style="height: 22px; min-height: 22px;")
-        .each-spot-rectangle-top(style="height: 108px; min-height: 108px;")
-        .each-spot-rectangle-top(style="height: 203px; min-height: 203px;")
-        .each-spot-rectangle-top(style="height: 126px; min-height: 126px;")
-        .each-spot-rectangle-top(style="height: 140px; min-height: 140px;")
-        .each-spot-rectangle-top(style="height: 80px; min-height: 80px;")
-        .each-spot-rectangle-top(style="height: 108px; min-height: 108px;")
-        .each-spot-rectangle-top(style="height: 250px; min-height: 250px;")
-        .each-spot-rectangle-top(style="height: 89px; min-height: 89px;")
-        .each-spot-rectangle-top(style="height: 250px; min-height: 250px;")
-        .each-spot-rectangle-top(style="height: 22px; min-height: 22px;")
-        .each-spot-rectangle-top(style="height: 108px; min-height: 108px;")
+        each height in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 22, 108, 203, 126, 140, 80, 108, 250, 89, 250, 22, 108]
+          .each-spot-rectangle-top(style=`height: ${height}px; min-height: ${height}px;`)
       .all-spot-rectangles-bottom-wrapper
-        .each-spot-rectangle-bottom(style="height: 600px; min-height: 600px; margin-top: -600px;")
-        .each-spot-rectangle-bottom(style="height: 508px; min-height: 508px; margin-top: -508px;")
-        .each-spot-rectangle-bottom(style="height: 444px; min-height: 444px; margin-top: -444px;")
-        .each-spot-rectangle-bottom(style="height: 325px; min-height: 325px; margin-top: -325px;")
-        .each-spot-rectangle-bottom(style="height: 171px; min-height: 171px; margin-top: -171px;")
-        .each-spot-rectangle-bottom(style="height: 233px; min-height: 233px; margin-top: -233px;")
-        .each-spot-rectangle-bottom(style="height: 246px; min-height: 246px; margin-top: -246px;")
-        .each-spot-rectangle-bottom(style="height: 246px; min-height: 246px; margin-top: -246px;")
-        .each-spot-rectangle-bottom(style="height: 410px; min-height: 410px; margin-top: -410px;")
-        .each-spot-rectangle-bottom(style="height: 315px; min-height: 315px; margin-top: -315px;")
-        .each-spot-rectangle-bottom(style="height: 232px; min-height: 232px; margin-top: -232px;")
-        .each-spot-rectangle-bottom(style="height: 294px; min-height: 294px; margin-top: -294px;")
-        .each-spot-rectangle-bottom(style="height: 265px; min-height: 265px; margin-top: -265px;")
-        .each-spot-rectangle-bottom(style="height: 294px; min-height: 294px; margin-top: -294px;")
-        .each-spot-rectangle-bottom(style="height: 265px; min-height: 265px; margin-top: -265px;")
-        .each-spot-rectangle-bottom(style="height: 375px; min-height: 375px; margin-top: -375px;")
-        .each-spot-rectangle-bottom(style="height: 286px; min-height: 286px; margin-top: -286px;")
-        .each-spot-rectangle-bottom(style="height: 255px; min-height: 255px; margin-top: -255px;")
-        .each-spot-rectangle-bottom(style="height: 285px; min-height: 285px; margin-top: -285px;")
-        .each-spot-rectangle-bottom(style="height: 375px; min-height: 375px; margin-top: -375px;")
-        .each-spot-rectangle-bottom(style="height: 138px; min-height: 138px; margin-top: -138px;")
-        .each-spot-rectangle-bottom(style="height: 294px; min-height: 294px; margin-top: -294px;")
-        .each-spot-rectangle-bottom(style="height: 190px; min-height: 190px; margin-top: -190px;")
-        .each-spot-rectangle-bottom(style="height: 410px; min-height: 410px; margin-top: -410px;")
-        .each-spot-rectangle-bottom(style="height: 315px; min-height: 315px; margin-top: -315px;")
-        .each-spot-rectangle-bottom(style="height: 232px; min-height: 232px; margin-top: -232px;")
-        .each-spot-rectangle-bottom(style="height: 294px; min-height: 294px; margin-top: -294px;")
-        .each-spot-rectangle-bottom(style="height: 265px; min-height: 265px; margin-top: -265px;")
-        .each-spot-rectangle-bottom(style="height: 294px; min-height: 294px; margin-top: -294px;")
-        .each-spot-rectangle-bottom(style="height: 286px; min-height: 286px; margin-top: -286px;")
-        .each-spot-rectangle-bottom(style="height: 255px; min-height: 255px; margin-top: -255px;")
-        .each-spot-rectangle-bottom(style="height: 285px; min-height: 285px; margin-top: -285px;")
-        .each-spot-rectangle-bottom(style="height: 375px; min-height: 375px; margin-top: -375px;")
+        each height in [600, 508, 444, 325, 171, 233, 246, 246, 410, 315, 232, 294, 265, 294, 265, 375, 286, 255, 285, 375, 138, 294, 190, 410, 315, 232, 294, 265, 294, 286, 255, 285, 375]
+          .each-spot-rectangle-bottom(style=`height: ${height}px; min-height: ${height}px; margin-top: -${height}px;`)
     .all-content-motto-wrapper
       .all-content-motto-top-wrapper
         .all-content-motto-top-left-wrapper
@@ -106,123 +45,16 @@ block main
       .all-content-team-title= __('TEAM OF AWESOMENESS')
       .all-content-team-text= __('node101 is a proof of stake validator that produces user-friendly solutions to the problems of the decentralized internet. In addition to the technical solutions and pain-point solver products it offers to blockchain projects, it organizes gatherings, summits, and workshops that feed the Turkish developer ecosystem. Moreover, It provides content to the ecosystem with blog posts, podcast episodes, and video content published on Library node101.') 
       .all-content-team-members-wrapper
-        .each-team-members-column
-          .each-team-member-wrapper(style='background: var(--member-1-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/aleyna.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-1-name-color);') Aleyna Özyurt
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-2-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/necip.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-2-name-color);') Necip Sağıroğlu
-              .each-team-member-title= __('Co-Founder') 
-        .each-team-members-column
-          .each-team-member-wrapper(style='background: var(--member-3-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/akin.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-3-name-color);') Akın Semih Pur
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-4-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/mutlu.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-4-name-color);') Mutlu Mutludağ
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-5-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/yakup.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-5-name-color);') Yakup Altay
-              .each-team-member-title= __('Co-Founder') 
-        .each-team-members-column
-          .each-team-member-wrapper(style='background: var(--member-6-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/mete.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-6-name-color);') Mete Koray Gergin
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-7-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/aytunc.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-7-name-color);') Aytunç Sancar
-              .each-team-member-title= __('Co-Founder') 
-        .each-team-members-column
-          .each-team-member-wrapper(style='background: var(--member-8-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/yunus.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-8-name-color);') Yunus Gürlek
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-9-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/damir.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-9-name-color);') Damir Shamanev
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-10-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/erol.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-10-name-color);') Erol Durummond
-              .each-team-member-title= __('Co-Founder') 
-        .each-team-members-column
-          .each-team-member-wrapper(style='background: var(--member-11-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/mustafa.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-11-name-color);') Mustafa Aksöz
-              .each-team-member-title= __('Co-Founder') 
-          .each-team-member-wrapper(style='background: var(--member-12-background-color);')
-            img.each-team-member-image(src=`${URL}/img/team/member1.webp`)
-            .each-team-member-info-layer
-              .each-team-member-name(style='color: var(--member-12-name-color);') Member 1
-              .each-team-member-title= __('Co-Founder') 
-    .all-content-footer-wrapper
-      .all-content-footer-left-wrapper
-        .all-content-footer-title= __('Do you want to organize an event with node101?')
-        .all-content-footer-text= __('node101 can help you organize your dream web3 event! Contact us!')
-        .all-content-footer-subtitle= __('Contact Us')
-        form.all-content-footer-form
-          label.all-content-footer-input-label(for='all-content-footer-name-input')= __('Name:')
-          input.all-content-footer-input#all-content-footer-name-input(type='text')
-          .all-content-footer-input-border-bottom
-          label.all-content-footer-input-label(for='all-content-footer-email-input')= __('Email:')
-          input.all-content-footer-input#all-content-footer-email-input(type='email')
-          .all-content-footer-input-border-bottom
-          label.all-content-footer-input-label(for='all-content-footer-message-input')= __('Message:')
-          textarea.all-content-footer-input#all-content-footer-message-input(oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"', rows='1')
-          .all-content-footer-input-border-bottom
-          button.all-content-footer-button= __('Submit')
-            svg.all-content-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-      .all-content-footer-right-wrapper
-        a.each-footer-right-button(href='#cryptist')= __('CryptIst')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='#moda-palas')= __('Moda Palas')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='#nym-community-gathering')= __('NYM Community Gathering')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='#aleo-tour-of-turkey')= __('Aleo Tour of Türkiye')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='#sui-move-workshop')= __('Sui Move Workshop')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='https://t.me/node101', target='_blank')= __('Telegram')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='https://twitter.com/node101org', target='_blank')= __('Twitter')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
-          .each-footer-right-button-secondary-text hello@node101.io
-        .each-footer-right-button-border-bottom
+        each column in member_columns
+          .each-team-members-column
+            each member in column
+              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                .each-team-member-info-layer
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-title= __(member.title)
   .all-cryptist-wrapper
   .all-moda-palas-wrapper
-  .al-sui-move-workshop-wrapper
-  .nym-community-gathering-wrapper
-  .aleo-tour-of-turkiye-wrapper
+  .all-sui-move-workshop-wrapper
+  .all-nym-community-gathering-wrapper
+  .all-aleo-tour-of-turkiye-wrapper

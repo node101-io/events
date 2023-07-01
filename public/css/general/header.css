@@ -87,6 +87,11 @@
     font-size: 17px;
     font-family: 'Atyp', sans-serif;
     color: var(--text-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.each-all-header-button:hover {
+    transform: scale(1.1);
 }
 
 .each-all-header-button::after {
@@ -105,4 +110,176 @@
 .each-all-header-button:hover::after,
 .each-all-header-button:focus::after {
     width: 100%;
+}
+
+.all-footer-wrapper {
+    display: flex;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0 calc(var(--box-padding) * 6);
+    gap: calc(var(--box-padding) * 8);
+    justify-content: space-between;
+    padding-bottom: calc(var(--box-padding) * 4);
+    margin-top: calc(var(--box-padding) * 6);
+}
+
+.all-footer-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: calc((100vw - calc(var(--box-padding) * 20)) / 2);
+    max-width: calc((100vw - calc(var(--box-padding) * 20)) / 2);
+}
+
+.all-footer-title {
+    display: flex;
+    color: var(--text-color);
+    font-size: 48px;
+    font-family: 'Atyp', sans-serif;
+    line-height: 67px;
+    margin-bottom: calc(var(--box-padding) * 0.4);
+}
+
+.all-footer-text {
+    display: flex;
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Atyp', sans-serif;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+    margin-bottom: calc(var(--box-padding) * 2);
+}
+
+.all-footer-subtitle {
+    display: flex;
+    color: #FFF;
+    font-size: 32px;
+    font-family: 'Atyp', sans-serif;
+}
+
+.all-footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-footer-input-label {
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: 'Atyp', sans-serif;
+    margin-top: calc(var(--box-padding) * 0.6);
+}
+
+.all-footer-input {
+    display: flex;
+    width: 100%;
+    border: none;
+    height: var(--all-footer-input-height);
+    min-height: var(--all-footer-input-height);
+    background-color: var(--background-color);
+    outline: none;
+    color: var(--text-color-two);
+    font-size: 16px;
+    font-family: 'Atyp', sans-serif;
+    line-height: 23px;
+}
+
+.all-footer-input-border-bottom {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    border: none;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--third-color));
+}
+
+.all-footer-button {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--box-padding) * 0.5);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+    border: none;
+    background: linear-gradient(to right, var(--secondary-color), var(--third-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    font-family: 'Atyp', sans-serif;
+    margin-top: calc(var(--box-padding) * 1.6);
+    cursor: pointer;
+}
+
+.all-footer-button:hover>.all-footer-button-icon {
+    transform: translate(2px, -2px);
+}
+
+.all-footer-button-icon {
+    display: flex;
+    width: 14px;
+    min-width: 14px;
+    height: auto;
+    stroke: var(--third-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.all-footer-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.each-footer-right-button {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: 'Atyp', sans-serif;
+    line-height: 34px;
+    letter-spacing: 0.72px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.each-footer-right-button:hover+.each-footer-right-button-border-bottom {
+    height: 3px;
+    min-height: 3px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.each-footer-right-button:hover>.each-footer-right-button-icon {
+    transform: translate(2px, -2px);
+}
+
+.each-footer-right-button-icon {
+    display: flex;
+    width: 21px;
+    min-width: 21px;
+    height: auto;
+    stroke: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.each-footer-right-button-border-bottom {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    border: none;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--third-color));
+    transition: all 0.2s ease-in-out;
+}
+
+.each-footer-right-button-secondary-text {
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: 'Atyp', sans-serif;
+    line-height: 20px;
+    letter-spacing: 0.48px;
 }
