@@ -85,7 +85,6 @@
     position: relative;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Atyp', sans-serif;
     color: var(--text-color);
     transition: transform 0.3s ease-in-out;
 }
@@ -134,7 +133,6 @@
     display: flex;
     color: var(--text-color);
     font-size: 48px;
-    font-family: 'Atyp', sans-serif;
     line-height: 67px;
     margin-bottom: calc(var(--box-padding) * 0.4);
 }
@@ -143,7 +141,6 @@
     display: flex;
     color: var(--text-color);
     font-size: 20px;
-    font-family: 'Atyp', sans-serif;
     line-height: 35px;
     letter-spacing: -0.4px;
     margin-bottom: calc(var(--box-padding) * 2);
@@ -153,7 +150,6 @@
     display: flex;
     color: #FFF;
     font-size: 32px;
-    font-family: 'Atyp', sans-serif;
 }
 
 .all-footer-form {
@@ -164,7 +160,6 @@
 .all-footer-input-label {
     color: var(--text-color);
     font-size: 16px;
-    font-family: 'Atyp', sans-serif;
     margin-top: calc(var(--box-padding) * 0.6);
 }
 
@@ -178,7 +173,6 @@
     outline: none;
     color: var(--text-color-two);
     font-size: 16px;
-    font-family: 'Atyp', sans-serif;
     line-height: 23px;
 }
 
@@ -205,7 +199,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 22px;
-    font-family: 'Atyp', sans-serif;
     margin-top: calc(var(--box-padding) * 1.6);
     cursor: pointer;
 }
@@ -234,7 +227,6 @@
     text-decoration: none;
     color: var(--text-color);
     font-size: 24px;
-    font-family: 'Atyp', sans-serif;
     line-height: 34px;
     letter-spacing: 0.72px;
     padding-right: 20px;
@@ -279,7 +271,6 @@
 .each-footer-right-button-secondary-text {
     color: var(--text-color);
     font-size: 16px;
-    font-family: 'Atyp', sans-serif;
     line-height: 20px;
     letter-spacing: 0.48px;
 }

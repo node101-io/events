@@ -62,8 +62,14 @@ window.addEventListener('load', () => {
   window.addEventListener('hashchange', () => {
     if (location.hash == '#cryptist' || location.hash == '#sui-move-workshop' || location.hash == '#aleo-tour-of-turkiye' || location.hash == '#nym-community-gathering' || location.hash == '#moda-palas')
       document.querySelector(`.all-${location.hash.split('#')[1]}-wrapper`).style.display = 'flex';
-    else
+    else {
       location.hash = '#';
+      document.querySelector('.all-cryptist-wrapper').style.display = 'none';
+      document.querySelector('.all-sui-move-workshop-wrapper').style.display = 'none';
+      document.querySelector('.all-aleo-tour-of-turkiye-wrapper').style.display = 'none';
+      document.querySelector('.all-nym-community-gathering-wrapper').style.display = 'none';
+      document.querySelector('.all-moda-palas-wrapper').style.display = 'none';
+    }
   });
   window.dispatchEvent(new HashChangeEvent("hashchange"));
 

@@ -145,7 +145,6 @@
   width: 80%;
   max-width: 80%;
   font-size: min(9vw, 6vh);
-  font-family: 'Atyp', sans-serif;
   letter-spacing: 5px;
   text-align: center;
 }
@@ -273,7 +272,6 @@
 
 .each-motto-line {
   color: var(--text-color);
-  font-family: 'Atyp', sans-serif;
   letter-spacing: 5px;
   opacity: 0;
   transform: translateX(-20px);
@@ -282,14 +280,11 @@
 
 .all-content-motto-wrapper span {
   color: var(--all-content-motto-wrapper-span-color);
-  /* CAN BE VARIABLE */
-  font-family: 'Atyp', sans-serif;
 }
 
 .all-content-motto-top-right-text {
   color: var(--text-color);
   font-size: 20px;
-  font-family: 'Atyp', sans-serif;
   line-height: 29px;
   letter-spacing: -0.4px;
   width: var(--all-content-motto-top-right-text-width);
@@ -312,7 +307,6 @@
   max-width: 534px;
   color: var(--text-color);
   font-size: 64px;
-  font-family: 'Atyp', sans-serif;
   line-height: 1.1;
   letter-spacing: 3.2px;
 }
@@ -321,7 +315,6 @@
   max-width: 888px;
   color: var(--text-color);
   font-size: 20px;
-  font-family: 'Atyp', sans-serif;
   line-height: 29px;
   letter-spacing: -0.4px;
 }
@@ -383,7 +376,6 @@
 
 .each-team-member-name {
   font-size: 20px;
-  font-family: 'Atyp', sans-serif;
   line-height: 29px;
   letter-spacing: -0.4px;
 }
@@ -391,7 +383,6 @@
 .each-team-member-title {
   color: var(--text-color);
   font-size: 16px;
-  font-family: 'Atyp', sans-serif;
   line-height: 29px;
   letter-spacing: -0.32px;
 }

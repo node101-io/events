@@ -1,3 +1,6 @@
 window.addEventListener('load', () => {
-  console.log('loaded');
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.all-cryptist-inner-wrapper'))
+      location.hash = '#';
+  });
 });
