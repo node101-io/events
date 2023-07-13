@@ -1,6 +1,3 @@
 window.addEventListener('load', () => {
-  document.addEventListener('click', (event) => {
-    if (!event.target.closest('.all-cryptist-inner-wrapper'))
-      location.hash = '#';
-  });
+  createNumberIncreaseObserver('.each-cryptist-first-left-event-stats-number', ['150', '14', '7', '6']).observe(document.querySelector('.all-cryptist-first-left-event-stats-wrapper'));
 });

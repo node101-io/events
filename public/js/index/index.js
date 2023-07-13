@@ -20,19 +20,28 @@ window.addEventListener('load', () => {
   const root = document.querySelector(':root');
   const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
   const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
-  const eventaSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
+  const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
   const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
   const allHeaderWrapper = document.querySelector('.all-header-wrapper');
   const spotTopRectangles = document.querySelectorAll('.each-spot-rectangle-top');
   const spotBottomRectangles = document.querySelectorAll('.each-spot-rectangle-bottom');
+  const hashLocations = {
+    '#cryptist': document.querySelector('.all-cryptist-wrapper'),
+    '#sui-move-workshop': document.querySelector('.all-sui-move-workshop-wrapper'),
+    '#aleo-tour-of-turkiye': document.querySelector('.all-aleo-tour-of-turkiye-wrapper'),
+    '#nym-community-gathering': document.querySelector('.all-nym-community-gathering-wrapper'),
+    '#moda-palas': document.querySelector('.all-moda-palas-wrapper')
+  };
 
+  for (let i = 0; i < hashLocations.length; i++)
+    eventPages.push(document.querySelector(`.all-${hashLocations[i].split('#')[1]}-wrapper`));
 
-  document.addEventListener("scroll", () => {
+  document.addEventListener("scroll", (event) => {
     const windowScrollY = window.scrollY;
     const scrollWidth = eventsSliderWrapper.scrollWidth;
     const allHeaderWrapperHeight = allHeaderWrapper.offsetHeight;
 
-    if (windowScrollY > scrollWidth - eventsSliderWrapper.offsetWidth + allHeaderWrapperHeight) {
+    if (windowScrollY > scrollWidth - eventsSliderWrapper.offsetWidth) {
       root.style.setProperty('--events-slider-wrapper-width', scrollWidth + 'px');
       eventsSliderOuterWrapper.classList.add('events-slider-outer-wrapper-end');
     } else {
@@ -40,9 +49,9 @@ window.addEventListener('load', () => {
     }
 
     for (let i = 0; i < 5; i++) {
-      if (eventaSliderWrappers[i].getBoundingClientRect().left < window.innerWidth / 2 && eventaSliderWrappers[i].getBoundingClientRect().right > window.innerWidth / 2) {
+      if (eventsSliderWrappers[i].getBoundingClientRect().left < window.innerWidth / 2 && eventsSliderWrappers[i].getBoundingClientRect().right > window.innerWidth / 2) {
         document.querySelector('.each-event-slider-active').classList.remove('each-event-slider-active');
-        eventaSliderWrappers[i].classList.add('each-event-slider-active');
+        eventsSliderWrappers[i].classList.add('each-event-slider-active');
         document.querySelector('.each-event-slider-bullet-filled').classList.remove('each-event-slider-bullet-filled');
         eventsSliderBullets[i].classList.add('each-event-slider-bullet-filled');
         sliderIndex = i;
@@ -50,26 +59,24 @@ window.addEventListener('load', () => {
       }
     }
 
-    eventsSliderWrapper.scrollTo(windowScrollY > allHeaderWrapperHeight ? windowScrollY - allHeaderWrapperHeight : 0, 0);
+    eventsSliderWrapper.scrollTo(windowScrollY, 0);
   });
 
   document.addEventListener('click', (event) => {
     if (event.target.classList.contains('each-event-slider-bullet'))
       window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4) + allHeaderWrapper.offsetHeight)
+
+    if (!event.target.closest('.all-cryptist-inner-wrapper') && !event.target.closest('.all-sui-move-workshop-inner-wrapper') && !event.target.closest('.all-aleo-tour-of-turkiye-inner-wrapper') && !event.target.closest('.all-nym-community-gathering-inner-wrapper') && !event.target.closest('.all-moda-palas-inner-wrapper'))
+      location.hash = '#';
   });
 
-
   window.addEventListener('hashchange', () => {
-    if (location.hash == '#cryptist' || location.hash == '#sui-move-workshop' || location.hash == '#aleo-tour-of-turkiye' || location.hash == '#nym-community-gathering' || location.hash == '#moda-palas')
-      document.querySelector(`.all-${location.hash.split('#')[1]}-wrapper`).style.display = 'flex';
-    else {
+    Object.keys(hashLocations).forEach((key) => hashLocations[key].style.display = 'none');
+
+    if (Object.keys(hashLocations).includes(location.hash))
+      hashLocations[location.hash].style.display = 'flex';
+    else
       location.hash = '#';
-      document.querySelector('.all-cryptist-wrapper').style.display = 'none';
-      document.querySelector('.all-sui-move-workshop-wrapper').style.display = 'none';
-      document.querySelector('.all-aleo-tour-of-turkiye-wrapper').style.display = 'none';
-      document.querySelector('.all-nym-community-gathering-wrapper').style.display = 'none';
-      document.querySelector('.all-moda-palas-wrapper').style.display = 'none';
-    }
   });
   window.dispatchEvent(new HashChangeEvent("hashchange"));
 

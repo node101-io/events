@@ -55,42 +55,45 @@ block main
                   .each-team-member-title= __(member.title)
   .all-cryptist-wrapper
     .all-cryptist-inner-wrapper
-      .all-cryptist-top-wrapper
-        .all-crpytist-left-wrapper
-          .all-cryptist-left-title= __('CRYPTIST')
-          .all-cryptist-left-event-type= __('Summit')
-          .all-cryptist-left-event-text= __('CryptIst, Zero-Knowledge Proof\'un sunduğu heyecan verici fırsatları genç yazılımcılara tanıtmayı amaçlar. Ülkenin en iyi üniversitelerinde okuyan yetenekli genç yazılımcıların misafir edildiği etkinlik, doğu ve batının buluşma noktası olan İstanbul\'un ilham verici atmosferinde düzenlendi.')
-          .all-cryptist-left-event-stats-wrapper
-            .each-cryptist-left-event-stats
-              .each-cryptist-left-event-stats-number 150
-              .each-cryptist-left-event-stats-text= __('Participants')
-            .each-cryptist-left-event-stats
-              .each-cryptist-left-event-stats-number 14
-              .each-cryptist-left-event-stats-text= __('Speakers')
-            .each-cryptist-left-event-stats
-              .each-cryptist-left-event-stats-number 7
-              .each-cryptist-left-event-stats-text= __('Sponsors')
-            .each-cryptist-left-event-stats
-              .each-cryptist-left-event-stats-number 6
-              .each-cryptist-left-event-stats-text= __('Partners')
-        .all-crpytist-right-wrapper
-          img.all-cryptist-right-image(src=`${URL}/img/cryptist/main/main_1200w.webp`)
-      .all-cryptist-socondary-top-wrapper
-        .all-cryptist-secondary-left-wrapper
-          .all-cryptist-secondary-left-text= __('Scroll down')
-          svg.all-cryptist-secondary-left-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
+      .all-cryptist-first-wrapper
+        .all-cryptist-first-left-wrapper
+          .all-cryptist-first-left-title= __('CRYPTIST')
+          .all-cryptist-first-left-event-type= __('Summit')
+          .all-cryptist-first-left-event-text= __('CryptIst, Zero-Knowledge Proof\'un sunduğu heyecan verici fırsatları genç yazılımcılara tanıtmayı amaçlar. Ülkenin en iyi üniversitelerinde okuyan yetenekli genç yazılımcıların misafir edildiği etkinlik, doğu ve batının buluşma noktası olan İstanbul\'un ilham verici atmosferinde düzenlendi.')
+          .all-cryptist-first-left-event-stats-wrapper
+            .each-cryptist-first-left-event-stats
+              .each-cryptist-first-left-event-stats-number 0
+              .each-cryptist-first-left-event-stats-text= __('Participants')
+            .each-cryptist-first-left-event-stats
+              .each-cryptist-first-left-event-stats-number 0
+              .each-cryptist-first-left-event-stats-text= __('Speakers')
+            .each-cryptist-first-left-event-stats
+              .each-cryptist-first-left-event-stats-number 0
+              .each-cryptist-first-left-event-stats-text= __('Sponsors')
+            .each-cryptist-first-left-event-stats
+              .each-cryptist-first-left-event-stats-number 0
+              .each-cryptist-first-left-event-stats-text= __('Partners')
+        .all-cryptist-first-right-wrapper
+          img.all-cryptist-first-right-image(src=`${URL}/img/cryptist/main/main_1200w.webp`)
+      .all-cryptist-second-wrapper
+        .all-cryptist-second-left-wrapper
+          .all-cryptist-second-left-text= __('Scroll down')
+          svg.all-cryptist-second-left-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
             path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
-        .all-cryptist-secondary-middle-wrapper
-          img.all-cryptist-secondary-middle-image(src=`${URL}/img/cryptist/hand/hand_300w.webp`)
-        .all-cryptist-secondary-right-wrapper
-          a.all-cryptist-secondary-right-button-wrapper
-            .all-cryptist-secondary-right-button-text= __('Video')
-            svg.all-cryptist-secondary-right-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
+        .all-cryptist-second-middle-wrapper
+          img.all-cryptist-second-middle-image(src=`${URL}/img/cryptist/hand/hand_300w.webp`)
+        .all-cryptist-second-right-wrapper
+          a.all-cryptist-second-right-button-wrapper
+            .all-cryptist-second-right-button-text= __('Video')
+            svg.all-cryptist-second-right-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-secondary-right-image(src=`${URL}/img/cryptist/damir_mustafa/damir_mustafa_700w.webp`)
-      .all-cryptist-third-top-wrapper
+          img.all-cryptist-second-right-image(src=`${URL}/img/cryptist/damir_mustafa/damir_mustafa_700w.webp`)
+      .all-cryptist-third-wrapper
         .all-cryptist-third-emoji 🔒 🙈 🙉 🧐
-        .all-cryptist-third-text= __('CryptIst, Zero-knowledge Proof teknolojisini geliştiren birçok uluslararası ismi ağırladı. Bu isimler arasında Emre Tekişalp, Toghrul Maharramov, Anthony Diprinzio, Kaan Uzdoğan, Todd Norton ve Albiona Hoti gibi isimler göze çarptı. Mustafa Aksöz, Errol Drummond ve Murat Karademir\'in önderliğinde organize edilen Cryptİst, Blockchain sektörünün önde gelen projelerinin sponsorluğunda gerçekleşti. Etkinliği, blockchain öğrenci kulüpleri, Türkçe ve İngilizce yayın yapan zero-knowledge newslettersları ve node101 tarafından partner olarak destekledi.')
+        .all-cryptist-third-text
+          | #{__('CryptIst, Zero-knowledge Proof teknolojisini geliştiren birçok uluslararası ismi ağırladı. Bu isimler arasında Emre Tekişalp, Toghrul Maharramov, Anthony Diprinzio, Kaan Uzdoğan, Todd Norton ve Albiona Hoti gibi isimler göze çarptı. Mustafa Aksöz, Errol Drummond ve Murat Karademir\'in önderliğinde organize edilen Cryptİst, Blockchain sektörünün önde gelen projelerinin sponsorluğunda gerçekleşti.')}
+          br
+          | #{__('Etkinliği, blockchain öğrenci kulüpleri, Türkçe ve İngilizce yayın yapan zero-knowledge newslettersları ve node101 tarafından partner olarak destekledi.')}
       .all-cryptist-sponsors-wrapper
         img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp`)
         img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp`)
@@ -297,7 +300,317 @@ block main
             a.each-cryptist-footer-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
               .each-cryptist-footer-button-secondary-text hello@node101.io
             .each-cryptist-footer-button-border-bottom
-  .all-moda-palas-wrapper
   .all-sui-move-workshop-wrapper
-  .all-nym-community-gathering-wrapper
+    .all-sui-move-workshop-inner-wrapper
+      .all-sui-first-wrapper
+        .all-sui-first-left-wrapper
+          .all-sui-first-left-title= __('SUI MOVE WORKSHOP')
+          .all-sui-first-left-event-type= __('Workshop')
+          .all-sui-first-left-event-text= __('Move dilini dünyaya tanıtan "The Move Book" kitabının yazarı ve Sui projesini inşa eden çekirdek ekipte yer alan Damir Shamanaev\'in öğreticisi olduğu, aylık olarak düzenlediğimiz workshoplar rağbet görmeye devam ediyor.')
+          .all-sui-first-left-event-stats-wrapper
+            .each-sui-first-left-event-stats
+              .each-sui-first-left-event-stats-number +40
+              .each-sui-first-left-event-stats-text= __('Participants')
+            .each-sui-first-left-event-stats
+              .each-sui-first-left-event-stats-number +10
+              .each-sui-first-left-event-stats-text= __('Case Study')
+            .each-sui-first-left-event-stats
+              .each-sui-first-left-event-stats-number 1
+              .each-sui-first-left-event-stats-text= __('Educator')
+        .all-sui-first-right-wrapper
+          img.all-sui-first-right-image(src=`${URL}/img/sui-move-workshop/people.webp`)
+      .all-sui-second-wrapper
+        .all-sui-second-left-wrapper
+          .all-sui-second-left-text= __('Scroll down')
+          svg.all-sui-second-left-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
+            path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
+        .all-sui-second-middle-wrapper
+          img.all-sui-second-middle-image(src=`${URL}/img/sui-move-workshop/laptop.webp`)
+        .all-sui-second-right-wrapper
+          img.all-sui-second-right-image(src=`${URL}/img/sui-move-workshop/code-snippet.webp`)
+          .all-sui-second-emoji 💧 👨‍💻 🌊 🏃‍♀️ 
+      .all-sui-third-wrapper
+        .all-sui-third-top-text= __('Daha güvenli, esnek ve doğrulanabilir blockchain ürünlerinin yazılabildiği, yeni nesil bir web3 yazılım dili olan "Move" ile üretilen projelerin sayısı her geçen gün katlanmaktadır.')
+        .all-sui-third-bottom-text= __('Sui Move Language Workshopslar ile, İstanbul\'da yaşayan genç yazılımcıların dikkatini bu yeni yazılım diline çekerek, bu dil üzerinde proje üretmelerinin desteklenmesi amaçlanmıştır.')
+        a.all-sui-third-button(href='https://github.com/node-101/sui-move-workshop', target='_blank')
+          .all-sui-third-button-text= __('GitHub')
+          svg.all-sui-third-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+      .all-sui-fourth-wrapper
+        .all-sui-fourth-left-wrapper
+          img.all-sui-fourth-left-image(src=`${URL}/img/sui-move-workshop/building.webp`)
+          .all-sui-fourth-left-text= __('Şehrin favori web3 hublarında düzenlenen workshoplara; üniversite blockchain kulüpleri, öğrenciler, bireysel geliştiriciler ve software geliştiriciler başta olmak üzere blockchain ile ilgilenen bir çok kesim ilgi gösteriyor.')
+        .all-sui-fourth-right-wrapper
+          img.all-sui-fourth-right-image(src=`${URL}/img/sui-move-workshop/building2.webp`)
+      .all-sui-fifth-wrapper
+        .all-sui-fifth-left-wrapper
+          img.all-sui-fifth-left-image(src=`${URL}/img/sui-move-workshop/laptop2.webp`)
+          .all-sui-fifth-left-quote-wrapper
+            .all-sui-fifth-left-quote-text= __('"Damir\'in özverili çabaları bizleri \'The Move Book\' un Türkçe çevirisini yapmamız konusunda teşvik etmiştir"')
+            .all-sui-fifth-left-quote-author= __('Kerem Kaya - YTU Blockchain')
+        .all-sui-fifth-right-wrapper
+          img.all-sui-fifth-right-image(src=`${URL}/img/sui-move-workshop/people2.webp`)
+          .all-sui-fifth-right-text= __('Her ay, bir tam gün şeklinde düzenlenen Sui Move Language Workshop süresince, sınırsız kahve-çay, atıştırmalıklar ikram ediliyor. Lunapark\'ın yaratıcı atmosferi altında düzenlenen workshoplar ile katılımcılar hem öğreniyor hem üretiyor hem de birbirleriyle tanışıyorlar.')
+      .all-sui-footer-wrapper
+        .all-sui-footer-left-wrapper
+          .all-sui-footer-left-text= __('SUI Move Language Workshop etkinliklerinden haberdar olmak için Telegram grubumuza katıl!')
+          .all-sui-footer-left-buttons-wrapper
+            a.each-sui-footer-left-button(href='https://t.me/sui_move_language', target='_blank')= __('Telegram')
+              svg.each-sui-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+            .each-sui-footer-left-button-border-bottom
+            a.each-sui-footer-left-button(href='https://twitter.com/sui_move', target='_blank')= __('Twitter')
+              svg.each-sui-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+            .each-sui-footer-left-button-border-bottom
+            a.each-sui-footer-left-button(href='https://drive.google.com/drive/', target='_blank')= __('Drive')
+              svg.each-sui-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+            .each-sui-footer-left-button-border-bottom
+        .all-sui-footer-right-wrapper
+          img.all-sui-footer-right-image(src=`${URL}/img/sui-move-workshop/code-snippet2.webp`)
   .all-aleo-tour-of-turkiye-wrapper
+    .all-aleo-tour-of-turkiye-inner-wrapper
+      .all-aleo-first-wrapper
+        .all-aleo-first-emoji 🏫 🛫 🇹🇷 🤓
+        .all-aleo-first-intro-wrapper
+          .all-aleo-first-intro-title= __('ALEO - TOUR OF TURKIYE')
+          .all-aleo-first-intro-event-type= __('Tour')
+          .all-aleo-first-intro-text= __('Aleo, Zero-Knowledge Proof teknolojisini kullanan blockchain uygulamaları için geliştirilen bir platfromdur. Daha fazla Zero-Knowledge Proof temelli ürünlerin üretilebilmesi için, en iyi yazılımcı gençlerin dikkatinin bu alana çekilmesi gerekiyor. Bu gerekliliğin farkında olan Aleo takımı "Tour of Türkiye" sürecimizle İstanbul, Ankara ve İzmir\'de üniversiteli gençlerle buluşarak seminerler ve workshoplar verdi.')
+          .all-aleo-first-intro-team-wrapper
+            .each-aleo-first-intro-team-member-wrapper
+              img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/anthony.webp`)
+              a.each-aleo-first-intro-team-member-name-button-wrapper
+                .each-aleo-first-intro-team-member-name-button-text= __('Anthony DiPrinzio')
+                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+              .each-aleo-first-intro-team-member-title= __('Head of Growth, Aleo')
+            .each-aleo-first-intro-team-member-wrapper
+              img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/errol.webp`)
+              a.each-aleo-first-intro-team-member-name-button-wrapper
+                .each-aleo-first-intro-team-member-name-button-text= __('Errol Drummond')
+                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+              .each-aleo-first-intro-team-member-title= __('ZK Educator, Aleo')
+            .each-aleo-first-intro-team-member-wrapper
+              img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/mustafa.webp`)
+              a.each-aleo-first-intro-team-member-name-button-wrapper
+                .each-aleo-first-intro-team-member-name-button-text= __('Mustafa Aksöz')
+                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+              .each-aleo-first-intro-team-member-title= __('Co-Founder, node101')
+        .all-aleo-first-bottom-wrapper
+          .all-aleo-first-bottom-text(href='https://www.youtube.com/watch?v=ZQ0QG5J0Xr8', target='_blank')= __('Scroll Down')
+          svg.all-aleo-first-bottom-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
+            path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355" stroke-width="2")
+      .all-aleo-second-wrapper
+        .all-aleo-second-left-wrapper
+          .all-aleo-second-left-title= __('TÜRKİYE\'NİN EN YETENEKLİ GENÇ YAZILIMCILARI WEB3\'YE ODAKLANMALI')
+          .all-aleo-second-stats-wrapper
+            .each-aleo-first-left-event-stats
+              .each-aleo-first-left-event-stats-number +200
+              .each-aleo-first-left-event-stats-text= __('Participants')
+            .each-aleo-first-left-event-stats
+              .each-aleo-first-left-event-stats-number +3
+              .each-aleo-first-left-event-stats-text= __('Cities')
+            .each-aleo-first-left-event-stats
+              .each-aleo-first-left-event-stats-number 2
+              .each-aleo-first-left-event-stats-text= __('Universities')
+          .all-aleo-second-left-text= __('Ulaşım, konaklama, üniversite kulüpleri ile iletişim dahil olmak üzere tüm süreci node101 yürüttü. Türkiye\'nin en önemli yükseköğretim kurumlarından olan Boğaziçi Üniversitesi\'nde ve Orta Doğu Teknik Üniversitesi\'nde okuyan yazılımcı gençlerle Aleo takımından Errol Drummond ve Anthony DiPrinzio bir araya gelme fırsatı buldu.')
+          img.all-aleo-second-left-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp`)
+        .all-aleo-second-right-wrapper
+          img.all-aleo-second-right-image(src=`${URL}/img/aleo-tour-of-turkiye/hand.webp`)
+      .all-aleo-third-wrapper
+        .all-aleo-third-left-wrapper
+          img.all-aleo-third-left-image(src=`${URL}/img/aleo-tour-of-turkiye/bogazici.webp`)
+        .all-aleo-third-right-wrapper
+          .all-aleo-third-right-title= __('BOĞAZİÇİ UNIVERSITY - İSTANBUL')
+          .all-aleo-third-right-text= __('Türkiye\'nin ekonomik ve kültürel başkenti İstanbul\'da, Boğaz\'ın en güzel tepesine kurulu olan Boğaziçi Üniversitesi, ülkenin en eski eğitim kurumlarından biridir. Amerika Birleşik Devletleri\'nin teşviki ile yurtdışında açılan ilk eğitim kurumu olma vasfı taşıyan üniversite, 1863 yılından beri eğitim vermekte. Özellikle mühendislik, yazılım, işletme ve ekonomi alanlarındaki rekabetçiliği ile ön plana çıkan okulda yapılan buluşmaya rağbet yoğundu.')
+          .all-aleo-third-right-inner-wrapper
+            img.all-aleo-third-right-inner-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp`)
+            .all-aleo-third-right-inner-text= __('Boğaziçi Üniversitesi\'nde Blockchain araştırma ve geliştirme çabalarının öncülerinden olan BUchain\'in de katıldığı Aleo buluşmasında, Zero-Knowledge Proof\'un getirdiği çözüm önerileri üzerine yoğun bir şekilde sohbet edildi. Öğrencilerin yoğun talebi ve soruları eşliğinde biten etkinlikten herkes memnun olarak ayrıldı.')
+      .all-aleo-fourth-wrapper
+        .all-aleo-fourth-left-wrapper
+          .all-aleo-fourth-left-title= __('ORTA DOĞU TEKNİK ÜNİVERSİTESİ - ANKARA')
+          .all-aleo-fourth-left-text= __('Başkent Ankara\'da yer alan Orta Doğu Teknik Üniversitesi (ODTU), ülkenin en önde gelen teknik üniversitesidir. Birleşmiş Milletler tarafından 1956 yılında kurulan üniversite, Orta Doğu ülkelerinin kalkınmasında görev alacak gençleri yetiştirmeyi amaçlamaktadır. Mühendisleri ve yazılımcıları ile ün salmış olan okulda düzenlediğimiz buluşmaya katılım beklenilenden de fazlaydı.')
+          img.all-aleo-fourth-left-image(src=`${URL}/img/aleo-tour-of-turkiye/class2.webp`)
+        .all-aleo-fourth-right-wrapper
+          img.all-aleo-fourth-right-top-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu.webp`)
+          img.all-aleo-fourth-right-bottom-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu2.webp`)
+          .all-aleo-fourth-right-text= __('Aleo\'nun Zero-Knowledge Proof evreninin genişlemesine yönelik olarak sunduğu çözümlerin değerlendirildiği buluşmada, gençlerin konu hakkındaki ilgisi ve bilgisi Aleo takımını oldukça memnun etti.')
+      .all-aleo-fifth-wrapper
+        .all-aleo-fifth-title= __('İZMİR')
+        .all-aleo-fifth-text= __('İstanbul\'da ve Ankara\'da düzenlenen üniversite buluşmaları sonrası, ülkenin batı\'ya açılan en önemli kapılarından biri olan, "Ege\'nin İncisi" İzmir\'de Aleo Türk topluluğu ile bir araya geldik. Bu buluşmada Aleo\'nun üzerinde çalıştığı son konular ve gelecekte aşılması planlanan miltaşları üzerine konuştuk. Yol boyunca; Sapanca Gölü, Abant Gölü, Efes Antik Şehri, Troya Antik Şehri gibi önemli ören yerleri de Aleo ekibi ile birlikte gezdik.')
+        img.all-aleo-fifth-top-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir.webp`)
+        img.all-aleo-fifth-bottom-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir2.webp`)
+      .all-aleo-footer-wrapper
+        a.each-aleo-footer-left-button(href='https://t.me/sui_move_language', target='_blank')= __('Orta Doğu Teknik Üniversitesi')
+          svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-aleo-footer-left-button-border-bottom
+        a.each-aleo-footer-left-button(href='https://twitter.com/sui_move', target='_blank')= __('Boğaziçi Üniversitesi')
+          svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-aleo-footer-left-button-border-bottom
+        a.each-aleo-footer-left-button(href='https://drive.google.com/drive/', target='_blank')= __('Drive')
+          svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+        .each-aleo-footer-left-button-border-bottom
+  .all-nym-community-gathering-wrapper
+    .all-nym-community-gathering-inner-wrapper
+      .all-nym-first-wrapper
+        .all-nym-first-left-wrapper
+          .all-nym-first-left-title= __('NYM COMMUNITY GATHERING')
+          .all-nym-first-left-event-type= __('Gathering')
+          .all-nym-first-left-text= __('İnternet, her tıklamamızda etrafa anlamlandırılabilir veriler saçtığımız bir mecra. Peki ama özel verilerimizi internete neden dağıtalım ki? NYM, sunduğu Mixnet ve Privacy Credentials gibi özgün çözümlerle verilerinize sahip çıkmanıza imkan sağlıyor. Istanbul\'a gelen NYM ekibi, Türkiye\'de bulunan anoNYM\'lerle düzenlediğimiz gathering\'te buluştu.')
+          .all-nym-first-left-bottom-wrapper
+            .all-nym-first-left-bottom-text= __('Scroll down')
+            svg.all-nym-first-left-bottom-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
+              path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
+        .all-nym-first-right-wrapper
+          .all-nym-first-right-emoji 🥂 🥳 🤝
+          img.all-nym-first-right-image(src=`${URL}/img/nym-community-gathering/people.webp`)
+      .all-nym-second-wrapper
+        .each-nym-second-row-wrapper
+          svg.each-nym-second-svg(viewbox='0 0 699 113' xmlns='http://www.w3.org/2000/svg')
+            mask#path-1-outside-1_296_1588(maskunits='userSpaceOnUse' x='0.432617' y='0.810059')
+              rect(fill='white' x='0.432617' y='0.810059' width='699' height='112')
+              path(d='M59.8109 84.8972V8.40182H68.535V86.6865H51.4222L11.1568 10.303V86.6865H2.43262V8.40182H19.5454L59.8109 84.8972Z')
+              path(d='M150.38 8.40182L120.628 59.5105V78.7462H135.952V86.6865H96.6929V78.7462H111.904V59.5105L82.2644 8.40182H92.5545L116.602 50.8992L140.537 8.40182H150.38Z')
+              path(d='M243.347 8.40182V86.6865H234.958V10.5267L211.47 86.6865H196.035L172.547 10.1912V86.6865H164.158V8.40182H180.6L203.865 84.1143L227.129 8.40182H243.347Z')
+              path(d='M269.161 2.81006C271.771 2.81006 273.896 3.89113 275.537 6.05329C277.177 8.14088 277.997 10.7504 277.997 13.8818C277.997 21.412 274.381 27.1529 267.148 31.1044L263.01 26.4073C266.291 24.6179 268.565 22.5304 269.832 20.1445C271.1 17.6842 271.398 15.5593 270.727 13.7699C269.012 14.3664 267.334 14.18 265.694 13.2107C264.054 12.2415 263.233 10.7131 263.233 8.6255C263.233 6.98525 263.793 5.60594 264.911 4.48759C266.104 3.36924 267.521 2.81006 269.161 2.81006Z')
+              path(d='M302.379 86.6865H293.99V3.92842H302.379V86.6865Z')
+              path(d='M349.816 28.9795C358.54 28.9795 365.699 32.0736 371.291 38.2618C376.958 44.3755 379.456 51.943 378.785 60.9644H329.013C329.609 66.6307 331.883 71.2905 335.835 74.9438C339.862 78.5225 344.746 80.3119 350.487 80.3119C354.887 80.3119 358.801 79.2308 362.231 77.0687C365.662 74.9065 368.271 71.9615 370.061 68.2337L377.219 71.2533C374.833 76.2486 371.291 80.2746 366.594 83.3315C361.896 86.3137 356.49 87.8049 350.376 87.8049C341.95 87.8049 334.866 85.009 329.124 79.4172C323.457 73.7509 320.624 66.7426 320.624 58.3922C320.624 50.0418 323.42 43.0708 329.013 37.479C334.605 31.8127 341.54 28.9795 349.816 28.9795ZM349.816 36.4725C344.671 36.4725 340.197 38.1127 336.395 41.3932C332.592 44.6737 330.206 48.8862 329.236 54.0306H370.285C369.464 48.9608 367.153 44.7856 363.35 41.5051C359.622 38.15 355.11 36.4725 349.816 36.4725Z')
+              path(d='M445.24 37.7027H432.49V30.0979H445.24V9.85568L453.629 7.28347V30.0979H470.854V37.7027H453.629V67.4509C453.629 71.626 454.524 74.6083 456.313 76.3977C458.103 78.187 461.048 79.0817 465.15 79.0817H470.854V86.6865H465.15C458.364 86.6865 453.331 85.0836 450.05 81.8776C446.844 78.6717 445.24 73.7509 445.24 67.1154V37.7027Z')
+              path(d='M510.827 28.9795C517.24 28.9795 522.46 30.6943 526.486 34.1239C530.513 37.479 532.526 42.2134 532.526 48.327V86.6865H524.137V71.2533C520.334 82.2877 512.952 87.8049 501.991 87.8049C496.846 87.8049 492.633 86.3883 489.352 83.5551C486.146 80.722 484.543 76.9569 484.543 72.2598C484.543 67.1899 486.37 63.2757 490.024 60.5171C493.752 57.7585 498.561 56.0809 504.452 55.4845L517.091 54.0306C521.789 53.5833 524.137 51.4211 524.137 47.5442C524.137 44.04 522.907 41.2814 520.446 39.2684C517.986 37.2553 514.742 36.2488 510.715 36.2488C506.689 36.2488 503.222 37.2553 500.314 39.2684C497.406 41.2814 495.43 44.3755 494.386 48.5507L486.221 46.314C487.563 40.7222 490.434 36.4352 494.833 33.4529C499.307 30.4707 504.638 28.9795 510.827 28.9795ZM504.116 80.7593C509.858 80.7593 514.63 78.8581 518.433 75.0557C522.236 71.1787 524.137 66.668 524.137 61.5236V56.8265C523.093 59.0632 520.558 60.4052 516.532 60.8526L504.34 62.1946C500.91 62.6419 498.151 63.6857 496.063 65.326C493.976 66.8917 492.932 69.0538 492.932 71.8124C492.932 74.4965 493.938 76.6586 495.952 78.2989C498.039 79.9391 500.761 80.7593 504.116 80.7593Z')
+              path(d='M581.9 28.9795C588.536 28.9795 593.98 31.2908 598.23 35.9133C602.555 40.5358 604.717 46.3513 604.717 53.3596V86.6865H596.328V54.3661C596.328 49.3708 594.688 45.1956 591.407 41.8406C588.126 38.411 584.062 36.6962 579.216 36.6962C573.921 36.6962 569.559 38.3737 566.129 41.7287C562.699 45.0838 560.984 49.2963 560.984 54.3661V86.6865H552.596V30.0979H560.984V44.6365C562.55 39.8648 565.197 36.0624 568.926 33.2293C572.654 30.3961 576.979 28.9795 581.9 28.9795Z')
+              path(d='M633.109 86.6865H624.721V30.0979H633.109V86.6865Z')
+              path(d='M696.541 71.1414C696.541 75.6148 694.64 79.38 690.837 82.4368C687.109 85.4936 682.262 87.2457 676.297 87.693C681.367 90.3025 683.902 93.9558 683.902 98.6529C683.902 101.859 682.597 104.58 679.988 106.817C677.378 109.054 673.724 110.172 669.026 110.172C667.013 110.172 664.925 109.911 662.763 109.389L663.434 102.343C664.851 102.642 666.267 102.791 667.684 102.791C670.294 102.791 672.27 102.194 673.612 101.001C675.029 99.8085 675.737 98.2801 675.737 96.4162C675.737 93.2103 674.06 90.3025 670.704 87.693C665.037 87.3203 660.414 85.7546 656.835 82.996C653.256 80.1628 651.056 76.5095 650.236 72.0361L658.736 70.3586C659.929 77.2924 664.813 80.7593 673.389 80.7593C677.713 80.7593 681.218 79.9018 683.902 78.187C686.661 76.3977 688.041 74.1237 688.041 71.3651C688.041 68.5319 686.773 66.3698 684.238 64.8786C681.777 63.3875 678.795 62.3437 675.29 61.7473C671.785 61.0762 668.243 60.368 664.664 59.6224C661.16 58.8023 658.14 57.2366 655.605 54.9253C653.144 52.614 651.914 49.4454 651.914 45.4193C651.914 40.6477 653.927 36.7334 657.953 33.6766C661.98 30.5452 667.125 28.9795 673.389 28.9795C679.503 28.9795 684.499 30.3961 688.376 33.2293C692.254 36.0624 694.64 39.9021 695.535 44.7483L687.146 46.4258C685.878 39.5666 681.292 36.137 673.389 36.137C669.586 36.137 666.454 36.9571 663.993 38.5974C661.533 40.2376 660.302 42.3998 660.302 45.0838C660.302 47.6933 661.533 49.7063 663.993 51.1229C666.528 52.4649 669.548 53.4342 673.053 54.0306C676.632 54.6271 680.174 55.3726 683.679 56.2673C687.258 57.0875 690.278 58.7277 692.738 61.1881C695.274 63.6485 696.541 66.9662 696.541 71.1414Z')
+            path(d='M59.8109 84.8972V8.40182H68.535V86.6865H51.4222L11.1568 10.303V86.6865H2.43262V8.40182H19.5454L59.8109 84.8972Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M150.38 8.40182L120.628 59.5105V78.7462H135.952V86.6865H96.6929V78.7462H111.904V59.5105L82.2644 8.40182H92.5545L116.602 50.8992L140.537 8.40182H150.38Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M243.347 8.40182V86.6865H234.958V10.5267L211.47 86.6865H196.035L172.547 10.1912V86.6865H164.158V8.40182H180.6L203.865 84.1143L227.129 8.40182H243.347Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M269.161 2.81006C271.771 2.81006 273.896 3.89113 275.537 6.05329C277.177 8.14088 277.997 10.7504 277.997 13.8818C277.997 21.412 274.381 27.1529 267.148 31.1044L263.01 26.4073C266.291 24.6179 268.565 22.5304 269.832 20.1445C271.1 17.6842 271.398 15.5593 270.727 13.7699C269.012 14.3664 267.334 14.18 265.694 13.2107C264.054 12.2415 263.233 10.7131 263.233 8.6255C263.233 6.98525 263.793 5.60594 264.911 4.48759C266.104 3.36924 267.521 2.81006 269.161 2.81006Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M302.379 86.6865H293.99V3.92842H302.379V86.6865Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M349.816 28.9795C358.54 28.9795 365.699 32.0736 371.291 38.2618C376.958 44.3755 379.456 51.943 378.785 60.9644H329.013C329.609 66.6307 331.883 71.2905 335.835 74.9438C339.862 78.5225 344.746 80.3119 350.487 80.3119C354.887 80.3119 358.801 79.2308 362.231 77.0687C365.662 74.9065 368.271 71.9615 370.061 68.2337L377.219 71.2533C374.833 76.2486 371.291 80.2746 366.594 83.3315C361.896 86.3137 356.49 87.8049 350.376 87.8049C341.95 87.8049 334.866 85.009 329.124 79.4172C323.457 73.7509 320.624 66.7426 320.624 58.3922C320.624 50.0418 323.42 43.0708 329.013 37.479C334.605 31.8127 341.54 28.9795 349.816 28.9795ZM349.816 36.4725C344.671 36.4725 340.197 38.1127 336.395 41.3932C332.592 44.6737 330.206 48.8862 329.236 54.0306H370.285C369.464 48.9608 367.153 44.7856 363.35 41.5051C359.622 38.15 355.11 36.4725 349.816 36.4725Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M445.24 37.7027H432.49V30.0979H445.24V9.85568L453.629 7.28347V30.0979H470.854V37.7027H453.629V67.4509C453.629 71.626 454.524 74.6083 456.313 76.3977C458.103 78.187 461.048 79.0817 465.15 79.0817H470.854V86.6865H465.15C458.364 86.6865 453.331 85.0836 450.05 81.8776C446.844 78.6717 445.24 73.7509 445.24 67.1154V37.7027Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M510.827 28.9795C517.24 28.9795 522.46 30.6943 526.486 34.1239C530.513 37.479 532.526 42.2134 532.526 48.327V86.6865H524.137V71.2533C520.334 82.2877 512.952 87.8049 501.991 87.8049C496.846 87.8049 492.633 86.3883 489.352 83.5551C486.146 80.722 484.543 76.9569 484.543 72.2598C484.543 67.1899 486.37 63.2757 490.024 60.5171C493.752 57.7585 498.561 56.0809 504.452 55.4845L517.091 54.0306C521.789 53.5833 524.137 51.4211 524.137 47.5442C524.137 44.04 522.907 41.2814 520.446 39.2684C517.986 37.2553 514.742 36.2488 510.715 36.2488C506.689 36.2488 503.222 37.2553 500.314 39.2684C497.406 41.2814 495.43 44.3755 494.386 48.5507L486.221 46.314C487.563 40.7222 490.434 36.4352 494.833 33.4529C499.307 30.4707 504.638 28.9795 510.827 28.9795ZM504.116 80.7593C509.858 80.7593 514.63 78.8581 518.433 75.0557C522.236 71.1787 524.137 66.668 524.137 61.5236V56.8265C523.093 59.0632 520.558 60.4052 516.532 60.8526L504.34 62.1946C500.91 62.6419 498.151 63.6857 496.063 65.326C493.976 66.8917 492.932 69.0538 492.932 71.8124C492.932 74.4965 493.938 76.6586 495.952 78.2989C498.039 79.9391 500.761 80.7593 504.116 80.7593Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M581.9 28.9795C588.536 28.9795 593.98 31.2908 598.23 35.9133C602.555 40.5358 604.717 46.3513 604.717 53.3596V86.6865H596.328V54.3661C596.328 49.3708 594.688 45.1956 591.407 41.8406C588.126 38.411 584.062 36.6962 579.216 36.6962C573.921 36.6962 569.559 38.3737 566.129 41.7287C562.699 45.0838 560.984 49.2963 560.984 54.3661V86.6865H552.596V30.0979H560.984V44.6365C562.55 39.8648 565.197 36.0624 568.926 33.2293C572.654 30.3961 576.979 28.9795 581.9 28.9795Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M633.109 86.6865H624.721V30.0979H633.109V86.6865Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            path(d='M696.541 71.1414C696.541 75.6148 694.64 79.38 690.837 82.4368C687.109 85.4936 682.262 87.2457 676.297 87.693C681.367 90.3025 683.902 93.9558 683.902 98.6529C683.902 101.859 682.597 104.58 679.988 106.817C677.378 109.054 673.724 110.172 669.026 110.172C667.013 110.172 664.925 109.911 662.763 109.389L663.434 102.343C664.851 102.642 666.267 102.791 667.684 102.791C670.294 102.791 672.27 102.194 673.612 101.001C675.029 99.8085 675.737 98.2801 675.737 96.4162C675.737 93.2103 674.06 90.3025 670.704 87.693C665.037 87.3203 660.414 85.7546 656.835 82.996C653.256 80.1628 651.056 76.5095 650.236 72.0361L658.736 70.3586C659.929 77.2924 664.813 80.7593 673.389 80.7593C677.713 80.7593 681.218 79.9018 683.902 78.187C686.661 76.3977 688.041 74.1237 688.041 71.3651C688.041 68.5319 686.773 66.3698 684.238 64.8786C681.777 63.3875 678.795 62.3437 675.29 61.7473C671.785 61.0762 668.243 60.368 664.664 59.6224C661.16 58.8023 658.14 57.2366 655.605 54.9253C653.144 52.614 651.914 49.4454 651.914 45.4193C651.914 40.6477 653.927 36.7334 657.953 33.6766C661.98 30.5452 667.125 28.9795 673.389 28.9795C679.503 28.9795 684.499 30.3961 688.376 33.2293C692.254 36.0624 694.64 39.9021 695.535 44.7483L687.146 46.4258C685.878 39.5666 681.292 36.137 673.389 36.137C669.586 36.137 666.454 36.9571 663.993 38.5974C661.533 40.2376 660.302 42.3998 660.302 45.0838C660.302 47.6933 661.533 49.7063 663.993 51.1229C666.528 52.4649 669.548 53.4342 673.053 54.0306C676.632 54.6271 680.174 55.3726 683.679 56.2673C687.258 57.0875 690.278 58.7277 692.738 61.1881C695.274 63.6485 696.541 66.9662 696.541 71.1414Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
+            defs
+              lineargradient#paint0(x1='-432.459' y1='-98.3761' x2='469.107' y2='32.8417' gradientunits='userSpaceOnUse')
+                stop(stop-color='#F4711C')
+                stop(offset='1' stop-color='#F12E4F')
+          img.each-nym-second-image(src=`${URL}/img/nym-community-gathering/collage-image.webp`)
+        .each-nym-second-row-wrapper
+          img.each-nym-second-image(src=`${URL}/img/nym-community-gathering/collage-image2.webp`)
+          svg.each-nym-second-svg(viewbox='0 0 626 90' xmlns='http://www.w3.org/2000/svg')
+            mask#path-1-outside-1_287_1935(maskunits='userSpaceOnUse' x='-0.0390625' y='0.797852')
+              rect(fill='white' x='-0.0390625' y='0.797852' width='626' height='89')
+              path(d='M80.017 85.1187H70.6498L62.5093 64.4272H20.1341L11.9936 85.1187H2.96094L33.8503 7.24762H49.1277L80.017 85.1187ZM41.3217 10.14L23.1449 56.5289H59.4985L41.3217 10.14Z')
+              path(d='M117.904 27.7166C124.52 27.7166 129.947 30.0156 134.185 34.6137C138.497 39.2118 140.653 44.9965 140.653 51.9679V85.1187H132.289V52.9691C132.289 48.0001 130.654 43.847 127.383 40.5097C124.111 37.0982 120.06 35.3924 115.228 35.3924C109.949 35.3924 105.6 37.0611 102.18 40.3984C98.7606 43.7358 97.0508 47.926 97.0508 52.9691V85.1187H88.6872V28.829H97.0508V43.2908C98.6119 38.5444 101.251 34.7621 104.968 31.9439C108.685 29.1257 112.997 27.7166 117.904 27.7166Z')
+              path(d='M160.708 77.8878C155.058 72.2514 152.233 65.2801 152.233 56.9739C152.233 48.6676 155.058 41.7334 160.708 36.1712C166.432 30.5348 173.495 27.7166 181.895 27.7166C190.296 27.7166 197.321 30.5348 202.971 36.1712C208.696 41.7334 211.558 48.6676 211.558 56.9739C211.558 65.2801 208.696 72.2514 202.971 77.8878C197.321 83.45 190.296 86.2311 181.895 86.2311C173.495 86.2311 166.432 83.45 160.708 77.8878ZM166.841 41.7334C162.826 45.8123 160.819 50.8925 160.819 56.9739C160.819 63.0552 162.826 68.1724 166.841 72.3256C170.93 76.4045 175.948 78.444 181.895 78.444C187.917 78.444 192.935 76.4045 196.95 72.3256C200.964 68.2466 202.971 63.1294 202.971 56.9739C202.971 50.8183 200.964 45.7011 196.95 41.6221C192.935 37.5432 187.917 35.5037 181.895 35.5037C175.948 35.5037 170.93 37.5802 166.841 41.7334Z')
+              path(d='M280.821 83.3388V7.24762H289.519V85.1187H272.458L232.313 9.13878V85.1187H223.615V7.24762H240.676L280.821 83.3388Z')
+              path(d='M364.986 7.24762L335.324 58.0863V77.2203H350.601V85.1187H311.46V77.2203H326.626V58.0863L297.074 7.24762H307.334L331.309 49.5205L355.173 7.24762H364.986Z')
+              path(d='M451.542 7.24762V85.1187H443.178V9.36126L419.76 85.1187H404.372L380.954 9.02753V85.1187H372.59V7.24762H388.983L412.178 82.5601L435.372 7.24762H451.542Z')
+              path(d='M524.539 52.0791L551.302 85.1187H540.486L518.852 58.1975L508.258 69.4332V85.1187H499.895V2.79785H508.258V58.5313L535.69 28.829H546.396L524.539 52.0791Z')
+              path(d='M579.927 27.7166C586.321 27.7166 591.525 29.4223 595.539 32.8338C599.554 36.1712 601.561 40.8805 601.561 46.9619V85.1187H593.198V69.767C589.406 80.7431 582.046 86.2311 571.118 86.2311C565.988 86.2311 561.788 84.822 558.517 82.0038C555.32 79.1856 553.722 75.4404 553.722 70.7682C553.722 65.7251 555.543 61.8315 559.186 59.0875C562.903 56.3435 567.698 54.6748 573.571 54.0815L586.172 52.6353C590.856 52.1903 593.198 50.0396 593.198 46.1831C593.198 42.6975 591.971 39.9535 589.518 37.9511C587.064 35.9487 583.831 34.9475 579.816 34.9475C575.802 34.9475 572.345 35.9487 569.445 37.9511C566.546 39.9535 564.576 43.0312 563.535 47.1843L555.394 44.9595C556.733 39.3972 559.595 35.1329 563.981 32.1664C568.442 29.1998 573.757 27.7166 579.927 27.7166ZM573.237 79.2227C578.961 79.2227 583.719 77.3316 587.51 73.5493C591.302 69.6928 593.198 65.2059 593.198 60.0887V55.4164C592.157 57.6413 589.629 58.9762 585.615 59.4212L573.46 60.7562C570.04 61.2011 567.289 62.2394 565.208 63.871C563.126 65.4284 562.085 67.5791 562.085 70.3232C562.085 72.993 563.089 75.1438 565.096 76.7753C567.178 78.4069 569.891 79.2227 573.237 79.2227Z')
+              path(d='M623.801 85.1187H615.438V2.79785H623.801V85.1187Z')
+            path(d='M80.017 85.1187H70.6498L62.5093 64.4272H20.1341L11.9936 85.1187H2.96094L33.8503 7.24762H49.1277L80.017 85.1187ZM41.3217 10.14L23.1449 56.5289H59.4985L41.3217 10.14Z' fill='url(#paint0)')
+            path(d='M117.904 27.7166C124.52 27.7166 129.947 30.0156 134.185 34.6137C138.497 39.2118 140.653 44.9965 140.653 51.9679V85.1187H132.289V52.9691C132.289 48.0001 130.654 43.847 127.383 40.5097C124.111 37.0982 120.06 35.3924 115.228 35.3924C109.949 35.3924 105.6 37.0611 102.18 40.3984C98.7606 43.7358 97.0508 47.926 97.0508 52.9691V85.1187H88.6872V28.829H97.0508V43.2908C98.6119 38.5444 101.251 34.7621 104.968 31.9439C108.685 29.1257 112.997 27.7166 117.904 27.7166Z' fill='url(#paint0)')
+            path(d='M160.708 77.8878C155.058 72.2514 152.233 65.2801 152.233 56.9739C152.233 48.6676 155.058 41.7334 160.708 36.1712C166.432 30.5348 173.495 27.7166 181.895 27.7166C190.296 27.7166 197.321 30.5348 202.971 36.1712C208.696 41.7334 211.558 48.6676 211.558 56.9739C211.558 65.2801 208.696 72.2514 202.971 77.8878C197.321 83.45 190.296 86.2311 181.895 86.2311C173.495 86.2311 166.432 83.45 160.708 77.8878ZM166.841 41.7334C162.826 45.8123 160.819 50.8925 160.819 56.9739C160.819 63.0552 162.826 68.1724 166.841 72.3256C170.93 76.4045 175.948 78.444 181.895 78.444C187.917 78.444 192.935 76.4045 196.95 72.3256C200.964 68.2466 202.971 63.1294 202.971 56.9739C202.971 50.8183 200.964 45.7011 196.95 41.6221C192.935 37.5432 187.917 35.5037 181.895 35.5037C175.948 35.5037 170.93 37.5802 166.841 41.7334Z' fill='url(#paint0)')
+            path(d='M280.821 83.3388V7.24762H289.519V85.1187H272.458L232.313 9.13878V85.1187H223.615V7.24762H240.676L280.821 83.3388Z' fill='url(#paint0)')
+            path(d='M364.986 7.24762L335.324 58.0863V77.2203H350.601V85.1187H311.46V77.2203H326.626V58.0863L297.074 7.24762H307.334L331.309 49.5205L355.173 7.24762H364.986Z' fill='url(#paint0)')
+            path(d='M451.542 7.24762V85.1187H443.178V9.36126L419.76 85.1187H404.372L380.954 9.02753V85.1187H372.59V7.24762H388.983L412.178 82.5601L435.372 7.24762H451.542Z' fill='url(#paint0)')
+            path(d='M524.539 52.0791L551.302 85.1187H540.486L518.852 58.1975L508.258 69.4332V85.1187H499.895V2.79785H508.258V58.5313L535.69 28.829H546.396L524.539 52.0791Z' fill='url(#paint0)')
+            path(d='M579.927 27.7166C586.321 27.7166 591.525 29.4223 595.539 32.8338C599.554 36.1712 601.561 40.8805 601.561 46.9619V85.1187H593.198V69.767C589.406 80.7431 582.046 86.2311 571.118 86.2311C565.988 86.2311 561.788 84.822 558.517 82.0038C555.32 79.1856 553.722 75.4404 553.722 70.7682C553.722 65.7251 555.543 61.8315 559.186 59.0875C562.903 56.3435 567.698 54.6748 573.571 54.0815L586.172 52.6353C590.856 52.1903 593.198 50.0396 593.198 46.1831C593.198 42.6975 591.971 39.9535 589.518 37.9511C587.064 35.9487 583.831 34.9475 579.816 34.9475C575.802 34.9475 572.345 35.9487 569.445 37.9511C566.546 39.9535 564.576 43.0312 563.535 47.1843L555.394 44.9595C556.733 39.3972 559.595 35.1329 563.981 32.1664C568.442 29.1998 573.757 27.7166 579.927 27.7166ZM573.237 79.2227C578.961 79.2227 583.719 77.3316 587.51 73.5493C591.302 69.6928 593.198 65.2059 593.198 60.0887V55.4164C592.157 57.6413 589.629 58.9762 585.615 59.4212L573.46 60.7562C570.04 61.2011 567.289 62.2394 565.208 63.871C563.126 65.4284 562.085 67.5791 562.085 70.3232C562.085 72.993 563.089 75.1438 565.096 76.7753C567.178 78.4069 569.891 79.2227 573.237 79.2227Z' fill='url(#paint0)')
+            path(d='M623.801 85.1187H615.438V2.79785H623.801V85.1187Z' fill='url(#paint0)')
+            path(d='M80.017 85.1187H70.6498L62.5093 64.4272H20.1341L11.9936 85.1187H2.96094L33.8503 7.24762H49.1277L80.017 85.1187ZM41.3217 10.14L23.1449 56.5289H59.4985L41.3217 10.14Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M117.904 27.7166C124.52 27.7166 129.947 30.0156 134.185 34.6137C138.497 39.2118 140.653 44.9965 140.653 51.9679V85.1187H132.289V52.9691C132.289 48.0001 130.654 43.847 127.383 40.5097C124.111 37.0982 120.06 35.3924 115.228 35.3924C109.949 35.3924 105.6 37.0611 102.18 40.3984C98.7606 43.7358 97.0508 47.926 97.0508 52.9691V85.1187H88.6872V28.829H97.0508V43.2908C98.6119 38.5444 101.251 34.7621 104.968 31.9439C108.685 29.1257 112.997 27.7166 117.904 27.7166Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M160.708 77.8878C155.058 72.2514 152.233 65.2801 152.233 56.9739C152.233 48.6676 155.058 41.7334 160.708 36.1712C166.432 30.5348 173.495 27.7166 181.895 27.7166C190.296 27.7166 197.321 30.5348 202.971 36.1712C208.696 41.7334 211.558 48.6676 211.558 56.9739C211.558 65.2801 208.696 72.2514 202.971 77.8878C197.321 83.45 190.296 86.2311 181.895 86.2311C173.495 86.2311 166.432 83.45 160.708 77.8878ZM166.841 41.7334C162.826 45.8123 160.819 50.8925 160.819 56.9739C160.819 63.0552 162.826 68.1724 166.841 72.3256C170.93 76.4045 175.948 78.444 181.895 78.444C187.917 78.444 192.935 76.4045 196.95 72.3256C200.964 68.2466 202.971 63.1294 202.971 56.9739C202.971 50.8183 200.964 45.7011 196.95 41.6221C192.935 37.5432 187.917 35.5037 181.895 35.5037C175.948 35.5037 170.93 37.5802 166.841 41.7334Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M280.821 83.3388V7.24762H289.519V85.1187H272.458L232.313 9.13878V85.1187H223.615V7.24762H240.676L280.821 83.3388Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M364.986 7.24762L335.324 58.0863V77.2203H350.601V85.1187H311.46V77.2203H326.626V58.0863L297.074 7.24762H307.334L331.309 49.5205L355.173 7.24762H364.986Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M451.542 7.24762V85.1187H443.178V9.36126L419.76 85.1187H404.372L380.954 9.02753V85.1187H372.59V7.24762H388.983L412.178 82.5601L435.372 7.24762H451.542Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M524.539 52.0791L551.302 85.1187H540.486L518.852 58.1975L508.258 69.4332V85.1187H499.895V2.79785H508.258V58.5313L535.69 28.829H546.396L524.539 52.0791Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M579.927 27.7166C586.321 27.7166 591.525 29.4223 595.539 32.8338C599.554 36.1712 601.561 40.8805 601.561 46.9619V85.1187H593.198V69.767C589.406 80.7431 582.046 86.2311 571.118 86.2311C565.988 86.2311 561.788 84.822 558.517 82.0038C555.32 79.1856 553.722 75.4404 553.722 70.7682C553.722 65.7251 555.543 61.8315 559.186 59.0875C562.903 56.3435 567.698 54.6748 573.571 54.0815L586.172 52.6353C590.856 52.1903 593.198 50.0396 593.198 46.1831C593.198 42.6975 591.971 39.9535 589.518 37.9511C587.064 35.9487 583.831 34.9475 579.816 34.9475C575.802 34.9475 572.345 35.9487 569.445 37.9511C566.546 39.9535 564.576 43.0312 563.535 47.1843L555.394 44.9595C556.733 39.3972 559.595 35.1329 563.981 32.1664C568.442 29.1998 573.757 27.7166 579.927 27.7166ZM573.237 79.2227C578.961 79.2227 583.719 77.3316 587.51 73.5493C591.302 69.6928 593.198 65.2059 593.198 60.0887V55.4164C592.157 57.6413 589.629 58.9762 585.615 59.4212L573.46 60.7562C570.04 61.2011 567.289 62.2394 565.208 63.871C563.126 65.4284 562.085 67.5791 562.085 70.3232C562.085 72.993 563.089 75.1438 565.096 76.7753C567.178 78.4069 569.891 79.2227 573.237 79.2227Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            path(d='M623.801 85.1187H615.438V2.79785H623.801V85.1187Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
+            defs
+              lineargradient#paint0(x1='-57.16' y1='-29.1984' x2='365.166' y2='126.142' gradientunits='userSpaceOnUse')
+                stop(stop-color='#F4711C')
+                stop(offset='1' stop-color='#F12E4F')
+      .all-nym-third-wrapper
+        .all-nym-third-left-wrapper
+          .all-nym-third-event-stats-number +30
+          .all-nym-third-event-stats-text= __('Participants')
+          .all-nym-third-text= __('Nişantaşı\'nda bir kafede gerçekleşen etkinliğe NYM\'nin Türk takipçilerinin özel ilgisi, ekibi oldukça memnun etti. Mix nodelar ve Privacy Credentials sistemlerinin nasıl çalıştığı hakkında şirketin COO\'su Alexis Roussel tarafından bir sunumlar bilgilendirilen Türk komünitesi sorduğu sorularlar projenin ilerleyen aşamalarında planlanan adımları öğrendi.')
+        .all-nym-third-right-wrapper
+          img.all-nym-third-right-image(src=`${URL}/img/nym-community-gathering/nym-logo.webp`)
+      .all-nym-footer-wrapper
+        .all-nym-footer-left-wrapper
+          .all-nym-footer-left-title= __('node101, Alexis Roussel ve Crypto Marina nun katıldığı etkinlik öncesi ve sonrası tüm süreci koordine etti.')
+          .all-nym-footer-left-text= __('Sade bir gathering\'ten farklı olarak, Türk developer komünitesinden çeşitli isimlerle ayarlanan görüşmeler ve katılınan blockchain etkinlikleri ile NYM ekibine eşlik ettik.')
+          a.all-nym-footer-left-button(href='https://t.me/node101', target='_blank')= __('Drive')
+            svg.all-nym-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+          .all-nym-footer-left-button-border-bottom
+          img.all-nym-footer-left-image(src=`${URL}/img/nym-community-gathering/people5.webp`)
+        .all-nym-footer-right-wrapper
+          img.all-nym-footer-right-top-image(src=`${URL}/img/nym-community-gathering/people6.webp`)
+          img.all-nym-footer-right-bottom-image(src=`${URL}/img/nym-community-gathering/people7.webp`)
+  .all-moda-palas-wrapper
+    .all-moda-palas-inner-wrapper
+      .all-moda-first-wrapper
+        .all-moda-first-title= __('MODA PALAS')
+        .all-moda-first-event-type= __('Gathering')
+        .all-moda-first-text= __('Blockchain hızla gelişen bir teknoloji. İstanbul\'da yaşayan Blockchain ekosistemini inşa eden üreticilerin her ay bir araya geldiği bu buluşmalar ile en güncel gelişmeleri tartışıyoruz.')
+      .all-moda-second-wrapper
+        .all-moda-second-left-wrapper
+          .all-moda-second-left-left-wrapper
+            img.all-moda-second-left-left-image(src=`${URL}/img/moda-palas/board.webp`)
+            .all-moda-second-left-left-bottom-wrapper
+              .all-moda-second-left-left-bottom-text= __('Scroll down')
+              svg.all-moda-second-left-left-bottom-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
+                path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
+          .all-modas-econd-left-right-wrapper
+            img.all-moda-second-left-right-image(src=`${URL}/img/moda-palas/sunset.webp`)
+            .all-modas-econd-left-right-emoji 🌇 🚋 🤝 👥
+        .all-moda-second-right-wrapper
+          .all-moda-second-right-left-wrapper
+            img.all-moda-second-right-left-image(src=`${URL}/img/moda-palas/people.webp`)
+          .all-moda-second-right-right-wrapper
+            img.all-moda-second-right-right-image(src=`${URL}/img/moda-palas/people2.webp`)
+      .all-moda-third-wrapper
+        .all-moda-third-left-wrapper
+          img.each-moda-third-left-image(src=`${URL}/img/moda-palas/tram.webp`)
+          img.each-moda-third-left-image(src=`${URL}/img/moda-palas/people4.webp`)
+        .all-moda-third-right-wrapper
+          img.all-moda-third-right-image(src=`${URL}/img/moda-palas/people3.webp`)
+          .all-moda-third-right-text-wrapper
+            .each-moda-third-right-text= __('node101\'ın kurucularından Mustafa Aksöz ve cryptograf Errol Drummond\'un organize ettiği "Moda Palas" davet yolu ile katılınabilen özel bir etkinliktir. Errol\'un, İstanbul\'un bohem merkezi Moda\'da boğaza nazır evinde düzenlenen etkinliğe talep çok yüksektir. Katılımcılar, gece boyunca blockchain\'deki en son teknolojilerin teknik detaylarına girerek fikir alışverişinde bulunur..')
+            .each-moda-third-right-text= __('Moda Palas, "The Move Book"un yazarı The Move Guy olarak bilinen Damir Shamanaev, Polygon\'un Lead Developer\'ı Fedor Sakharov gibi uluslararası developerların yanı sıra ITU Blockchain, YTU Blockchain ve BuChain gibi önde gelen öğrenci kulüplerinden genç developerların da uğrak yeridir.')
+        .all-moda-third-title-first-row-wrapper
+          .each-moda-third-title-first-row-part= __('EK')
+          .each-moda-third-title-first-row-part= __('O')
+          .each-moda-third-title-first-row-part= __('SİSTEMİN')
+        .all-moda-third-title-second-row-wrapper
+          .each-moda-third-title-second-row-part= __('MOD')
+          .each-moda-third-title-second-row-part= __('A')
+          .each-moda-third-title-second-row-part= __('\'SINI')
+        .all-moda-third-title-third-row-wrapper
+          .each-moda-third-title-third-row-part= __('T')
+          .each-moda-third-title-third-row-part= __('A')
+          .each-moda-third-title-third-row-part= __('KİP ET!')
+      .all-moda-footer-wrapper
+        .all-moda-footer-left-wrapper
+          img.all-moda-footer-left-image(src=`${URL}/img/moda-palas/people5.webp`)
+        .all-moda-footer-right-wrapper
+          .all-moda-footer-right-text= __('Şu ana kadar birçok blockchain ekibinin oluşturulduğu Moda Palas\'tan çıkan bazı oluşumlar şu şekildedir: node101, Chainway, Eduisas. Türk Blockchain Geliştiricilerini bir araya getirmeye devam ediyoruz.')
+          .all-moda-footer-right-button-wrapper
+            a.each-moda-footer-right-button(href='https://t.me/node101', target='_blank')= __('Telegram')
+              svg.each-moda-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+            .each-moda-footer-right-button-border-bottom
+            a.each-moda-footer-right-button(href='https://t.me/chainway', target='_blank')= __('Drive')
+              svg.each-moda-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+            .each-moda-footer-right-button-border-bottom

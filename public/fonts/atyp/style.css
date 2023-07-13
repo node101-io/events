@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Atyp';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Atyp Bold'), local('Atyp-Bold'),
+        url('AtypDisplay-Bold.woff2') format('woff2'),
+        url('AtypDisplay-Bold.woff') format('woff'),
+        url('AtypDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Atyp';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Atyp Regular'), local('Atyp-Regular'),
+        url('AtypDisplay-Regular.woff2') format('woff2'),
+        url('AtypDisplay-Regular.woff') format('woff'),
+        url('AtypDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Atyp';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Atyp Semibold'), local('Atyp-Semibold'),
+        url('AtypDisplay-Semibold.woff2') format('woff2'),
+        url('AtypDisplay-Semibold.woff') format('woff'),
+        url('AtypDisplay-Semibold.ttf') format('truetype');
+}

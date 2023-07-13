@@ -52,7 +52,7 @@
 .all-content-wrapper {
   display: flex;
   flex-direction: column;
-  top: calc(var(--all-header-top-wrapper-height) + var(--all-header-bottom-wrapper-height) + var(--box-padding) * 1.6);
+  top: calc(var(--all-header-wrapper-height) + var(--box-padding) * 1.6);
   width: 100vw;
   min-width: 100vw;
   height: -webkit-fit-content;
@@ -85,7 +85,7 @@
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: calc(var(--box-padding) * 3);
+  top: calc(var(--box-padding) * 3 + var(--all-header-wrapper-height));
   gap: calc(var(--box-padding) * 1);
 }
 
@@ -100,7 +100,7 @@
   align-items: center;
   justify-content: space-between;
   gap: calc(var(--box-padding) * 3);
-  padding: 0 max(var(--box-padding) * 3, (100vw - (100vh - var(--box-padding) * 6) / 2 * 3) / 2);
+  padding: 0 max(var(--box-padding) * 3, (100vw - (100vh - var(--box-padding) * 6 - var(--all-header-wrapper-height)) / 2 * 3) / 2);
   overflow: hidden;
   width: 100vw;
   min-width: 100vw;
@@ -134,9 +134,8 @@
 }
 
 .each-event-slider-image {
-  transition: all 0.6s ease;
   max-width: calc(100vw - var(--box-padding) * 6);
-  max-height: calc(100vh - var(--box-padding) * 6);
+  max-height: calc(100vh - var(--box-padding) * 6 - var(--all-header-wrapper-height));
 }
 
 .each-event-slider-text {
@@ -145,6 +144,7 @@
   width: 80%;
   max-width: 80%;
   font-size: min(9vw, 6vh);
+  font-weight: 600;
   letter-spacing: 5px;
   text-align: center;
 }
@@ -185,7 +185,6 @@
 
 .spot-background {
   margin-left: calc(var(--box-padding) * 7);
-  z-index: 90;
   width: var(--spot-background-width);
   min-width: var(--spot-background-width);
   height: var(--spot-background-height);
@@ -196,7 +195,6 @@
   position: absolute;
   left: calc(var(--box-padding) * 7 - 2px);
   display: flex;
-  z-index: 101;
 }
 
 .each-spot-rectangle-top {
@@ -233,7 +231,6 @@
   left: calc(var(--box-padding) * 7 - 2px);
   bottom: -20px;
   display: flex;
-  z-index: 101;
 }
 
 .each-spot-rectangle-bottom {
@@ -254,7 +251,6 @@
   font-size: 96px;
   line-height: 1.1;
   padding: 0 calc(var(--box-padding) * 2);
-  z-index: 102;
   margin-top: -200px;
 }
 
