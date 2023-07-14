@@ -90,6 +90,7 @@
     position: relative;
     text-decoration: none;
     font-size: 17px;
+    text-align: center;
     color: var(--text-color);
     transition: transform 0.3s ease-in-out;
 }
@@ -114,6 +115,10 @@
 .each-all-header-button:hover::after,
 .each-all-header-button:focus::after {
     width: 100%;
+}
+
+.secondary-each-all-header-button {
+    display: none;
 }
 
 .all-footer-wrapper {
@@ -278,4 +283,199 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.48px;
+}
+
+@media only screen and (max-width: 1700px) {}
+
+@media only screen and (max-width: 1500px) {
+    .all-footer-wrapper {
+        gap: calc(var(--box-padding) * 5);
+    }
+
+    .all-footer-title {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .all-footer-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .all-footer-subtitle {
+        font-size: 28px;
+    }
+
+    .each-footer-right-button {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {}
+
+@media only screen and (max-width: 1200px) {
+    .all-header-bottom-wrapper {
+        gap: calc(var(--box-padding) * 2);
+    }
+
+    .all-footer-wrapper {
+        gap: calc(var(--box-padding) * 2);
+    }
+
+    .all-footer-left-wrapper {
+        width: 340px;
+        min-width: 340px;
+    }
+
+    .all-footer-title {
+        font-size: 30px;
+    }
+
+    .all-footer-text {
+        font-size: 16px;
+    }
+
+    .all-footer-subtitle {
+        font-size: 24px;
+    }
+
+    .each-footer-right-button {
+        font-size: 18px;
+    }
+
+    .each-footer-right-button-icon {
+        width: 18px;
+        min-width: 18px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .all-header-bottom-wrapper {
+        gap: calc(var(--box-padding) * 1.5);
+    }
+
+    .all-footer-left-wrapper {
+        width: 300px;
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {}
+
+@media only screen and (max-width: 900px) {
+    .each-all-header-button {
+        font-size: 15px;
+    }
+
+    .all-footer-left-wrapper {
+        width: 260px;
+        min-width: 260px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .all-footer-wrapper {
+        flex-direction: column;
+        gap: calc(var(--box-padding) * 4);
+    }
+
+    .all-footer-left-wrapper {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .all-header-bottom-wrapper {
+        gap: calc(var(--box-padding) * 1);
+    }
+
+    .each-all-header-button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .all-header-bottom-wrapper {
+        gap: calc(var(--box-padding) * 0.6);
+    }
+
+    .each-all-header-button {
+        font-size: 12px;
+    }
+
+    .each-all-header-button::after {
+        display: none;
+    }
+
+    .main-each-all-header-button {
+        display: none;
+    }
+
+    .secondary-each-all-header-button {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .all-header-bottom-wrapper {
+        padding-left: calc(var(--box-padding) * 0.4);
+        padding-right: calc(var(--box-padding) * 0.4);
+    }
+
+    .all-footer-title {
+        font-size: 20px;
+    }
+
+    .all-footer-text {
+        font-size: 12px;
+    }
+
+    .all-footer-subtitle {
+        font-size: 16px;
+    }
+
+    .all-footer-input-label {
+        font-size: 12px;
+    }
+
+    .all-footer-button {
+        font-size: 14px;
+    }
+
+    .all-footer-button-icon {
+        width: 12px;
+        min-width: 12px;
+    }
+
+    .each-footer-right-button {
+        font-size: 12px;
+    }
+
+    .each-footer-right-button-icon {
+        width: 14px;
+        min-width: 14px;
+    }
+
+    .each-footer-right-button-secondary-text {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .all-footer-wrapper {
+        padding-left: calc(var(--box-padding) * 3);
+        padding-right: calc(var(--box-padding) * 3);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .each-all-header-button {
+        font-size: 10px;
+    }
+
+    .all-header-top-wrapper {
+        padding-left: calc(var(--box-padding));
+        padding-right: calc(var(--box-padding));
+    }
 }

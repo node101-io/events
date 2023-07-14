@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
 
   document.addEventListener('click', (event) => {
     if (event.target.classList.contains('each-event-slider-bullet'))
-      window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4) + allHeaderWrapper.offsetHeight)
+      window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4))
 
     if (!event.target.closest('.all-cryptist-inner-wrapper') && !event.target.closest('.all-sui-move-workshop-inner-wrapper') && !event.target.closest('.all-aleo-tour-of-turkiye-inner-wrapper') && !event.target.closest('.all-nym-community-gathering-inner-wrapper') && !event.target.closest('.all-moda-palas-inner-wrapper'))
       location.hash = '#';

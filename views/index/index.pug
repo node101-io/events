@@ -53,6 +53,34 @@ block main
                 .each-team-member-info-layer
                   .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
                   .each-team-member-title= __(member.title)
+      .all-content-team-members-secondary-wrapper
+        each column, index in member_secondary_columns
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+            each member in column
+              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                .each-team-member-info-layer
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-title= __(member.title)
+      .all-content-team-members-tertiary-wrapper
+        each column, index in member_tertiary_columns
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+            each member in column
+              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                .each-team-member-info-layer
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-title= __(member.title)
+      .all-content-team-members-quaternary-wrapper
+        each column, index in member_quaternary_columns
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+            each member in column
+              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                .each-team-member-info-layer
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-title= __(member.title)
+
   .all-cryptist-wrapper
     .all-cryptist-inner-wrapper
       .all-cryptist-first-wrapper

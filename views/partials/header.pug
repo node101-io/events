@@ -26,8 +26,10 @@ block content
             .all-header-language-button-text TR
       .all-header-bottom-wrapper
         a.each-all-header-button(href='#crpytist' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--cryptist-color);')= __('CRYPTIST')
-        a.each-all-header-button(href='#sui-move-workshop' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--sui-move-workshop-color);')= __('SUI MOVE WORKSHOP')
-        a.each-all-header-button(href='#aleo-tour-of-turkiye' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--aleo-tour-of-turkiye-color);')= __('ALEO TOUR OF TURKIYE')
+        a.each-all-header-button.main-each-all-header-button(href='#sui-move-workshop' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--sui-move-workshop-color);')= __('SUI MOVE WORKSHOP')
+        a.each-all-header-button.secondary-each-all-header-button(href='#sui-move-workshop' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--sui-move-workshop-color);')= __('SUI WORKSHOP')
+        a.each-all-header-button.main-each-all-header-button(href='#aleo-tour-of-turkiye' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--aleo-tour-of-turkiye-color);')= __('ALEO TOUR OF TURKIYE')
+        a.each-all-header-button.secondary-each-all-header-button(href='#aleo-tour-of-turkiye' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--aleo-tour-of-turkiye-color);')= __('ALEO TOUR')
         a.each-all-header-button(href='#nym-community-gathering' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--nym-community-gathering-color);')= __('NYM GATHERING')
         a.each-all-header-button(href='#moda-palas' + (query_lang ? '?lang=' + query_lang : '') style='color: var(--moda-palas-color);')= __('MODA PALAS')
     .all-content-wrapper
