@@ -37,7 +37,7 @@ module.exports = (req, res) => {
       ],
       [
         { id: 11, name: 'Mustafa Aksöz', title: 'Co-Founder', image: 'mustafa.webp' },
-        { id: 12, name: 'Member 1', title: 'Co-Founder', image: 'member1.webp' }
+        { id: 12, name: 'Anthony DiPrinzio', title: 'Co-Founder', image: 'anthony.webp' }
       ],
     ],
     member_secondary_columns: [
@@ -54,7 +54,7 @@ module.exports = (req, res) => {
       [
         { id: 6, name: 'Mete Koray Gergin', title: 'Co-Founder', image: 'mete.webp' },
         { id: 7, name: 'Aytunç Sancar', title: 'Co-Founder', image: 'aytunc.webp' },
-        { id: 12, name: 'Member 1', title: 'Co-Founder', image: 'member1.webp' }
+        { id: 12, name: 'Anthony DiPrinzio', title: 'Co-Founder', image: 'anthony.webp' }
       ],
       [
         { id: 8, name: 'Yunus Gürlek', title: 'Co-Founder', image: 'yunus.webp' },
@@ -78,7 +78,7 @@ module.exports = (req, res) => {
       [
         { id: 6, name: 'Mete Koray Gergin', title: 'Co-Founder', image: 'mete.webp' },
         { id: 7, name: 'Aytunç Sancar', title: 'Co-Founder', image: 'aytunc.webp' },
-        { id: 12, name: 'Member 1', title: 'Co-Founder', image: 'member1.webp' },
+        { id: 12, name: 'Anthony DiPrinzio', title: 'Co-Founder', image: 'anthony.webp' },
         { id: 10, name: 'Erol Durummond', title: 'Co-Founder', image: 'erol.webp' },
       ],
     ],
@@ -94,7 +94,7 @@ module.exports = (req, res) => {
       [
         { id: 6, name: 'Mete Koray Gergin', title: 'Co-Founder', image: 'mete.webp' },
         { id: 7, name: 'Aytunç Sancar', title: 'Co-Founder', image: 'aytunc.webp' },
-        { id: 12, name: 'Member 1', title: 'Co-Founder', image: 'member1.webp' },
+        { id: 12, name: 'Anthony DiPrinzio', title: 'Co-Founder', image: 'anthony.webp' },
         { id: 8, name: 'Yunus Gürlek', title: 'Co-Founder', image: 'yunus.webp' },
         { id: 9, name: 'Damir Shamanev', title: 'Co-Founder', image: 'damir.webp' },
         { id: 10, name: 'Erol Durummond', title: 'Co-Founder', image: 'erol.webp' }
