@@ -10,33 +10,6 @@
   --each-sui-footer-left-button-border-bottom-color: rgba(76, 163, 255, 1);
 }
 
-.all-sui-move-workshop-wrapper {
-  display: none;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  overscroll-behavior: contain;
-  overflow: scroll;
-  z-index: 105;
-}
-
-.all-sui-move-workshop-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.all-sui-move-workshop-inner-wrapper {
-  position: relative;
-  margin: calc(var(--box-padding) * 2);
-  flex-direction: column;
-  align-items: center;
-  width: calc(100vw - calc(var(--box-padding) * 4));
-  min-width: calc(100vw - calc(var(--box-padding) * 4));
-  height: fit-content;
-  background: rgba(0, 0, 0, 0.94);
-  padding: calc(var(--box-padding) * 3);
-  gap: calc(var(--box-padding));
-}
-
 .all-sui-first-wrapper {
   display: flex;
   justify-content: space-between;

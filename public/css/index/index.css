@@ -405,6 +405,33 @@
   gap: calc(var(--box-padding) * 2);
 }
 
+.each-event-page-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  overscroll-behavior: contain;
+  overflow: scroll;
+  z-index: 105;
+}
+
+.each-event-page-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.each-event-page-inner-wrapper {
+  position: relative;
+  margin: calc(var(--box-padding) * 2);
+  flex-direction: column;
+  align-items: center;
+  width: calc(100vw - calc(var(--box-padding) * 4));
+  min-width: calc(100vw - calc(var(--box-padding) * 4));
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.94);
+  padding: calc(var(--box-padding) * 3);
+  gap: calc(var(--box-padding));
+}
+
 @media only screen and (max-width: 1700px) {
   .all-content-spot-wrapper {
     margin-left: 900px;

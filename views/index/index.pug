@@ -81,8 +81,8 @@ block main
                   .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
                   .each-team-member-title= __(member.title)
 
-  .all-cryptist-wrapper
-    .all-cryptist-inner-wrapper
+  .all-cryptist-wrapper.each-event-page-wrapper
+    .all-cryptist-inner-wrapper.each-event-page-inner-wrapper
       .all-cryptist-first-wrapper
         .all-cryptist-first-left-wrapper
           .all-cryptist-first-left-title= __('CRYPTIST')
@@ -328,8 +328,8 @@ block main
             a.each-cryptist-footer-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
               .each-cryptist-footer-button-secondary-text hello@node101.io
             .each-cryptist-footer-button-border-bottom
-  .all-sui-move-workshop-wrapper
-    .all-sui-move-workshop-inner-wrapper
+  .all-sui-move-workshop-wrapper.each-event-page-wrapper
+    .all-sui-move-workshop-inner-wrapper.each-event-page-inner-wrapper
       .all-sui-first-wrapper
         .all-sui-first-left-wrapper
           .all-sui-first-left-title= __('SUI MOVE WORKSHOP')
@@ -397,8 +397,8 @@ block main
             .each-sui-footer-left-button-border-bottom
         .all-sui-footer-right-wrapper
           img.all-sui-footer-right-image(src=`${URL}/img/sui-move-workshop/code-snippet2.webp`)
-  .all-aleo-tour-of-turkiye-wrapper
-    .all-aleo-tour-of-turkiye-inner-wrapper
+  .all-aleo-tour-of-turkiye-wrapper.each-event-page-wrapper
+    .all-aleo-tour-of-turkiye-inner-wrapper.each-event-page-inner-wrapper
       .all-aleo-first-wrapper
         .all-aleo-first-emoji 🏫 🛫 🇹🇷 🤓
         .all-aleo-first-intro-wrapper
@@ -484,8 +484,8 @@ block main
           svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
             path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
         .each-aleo-footer-left-button-border-bottom
-  .all-nym-community-gathering-wrapper
-    .all-nym-community-gathering-inner-wrapper
+  .all-nym-community-gathering-wrapper.each-event-page-wrapper
+    .all-nym-community-gathering-inner-wrapper.each-event-page-inner-wrapper
       .all-nym-first-wrapper
         .all-nym-first-left-wrapper
           .all-nym-first-left-title= __('NYM COMMUNITY GATHERING')
@@ -585,8 +585,8 @@ block main
         .all-nym-footer-right-wrapper
           img.all-nym-footer-right-top-image(src=`${URL}/img/nym-community-gathering/people6.webp`)
           img.all-nym-footer-right-bottom-image(src=`${URL}/img/nym-community-gathering/people7.webp`)
-  .all-moda-palas-wrapper
-    .all-moda-palas-inner-wrapper
+  .all-moda-palas-wrapper.each-event-page-wrapper
+    .all-moda-palas-inner-wrapper.each-event-page-inner-wrapper
       .all-moda-first-wrapper
         .all-moda-first-title= __('MODA PALAS')
         .all-moda-first-event-type= __('Gathering')

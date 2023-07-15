@@ -5,37 +5,6 @@
   --all-nym-footer-left-button-color: var(--text-color);
 }
 
-.all-nym-community-gathering-wrapper {
-  display: none;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  -ms-scroll-chaining: none;
-  overscroll-behavior: contain;
-  overflow: scroll;
-  z-index: 105;
-}
-
-.all-nym-community-gathering-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.all-nym-community-gathering-inner-wrapper {
-  position: relative;
-  margin: 5vh 5vw;
-  flex-direction: column;
-  align-items: center;
-  width: 90vw;
-  min-width: 90vw;
-  max-width: 90vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: rgba(0, 0, 0, 0.94);
-  padding: calc(var(--box-padding) * 3);
-  gap: calc(var(--box-padding));
-}
-
 .all-nym-first-wrapper {
   width: 100%;
   display: flex;

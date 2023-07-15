@@ -4,33 +4,6 @@
   --all-aleo-first-intro-event-type-background: rgba(1, 129, 83, 1);
 }
 
-.all-aleo-tour-of-turkiye-wrapper {
-  display: none;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  overscroll-behavior: contain;
-  overflow: scroll;
-  z-index: 105;
-}
-
-.all-aleo-tour-of-turkiye-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.all-aleo-tour-of-turkiye-inner-wrapper {
-  position: relative;
-  margin: calc(var(--box-padding) * 2);
-  flex-direction: column;
-  align-items: center;
-  width: calc(100vw - calc(var(--box-padding) * 4));
-  min-width: calc(100vw - calc(var(--box-padding) * 4));
-  height: fit-content;
-  background: rgba(0, 0, 0, 0.94);
-  padding: calc(var(--box-padding) * 3);
-  gap: calc(var(--box-padding));
-}
-
 .all-aleo-first-wrapper {
   width: 100%;
   display: flex;
