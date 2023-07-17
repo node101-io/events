@@ -28,11 +28,12 @@ block main
     .all-content-spot-wrapper
       img.spot-background(src=`${URL}/img/istanbul.webp`)
       .all-spot-rectangles-top-wrapper
-        each height in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 22, 108, 203, 126, 140, 80, 108, 250, 89, 250, 22, 108]
-          .each-spot-rectangle-top(style=`height: ${height}px; min-height: ${height}px;`)
+        each height, index in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 22, 108, 203, 126, 140, 80, 108, 250, 89, 250, 22, 108]
+          .each-spot-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;`)
+          .each-spot-column
       .all-spot-rectangles-bottom-wrapper
-        each height in [600, 508, 444, 325, 171, 233, 246, 246, 410, 315, 232, 294, 265, 294, 265, 375, 286, 255, 285, 375, 138, 294, 190, 410, 315, 232, 294, 265, 294, 286, 255, 285, 375]
-          .each-spot-rectangle-bottom(style=`height: ${height}px; min-height: ${height}px; margin-top: -${height}px;`)
+        each height, index in [482, 390, 326, 207, 53, 115, 128, 128, 292, 197, 114, 176, 147, 176, 147, 257, 168, 137, 167, 257, 20, 176, 72, 292, 197, 114, 176, 147, 176, 168, 137, 167, 257]
+          .each-spot-rectangle-bottom(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw; margin-top: -${height / 20}vw;`)
     .all-content-motto-wrapper
       .all-content-motto-top-wrapper
         .all-content-motto-top-left-wrapper
@@ -41,6 +42,7 @@ block main
         .all-content-motto-top-right-text= __('In Istanbul, thousands of developers develop products on blockchain, and millions of people use crypto daily. Reach university student clubs, blockchain communities, and developers that drive the ecosystem with node101 events.')
       .each-motto-line= __('TO ')
         span= __('THE TURKISH ECOSYSTEM')
+      .all-content-motto-top-right-text= __('In Istanbul, thousands of developers develop products on blockchain, and millions of people use crypto daily. Reach university student clubs, blockchain communities, and developers that drive the ecosystem with node101 events.')
     .all-content-team-wrapper
       .all-content-team-title= __('TEAM OF AWESOMENESS')
       .all-content-team-text= __('node101 is a proof of stake validator that produces user-friendly solutions to the problems of the decentralized internet. In addition to the technical solutions and pain-point solver products it offers to blockchain projects, it organizes gatherings, summits, and workshops that feed the Turkish developer ecosystem. Moreover, It provides content to the ecosystem with blog posts, podcast episodes, and video content published on Library node101.') 
@@ -407,19 +409,19 @@ block main
           .all-aleo-first-intro-text= __('Aleo, Zero-Knowledge Proof teknolojisini kullanan blockchain uygulamaları için geliştirilen bir platfromdur. Daha fazla Zero-Knowledge Proof temelli ürünlerin üretilebilmesi için, en iyi yazılımcı gençlerin dikkatinin bu alana çekilmesi gerekiyor. Bu gerekliliğin farkında olan Aleo takımı "Tour of Türkiye" sürecimizle İstanbul, Ankara ve İzmir\'de üniversiteli gençlerle buluşarak seminerler ve workshoplar verdi.')
           .all-aleo-first-intro-team-wrapper
             .each-aleo-first-intro-team-member-wrapper
-              img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/anthony.webp`)
-              a.each-aleo-first-intro-team-member-name-button-wrapper
-                .each-aleo-first-intro-team-member-name-button-text= __('Anthony DiPrinzio')
-                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-              .each-aleo-first-intro-team-member-title= __('Head of Growth, Aleo')
-            .each-aleo-first-intro-team-member-wrapper
               img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/errol.webp`)
               a.each-aleo-first-intro-team-member-name-button-wrapper
                 .each-aleo-first-intro-team-member-name-button-text= __('Errol Drummond')
                 svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
                   path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
               .each-aleo-first-intro-team-member-title= __('ZK Educator, Aleo')
+            .each-aleo-first-intro-team-member-wrapper
+              img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/anthony.webp`)
+              a.each-aleo-first-intro-team-member-name-button-wrapper
+                .each-aleo-first-intro-team-member-name-button-text= __('Anthony DiPrinzio')
+                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
+              .each-aleo-first-intro-team-member-title= __('Head of Growth, Aleo')
             .each-aleo-first-intro-team-member-wrapper
               img.each-aleo-first-intro-team-member-image(src=`${URL}/img/aleo-tour-of-turkiye/mustafa.webp`)
               a.each-aleo-first-intro-team-member-name-button-wrapper

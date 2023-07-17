@@ -51,7 +51,7 @@
 
 .all-aleo-first-intro-text {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5;
   color: var(--text-color-two);
   text-align: center;
 }
@@ -95,7 +95,7 @@
 
 .each-aleo-first-intro-team-member-name-button-text {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.4;
   color: var(--text-color-two);
 }
 
@@ -184,7 +184,7 @@
 .all-aleo-second-left-text {
   color: var(--text-color-two);
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.6;
 }
 
 .all-aleo-second-left-logo {
@@ -255,7 +255,7 @@
 .all-aleo-third-right-text {
   color: var(--text-color-three);
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.5;
 }
 
 .all-aleo-third-right-inner-wrapper {
@@ -276,7 +276,7 @@
 .all-aleo-third-right-inner-text {
   color: var(--text-color-three);
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.5;
 }
 
 .all-aleo-fourth-wrapper {
@@ -305,7 +305,7 @@
 .all-aleo-fourth-left-text {
   color: var(--text-color-three);
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5;
 }
 
 .all-aleo-fourth-left-image {
@@ -342,7 +342,7 @@
   width: 85%;
   color: var(--text-color-three);
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5;
 }
 
 .all-aleo-fifth-wrapper {
@@ -366,7 +366,7 @@
   width: 50%;
   color: var(--text-color-three);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.6;
 }
 
 .all-aleo-fifth-top-image {
@@ -399,7 +399,7 @@
   text-decoration: none;
   color: var(--text-color);
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.6;
   letter-spacing: 0.72px;
   padding-right: calc(var(--box-padding));
   align-items: center;
@@ -858,7 +858,6 @@
 
   .each-aleo-footer-left-button {
     font-size: 12px;
-    line-height: 16px;
   }
 
   .each-aleo-footer-left-button-icon {

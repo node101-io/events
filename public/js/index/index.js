@@ -23,8 +23,6 @@ window.addEventListener('load', () => {
   const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
   const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
   const allHeaderWrapper = document.querySelector('.all-header-wrapper');
-  const spotTopRectangles = document.querySelectorAll('.each-spot-rectangle-top');
-  const spotBottomRectangles = document.querySelectorAll('.each-spot-rectangle-bottom');
   const hashLocations = {
     '#cryptist': document.querySelector('.all-cryptist-wrapper'),
     '#sui-move-workshop': document.querySelector('.all-sui-move-workshop-wrapper'),
@@ -39,7 +37,6 @@ window.addEventListener('load', () => {
   document.addEventListener("scroll", (event) => {
     const windowScrollY = window.scrollY;
     const scrollWidth = eventsSliderWrapper.scrollWidth;
-    const allHeaderWrapperHeight = allHeaderWrapper.offsetHeight;
 
     if (windowScrollY > scrollWidth - eventsSliderWrapper.offsetWidth) {
       root.style.setProperty('--events-slider-wrapper-width', scrollWidth + 'px');
@@ -81,11 +78,6 @@ window.addEventListener('load', () => {
   window.dispatchEvent(new HashChangeEvent("hashchange"));
 
   new ResizeObserver(() => root.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px')).observe(eventsSliderWrapper);
-
-  for (let i = 0; i < spotTopRectangles.length; i++) {
-    spotTopRectangles[i].style.animationDelay = i * -0.3 + 's';
-    spotBottomRectangles[i].style.animationDelay = i * -0.3 + 's';
-  }
 
   observeByClassNames(['.each-team-member-wrapper', '.each-motto-line', '.all-content-team-title']);
 });

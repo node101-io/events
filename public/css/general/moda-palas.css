@@ -34,7 +34,7 @@
   width: 50%;
   color: var(--text-color-three);
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5;
 }
 
 .all-moda-second-wrapper {
@@ -189,7 +189,7 @@
   width: auto;
   color: var(--text-color-three);
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4;
 }
 
 .all-moda-third-right-image {
@@ -291,7 +291,7 @@
 .all-moda-footer-right-text {
   color: var(--text-color-three);
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.4;
 }
 
 .all-moda-footer-right-button-wrapper {
@@ -305,7 +305,7 @@
   text-decoration: none;
   color: var(--text-color);
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.6;
   letter-spacing: 0.72px;
   padding-right: calc(var(--box-padding));
   align-items: center;
@@ -432,7 +432,6 @@
 
   .each-moda-third-right-text {
     font-size: 14px;
-    line-height: 20px;
   }
 
   .all-moda-third-wrapper {
@@ -505,12 +504,10 @@
 
   .each-moda-third-right-text {
     font-size: 14px;
-    line-height: 20px;
   }
 
   .each-moda-footer-right-button {
     font-size: 16px;
-    line-height: 24px;
   }
 }
 
@@ -559,12 +556,10 @@
 
   .all-moda-footer-right-text {
     font-size: 14px;
-    line-height: 20px;
   }
 
   .each-moda-footer-right-button {
     font-size: 14px;
-    line-height: 20px;
   }
 
   .each-moda-footer-right-button-icon {
@@ -576,7 +571,6 @@
 @media only screen and (max-width: 800px) {
   .all-moda-first-title {
     font-size: 54px;
-    line-height: 64px;
   }
 
   .all-moda-second-left-wrapper {
@@ -633,7 +627,6 @@
 @media only screen and (max-width: 700px) {
   .all-moda-first-title {
     font-size: 48px;
-    line-height: 56px;
     letter-spacing: 4px;
   }
 

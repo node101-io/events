@@ -194,7 +194,7 @@
 .all-cryptist-third-text {
   color: var(--text-color);
   font-size: 16px;
-  line-height: 29px;
+  line-height: 1.6;
   width: 900px;
   min-width: 900px;
 }
@@ -257,7 +257,7 @@
   width: auto;
   color: var(--text-color);
   font-size: 18px;
-  line-height: 30.5px;
+  line-height: 1.6;
 }
 
 .all-cryptist-fourth-top-right-logo {
@@ -350,7 +350,7 @@
 .all-cryptist-fifth-left-top-text {
   color: var(--text-color);
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.5;
 }
 
 .all-cryptist-fifth-left-top-text span {
@@ -1224,7 +1224,7 @@
   text-decoration: none;
   color: var(--text-color);
   font-size: 24px;
-  line-height: 34px;
+  line-height: 1.4;
   letter-spacing: 0.72px;
   padding-right: 18px;
   align-items: center;
@@ -1267,7 +1267,7 @@
 .each-cryptist-footer-button-secondary-text {
   color: var(--text-color);
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.2;
 }
 
 @media only screen and (max-width: 1700px) {
