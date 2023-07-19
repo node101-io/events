@@ -70,17 +70,19 @@ window.addEventListener('load', () => {
       eventsSliderOuterWrapper.classList.remove('events-slider-outer-wrapper-end');
     }
 
-    for (let i = 0; i < 5; i++) {
-      const sliderPositionLeft = eventsSliderWrappers[i].getBoundingClientRect().left;
-      const sliderPositionRight = eventsSliderWrappers[i].getBoundingClientRect().right;
+    for (let i = 0; i < eventsSliderWrappers.length; i++) {
+      const sliderRect = eventsSliderWrappers[i].getBoundingClientRect();
 
-      if (sliderPositionLeft < windowInnerWidth / 2 && sliderPositionRight > windowInnerWidth / 2) {
+      const absoluteValue = Math.abs((sliderRect.left + sliderRect.right) / windowInnerWidth - 1);
+      eventsSliderWrappers[i].style.transform = `scale(${1 - absoluteValue / 10})`;
+      eventsSliderWrappers[i].style.opacity = 1 - absoluteValue / 2;
+
+      if (sliderRect.left < windowInnerWidth / 2 && sliderRect.right > windowInnerWidth / 2) {
         document.querySelector('.each-event-slider-active').classList.remove('each-event-slider-active');
         eventsSliderWrappers[i].classList.add('each-event-slider-active');
         document.querySelector('.each-event-slider-bullet-filled').classList.remove('each-event-slider-bullet-filled');
         eventsSliderBullets[i].classList.add('each-event-slider-bullet-filled');
         sliderIndex = i;
-        break;
       }
     }
 
@@ -101,4 +103,6 @@ window.addEventListener('load', () => {
   renderContent(window.location.pathname.split('/')[1]);
 
   observeByClassNames(['.each-team-member-wrapper', '.each-motto-line', '.all-content-team-title']);
+
+  window.scrollTo(0, 1);
 });

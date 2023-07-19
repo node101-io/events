@@ -10,8 +10,8 @@
     --all-header-logo-height: 24px;
     --all-header-logo-color: rgba(254, 254, 254, 1);
     --all-header-language-button-flag-width: 24px;
-    /* --all-header-bottom-wrapper-height: 50px; */
-    --all-header-bottom-wrapper-height: 1px;
+    --all-header-bottom-wrapper-height: 50px;
+    /* --all-header-bottom-wrapper-height: 1px; */
     --all-header-bottom-wrapper-color: rgba(54, 54, 181, 1);
     --all-second-footer-each-column-width: 200px;
 }
@@ -76,8 +76,8 @@
 }
 
 .all-header-bottom-wrapper {
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: calc(var(--box-padding) / 2);
