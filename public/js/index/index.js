@@ -1,3 +1,7 @@
+history.scrollRestoration = 'manual';
+
+const ROUTES = ['cryptist', 'sui-move-workshop', 'aleo-tour-of-turkiye', 'nym-community-gathering', 'moda-palas'];
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -13,8 +17,37 @@ const observeByClassNames = (classNames) => {
   });
 };
 
+const renderContent = (route) => {
+  for (let i = 0; i < ROUTES.length; i++)
+    document.querySelector(`.all-${ROUTES[i]}-wrapper`).style.display = ROUTES[i] == route ? 'flex' : 'none';
+};
+
 window.addEventListener('load', () => {
-  history.scrollRestoration = "manual";
+  const links = document.querySelectorAll('a');
+  for (let i = 0; i < links.length; i++)
+    links[i].addEventListener('click', (event) => {
+      const targetRoute = event.currentTarget.getAttribute('href');
+      if (targetRoute.startsWith('http') || targetRoute.startsWith('mailto')) return;
+      event.preventDefault();
+      history.pushState(null, null, targetRoute);
+      renderContent(targetRoute.split('/')[1]);
+    });
+
+  const clickableImages = document.querySelectorAll('.clickable-image');
+  const clickableImageBig = document.querySelector('.clickable-image-big');
+  const clickableImageLayer = document.querySelector('.clickable-image-layer');
+
+  clickableImageLayer.addEventListener('click', (event) => {
+    clickableImageLayer.classList.add('display-none');
+    document.querySelector('html').classList.remove('disable-scroll');
+  });
+
+  for (let i = 0; i < clickableImages.length; i++)
+    clickableImages[i].addEventListener('click', (event) => {
+      clickableImageBig.src = event.currentTarget.src;
+      clickableImageLayer.classList.remove('display-none');
+      document.querySelector('html').classList.add('disable-scroll');
+    });
 
   let sliderIndex = 0;
   const root = document.querySelector(':root');
@@ -22,21 +55,13 @@ window.addEventListener('load', () => {
   const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
   const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
   const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
-  const allHeaderWrapper = document.querySelector('.all-header-wrapper');
-  const hashLocations = {
-    '#cryptist': document.querySelector('.all-cryptist-wrapper'),
-    '#sui-move-workshop': document.querySelector('.all-sui-move-workshop-wrapper'),
-    '#aleo-tour-of-turkiye': document.querySelector('.all-aleo-tour-of-turkiye-wrapper'),
-    '#nym-community-gathering': document.querySelector('.all-nym-community-gathering-wrapper'),
-    '#moda-palas': document.querySelector('.all-moda-palas-wrapper')
-  };
 
-  for (let i = 0; i < hashLocations.length; i++)
-    eventPages.push(document.querySelector(`.all-${hashLocations[i].split('#')[1]}-wrapper`));
+  new ResizeObserver(() => root.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px')).observe(eventsSliderWrapper);
 
   document.addEventListener("scroll", (event) => {
     const windowScrollY = window.scrollY;
     const scrollWidth = eventsSliderWrapper.scrollWidth;
+    const windowInnerWidth = window.innerWidth;
 
     if (windowScrollY > scrollWidth - eventsSliderWrapper.offsetWidth) {
       root.style.setProperty('--events-slider-wrapper-width', scrollWidth + 'px');
@@ -46,7 +71,10 @@ window.addEventListener('load', () => {
     }
 
     for (let i = 0; i < 5; i++) {
-      if (eventsSliderWrappers[i].getBoundingClientRect().left < window.innerWidth / 2 && eventsSliderWrappers[i].getBoundingClientRect().right > window.innerWidth / 2) {
+      const sliderPositionLeft = eventsSliderWrappers[i].getBoundingClientRect().left;
+      const sliderPositionRight = eventsSliderWrappers[i].getBoundingClientRect().right;
+
+      if (sliderPositionLeft < windowInnerWidth / 2 && sliderPositionRight > windowInnerWidth / 2) {
         document.querySelector('.each-event-slider-active').classList.remove('each-event-slider-active');
         eventsSliderWrappers[i].classList.add('each-event-slider-active');
         document.querySelector('.each-event-slider-bullet-filled').classList.remove('each-event-slider-bullet-filled');
@@ -61,23 +89,16 @@ window.addEventListener('load', () => {
 
   document.addEventListener('click', (event) => {
     if (event.target.classList.contains('each-event-slider-bullet'))
-      window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4))
+      window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4));
 
-    if (!event.target.closest('.each-event-page-inner-wrapper'))
-      location.hash = '#';
+    if (event.target.classList.contains('each-event-page-wrapper')) {
+      history.pushState(null, null, '/');
+      renderContent('');
+    };
   });
 
-  window.addEventListener('hashchange', () => {
-    Object.keys(hashLocations).forEach((key) => hashLocations[key].style.display = 'none');
-
-    if (Object.keys(hashLocations).includes(location.hash))
-      hashLocations[location.hash].style.display = 'flex';
-    else
-      location.hash = '#';
-  });
-  window.dispatchEvent(new HashChangeEvent("hashchange"));
-
-  new ResizeObserver(() => root.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px')).observe(eventsSliderWrapper);
+  window.addEventListener('popstate', () => renderContent(window.location.pathname.split('/')[1]));
+  renderContent(window.location.pathname.split('/')[1]);
 
   observeByClassNames(['.each-team-member-wrapper', '.each-motto-line', '.all-content-team-title']);
 });

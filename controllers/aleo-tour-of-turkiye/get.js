@@ -1,20 +1,20 @@
 module.exports = (req, res) => {
   return res.render('index/index', {
     page: 'index/index',
-    title: res.__('Cryptİst'),
+    title: res.__('Aleo - Türkiye Turu'),
     includes: {
       external: {
         css: ['general', 'header', 'page', 'cryptist', 'sui-move-workshop', 'aleo-tour-of-turkiye', 'nym-community-gathering', 'moda-palas'],
         js: ['header', 'page', 'serverRequest', 'increaseNumbers', 'cryptist', 'sui-move-workshop', 'aleo-tour-of-turkiye', 'nym-community-gathering', 'moda-palas']
       },
       meta: {
-        title: res.__('Cryptİst'),
+        title: res.__('Aleo - Türkiye Turu'),
         description: res.__(''),
-        image: '/img/meta/cryptist.png',
+        image: '/img/meta/aleo.png',
         twitter: true
       }
     },
-    url: '/cryptist',
-    active_page: 'cryptist'
+    url: '/aleo-tour-of-turkiye',
+    active_page: 'aleo-tour-of-turkiye'
   });
 }

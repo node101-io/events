@@ -106,6 +106,8 @@
 }
 
 .all-cryptist-second-left-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   color: var(--text-color);
   font-size: 16px;
@@ -273,6 +275,7 @@
 .all-cryptist-fourth-top-right-image {
   position: relative;
   top: calc(var(--box-padding) * 3);
+  -o-object-fit: contain;
   object-fit: contain;
   width: 400px;
   min-width: 400px;
@@ -288,6 +291,7 @@
 }
 
 .all-cryptist-fourth-bottom-left-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 700px;
   min-width: 700px;
@@ -296,6 +300,7 @@
 }
 
 .all-cryptist-fourth-bottom-right-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 640px;
   min-width: 640px;
@@ -327,6 +332,8 @@
 .all-cryptist-fifth-left-top-button {
   display: flex;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -355,6 +362,7 @@
 
 .all-cryptist-fifth-left-top-text span {
   color: var(--all-cryptist-fifth-left-top-text-span-color);
+  font-weight: 600;
 }
 
 .all-cryptist-fifth-left-top-second-button {
@@ -362,6 +370,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -391,6 +401,7 @@
 }
 
 .all-cryptist-fifth-left-middle-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 400px;
   min-width: 400px;
@@ -429,6 +440,7 @@
 }
 
 .all-cryptist-fifth-right-top-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 400px;
   min-width: 400px;
@@ -436,6 +448,7 @@
 }
 
 .all-cryptist-fifth-right-logo {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 160px;
   min-width: 160px;
@@ -470,6 +483,7 @@
 
 .all-cryptist-sixth-left-text span {
   color: var(--all-cryptist-sixth-left-text-span-color);
+  font-weight: 600;
 }
 
 .all-cryptist-sixth-left-button {
@@ -477,6 +491,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -510,6 +526,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -529,6 +547,7 @@
 }
 
 .all-cryptist-sixth-right-bottom-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 100%;
   min-width: 100%;
@@ -560,6 +579,7 @@
 
 .all-cryptist-seventh-left-text span {
   color: var(--all-cryptist-seventh-left-text-span-color);
+  font-weight: 600;
 }
 
 .all-cryptist-seventh-left-button {
@@ -567,6 +587,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -587,6 +609,7 @@
 }
 
 .all-cryptist-seventh-left-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 100%;
   min-width: 100%;
@@ -600,6 +623,7 @@
 }
 
 .all-cryptist-seventh-left-bottom-logo {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 160px;
   min-width: 160px;
@@ -611,6 +635,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -647,6 +673,7 @@
 }
 
 .all-cryptist-seventh-right-top-logo {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 160px;
   min-width: 160px;
@@ -658,6 +685,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -677,6 +706,7 @@
 }
 
 .all-cryptist-seventh-right-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 100%;
   min-width: 100%;
@@ -690,25 +720,28 @@
 
 .all-cryptist-seventh-right-text span {
   color: var(--all-cryptist-seventh-right-text-span-color);
+  font-weight: 600;
 }
 
-.all-crpytist-seventh-right-button {
+.all-cryptist-seventh-right-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.all-crpytist-seventh-right-button-text {
+.all-cryptist-seventh-right-button-text {
   color: var(--text-color);
   font-size: 16px;
 }
 
-.all-crpytist-seventh-right-button-icon {
+.all-cryptist-seventh-right-button-icon {
   stroke: var(--text-color);
   width: 16px;
   min-width: 16px;
@@ -739,6 +772,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -758,6 +793,7 @@
 }
 
 .all-cryptist-eighth-left-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 100%;
   min-width: 100%;
@@ -775,6 +811,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -794,6 +832,7 @@
 }
 
 .all-cryptist-eighth-left-bottom-logo {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 160px;
   min-width: 160px;
@@ -819,12 +858,15 @@
 
 .all-cryptist-eighth-right-text span {
   color: var(--all-cryptist-eighth-right-text-span-color);
+  font-weight: 600;
 }
 
 .all-cryptist-eighth-right-quote-wrapper {
   display: flex;
   flex-direction: column;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
 }
@@ -842,6 +884,7 @@
 }
 
 .all-cryptist-eighth-right-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 580px;
   min-width: 580px;
@@ -873,6 +916,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -892,6 +937,7 @@
 }
 
 .all-cryptist-ninth-left-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 100%;
   min-width: 100%;
@@ -905,6 +951,7 @@
 
 .all-cryptist-ninth-left-text span {
   color: var(--all-cryptist-ninth-left-text-span-color);
+  font-weight: 600;
 }
 
 .all-cryptist-ninth-left-bottom-wrapper {
@@ -917,6 +964,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -936,6 +985,7 @@
 }
 
 .all-cryptist-ninth-left-bottom-logo {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 120px;
   min-width: 120px;
@@ -961,6 +1011,7 @@
 
 .all-cryptist-ninth-right-text span {
   color: var(--all-cryptist-ninth-right-text-span-color);
+  font-weight: 600;
 }
 
 .all-cryptist-ninth-right-middle-wrapper {
@@ -973,6 +1024,7 @@
 }
 
 .all-cryptist-ninth-right-middle-logo {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 140px;
   min-width: 140px;
@@ -984,6 +1036,8 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1004,6 +1058,7 @@
 }
 
 .all-cryptist-ninth-right-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 440px;
   min-width: 440px;
@@ -1030,6 +1085,7 @@
 }
 
 .all-cryptist-tenth-left-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 460px;
   min-width: 460px;
@@ -1043,6 +1099,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -1052,9 +1110,12 @@
 }
 
 .all-cryptist-tenth-left-location-wrapper {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1087,6 +1148,7 @@
 }
 
 .all-cryptist-tenth-right-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 400px;
   min-width: 400px;
@@ -1095,6 +1157,7 @@
 }
 
 .all-cryptist-tenth-right-second-image {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 100%;
   min-width: 100%;
@@ -1121,6 +1184,7 @@
 }
 
 .all-cryptist-eleventh-image-top {
+  -o-object-fit: contain;
   object-fit: contain;
   height: 340px;
   min-height: 340px;
@@ -1129,6 +1193,7 @@
 }
 
 .all-cryptist-eleventh-image-bottom {
+  -o-object-fit: contain;
   object-fit: contain;
   width: 250px;
   min-width: 250px;
@@ -1148,6 +1213,7 @@
 }
 
 .all-cryptist-eleventh-right-image {
+  -o-object-fit: contain;
   object-fit: contain;
   height: 340px;
   min-height: 340px;
@@ -1167,9 +1233,12 @@
 }
 
 .all-cryptist-eleventh-right-location-wrapper {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: calc(var(--box-padding) / 2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;

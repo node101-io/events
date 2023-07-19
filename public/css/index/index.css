@@ -35,7 +35,9 @@
   --member-11-name-color: rgba(183, 183, 255, 1);
   --member-12-name-color: rgba(103, 255, 182, 1);
   --all-footer-input-height: 40px;
-  --events-slider-wrapper-width: unset;
+  --events-slider-wrapper-width: 200vh;
+  --events-slider-wrapper-padding-top: calc(var(--box-padding) * 1.5);
+  --events-slider-wrapper-padding-sides: calc(var(--box-padding) * 2);
 }
 
 .become-visible {
@@ -46,7 +48,7 @@
 .all-wrapper {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--box-padding) * 3);
+  gap: var(--events-slider-wrapper-padding-top);
   scroll-behavior: smooth;
 }
 
@@ -86,8 +88,8 @@
   flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: calc(var(--box-padding) * 3 + var(--all-header-wrapper-height));
-  gap: calc(var(--box-padding) * 1);
+  top: calc(var(--events-slider-wrapper-padding-top) + var(--all-header-wrapper-height));
+  gap: calc(var(--each-event-slider-active-width) / 60);
 }
 
 .events-slider-outer-wrapper-end {
@@ -100,8 +102,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: calc(var(--box-padding) * 3);
-  padding: 0 max(var(--box-padding) * 3, (100vw - (100vh - var(--box-padding) * 6 - var(--all-header-wrapper-height)) / var(--each-event-slider-rate)) / 2);
+  padding: 0 max(var(--events-slider-wrapper-padding-sides), (100vw - (100vh - var(--events-slider-wrapper-padding-sides) * 2 - var(--all-header-wrapper-height)) / var(--each-event-slider-rate)) / 2);
   overflow: hidden;
   width: 100vw;
   min-width: 100vw;
@@ -119,7 +120,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.6s ease-in-out;
   cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -127,6 +127,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  transition: all 0.6s ease-in-out;
   transform: scale(0.8);
 }
 
@@ -135,8 +136,8 @@
 }
 
 .each-event-slider-image {
-  max-width: calc(100vw - var(--box-padding) * 6);
-  max-height: calc(100vh - var(--box-padding) * 6 - var(--all-header-wrapper-height));
+  max-width: calc(100vw - var(--events-slider-wrapper-padding-sides) * 2);
+  max-height: calc(100vh - var(--events-slider-wrapper-padding-top) * 2 - var(--all-header-wrapper-height));
 }
 
 .each-event-slider-text {
@@ -216,7 +217,6 @@
     letter-spacing: 1px;
   }
 }
-
 
 .events-slider-bullets-wrapper {
   display: flex;
@@ -352,8 +352,34 @@
   transition: all 0.6s ease-in-out;
 }
 
-.all-content-motto-wrapper span {
-  color: var(--all-content-motto-wrapper-span-color);
+.each-motto-line span {
+  background: linear-gradient(-45deg, var(--all-content-motto-wrapper-span-color) 49%, transparent 50%, var(--all-content-motto-wrapper-span-color) 51%);
+  background-size: 240% 240%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-animation: motto-line-animation 4s ease infinite;
+  animation: motto-line-animation 4s ease infinite;
+}
+
+@-webkit-keyframes motto-line-animation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes motto-line-animation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
 }
 
 .all-content-motto-top-right-text {
@@ -536,6 +562,43 @@
   background: rgba(0, 0, 0, 0.94);
   padding: calc(var(--box-padding) * 3);
   gap: calc(var(--box-padding));
+}
+
+.clickable-image-layer {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.clickable-image {
+  display: flex !important;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.clickable-image:hover {
+  transform: scale(1.02);
+}
+
+.clickable-image-big {
+  width: auto !important;
+  height: auto !important;
+  max-width: calc(100vw - var(--box-padding) * 10) !important;
+  max-height: calc(100vh - var(--box-padding) * 10) !important;
+  -o-object-fit: contain !important;
+  object-fit: contain !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  margin: auto !important;
+  z-index: 1000 !important;
 }
 
 @media only screen and (max-width: 1700px) {

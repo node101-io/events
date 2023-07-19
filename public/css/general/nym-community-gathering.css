@@ -22,14 +22,28 @@
 }
 
 .all-nym-first-left-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
-  background: linear-gradient(90deg, var(--all-nym-first-left-title-first-color) 0%, var(--all-nym-first-left-title-second-color) 100%);
+  background: linear-gradient(60deg, var(--all-nym-first-left-title-first-color) 20%, var(--all-nym-first-left-title-second-color) 50%, var(--all-nym-first-left-title-first-color) 80%);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 80px;
   font-weight: 600;
   line-height: 1.1;
+  animation: nym-first-left-title-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes nym-first-left-title-animation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .all-nym-first-left-event-type {
@@ -145,13 +159,15 @@
 }
 
 .all-nym-third-event-stats-number {
-  color: var(--text-color);
-  font-size: 32px;
+  display: none;
+  /* color: var(--text-color);
+  font-size: 32px; */
 }
 
 .all-nym-third-event-stats-text {
-  color: var(--text-color-three);
-  font-size: 14px;
+  display: none;
+  /* color: var(--text-color-three);
+  font-size: 14px; */
 }
 
 .all-nym-third-text {

@@ -4,8 +4,8 @@ module.exports = (req, res) => {
     title: res.__('SUI Move Yazılım Eğitimleri'),
     includes: {
       external: {
-        css: ['cryptist', 'general', 'header', 'moda-palas', 'nym-community-gathering', 'page', 'sui-move-workshop', 'aleo-tour-of-turkiye'],
-        js: ['ancestorWithClassName', 'cryptist', 'header', 'moda-palas', 'nym-community-gathering', 'page', 'serverRequest', 'sui-move-workshop', 'aleo-tour-of-turkiye']
+        css: ['general', 'header', 'page', 'cryptist', 'sui-move-workshop', 'aleo-tour-of-turkiye', 'nym-community-gathering', 'moda-palas'],
+        js: ['header', 'page', 'serverRequest', 'increaseNumbers', 'cryptist', 'sui-move-workshop', 'aleo-tour-of-turkiye', 'nym-community-gathering', 'moda-palas']
       },
       meta: {
         title: res.__('SUI Move Yazılım Eğitimleri'),
@@ -14,7 +14,7 @@ module.exports = (req, res) => {
         twitter: true
       }
     },
-    url: '/sui_move_workshop',
-    active_page: 'sui'
+    url: '/sui-move-workshop',
+    active_page: 'sui-move-workshop'
   });
 }

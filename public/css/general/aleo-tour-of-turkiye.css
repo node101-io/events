@@ -354,6 +354,8 @@
 }
 
 .all-aleo-fifth-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 32px;
   background: linear-gradient(90deg, var(--all-aleo-first-color) 0%, var(--all-aleo-second-color) 100%);

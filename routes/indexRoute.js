@@ -4,12 +4,12 @@ const router = express.Router();
 
 const generateConstantData = require('../middleware/generateConstantData');
 
-const aleoGetController = require('../controllers/aleo_tour_of_turkiye/get');
+const aleoGetController = require('../controllers/aleo-tour-of-turkiye/get');
 const cryptistGetController = require('../controllers/cryptist/get');
 const indexGetController = require('../controllers/index/get');
-const modaGetController = require('../controllers/moda_palas/get');
-const nymGetController = require('../controllers/nym_community_gathering/get');
-const suiGetController = require('../controllers/sui_move_workshop/get');
+const modaGetController = require('../controllers/moda-palas/get');
+const nymGetController = require('../controllers/nym-community-gathering/get');
+const suiGetController = require('../controllers/sui-move-workshop/get');
 
 router.get(
   '/',
@@ -17,7 +17,7 @@ router.get(
     indexGetController
 );
 router.get(
-  '/aleo_tour_of_turkiye',
+  '/aleo-tour-of-turkiye',
     generateConstantData,
     aleoGetController
 );
@@ -27,17 +27,17 @@ router.get(
     cryptistGetController
 );
 router.get(
-  '/moda_palas',
+  '/moda-palas',
     generateConstantData,
     modaGetController
 );
 router.get(
-  '/nym_community_gathering',
+  '/nym-community-gathering',
     generateConstantData,
     nymGetController
 );
 router.get(
-  '/sui_move_workshop',
+  '/sui-move-workshop',
     generateConstantData,
     suiGetController
 );
