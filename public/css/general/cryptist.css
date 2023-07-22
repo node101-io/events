@@ -48,11 +48,6 @@
   width: fit-content;
 }
 
-.all-cryptist-first-left-event-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
 .all-cryptist-first-left-event-stats-wrapper {
   display: flex;
   gap: calc(var(--box-padding) / 2);
@@ -68,14 +63,7 @@
   font-size: 32px;
 }
 
-.each-cryptist-first-left-event-stats-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
 .all-cryptist-first-right-wrapper {
-  /* width: 45vw;
-  min-width: 45vw; */
   width: 800px;
   min-width: 800px;
 }
@@ -123,8 +111,6 @@
 }
 
 .all-cryptist-second-middle-wrapper {
-  /* width: 20vw;
-  min-width: 20vw; */
   width: 300px;
   min-width: 300px;
 }
@@ -140,33 +126,12 @@
   display: flex;
   flex-direction: column;
   gap: calc(var(--box-padding) / 2);
-  /* width: 35vw;
-  min-width: 35vw; */
   width: 600px;
   min-width: 600px;
 }
 
-.all-cryptist-second-right-button-wrapper {
-  display: flex;
-  gap: calc(var(--box-padding) / 2);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  align-self: center;
+.all-cryptist-second-right-button {
   margin-left: auto;
-}
-
-.all-cryptist-second-right-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-second-right-button-icon {
-  width: 15px;
-  min-width: 15px;
-  height: auto;
-  stroke: var(--text-color);
-  stroke-width: 1.5;
 }
 
 .all-cryptist-second-right-image {
@@ -194,17 +159,15 @@
 }
 
 .all-cryptist-third-text {
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 1.6;
   width: 900px;
   min-width: 900px;
 }
 
 .all-cryptist-sponsors-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   min-width: 100%;
   gap: calc(var(--box-padding));
@@ -214,8 +177,8 @@
 .each-cryptist-sponsor {
   -o-object-fit: contain;
   object-fit: contain;
-  width: 150px;
-  min-width: 150px;
+  width: auto;
+  max-width: 140px;
 }
 
 .all-cryptist-fourth-wrapper {
@@ -248,7 +211,6 @@
 
 .all-cryptist-fourth-top-left-title {
   width: auto;
-  font-size: 64px;
   background: linear-gradient(90deg, rgba(217, 217, 217, 1) 0%, rgba(111, 219, 238, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -257,9 +219,6 @@
 
 .all-cryptist-fourth-top-left-text {
   width: auto;
-  color: var(--text-color);
-  font-size: 18px;
-  line-height: 1.6;
 }
 
 .all-cryptist-fourth-top-right-logo {
@@ -330,34 +289,8 @@
 }
 
 .all-cryptist-fifth-left-top-button {
-  display: flex;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   margin-left: auto;
   margin-top: calc(var(--box-padding) * 6);
-}
-
-.all-cryptist-fifth-left-top-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-fifth-left-top-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
-}
-
-.all-cryptist-fifth-left-top-text {
-  color: var(--text-color);
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 .all-cryptist-fifth-left-top-text span {
@@ -366,29 +299,8 @@
 }
 
 .all-cryptist-fifth-left-top-second-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   margin-bottom: calc(var(--box-padding) * 6);
-}
-
-.all-cryptist-fifth-left-top-second-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-fifth-left-top-second-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-fifth-left-middle-wrapper {
@@ -418,14 +330,7 @@
   margin: auto 0;
 }
 
-.all-cryptist-fifth-left-middle-quote {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
 .all-cryptist-fifth-left-middle-author {
-  color: var(--text-color);
-  font-size: 16px;
   margin-left: auto;
 }
 
@@ -476,39 +381,13 @@
   height: fit-content;
 }
 
-.all-cryptist-sixth-left-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
 .all-cryptist-sixth-left-text span {
   color: var(--all-cryptist-sixth-left-text-span-color);
   font-weight: 600;
 }
 
 .all-cryptist-sixth-left-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-sixth-left-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-sixth-left-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-sixth-right-wrapper {
@@ -522,28 +401,7 @@
 }
 
 .all-cryptist-sixth-right-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-sixth-right-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-sixth-right-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-sixth-right-bottom-image {
@@ -572,40 +430,13 @@
   height: fit-content;
 }
 
-.all-cryptist-seventh-left-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
 .all-cryptist-seventh-left-text span {
   color: var(--all-cryptist-seventh-left-text-span-color);
   font-weight: 600;
 }
 
 .all-cryptist-seventh-left-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   margin-left: auto;
-}
-
-.all-cryptist-seventh-left-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-seventh-left-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
 }
 
 .all-cryptist-seventh-left-image {
@@ -627,31 +458,6 @@
   object-fit: contain;
   width: 160px;
   min-width: 160px;
-  height: auto;
-}
-
-.all-cryptist-seventh-left-bottom-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-seventh-left-bottom-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-seventh-left-bottom-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
   height: auto;
 }
 
@@ -680,31 +486,6 @@
   height: auto;
 }
 
-.all-cryptist-seventh-right-top-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-seventh-right-top-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-seventh-right-top-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
-}
-
 .all-cryptist-seventh-right-image {
   -o-object-fit: contain;
   object-fit: contain;
@@ -713,39 +494,13 @@
   height: auto;
 }
 
-.all-cryptist-seventh-right-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
 .all-cryptist-seventh-right-text span {
   color: var(--all-cryptist-seventh-right-text-span-color);
   font-weight: 600;
 }
 
 .all-cryptist-seventh-right-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-seventh-right-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-seventh-right-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-eighth-wrapper {
@@ -768,28 +523,7 @@
 }
 
 .all-cryptist-eighth-left-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-eighth-left-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-eighth-left-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-eighth-left-image {
@@ -804,31 +538,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-.all-cryptist-eighth-left-bottom-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-eighth-left-bottom-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-eighth-left-bottom-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
 }
 
 .all-cryptist-eighth-left-bottom-logo {
@@ -851,11 +560,6 @@
   margin-top: calc(var(--box-padding) * 4);
 }
 
-.all-cryptist-eighth-right-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
 .all-cryptist-eighth-right-text span {
   color: var(--all-cryptist-eighth-right-text-span-color);
   font-weight: 600;
@@ -873,14 +577,10 @@
 
 .all-cryptist-eighth-right-quote {
   text-align: right;
-  color: var(--text-color);
-  font-size: 16px;
 }
 
 .all-cryptist-eighth-right-quote-author {
   text-align: right;
-  color: var(--text-color);
-  font-size: 16px;
 }
 
 .all-cryptist-eighth-right-image {
@@ -912,28 +612,7 @@
 }
 
 .all-cryptist-ninth-left-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-ninth-left-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-ninth-left-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-ninth-left-image {
@@ -942,11 +621,6 @@
   width: 100%;
   min-width: 100%;
   height: auto;
-}
-
-.all-cryptist-ninth-left-text {
-  color: var(--text-color);
-  font-size: 18px;
 }
 
 .all-cryptist-ninth-left-text span {
@@ -960,28 +634,7 @@
 }
 
 .all-cryptist-ninth-left-bottom-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.all-cryptist-ninth-left-bottom-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-cryptist-ninth-left-bottom-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
+  margin-right: auto;
 }
 
 .all-cryptist-ninth-left-bottom-logo {
@@ -1002,11 +655,6 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.all-cryptist-ninth-right-text {
-  color: var(--text-color);
-  font-size: 18px;
 }
 
 .all-cryptist-ninth-right-text span {
@@ -1032,29 +680,7 @@
 }
 
 .all-cryptist-ninth-right-middle-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   margin-top: auto;
-}
-
-.all-cryptist-ninth-right-middle-button-text {
-  color: var(--text-color);
-  font-size: 18px;
-}
-
-.all-cryptist-ninth-right-middle-button-icon {
-  stroke: var(--text-color);
-  width: 16px;
-  min-width: 16px;
-  height: auto;
 }
 
 .all-cryptist-ninth-right-image {
@@ -1094,7 +720,6 @@
 }
 
 .all-cryptist-tenth-left-title {
-  font-size: 64px;
   background: linear-gradient(90deg, #39A1FF 0%, #23C4C1 14.28%, #39A1FF 43.04%, #F268BB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1102,11 +727,6 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.all-cryptist-tenth-left-text {
-  color: var(--text-color);
-  font-size: 18px;
 }
 
 .all-cryptist-tenth-left-location-wrapper {
@@ -1127,11 +747,6 @@
   width: 17px;
   min-width: 17px;
   height: auto;
-}
-
-.all-cryptist-tenth-left-location-text {
-  color: var(--text-color);
-  font-size: 16px;
 }
 
 .all-cryptist-tenth-right-wrapper {
@@ -1223,12 +838,9 @@
 
 .all-cryptist-eleventh-right-title {
   color: var(--text-color);
-  font-size: 64px;
 }
 
 .all-cryptist-eleventh-right-text {
-  color: var(--text-color);
-  font-size: 18px;
   margin-bottom: calc(var(--box-padding) * 3);
 }
 
@@ -1255,7 +867,6 @@
 
 .all-cryptist-eleventh-right-location-text {
   color: var(--all-cryptist-eleventh-right-location-color);
-  font-size: 16px;
 }
 
 .all-cryptist-footer-wrapper {
@@ -1268,7 +879,6 @@
 }
 
 .all-cryptist-footer-title {
-  font-size: 64px;
   background: linear-gradient(90deg, rgba(217, 217, 217, 1) 0%, rgba(111, 219, 238, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1355,11 +965,6 @@
     min-width: 500px;
   }
 
-  .each-cryptist-sponsor {
-    width: 140px;
-    min-width: 140px;
-  }
-
   .all-cryptist-fourth-top-right-logo {
     width: 60px;
     height: auto;
@@ -1413,8 +1018,7 @@
   }
 
   .each-cryptist-sponsor {
-    width: 110px;
-    min-width: 110px;
+    max-width: 116px;
   }
 
   .all-cryptist-fourth-top-right-logo {
@@ -1450,10 +1054,6 @@
   .all-cryptist-sixth-right-wrapper {
     width: 350px;
     min-width: 350px;
-  }
-
-  .all-cryptist-fourth-top-left-title {
-    font-size: 56px;
   }
 
   .all-cryptist-seventh-left-wrapper {
@@ -1553,14 +1153,10 @@
     min-width: 450px;
   }
 
-  .each-cryptist-sponsor {
-    width: 100px;
-    min-width: 100px;
-  }
-
-  .all-cryptist-fourth-top-left-title {
-    font-size: 50px;
-  }
+  /* .each-cryptist-sponsor {
+    width: 90px;
+    min-width: 90px;
+  } */
 
   .all-cryptist-fourth-bottom-left-image {
     width: 400px;
@@ -1689,11 +1285,6 @@
     min-width: 100%;
   }
 
-  .each-cryptist-sponsor {
-    width: 120px;
-    min-width: 120px;
-  }
-
   .all-cryptist-fourth-top-right-logo {
     width: 40px;
     height: auto;
@@ -1722,6 +1313,10 @@
   .all-cryptist-fifth-left-middle-image {
     width: 260px;
     min-width: 260px;
+  }
+
+  .all-cryptist-sixth-wrapper {
+    margin-top: calc(var(--box-padding) * 6);
   }
 
   .all-cryptist-sixth-right-wrapper {
@@ -1895,17 +1490,9 @@
     min-width: 100%;
   }
 
-  .all-cryptist-tenth-left-text {
-    font-size: 16px;
-  }
-
   .all-cryptist-tenth-left-image {
     width: 400px;
     min-width: 400px;
-  }
-
-  .all-cryptist-tenth-left-title {
-    font-size: 50px;
   }
 
   .all-cryptist-tenth-right-image {
@@ -1932,10 +1519,6 @@
 
   .all-cryptist-eleventh-right-text {
     margin-bottom: calc(var(--box-padding));
-  }
-
-  .all-cryptist-footer-title {
-    font-size: 50px;
   }
 
   .each-cryptist-footer-button {
@@ -2091,25 +1674,13 @@
     width: 140px;
     min-width: 140px;
   }
-
-  .all-cryptist-eleventh-right-title {
-    font-size: 50px;
-  }
-
-  .all-cryptist-eleventh-right-text {
-    font-size: 16px;
-  }
-
-  .all-cryptist-eleventh-right-location-text {
-    font-size: 14px;
-  }
-
-  .all-cryptist-footer-title {
-    font-size: 40px;
-  }
 }
 
 @media only screen and (max-width: 800px) {
+  .all-cryptist-first-right-wrapper {
+    display: none;
+  }
+
   .all-cryptist-second-left-wrapper {
     display: none;
   }
@@ -2186,10 +1757,6 @@
     min-width: 100%;
   }
 
-  .all-cryptist-fourth-top-left-title {
-    font-size: 40px;
-  }
-
   .all-cryptist-fourth-bottom-wrapper {
     margin-top: calc(var(--box-padding) * 2);
   }
@@ -2231,6 +1798,7 @@
   }
 
   .all-cryptist-sixth-left-button {
+    margin: 0;
     margin-left: auto;
   }
 
@@ -2283,21 +1851,9 @@
     font-size: 14px;
   }
 
-  .each-cryptist-first-left-event-stats-text {
-    font-size: 14px;
-  }
-
   .all-cryptist-second-right-wrapper {
     width: 100%;
     min-width: 100%;
-  }
-
-  .all-cryptist-fourth-top-left-title {
-    font-size: 30px;
-  }
-
-  .all-cryptist-fourth-top-left-text {
-    font-size: 14px;
   }
 
   .all-cryptist-fourth-bottom-left-image {
@@ -2309,25 +1865,9 @@
     display: none;
   }
 
-  .all-cryptist-fifth-left-top-text {
-    font-size: 14px;
-  }
-
-  .all-cryptist-fifth-left-middle-quote {
-    font-size: 14px;
-  }
-
-  .all-cryptist-sixth-left-text {
-    font-size: 14px;
-  }
-
   .all-cryptist-seventh-left-wrapper {
     width: 100%;
     min-width: 100%;
-  }
-
-  .all-cryptist-seventh-left-text {
-    font-size: 14px;
   }
 
   .all-cryptist-seventh-right-wrapper {
@@ -2335,29 +1875,9 @@
     min-width: 100%;
   }
 
-  .all-cryptist-seventh-right-text {
-    font-size: 14px;
-  }
-
   .all-cryptist-eighth-left-wrapper {
     width: 100%;
     min-width: 100%;
-  }
-
-  .all-cryptist-eighth-right-text {
-    font-size: 14px;
-  }
-
-  .all-cryptist-eighth-right-quote {
-    font-size: 14px;
-  }
-
-  .all-cryptist-eighth-right-quote-author {
-    font-size: 14px;
-  }
-
-  .all-cryptist-ninth-left-text {
-    font-size: 14px;
   }
 
   .all-cryptist-ninth-right-middle-wrapper {
@@ -2365,37 +1885,13 @@
     min-width: 100%;
   }
 
-  .all-cryptist-ninth-right-text {
-    font-size: 14px;
-  }
-
   .all-cryptist-tenth-left-image {
     margin: 0;
-  }
-
-  .all-cryptist-tenth-left-text {
-    font-size: 14px;
-  }
-
-  .all-cryptist-tenth-left-location-text {
-    font-size: 14px;
   }
 
   .all-cryptist-tenth-right-wrapper {
     width: 100%;
     min-width: 100%;
-  }
-
-  .all-cryptist-eleventh-right-text {
-    font-size: 14px;
-  }
-
-  .all-cryptist-eleventh-right-location-text {
-    font-size: 14px;
-  }
-
-  .all-cryptist-footer-title {
-    font-size: 30px;
   }
 
   .all-cryptist-footer-buttons-wrapper {
@@ -2447,13 +1943,5 @@
   .all-cryptist-tenth-left-image {
     width: 100%;
     min-width: 100%;
-  }
-
-  .all-cryptist-eleventh-right-title {
-    font-size: 30px;
-  }
-
-  .all-cryptist-tenth-left-title {
-    font-size: 36px;
   }
 }

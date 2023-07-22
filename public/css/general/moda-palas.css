@@ -33,8 +33,6 @@
 .all-moda-first-text {
   width: 50%;
   color: var(--text-color-three);
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .all-moda-second-wrapper {
@@ -188,8 +186,6 @@
 .each-moda-third-right-text {
   width: auto;
   color: var(--text-color-three);
-  font-size: 16px;
-  line-height: 1.4;
 }
 
 .all-moda-third-right-image {
@@ -290,8 +286,6 @@
 
 .all-moda-footer-right-text {
   color: var(--text-color-three);
-  font-size: 16px;
-  line-height: 1.4;
 }
 
 .all-moda-footer-right-button-wrapper {
@@ -430,10 +424,6 @@
     top: 120px;
   }
 
-  .each-moda-third-right-text {
-    font-size: 14px;
-  }
-
   .all-moda-third-wrapper {
     gap: calc(var(--box-padding) * 2);
   }
@@ -502,10 +492,6 @@
     top: 100px;
   }
 
-  .each-moda-third-right-text {
-    font-size: 14px;
-  }
-
   .each-moda-footer-right-button {
     font-size: 16px;
   }
@@ -552,10 +538,6 @@
   .each-moda-third-title-second-row-part,
   .each-moda-third-title-third-row-part {
     font-size: 64px;
-  }
-
-  .all-moda-footer-right-text {
-    font-size: 14px;
   }
 
   .each-moda-footer-right-button {

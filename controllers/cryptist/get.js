@@ -15,6 +15,5 @@ module.exports = (req, res) => {
       }
     },
     url: '/cryptist',
-    active_page: 'cryptist'
   });
 }

@@ -15,6 +15,5 @@ module.exports = (req, res) => {
       }
     },
     url: '/sui-move-workshop',
-    active_page: 'sui-move-workshop'
   });
 }

@@ -15,6 +15,5 @@ module.exports = (req, res) => {
       }
     },
     url: '/moda-palas',
-    active_page: 'moda-palas'
   });
 }

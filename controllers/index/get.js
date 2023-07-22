@@ -15,6 +15,5 @@ module.exports = (req, res) => {
       }
     },
     url: '/',
-    active_page: '',
   });
 }

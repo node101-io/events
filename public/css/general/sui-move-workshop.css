@@ -33,11 +33,23 @@
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: 4px;
-  background: linear-gradient(0deg, var(--all-sui-first-left-title-first-color) 0%, var(--all-sui-first-left-title-second-color) 100%);
+  background: linear-gradient(30deg, var(--all-sui-first-left-title-first-color) 0%, var(--all-sui-first-left-title-second-color) 100%);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: calc(var(--box-padding)) 0 0 0;
+  animation: allSuiFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes allSuiFirstLeftTitleAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .all-sui-first-left-event-type {
@@ -51,11 +63,6 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.all-sui-first-left-event-text {
-  color: var(--text-color);
-  font-size: 16px;
 }
 
 .all-sui-first-left-event-stats-wrapper {
@@ -184,35 +191,10 @@
 .all-sui-third-bottom-text {
   width: 800px;
   min-width: 800px;
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 2;
 }
 
 .all-sui-third-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--box-padding) / 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-decoration: none;
-}
-
-.all-sui-third-button-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-sui-third-button-icon {
-  width: 12px;
-  min-width: 12px;
-  height: auto;
-  stroke: var(--text-color);
+  margin-right: auto;
 }
 
 .all-sui-fourth-wrapper {
@@ -239,8 +221,6 @@
 }
 
 .all-sui-fourth-left-text {
-  color: var(--text-color-two);
-  font-size: 16px;
   margin: calc(var(--box-padding) * 2) 0;
 }
 
@@ -296,12 +276,10 @@
 
 .all-sui-fifth-left-quote-text {
   color: var(--all-sui-fifth-left-quote-color);
-  font-size: 16px;
 }
 
 .all-sui-fifth-left-quote-author {
   color: var(--all-sui-fifth-left-quote-color);
-  font-size: 16px;
   margin-left: auto;
 }
 
@@ -323,7 +301,6 @@
 
 .all-sui-fifth-right-text {
   color: var(--text-color-two);
-  font-size: 16px;
 }
 
 .all-sui-footer-wrapper {
@@ -517,14 +494,6 @@
     font-size: 50px;
   }
 
-  .all-sui-first-left-event-type {
-    font-size: 15px;
-  }
-
-  .all-sui-first-left-event-text {
-    font-size: 14px;
-  }
-
   .all-sui-second-right-wrapper {
     width: 400px;
     min-width: 400px;
@@ -544,7 +513,6 @@
   .all-sui-third-bottom-text {
     width: 440px;
     min-width: 440px;
-    font-size: 15px;
   }
 
   .all-sui-fourth-left-wrapper {
@@ -831,10 +799,6 @@
 
   .all-sui-third-top-text {
     font-size: 22px;
-  }
-
-  .all-sui-third-bottom-text {
-    font-size: 14px;
   }
 
   .all-sui-fourth-wrapper {

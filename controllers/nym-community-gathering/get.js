@@ -15,6 +15,5 @@ module.exports = (req, res) => {
       }
     },
     url: '/nym-community-gathering',
-    active_page: 'nym-community-gathering'
   });
 }
