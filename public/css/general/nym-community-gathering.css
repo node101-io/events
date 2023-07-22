@@ -407,9 +407,7 @@
   }
 
   .all-nym-footer-right-top-image {
-    width: 80%;
-    min-width: 80%;
-    margin-left: auto;
+    display: none !important;
   }
 
   .all-nym-footer-left-wrapper {
@@ -472,12 +470,6 @@
   .all-nym-third-right-image {
     width: 60px;
     min-width: 60px;
-  }
-
-  .all-nym-footer-right-top-image {
-    margin: 0;
-    width: 100%;
-    min-width: 100%;
   }
 
   .all-nym-footer-right-bottom-image {

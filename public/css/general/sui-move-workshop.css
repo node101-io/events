@@ -89,6 +89,7 @@
 }
 
 .all-sui-first-right-wrapper {
+  display: flex;
   width: auto;
   min-width: auto;
 }
@@ -98,6 +99,7 @@
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
+  margin-top: auto;
 }
 
 .all-sui-second-wrapper {
@@ -207,7 +209,7 @@
 .all-sui-fourth-left-wrapper {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--box-padding) * 2);
+  gap: calc(var(--box-padding) * 3);
   width: 50%;
 }
 
@@ -265,6 +267,7 @@
 
 .all-sui-fifth-left-quote-wrapper {
   width: 100%;
+  min-width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -750,7 +753,7 @@
   }
 
   .all-sui-fourth-left-image {
-    display: none;
+    display: none !important;
   }
 
   .all-sui-fourth-left-wrapper {
@@ -816,8 +819,18 @@
   }
 
   .all-sui-fourth-left-wrapper {
-    width: 300px;
-    min-width: 300px;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .all-sui-fifth-left-image {
+    display: none !important;
+  }
+
+  .all-sui-fifth-left-quote-wrapper {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
   }
 
   .all-sui-fifth-wrapper {
@@ -879,11 +892,6 @@
 
   .each-sui-first-left-event-stats-text {
     font-size: 12px;
-  }
-
-  .all-sui-fourth-left-wrapper {
-    width: 100%;
-    min-width: 100%;
   }
 
   .all-sui-fourth-right-wrapper {

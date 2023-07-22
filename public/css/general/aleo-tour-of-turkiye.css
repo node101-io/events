@@ -117,6 +117,7 @@
 
 .each-aleo-first-intro-team-member-title {
   color: var(--text-color-three);
+  margin-right: auto;
 }
 
 .all-aleo-first-bottom-wrapper {
@@ -637,15 +638,20 @@
   }
 }
 
-@media only screen and (max-width: 900px) {}
+@media only screen and (max-width: 900px) {
+  .all-aleo-first-intro-wrapper {
+    margin: 0;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   .all-aleo-first-intro-title {
     font-size: 34px;
   }
 
-  .all-aleo-first-intro-wrapper {
-    margin: 0;
+  .each-aleo-first-intro-team-member-wrapper {
+    width: 160px;
+    min-width: 160px;
   }
 
   .all-aleo-second-right-wrapper {
@@ -678,7 +684,7 @@
   }
 
   .all-aleo-fourth-right-top-image {
-    display: none;
+    display: none !important;
   }
 
   .all-aleo-fourth-right-bottom-image {
@@ -713,14 +719,7 @@
   .each-aleo-first-intro-team-member-wrapper {
     width: 220px;
     min-width: 220px;
-  }
-
-  .each-aleo-first-intro-team-member-wrapper:nth-child(odd) {
-    margin-right: auto;
-  }
-
-  .each-aleo-first-intro-team-member-wrapper:nth-child(even) {
-    margin-left: auto;
+    align-items: center;
   }
 
   .all-aleo-third-wrapper {
@@ -773,11 +772,6 @@
 @media only screen and (max-width: 500px) {
   .all-aleo-first-intro-title {
     text-align: center;
-  }
-
-  .each-aleo-first-intro-team-member-wrapper {
-    width: 100%;
-    min-width: 100%;
   }
 
   .all-aleo-second-stats-wrapper {
@@ -839,11 +833,6 @@
   .all-aleo-second-left-title {
     font-size: 20px;
     word-wrap: break-word;
-  }
-
-  .all-aleo-second-stats-wrapper {
-    flex-direction: column;
-    gap: calc(var(--box-padding) / 2);
   }
 
   .all-aleo-third-wrapper {
