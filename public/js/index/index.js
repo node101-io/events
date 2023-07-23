@@ -50,6 +50,7 @@ window.addEventListener('load', () => {
     });
 
   let sliderIndex = 0;
+  let oldScrollY = 0;
   const root = document.querySelector(':root');
   const allHeaderBottomWrapper = document.querySelector('.all-header-bottom-wrapper');
   const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
@@ -57,9 +58,10 @@ window.addEventListener('load', () => {
   const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
   const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
 
-  new ResizeObserver(() => root.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px')).observe(eventsSliderWrapper);
+  new ResizeObserver(() => {
+    root.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px');
+  }).observe(eventsSliderWrapper);
 
-  let oldScrollY = 0;
   document.addEventListener("scroll", (event) => {
     const windowScrollY = window.scrollY;
     const scrollWidth = eventsSliderWrapper.scrollWidth;
@@ -69,10 +71,7 @@ window.addEventListener('load', () => {
       root.style.setProperty('--events-slider-wrapper-width', scrollWidth + 'px');
       eventsSliderOuterWrapper.classList.add('events-slider-outer-wrapper-end');
 
-      if (windowScrollY < oldScrollY)
-        allHeaderBottomWrapper.classList.remove('all-header-bottom-wrapper-hidden');
-      else
-        allHeaderBottomWrapper.classList.add('all-header-bottom-wrapper-hidden');
+      allHeaderBottomWrapper.classList.toggle('all-header-bottom-wrapper-hidden', windowScrollY < oldScrollY);
 
       oldScrollY = window.scrollY;
     } else {
@@ -81,8 +80,8 @@ window.addEventListener('load', () => {
 
     for (let i = 0; i < eventsSliderWrappers.length; i++) {
       const sliderRect = eventsSliderWrappers[i].getBoundingClientRect();
-
       const absoluteValue = Math.abs((sliderRect.left + sliderRect.right) / windowInnerWidth - 1);
+
       eventsSliderWrappers[i].style.transform = `scale(${1 - absoluteValue / 10})`;
       eventsSliderWrappers[i].style.opacity = 1 - absoluteValue / 2;
 
@@ -108,7 +107,10 @@ window.addEventListener('load', () => {
     };
   });
 
-  window.addEventListener('popstate', () => renderContent(window.location.pathname.split('/')[1]));
+  window.addEventListener('popstate', () => {
+    renderContent(window.location.pathname.split('/')[1]);
+  });
+
   renderContent(window.location.pathname.split('/')[1]);
 
   observeByClassNames(['.each-team-member-wrapper', '.each-motto-line', '.all-content-team-title']);

@@ -64,6 +64,8 @@
 }
 
 .all-cryptist-first-right-wrapper {
+  display: flex;
+  justify-content: center;
   width: 800px;
   min-width: 800px;
 }
@@ -922,7 +924,7 @@
   display: flex;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.72px;
   padding-right: 18px;
@@ -1567,7 +1569,7 @@
   }
 
   .each-cryptist-footer-button {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .each-cryptist-footer-button-icon {
@@ -1910,7 +1912,7 @@
   }
 
   .each-cryptist-footer-button {
-    font-size: 16px;
+    font-size: 14px;
     padding-right: 0;
   }
 
@@ -2042,9 +2044,5 @@
   .each-cryptist-sponsor {
     width: 50px;
     min-width: 50px;
-  }
-
-  .each-cryptist-footer-button {
-    font-size: 14px;
   }
 }
