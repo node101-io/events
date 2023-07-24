@@ -48,7 +48,7 @@
 .all-wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--events-slider-wrapper-padding-top);
+  gap: calc(var(--events-slider-wrapper-padding-top));
   scroll-behavior: smooth;
 }
 
@@ -127,17 +127,34 @@
   opacity: 0;
 }
 
-.each-event-slider-image {
-  width: 100%;
-  min-width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+@media (orientation: landscape) {
+  .each-event-slider-image {
+    width: 100%;
+    min-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+@media (orientation: portrait) {
+  :root {
+    --events-slider-wrapper-padding-top: calc(var(--box-padding) * 3);
+  }
+
+  .each-event-slider-image {
+    width: calc(100vw - var(--events-slider-wrapper-padding-sides) * 4);
+    min-width: calc(100vw - var(--events-slider-wrapper-padding-sides) * 4);
+    height: calc(100vh - var(--all-header-wrapper-height) - var(--events-slider-wrapper-padding-top) * 4);
+    min-height: calc(100vh - var(--all-header-wrapper-height) - var(--events-slider-wrapper-padding-top) * 4);
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }
 
 .each-event-slider-text {
   position: absolute;
   color: var(--text-color);
-  max-width: 90%;
+  max-width: 80%;
   font-size: 80px;
   line-height: 1;
   font-weight: 600;
@@ -235,6 +252,7 @@
 
 .all-content-spot-wrapper {
   position: relative;
+  left: 1vw;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -347,13 +365,13 @@
 }
 
 .each-motto-line span {
-  background: linear-gradient(-45deg, var(--all-content-motto-wrapper-span-color) 49%, transparent 50%, var(--all-content-motto-wrapper-span-color) 51%);
+  background: linear-gradient(-45deg, var(--all-content-motto-wrapper-span-color) 48%, #fff 50%, var(--all-content-motto-wrapper-span-color) 52%);
   background-size: 240% 240%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-animation: mottoLineAnimation 4s ease infinite;
-  animation: mottoLineAnimation 4s ease infinite;
+  -webkit-animation: mottoLineAnimation 3s ease infinite;
+  animation: mottoLineAnimation 3s ease infinite;
 }
 
 @-webkit-keyframes mottoLineAnimation {
@@ -361,7 +379,7 @@
     background-position: 100% 50%;
   }
 
-  50% {
+  70% {
     background-position: 0% 50%;
   }
 }
@@ -371,7 +389,7 @@
     background-position: 100% 50%;
   }
 
-  50% {
+  70% {
     background-position: 0% 50%;
   }
 }
@@ -527,7 +545,6 @@
 }
 
 .each-event-page-wrapper {
-  display: none;
   position: fixed;
   top: 0;
   height: 100vh;
@@ -606,6 +623,7 @@
 }
 
 .clickable-image {
+  position: relative !important;
   display: flex !important;
   cursor: pointer;
   transition: transform 0.5s ease;
@@ -617,10 +635,12 @@
 
 .clickable-image-big {
   position: relative !important;
-  width: 80vw !important;
-  height: 80vh !important;
+  width: auto !important;
+  height: auto !important;
   min-width: unset !important;
   min-height: unset !important;
+  max-width: 80vw !important;
+  max-height: 80vh !important;
   max-width: unset !important;
   max-height: unset !important;
   -o-object-fit: contain !important;

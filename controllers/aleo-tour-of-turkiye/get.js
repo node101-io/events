@@ -10,7 +10,7 @@ module.exports = (req, res) => {
       meta: {
         title: res.__('Aleo - Türkiye Turu'),
         description: res.__(''),
-        image: '/img/meta/aleo.png',
+        image: '/img/meta/aleo-tour-of-turkiye.webp',
         twitter: true
       }
     },

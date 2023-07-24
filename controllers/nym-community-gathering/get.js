@@ -10,7 +10,7 @@ module.exports = (req, res) => {
       meta: {
         title: res.__('NYM Topluluk Buluşması'),
         description: res.__(''),
-        image: '/img/meta/nym.png',
+        image: '/img/meta/nym-community-gathering.webp',
         twitter: true
       }
     },

@@ -24,55 +24,22 @@ block content
     .all-content-wrapper
       block main
     .all-footer-wrapper
-      .all-footer-left-wrapper
-        .all-footer-title= __('Do you want to organize an event with node101?')
-        .all-footer-text= __('node101 can help you organize your dream web3 event! Contact us!')
-        .all-footer-subtitle= __('Contact Us')
-        form.all-footer-form
-          label.all-footer-input-label(for='all-footer-name-input')= __('Name:')
-          input.all-footer-input#all-footer-name-input(type='text')
-          .all-footer-input-border-bottom
-          label.all-footer-input-label(for='all-footer-email-input')= __('Email:')
-          input.all-footer-input#all-footer-email-input(type='email')
-          .all-footer-input-border-bottom
-          label.all-footer-input-label(for='all-footer-message-input')= __('Message:')
-          textarea.all-footer-input#all-footer-message-input(oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"', rows='1')
-          .all-footer-input-border-bottom
-          button.all-footer-button= __('Submit')
-            svg.all-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-      .all-footer-right-wrapper
-        a.each-footer-right-button(href='/cryptist')= __('CryptIst')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
+      .all-footer-title= __('Do you want to organize an event with node101?')
+      .all-footer-text= __('node101 can help you organize your dream web3 event! Contact us!')
+      .all-footer-subtitle= __('Contact Us')
+      form.all-footer-form
+        label.all-footer-input-label(for='all-footer-name-input')= __('Name:')
+        input.all-footer-input#all-footer-name-input(type='text')
+        .all-footer-input-border-bottom
+        label.all-footer-input-label(for='all-footer-email-input')= __('Email:')
+        input.all-footer-input#all-footer-email-input(type='email')
+        .all-footer-input-border-bottom
+        label.all-footer-input-label(for='all-footer-message-input')= __('Message:')
+        textarea.all-footer-input#all-footer-message-input(oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"', rows='1')
+        .all-footer-input-border-bottom
+        button.all-footer-button= __('Submit')
+          svg.all-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
             path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='/moda-palas')= __('Moda Palas')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='/nym-community-gathering')= __('NYM Community Gathering')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='/aleo-tour-of-turkey')= __('Aleo Tour of Türkiye')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='/sui-move-workshop')= __('Sui Move Workshop')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='https://t.me/node101', target='_blank')= __('Telegram')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='https://twitter.com/node101org', target='_blank')= __('Twitter')
-          svg.each-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-footer-right-button-border-bottom
-        a.each-footer-right-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
-          .each-footer-right-button-secondary-text hello@node101.io
-        .each-footer-right-button-border-bottom
     .all-second-footer-wrapper
       .all-second-footer-top-wrapper
         .all-second-footer-left-wrapper
@@ -91,10 +58,17 @@ block content
                     path(d=SOCIAL_MEDIA_ICONS[account].d)
                   .all-second-footer-each-column-link= account.substring(0, 1).toUpperCase() + account.substring(1)
             .all-second-footer-each-column-wrapper
+              h3.all-second-footer-each-column-title= __('Events')
+              a.all-second-footer-each-column-link(href='/cryptist')= __('Cryptist')
+              a.all-second-footer-each-column-link(href='/sui-move-workshop')= __('SUI Move Workshop')
+              a.all-second-footer-each-column-link(href='/aleo-tour-of-turkiye')= __('Aleo Tour of Turkiye')
+              a.all-second-footer-each-column-link(href='/nym-community-gathering')= __('NYM Community Gathering')
+              a.all-second-footer-each-column-link(href='/moda-palas')= __('Moda Palas')
+            .all-second-footer-each-column-wrapper
               h3.all-second-footer-each-column-title node101
-              a.all-second-footer-each-column-link(href='https://node101.io/stake' target='_blank')= __('Projects')
-              a.all-second-footer-each-column-link(href='https://node101.io/about_us' target='_blank')= __('About Us')
-              a.all-second-footer-each-column-link(href='/projects')= __('Blog')
-              a.all-second-footer-each-column-link(href='https://node101.io/stake' target='_blank')= __('Stake with Us')
+              a.all-second-footer-each-column-link(href='https://node101.io/' target='_blank')= __('Website')
+              a.all-second-footer-each-column-link(href='https://library.node101.io/' target='_blank')= __('Library')
+              a.all-second-footer-each-column-link(href='https://stake.node101.io/' target='_blank')= __('Stake with Us')
+              a.all-second-footer-each-column-link(href='https://klein.run/' target='_blank')= __('Klein')
       .all-second-footer-bottom-wrapper
         .all-second-footer-bottom-text #{__('Designed & Developed by node101.io')}

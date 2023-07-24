@@ -10,7 +10,7 @@ module.exports = (req, res) => {
       meta: {
         title: res.__('Cryptİst'),
         description: res.__(''),
-        image: '/img/meta/cryptist.png',
+        image: '/img/meta/cryptist.webp',
         twitter: true
       }
     },

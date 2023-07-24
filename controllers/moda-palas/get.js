@@ -10,7 +10,7 @@ module.exports = (req, res) => {
       meta: {
         title: res.__('Moda Palas'),
         description: res.__(''),
-        image: '/img/meta/aleo.png',
+        image: '/img/meta/moda-palas.webp',
         twitter: true
       }
     },

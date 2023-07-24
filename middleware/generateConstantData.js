@@ -130,13 +130,13 @@ module.exports = (req, res, next) => {
   };
 
   const NODE101_SOCIAL_MEDIA_ACCOUNTS = {
-    instagram: 'https://www.instagram.com/node_101/',
+    twitter: language == 'tr' ? 'https://twitter.com/node101_TR' : 'https://twitter.com/node_101',
+    web: 'https://node101.io',
     github: 'https://github.com/node101-io',
     telegram: language == 'tr' ? 'https://t.me/node101_tr' : 'https://t.me/node101',
-    twitter: language == 'tr' ? 'https://twitter.com/node101_TR' : 'https://twitter.com/node_101',
-    spotify: language == 'tr' ? 'https://open.spotify.com/show/0ocAj5RGbBVXcABbGV2ZC9' : 'https://open.spotify.com/show/5qQyR3JUUOYYfSJsulb9A7',
+    instagram: 'https://www.instagram.com/node_101/',
     youtube: language == 'tr' ? 'https://www.youtube.com/@node101turkiye' : 'https://www.youtube.com/@node101',
-    web: 'https://node101.io'
+    spotify: language == 'tr' ? 'https://open.spotify.com/show/0ocAj5RGbBVXcABbGV2ZC9' : 'https://open.spotify.com/show/5qQyR3JUUOYYfSJsulb9A7',
   };
 
   const MEMBER_COLUMNS = [

@@ -19,11 +19,41 @@ const observeByClassNames = (classNames) => {
 
 const renderContent = (route) => {
   for (let i = 0; i < ROUTES.length; i++)
-    document.querySelector(`.all-${ROUTES[i]}-wrapper`).style.display = ROUTES[i] == route ? 'flex' : 'none';
+    document.querySelector(`.all-${ROUTES[i]}-wrapper`).classList.toggle('display-none', ROUTES[i] != route);
+
+  if (route == 'cryptist') {
+    createNumberIncreaseObserver('.each-cryptist-first-left-event-stats-number', ['150', '14', '7', '6'])
+      .observe(document.querySelector('.all-cryptist-first-left-event-stats-wrapper'));
+    document.querySelector('.all-cryptist-wrapper').scrollTo(0, 0);
+  } else if (route == 'sui-move-workshop') {
+    createNumberIncreaseObserver('.each-sui-first-left-event-stats-number', ['+40', '+10', '1'])
+      .observe(document.querySelector('.all-sui-first-left-event-stats-wrapper'));
+    document.querySelector('.all-sui-move-workshop-wrapper').scrollTo(0, 0);
+  } else if (route == 'aleo-tour-of-turkiye') {
+    createNumberIncreaseObserver('.each-aleo-first-left-event-stats-number', ['+200', '+3', '2'])
+      .observe(document.querySelector('.all-aleo-second-stats-wrapper'));
+    document.querySelector('.all-aleo-tour-of-turkiye-wrapper').scrollTo(0, 0);
+  } else if (route == 'nym-community-gathering') {
+    document.querySelector('.all-nym-community-gathering-wrapper').scrollTo(0, 0);
+  } else if (route == 'moda-palas') {
+    document.querySelector('.all-moda-palas-wrapper').scrollTo(0, 0);
+  }
 };
 
 window.addEventListener('load', () => {
+  let sliderIndex = 0;
+  let oldScrollY = 0;
   const links = document.querySelectorAll('a');
+  const rootElement = document.querySelector(':root');
+  const htmlElement = document.querySelector('html');
+  const allHeaderBottomWrapper = document.querySelector('.all-header-bottom-wrapper');
+  const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
+  const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
+  const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
+  const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
+  const clickableImageBig = document.querySelector('.clickable-image-big');
+  const clickableImageLayer = document.querySelector('.clickable-image-layer');
+
   for (let i = 0; i < links.length; i++)
     links[i].addEventListener('click', (event) => {
       const targetRoute = event.currentTarget.getAttribute('href');
@@ -33,33 +63,8 @@ window.addEventListener('load', () => {
       renderContent(targetRoute.split('/')[1]);
     });
 
-  const clickableImages = document.querySelectorAll('.clickable-image');
-  const clickableImageBig = document.querySelector('.clickable-image-big');
-  const clickableImageLayer = document.querySelector('.clickable-image-layer');
-
-  clickableImageLayer.addEventListener('click', (event) => {
-    clickableImageLayer.classList.add('display-none');
-    document.querySelector('html').classList.remove('disable-scroll');
-  });
-
-  for (let i = 0; i < clickableImages.length; i++)
-    clickableImages[i].addEventListener('click', (event) => {
-      clickableImageBig.src = event.currentTarget.src;
-      clickableImageLayer.classList.remove('display-none');
-      document.querySelector('html').classList.add('disable-scroll');
-    });
-
-  let sliderIndex = 0;
-  let oldScrollY = 0;
-  const root = document.querySelector(':root');
-  const allHeaderBottomWrapper = document.querySelector('.all-header-bottom-wrapper');
-  const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
-  const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
-  const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
-  const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
-
   new ResizeObserver(() => {
-    root.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px');
+    rootElement.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px');
   }).observe(eventsSliderWrapper);
 
   document.addEventListener("scroll", (event) => {
@@ -68,15 +73,17 @@ window.addEventListener('load', () => {
     const windowInnerWidth = window.innerWidth;
 
     if (windowScrollY > scrollWidth - eventsSliderWrapper.offsetWidth) {
-      root.style.setProperty('--events-slider-wrapper-width', scrollWidth + 'px');
+      rootElement.style.setProperty('--events-slider-wrapper-width', scrollWidth + 'px');
       eventsSliderOuterWrapper.classList.add('events-slider-outer-wrapper-end');
 
-      allHeaderBottomWrapper.classList.toggle('all-header-bottom-wrapper-hidden', windowScrollY < oldScrollY);
+      allHeaderBottomWrapper.classList.toggle('all-header-bottom-wrapper-hidden', oldScrollY < windowScrollY);
 
       oldScrollY = window.scrollY;
     } else {
       eventsSliderOuterWrapper.classList.remove('events-slider-outer-wrapper-end');
-    }
+
+      allHeaderBottomWrapper.classList.remove('all-header-bottom-wrapper-hidden');
+    };
 
     for (let i = 0; i < eventsSliderWrappers.length; i++) {
       const sliderRect = eventsSliderWrappers[i].getBoundingClientRect();
@@ -92,18 +99,30 @@ window.addEventListener('load', () => {
         eventsSliderBullets[i].classList.add('each-event-slider-bullet-filled');
         sliderIndex = i;
       }
-    }
+    };
 
     eventsSliderWrapper.scrollTo(windowScrollY, 0);
   });
 
   document.addEventListener('click', (event) => {
-    if (event.target.closest('.each-event-slider-bullet'))
+    if (event.target.closest('.each-event-slider-bullet')) {
       window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4));
+    };
 
     if (event.target.classList.contains('each-event-page-wrapper') || event.target.closest('.each-event-page-close-button')) {
       history.pushState(null, null, '/');
       renderContent('');
+    };
+
+    if (event.target.closest('.clickable-image-layer') && !event.target.closest('.clickable-image-big')) {
+      clickableImageLayer.classList.add('display-none');
+      htmlElement.classList.remove('disable-scroll');
+    };
+
+    if (event.target.closest('.clickable-image')) {
+      clickableImageBig.src = event.target.src;
+      clickableImageLayer.classList.remove('display-none');
+      htmlElement.classList.add('disable-scroll');
     };
   });
 

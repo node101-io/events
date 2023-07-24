@@ -10,7 +10,7 @@ module.exports = (req, res) => {
       meta: {
         title: res.__('SUI Move Yazılım Eğitimleri'),
         description: res.__(''),
-        image: '/img/meta/sui.png',
+        image: '/img/meta/sui-move-workshop.webp',
         twitter: true
       }
     },

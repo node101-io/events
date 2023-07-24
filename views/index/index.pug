@@ -4,19 +4,19 @@ block main
     .events-slider-outer-wrapper
       .events-slider-wrapper
         a.each-event-slider-wrapper.each-event-slider-active(href='/cryptist')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp`)
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` loading='lazy')
           h1.each-event-slider-text= __('CRYPTIST')
         a.each-event-slider-wrapper(href='/sui-move-workshop')
-          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main.webp`)
+          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main.webp` loading='lazy')
           h1.each-event-slider-text= __('SUI MOVE WORKSHOP')
         a.each-event-slider-wrapper(href='/aleo-tour-of-turkiye')
-          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/main.webp`)
+          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/main.webp` loading='lazy')
           h1.each-event-slider-text= __('ALEO - TOUR OF TURKIYE')
         a.each-event-slider-wrapper(href='/nym-community-gathering')
-          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/main.webp`)
+          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/main.webp` loading='lazy')
           h1.each-event-slider-text= __('NYM COMMUNITY GATHERING')
         a.each-event-slider-wrapper(href='/moda-palas')
-          img.each-event-slider-image(src=`${URL}/img/moda-palas/main.webp`)
+          img.each-event-slider-image(src=`${URL}/img/moda-palas/main.webp` loading='lazy')
           h1.each-event-slider-text= __('MODA PALAS')
       .events-slider-bullets-wrapper
         .each-event-slider-bullet.each-event-slider-bullet-filled(data-index=0)
@@ -25,14 +25,14 @@ block main
         .each-event-slider-bullet(data-index=3)
         .each-event-slider-bullet(data-index=4)
     .all-content-spot-wrapper
-      img.spot-background(src=`${URL}/img/istanbul.webp`)
+      img.spot-background(src=`${URL}/img/istanbul.webp` loading='lazy')
       .all-spot-rectangles-top-wrapper
         each height, index in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 22, 108, 203, 126, 140, 80, 108, 250, 89, 250, 22, 108]
-          .each-spot-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;`)
+          .each-spot-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;` loading='lazy')
           .each-spot-column
       .all-spot-rectangles-bottom-wrapper
         each height, index in [482, 390, 326, 207, 53, 115, 128, 128, 292, 197, 114, 176, 147, 176, 147, 257, 168, 137, 167, 257, 20, 176, 72, 292, 197, 114, 176, 147, 176, 168, 137, 167, 257]
-          .each-spot-rectangle-bottom(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw; margin-top: -${height / 20}vw;`)
+          .each-spot-rectangle-bottom(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw; margin-top: -${height / 20}vw;` loading='lazy')
     .all-content-motto-wrapper
       .all-content-motto-top-wrapper
         .all-content-motto-top-left-wrapper
@@ -52,41 +52,41 @@ block main
               .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-secondary-wrapper
         each column, index in member_secondary_columns
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};` loading='lazy')
             each member in column
               .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-tertiary-wrapper
         each column, index in member_tertiary_columns
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};` loading='lazy')
             each member in column
               .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-quaternary-wrapper
         each column, index in member_quaternary_columns
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};` loading='lazy')
             each member in column
               .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);`) #{member.name}
+                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
                   .each-team-member-title= __(member.title)
   .clickable-image-layer.display-none
-    img.clickable-image-big
+    img.clickable-image-big(loading='lazy')
     svg.clickable-image-big-close(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
       path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
       path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-  .each-event-page-wrapper.all-cryptist-wrapper
+  .each-event-page-wrapper.display-none.all-cryptist-wrapper
     .each-event-page-inner-wrapper.all-cryptist-inner-wrapper
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
@@ -110,20 +110,20 @@ block main
               .each-cryptist-first-left-event-stats-number 0
               .each-cryptist-first-left-event-stats-text.each-text-small= __('Partners')
         .all-cryptist-first-right-wrapper
-          img.all-cryptist-first-right-image.clickable-image(src=`${URL}/img/cryptist/speaker9/speaker9.webp`)
+          img.all-cryptist-first-right-image.clickable-image(src=`${URL}/img/cryptist/speaker9/speaker9.webp` loading='lazy')
       .all-cryptist-second-wrapper
         .all-cryptist-second-left-wrapper
           .all-cryptist-second-left-text= __('Scroll down')
           svg.all-cryptist-second-left-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
             path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
         .all-cryptist-second-middle-wrapper
-          img.all-cryptist-second-middle-image.clickable-image(src=`${URL}/img/cryptist/hand/hand_300w.webp`)
+          img.all-cryptist-second-middle-image.clickable-image(src=`${URL}/img/cryptist/hand/hand_300w.webp` loading='lazy')
         .all-cryptist-second-right-wrapper
           a.all-cryptist-second-right-button.each-url-button(href='https://youtu.be/qzWwVLtQsyg' target='_blank')
             .each-url-button-text= __('Video')
             svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-second-right-image.clickable-image(src=`${URL}/img/cryptist/damir_mustafa/damir_mustafa_700w.webp`)
+          img.all-cryptist-second-right-image.clickable-image(src=`${URL}/img/cryptist/damir_mustafa/damir_mustafa_700w.webp` loading='lazy')
       .all-cryptist-third-wrapper
         .all-cryptist-third-emoji 🔒 🙈 🙉 🧐
         .all-cryptist-third-text.each-text-small
@@ -131,23 +131,37 @@ block main
           br
           | #{__('Etkinliği, blockchain öğrenci kulüpleri, Türkçe ve İngilizce yayın yapan zero-knowledge newslettersları ve node101 tarafından partner olarak destekledi.')}
       .all-cryptist-sponsors-wrapper
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp`)
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp`)
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/dydx.webp`)
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/paribu-ventures.webp`)
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/manta-network.webp`)
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/o1-labs.webp`)
-        img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/scroll.webp`)
+        a(href='https://www.aleo.org/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
+        a(href='https://ethereum.foundation/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
+        a(href='https://dydx.foundation/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/dydx.webp` loading='lazy')
+        a(href='https://ventures.paribu.com/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/paribu-ventures.webp` loading='lazy')
+        a(href='https://manta.network/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
+        a(href='https://o1labs.org/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
+        a(href='https://scroll.io/' target='_blank')
+          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
       .all-cryptist-sponsors-secondary-wrapper
         .each-cryptist-sponsors-secondary-row
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp`)
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp`)
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/dydx.webp`)
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/paribu-ventures.webp`)
+          a(href='https://www.aleo.org/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
+          a(href='https://ethereum.foundation/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
+          a(href='https://dydx.foundation/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/dydx.webp` loading='lazy')
+          a(href='https://ventures.paribu.com/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/paribu-ventures.webp` loading='lazy')
         .each-cryptist-sponsors-secondary-row
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/manta-network.webp`)
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/o1-labs.webp`)
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/scroll.webp`)
+          a(href='https://manta.network/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
+          a(href='https://o1labs.org/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
+          a(href='https://scroll.io/' target='_blank')
+            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
       .all-cryptist-fourth-wrapper
         .all-cryptist-fourth-top-wrapper
           .all-cryptist-fourth-top-left-wrapper
@@ -175,10 +189,10 @@ block main
             path(d='M54.9011 84.8989V83.3739H53.5799V84.8989H54.9011ZM54.9011 93.877V85.6368H53.5799V93.877H54.9011Z')
             path(d='M61.9477 94C64.3699 94 65.3853 92.8439 65.3853 91.5894C65.3853 90.3842 64.5779 89.6339 62.9386 89.3388L60.9446 88.9944C59.9781 88.7853 59.5622 88.5516 59.5622 87.8383C59.5622 87.1004 60.1494 86.7314 61.6419 86.7314C63.3423 86.7314 63.9418 87.2357 63.9418 88.2442V88.4041H65.2508V88.3303C65.2508 86.7191 64.162 85.5138 61.7642 85.5138C59.2196 85.5138 58.241 86.7191 58.241 87.9121C58.241 89.265 59.2196 89.9045 60.602 90.1505L62.6083 90.4825C63.6482 90.6793 64.0641 90.9499 64.0641 91.6632C64.0641 92.4381 63.5136 92.7824 61.9477 92.7824C60.1494 92.7824 59.5744 92.2905 59.5744 91.3066V91.1098H58.2532V91.1836C58.2532 92.9177 59.501 94 61.9477 94Z')
             path(d='M72.7826 93.877V86.8298H76V85.6368H68.2439V86.8298H71.4736V93.877H72.7826Z')
-          img.all-cryptist-fourth-top-right-image.clickable-image(src=`${URL}/img/cryptist/building/building.webp`)
+          img.all-cryptist-fourth-top-right-image.clickable-image(src=`${URL}/img/cryptist/building/building.webp` loading='lazy')
         .all-cryptist-fourth-bottom-wrapper
-          img.all-cryptist-fourth-bottom-left-image.clickable-image(src=`${URL}/img/cryptist/people/people.webp`)
-          img.all-cryptist-fourth-bottom-right-image.clickable-image(src=`${URL}/img/cryptist/people2/people2.webp`)
+          img.all-cryptist-fourth-bottom-left-image.clickable-image(src=`${URL}/img/cryptist/people/people.webp` loading='lazy')
+          img.all-cryptist-fourth-bottom-right-image.clickable-image(src=`${URL}/img/cryptist/people2/people2.webp` loading='lazy')
       .all-cryptist-fifth-wrapper
         .all-cryptist-fifth-left-wrapper
           a.all-cryptist-fifth-left-top-button.each-url-button(href='https://github.com/GhostOfGauss' target='_blank')
@@ -194,13 +208,13 @@ block main
             svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
           .all-cryptist-fifth-left-middle-wrapper
-            img.all-cryptist-fifth-left-middle-image.clickable-image(src=`${URL}/img/cryptist/people3/people3.webp`)
+            img.all-cryptist-fifth-left-middle-image.clickable-image(src=`${URL}/img/cryptist/people3/people3.webp` loading='lazy')
             .all-cryptist-fifth-left-middle-quote-wrapper
               .all-cryptist-fifth-left-middle-quote.each-text-small= __('"Todd Norton, Ateşi Olimposlulardan insanlara getiren Prometheus gibi, Zero-Knowledge Proof ve Blockchain felsefesini sunumu ile bana getirdi."')
               .all-cryptist-fifth-left-middle-author.each-text-small= __('Aytunç Sancar - Junior Developer at node101')
         .all-cryptist-fifth-right-wrapper
-          img.all-cryptist-fifth-right-top-image.clickable-image(src=`${URL}/img/cryptist/speaker/speaker.webp`)
-          img.all-cryptist-fifth-right-logo(src=`${URL}/img/cryptist/sponsors/manta-network.webp`)
+          img.all-cryptist-fifth-right-top-image.clickable-image(src=`${URL}/img/cryptist/speaker/speaker.webp` loading='lazy')
+          img.all-cryptist-fifth-right-logo(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
       .all-cryptist-sixth-wrapper
         .all-cryptist-sixth-left-wrapper
           .all-cryptist-sixth-left-text.each-text-large
@@ -215,7 +229,7 @@ block main
             .each-url-button-text= __('Eda Aktürk')
             svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-sixth-right-bottom-image.clickable-image(src=`${URL}/img/cryptist/speaker2/speaker2.webp`)
+          img.all-cryptist-sixth-right-bottom-image.clickable-image(src=`${URL}/img/cryptist/speaker2/speaker2.webp` loading='lazy')
       .all-cryptist-seventh-wrapper
         .all-cryptist-seventh-left-wrapper
           .all-cryptist-seventh-left-text.each-text-medium
@@ -226,21 +240,21 @@ block main
             .each-url-button-text= __('Albiona Hoti')
             svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-seventh-left-image.clickable-image(src=`${URL}/img/cryptist/speaker4/speaker4.webp`)
+          img.all-cryptist-seventh-left-image.clickable-image(src=`${URL}/img/cryptist/speaker4/speaker4.webp` loading='lazy')
           .all-cryptist-seventh-left-bottom-wrapper
-            img.all-cryptist-seventh-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/manta-network.webp`)
+            img.all-cryptist-seventh-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
             a.all-cryptist-seventh-left-bottom-button.each-url-button(href='https://youtu.be/gDaD8-9hP1M' target='_blank')
               .each-url-button-text= __('Video')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
         .all-cryptist-seventh-right-wrapper
           .all-cryptist-seventh-right-top-wrapper
-            img.all-cryptist-seventh-right-top-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp`)
+            img.all-cryptist-seventh-right-top-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
             a.all-cryptist-seventh-right-top-button.each-url-button(href='https://www.linkedin.com/in/anthonydiprinzio/' target='_blank')
               .each-url-button-text= __('Anthony DiPrinzio')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-seventh-right-image.clickable-image(src=`${URL}/img/cryptist/speaker5/speaker5.webp`)
+          img.all-cryptist-seventh-right-image.clickable-image(src=`${URL}/img/cryptist/speaker5/speaker5.webp` loading='lazy')
           .all-cryptist-seventh-right-text.each-text-medium
             | #{__('Aleo\'dan')}
             span #{__(' Anthony DiPrinzio, "Use Cases for Private Applications on Web3: Where is the Real Value?" ')}
@@ -255,13 +269,13 @@ block main
             .each-url-button-text= __('Emre Tekişalp')
             svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-eighth-left-image.clickable-image(src=`${URL}/img/cryptist/speaker6/speaker6.webp`)
+          img.all-cryptist-eighth-left-image.clickable-image(src=`${URL}/img/cryptist/speaker6/speaker6.webp` loading='lazy')
           .all-cryptist-eighth-left-bottom-wrapper
             a.all-cryptist-eighth-left-bottom-button.each-url-button(href='https://youtu.be/OXA41DVsYsc' target='_blank')
               .each-url-button-text= __('Video')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-            img.all-cryptist-eighth-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/o1-labs.webp`)
+            img.all-cryptist-eighth-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
         .all-cryptist-eighth-right-wrapper
           .all-cryptist-eighth-right-text.each-text-large
             | #{__('O(1) Labs CEO\'su')}
@@ -270,14 +284,14 @@ block main
           .all-cryptist-eighth-right-quote-wrapper
             .all-cryptist-eighth-right-quote.each-text-small= __('"Emre\'nin sunumu beni Mina ile tanıştırdı. Cryptİst de Emre ile"')
             .all-cryptist-eighth-right-quote-author.each-text-small= __('Yasin Berk Yeşilyurt - Mina Community Builder')
-          img.all-cryptist-eighth-right-image.clickable-image(src=`${URL}/img/cryptist/people4/people4.webp`)
+          img.all-cryptist-eighth-right-image.clickable-image(src=`${URL}/img/cryptist/people4/people4.webp` loading='lazy')
       .all-cryptist-ninth-wrapper
         .all-cryptist-ninth-left-wrapper
           a.all-cryptist-ninth-left-button.each-url-button(href='https://twitter.com/toghrulmaharram' target='_blank')
             .each-url-button-text= __('Toghrul Maharramov')
             svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-ninth-left-image.clickable-image(src=`${URL}/img/cryptist/speaker7/speaker7.webp`)
+          img.all-cryptist-ninth-left-image.clickable-image(src=`${URL}/img/cryptist/speaker7/speaker7.webp` loading='lazy')
           .all-cryptist-ninth-left-text.each-text-large
             | #{__('Son dönemin en ilgi çekici projelerinden biri olan Scroll\'dan')}
             span #{__(' Toghrul Maharramov\'un yaptığı "Zero-Knowledge Proofs in the World of Rollups" ')}
@@ -287,22 +301,22 @@ block main
               .each-url-button-text= __('Video')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-ninth-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/scroll.webp`)
+          img.all-cryptist-ninth-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
         .all-cryptist-ninth-right-wrapper
           .all-cryptist-ninth-right-text.each-text-large
             | #{__('Toghrul\'un katılımcılardan çok soru alan sunumu sonrası, Ethereum Foundation\'dan')}
             span #{__(' Kaan Uzdoğan, "Ethereum Rollup-Centric Roadmap" ')}
             | #{__('konulu sunumunu gerçekleştirdi.')}
           .all-cryptist-ninth-right-middle-wrapper
-            img.all-cryptist-ninth-right-middle-logo(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp`)
+            img.all-cryptist-ninth-right-middle-logo(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
             a.all-cryptist-ninth-right-middle-button.each-url-button(href='https://www.linkedin.com/in/kuzdogan/?originalSubdomain=de' target='_blank')
               .each-url-button-text= __('Kaan Uzdoğan')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-ninth-right-image.clickable-image(src=`${URL}/img/cryptist/speaker8/speaker8.webp`)
+          img.all-cryptist-ninth-right-image.clickable-image(src=`${URL}/img/cryptist/speaker8/speaker8.webp` loading='lazy')
       .all-cryptist-tenth-wrapper
         .all-cryptist-tenth-left-wrapper
-          img.all-cryptist-tenth-left-image.clickable-image(src=`${URL}/img/cryptist/people5/people5.webp`)
+          img.all-cryptist-tenth-left-image.clickable-image(src=`${URL}/img/cryptist/people5/people5.webp` loading='lazy')
           .all-cryptist-tenth-left-title.each-subtitle= __('Afterparty')
           .all-cryptist-tenth-left-text.each-text-large= __('Son dönemin en havalı ve rağbet gören gece kulüplerinden biri olan ve Galata Kulesi\'nin hemen altında yer alan "iguru Galata" daki afterparty, Manta Netwok\'ün sponsorluğunda düzenlendi. iguru\'nun ünlü kokteyllerinin afiyetle tüketildiği gecede, gün boyu zero-knowledge evreninin derinliklerini öğrenen katılımcılar birbirleriyle ve konuşmacılarla daha çok kaynaşma fırsatı yakaladılar.')
           a.all-cryptist-tenth-left-location-wrapper(href='https://goo.gl/maps/6FwWb8GY7xkfAkNF7' target='_blank')
@@ -311,14 +325,14 @@ block main
               path(d='M6.87501 17.75L1.60282 11.5321C1.57288 11.4964 1.38519 11.2499 1.38519 11.2499C0.484508 10.0636 -0.00210416 8.6145 6.83948e-06 7.125C6.83948e-06 5.30164 0.724335 3.55295 2.01365 2.26364C3.30296 0.974328 5.05164 0.25 6.87501 0.25C8.69837 0.25 10.4471 0.974328 11.7364 2.26364C13.0257 3.55295 13.75 5.30164 13.75 7.125C13.7522 8.61389 13.266 10.0624 12.3658 11.2483L12.3648 11.2499C12.3648 11.2499 12.1773 11.4964 12.1494 11.5295L6.87501 17.75ZM2.38282 10.4969C2.38282 10.4969 2.52869 10.6895 2.56194 10.7309L6.87501 15.8174L11.1938 10.7237C11.2212 10.6892 11.368 10.4951 11.368 10.4951C12.1038 9.5258 12.5014 8.34195 12.5 7.125C12.5 5.63316 11.9074 4.20242 10.8525 3.14752C9.79759 2.09263 8.36685 1.5 6.87501 1.5C5.38316 1.5 3.95242 2.09263 2.89753 3.14752C1.84264 4.20242 1.25001 5.63316 1.25001 7.125C1.24862 8.34261 1.64656 9.52708 2.38282 10.4969Z')
             .all-cryptist-tenth-left-location-text.each-text-small= __('Bereketzade, Galata Kulesi Sk. No: 10, 34420 Beyoğlu/İstanbul')
         .all-cryptist-tenth-right-wrapper
-          img.all-cryptist-tenth-right-image.clickable-image(src=`${URL}/img/cryptist/iguru/iguru.webp`)
-          img.all-cryptist-tenth-right-second-image.clickable-image(src=`${URL}/img/cryptist/people6/people6.webp`)
+          img.all-cryptist-tenth-right-image.clickable-image(src=`${URL}/img/cryptist/iguru/iguru.webp` loading='lazy')
+          img.all-cryptist-tenth-right-second-image.clickable-image(src=`${URL}/img/cryptist/people6/people6.webp` loading='lazy')
       .all-cryptist-eleventh-wrapper
         .all-cryptist-eleventh-left-wrapper
-          img.all-cryptist-eleventh-image-top.clickable-image(src=`${URL}/img/cryptist/galata/galata.webp`)
-          img.all-cryptist-eleventh-image-bottom.clickable-image(src=`${URL}/img/cryptist/robot-hand/robot-hand.webp`)
+          img.all-cryptist-eleventh-image-top.clickable-image(src=`${URL}/img/cryptist/galata/galata.webp` loading='lazy')
+          img.all-cryptist-eleventh-image-bottom.clickable-image(src=`${URL}/img/cryptist/robot-hand/robot-hand.webp` loading='lazy')
         .all-cryptist-eleventh-right-wrapper
-          img.all-cryptist-eleventh-right-image.clickable-image(src=`${URL}/img/cryptist/galata-inside/galata-inside.webp`)
+          img.all-cryptist-eleventh-right-image.clickable-image(src=`${URL}/img/cryptist/galata-inside/galata-inside.webp` loading='lazy')
           .all-cryptist-eleventh-right-title.each-subtitle= __('Salt Galata')
           .all-cryptist-eleventh-right-text.each-text-large= __('Bir gün süren etkinliğe İstanbul\'un en gözde mekanlarından Salt Galata ev sahipliği yaptı. Haliç\'in ve İstanbul Boğazı\'nın eşsiz mazarası, katılımcılara unutulmaz bir deneyim sundu.')
           a.all-cryptist-eleventh-right-location-wrapper(href='https://goo.gl/maps/Djrco8hEHtUhzuFt5' target='_blank')
@@ -346,7 +360,7 @@ block main
             a.each-cryptist-footer-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
               .each-cryptist-footer-button-secondary-text hello@node101.io
             .each-cryptist-footer-button-border-bottom
-  .each-event-page-wrapper.all-sui-move-workshop-wrapper
+  .each-event-page-wrapper.display-none.all-sui-move-workshop-wrapper
     .each-event-page-inner-wrapper.all-sui-move-workshop-inner-wrapper
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
@@ -367,16 +381,16 @@ block main
               .each-sui-first-left-event-stats-number 1
               .each-sui-first-left-event-stats-text.each-text-small= __('Educator')
         .all-sui-first-right-wrapper
-          img.all-sui-first-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/people.webp`)
+          img.all-sui-first-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/people.webp` loading='lazy')
       .all-sui-second-wrapper
         .all-sui-second-left-wrapper
           .all-sui-second-left-text= __('Scroll down')
           svg.all-sui-second-left-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
             path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
         .all-sui-second-middle-wrapper
-          img.all-sui-second-middle-image.clickable-image(src=`${URL}/img/sui-move-workshop/laptop.webp`)
+          img.all-sui-second-middle-image.clickable-image(src=`${URL}/img/sui-move-workshop/laptop.webp` loading='lazy')
         .all-sui-second-right-wrapper
-          img.all-sui-second-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/code-snippet.webp`)
+          img.all-sui-second-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/code-snippet.webp` loading='lazy')
           .all-sui-second-emoji 💧 👨‍💻 🌊 🏃‍♀️ 
       .all-sui-third-wrapper
         .all-sui-third-top-text= __('Daha güvenli, esnek ve doğrulanabilir blockchain ürünlerinin yazılabildiği, yeni nesil bir web3 yazılım dili olan "Move" ile üretilen projelerin sayısı her geçen gün katlanmaktadır.')
@@ -387,18 +401,18 @@ block main
             path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
       .all-sui-fourth-wrapper
         .all-sui-fourth-left-wrapper
-          img.all-sui-fourth-left-image.clickable-image(src=`${URL}/img/sui-move-workshop/building.webp`)
+          img.all-sui-fourth-left-image.clickable-image(src=`${URL}/img/sui-move-workshop/building.webp` loading='lazy')
           .all-sui-fourth-left-text.each-text-large= __('Şehrin favori web3 hublarında düzenlenen workshoplara; üniversite blockchain kulüpleri, öğrenciler, bireysel geliştiriciler ve software geliştiriciler başta olmak üzere blockchain ile ilgilenen bir çok kesim ilgi gösteriyor.')
         .all-sui-fourth-right-wrapper
-          img.all-sui-fourth-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/building2.webp`)
+          img.all-sui-fourth-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/building2.webp` loading='lazy')
       .all-sui-fifth-wrapper
         .all-sui-fifth-left-wrapper
-          img.all-sui-fifth-left-image.clickable-image(src=`${URL}/img/sui-move-workshop/laptop2.webp`)
+          img.all-sui-fifth-left-image.clickable-image(src=`${URL}/img/sui-move-workshop/laptop2.webp` loading='lazy')
           .all-sui-fifth-left-quote-wrapper
             .all-sui-fifth-left-quote-text.each-text-large= __('"Damir\'in özverili çabaları bizleri \'The Move Book\' un Türkçe çevirisini yapmamız konusunda teşvik etmiştir"')
             .all-sui-fifth-left-quote-author.each-text-large= __('Kerem Kaya - YTU Blockchain')
         .all-sui-fifth-right-wrapper
-          img.all-sui-fifth-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/people2.webp`)
+          img.all-sui-fifth-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/people2.webp` loading='lazy')
           .all-sui-fifth-right-text.each-text-large= __('Her ay, bir tam gün şeklinde düzenlenen Sui Move Language Workshop süresince, sınırsız kahve-çay, atıştırmalıklar ikram ediliyor. Lunapark\'ın yaratıcı atmosferi altında düzenlenen workshoplar ile katılımcılar hem öğreniyor hem üretiyor hem de birbirleriyle tanışıyorlar.')
       .all-sui-footer-wrapper
         .all-sui-footer-left-wrapper
@@ -417,8 +431,8 @@ block main
                 path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
             .each-sui-footer-left-button-border-bottom
         .all-sui-footer-right-wrapper
-          img.all-sui-footer-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/code-snippet2.webp`)
-  .each-event-page-wrapper.all-aleo-tour-of-turkiye-wrapper
+          img.all-sui-footer-right-image.clickable-image(src=`${URL}/img/sui-move-workshop/code-snippet2.webp` loading='lazy')
+  .each-event-page-wrapper.display-none.all-aleo-tour-of-turkiye-wrapper
     .each-event-page-inner-wrapper.all-aleo-tour-of-turkiye-inner-wrapper
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
@@ -431,21 +445,21 @@ block main
           .all-aleo-first-intro-text.each-text-large= __('Aleo, Zero-Knowledge Proof teknolojisini kullanan blockchain uygulamaları için geliştirilen bir platfromdur. Daha fazla Zero-Knowledge Proof temelli ürünlerin üretilebilmesi için, en iyi yazılımcı gençlerin dikkatinin bu alana çekilmesi gerekiyor. Bu gerekliliğin farkında olan Aleo takımı "Tour of Türkiye" sürecimizle İstanbul, Ankara ve İzmir\'de üniversiteli gençlerle buluşarak seminerler ve workshoplar verdi.')
           .all-aleo-first-intro-team-wrapper
             .each-aleo-first-intro-team-member-wrapper
-              img.each-aleo-first-intro-team-member-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/errol.webp`)
+              img.each-aleo-first-intro-team-member-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/errol.webp` loading='lazy')
               a.each-aleo-first-intro-team-member-name-button-wrapper
                 .each-aleo-first-intro-team-member-name-button-text.each-text-large= __('Errol Drummond')
                 svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
                   path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
               .each-aleo-first-intro-team-member-title.each-text-small= __('ZK Educator, Aleo')
             .each-aleo-first-intro-team-member-wrapper
-              img.each-aleo-first-intro-team-member-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/anthony.webp`)
+              img.each-aleo-first-intro-team-member-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/anthony.webp` loading='lazy')
               a.each-aleo-first-intro-team-member-name-button-wrapper
                 .each-aleo-first-intro-team-member-name-button-text.each-text-large= __('Anthony DiPrinzio')
                 svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
                   path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
               .each-aleo-first-intro-team-member-title.each-text-small= __('Head of Growth, Aleo')
             .each-aleo-first-intro-team-member-wrapper
-              img.each-aleo-first-intro-team-member-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/mustafa.webp`)
+              img.each-aleo-first-intro-team-member-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/mustafa.webp` loading='lazy')
               a.each-aleo-first-intro-team-member-name-button-wrapper
                 .each-aleo-first-intro-team-member-name-button-text.each-text-large= __('Mustafa Aksöz')
                 svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
@@ -469,32 +483,32 @@ block main
               .each-aleo-first-left-event-stats-number 2
               .each-aleo-first-left-event-stats-text= __('Universities')
           .all-aleo-second-left-text.each-text-large= __('Ulaşım, konaklama, üniversite kulüpleri ile iletişim dahil olmak üzere tüm süreci node101 yürüttü. Türkiye\'nin en önemli yükseköğretim kurumlarından olan Boğaziçi Üniversitesi\'nde ve Orta Doğu Teknik Üniversitesi\'nde okuyan yazılımcı gençlerle Aleo takımından Errol Drummond ve Anthony DiPrinzio bir araya gelme fırsatı buldu.')
-          img.all-aleo-second-left-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp`)
+          img.all-aleo-second-left-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
         .all-aleo-second-right-wrapper
-          img.all-aleo-second-right-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/hand.webp`)
+          img.all-aleo-second-right-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/hand.webp` loading='lazy')
       .all-aleo-third-wrapper
         .all-aleo-third-left-wrapper
-          img.all-aleo-third-left-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/bogazici.webp`)
+          img.all-aleo-third-left-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/bogazici.webp` loading='lazy')
         .all-aleo-third-right-wrapper
           .all-aleo-third-right-title= __('BOĞAZİÇİ UNIVERSITY - İSTANBUL')
           .all-aleo-third-right-text.each-text-small= __('Türkiye\'nin ekonomik ve kültürel başkenti İstanbul\'da, Boğaz\'ın en güzel tepesine kurulu olan Boğaziçi Üniversitesi, ülkenin en eski eğitim kurumlarından biridir. Amerika Birleşik Devletleri\'nin teşviki ile yurtdışında açılan ilk eğitim kurumu olma vasfı taşıyan üniversite, 1863 yılından beri eğitim vermekte. Özellikle mühendislik, yazılım, işletme ve ekonomi alanlarındaki rekabetçiliği ile ön plana çıkan okulda yapılan buluşmaya rağbet yoğundu.')
           .all-aleo-third-right-inner-wrapper
-            img.all-aleo-third-right-inner-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp`)
+            img.all-aleo-third-right-inner-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp` loading='lazy')
             .all-aleo-third-right-inner-text.each-text-small= __('Boğaziçi Üniversitesi\'nde Blockchain araştırma ve geliştirme çabalarının öncülerinden olan BUchain\'in de katıldığı Aleo buluşmasında, Zero-Knowledge Proof\'un getirdiği çözüm önerileri üzerine yoğun bir şekilde sohbet edildi. Öğrencilerin yoğun talebi ve soruları eşliğinde biten etkinlikten herkes memnun olarak ayrıldı.')
       .all-aleo-fourth-wrapper
         .all-aleo-fourth-left-wrapper
           .all-aleo-fourth-left-title= __('ORTA DOĞU TEKNİK ÜNİVERSİTESİ - ANKARA')
           .all-aleo-fourth-left-text.each-text-small= __('Başkent Ankara\'da yer alan Orta Doğu Teknik Üniversitesi (ODTU), ülkenin en önde gelen teknik üniversitesidir. Birleşmiş Milletler tarafından 1956 yılında kurulan üniversite, Orta Doğu ülkelerinin kalkınmasında görev alacak gençleri yetiştirmeyi amaçlamaktadır. Mühendisleri ve yazılımcıları ile ün salmış olan okulda düzenlediğimiz buluşmaya katılım beklenilenden de fazlaydı.')
-          img.all-aleo-fourth-left-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/class2.webp`)
+          img.all-aleo-fourth-left-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/class2.webp` loading='lazy')
         .all-aleo-fourth-right-wrapper
-          img.all-aleo-fourth-right-top-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu.webp`)
-          img.all-aleo-fourth-right-bottom-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu2.webp`)
+          img.all-aleo-fourth-right-top-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu.webp` loading='lazy')
+          img.all-aleo-fourth-right-bottom-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu2.webp` loading='lazy')
           .all-aleo-fourth-right-text.each-text-small= __('Aleo\'nun Zero-Knowledge Proof evreninin genişlemesine yönelik olarak sunduğu çözümlerin değerlendirildiği buluşmada, gençlerin konu hakkındaki ilgisi ve bilgisi Aleo takımını oldukça memnun etti.')
       .all-aleo-fifth-wrapper
         .all-aleo-fifth-title= __('İZMİR')
         .all-aleo-fifth-text.each-text-small= __('İstanbul\'da ve Ankara\'da düzenlenen üniversite buluşmaları sonrası, ülkenin batı\'ya açılan en önemli kapılarından biri olan, "Ege\'nin İncisi" İzmir\'de Aleo Türk topluluğu ile bir araya geldik. Bu buluşmada Aleo\'nun üzerinde çalıştığı son konular ve gelecekte aşılması planlanan miltaşları üzerine konuştuk. Yol boyunca; Sapanca Gölü, Abant Gölü, Efes Antik Şehri, Troya Antik Şehri gibi önemli ören yerleri de Aleo ekibi ile birlikte gezdik.')
-        img.all-aleo-fifth-top-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir.webp`)
-        img.all-aleo-fifth-bottom-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir2.webp`)
+        img.all-aleo-fifth-top-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir.webp` loading='lazy')
+        img.all-aleo-fifth-bottom-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir2.webp` loading='lazy')
       .all-aleo-footer-wrapper
         a.each-aleo-footer-left-button(href='https://www.metu.edu.tr/tr', target='_blank')= __('Orta Doğu Teknik Üniversitesi')
           svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
@@ -508,7 +522,7 @@ block main
           svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
             path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
         .each-aleo-footer-left-button-border-bottom
-  .each-event-page-wrapper.all-nym-community-gathering-wrapper
+  .each-event-page-wrapper.display-none.all-nym-community-gathering-wrapper
     .each-event-page-inner-wrapper.all-nym-community-gathering-inner-wrapper
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
@@ -524,7 +538,7 @@ block main
               path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
         .all-nym-first-right-wrapper
           .all-nym-first-right-emoji 🥂 🥳 🤝
-          img.all-nym-first-right-image.clickable-image(src=`${URL}/img/nym-community-gathering/people.webp`)
+          img.all-nym-first-right-image.clickable-image(src=`${URL}/img/nym-community-gathering/people.webp` loading='lazy')
       .all-nym-second-wrapper
         .each-nym-second-row-wrapper
           svg.each-nym-second-svg(viewbox='0 0 699 113' xmlns='http://www.w3.org/2000/svg')
@@ -556,9 +570,9 @@ block main
               lineargradient#paint0(x1='-432.459' y1='-98.3761' x2='469.107' y2='32.8417' gradientunits='userSpaceOnUse')
                 stop(stop-color='#F4711C')
                 stop(offset='1' stop-color='#F12E4F')
-          img.each-nym-second-image.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp`)
+          img.each-nym-second-image.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp` loading='lazy')
         .each-nym-second-row-wrapper
-          img.each-nym-second-image.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp`)
+          img.each-nym-second-image.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp` loading='lazy')
           svg.each-nym-second-svg(viewbox='0 0 626 90' xmlns='http://www.w3.org/2000/svg')
             mask#path-1-outside-1_287_1935(maskunits='userSpaceOnUse' x='-0.0390625' y='0.797852')
               rect(fill='white' x='-0.0390625' y='0.797852' width='626' height='89')
@@ -599,7 +613,7 @@ block main
           .all-nym-third-event-stats-text= __('Participants')
           .all-nym-third-text.each-text-small= __('Nişantaşı\'nda bir kafede gerçekleşen etkinliğe NYM\'nin Türk takipçilerinin özel ilgisi, ekibi oldukça memnun etti. Mix nodelar ve Privacy Credentials sistemlerinin nasıl çalıştığı hakkında şirketin COO\'su Alexis Roussel tarafından bir sunumlar bilgilendirilen Türk komünitesi sorduğu sorularlar projenin ilerleyen aşamalarında planlanan adımları öğrendi.')
         .all-nym-third-right-wrapper
-          img.all-nym-third-right-image.clickable-image(src=`${URL}/img/nym-community-gathering/nym-logo.webp`)
+          img.all-nym-third-right-image.clickable-image(src=`${URL}/img/nym-community-gathering/nym-logo.webp` loading='lazy')
       .all-nym-footer-wrapper
         .all-nym-footer-left-wrapper
           .all-nym-footer-left-title= __('node101, Alexis Roussel ve Crypto Marina nun katıldığı etkinlik öncesi ve sonrası tüm süreci koordine etti.')
@@ -608,11 +622,11 @@ block main
             svg.all-nym-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
               path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
           .all-nym-footer-left-button-border-bottom
-          img.all-nym-footer-left-image.clickable-image(src=`${URL}/img/nym-community-gathering/people5.webp`)
+          img.all-nym-footer-left-image.clickable-image(src=`${URL}/img/nym-community-gathering/people5.webp` loading='lazy')
         .all-nym-footer-right-wrapper
-          img.all-nym-footer-right-top-image.clickable-image(src=`${URL}/img/nym-community-gathering/people6.webp`)
-          img.all-nym-footer-right-bottom-image.clickable-image(src=`${URL}/img/nym-community-gathering/people7.webp`)
-  .each-event-page-wrapper.all-moda-palas-wrapper
+          img.all-nym-footer-right-top-image.clickable-image(src=`${URL}/img/nym-community-gathering/people6.webp` loading='lazy')
+          img.all-nym-footer-right-bottom-image.clickable-image(src=`${URL}/img/nym-community-gathering/people7.webp` loading='lazy')
+  .each-event-page-wrapper.display-none.all-moda-palas-wrapper
     .each-event-page-inner-wrapper.all-moda-palas-inner-wrapper
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
@@ -624,25 +638,25 @@ block main
       .all-moda-second-wrapper
         .all-moda-second-left-wrapper
           .all-moda-second-left-left-wrapper
-            img.all-moda-second-left-left-image.clickable-image(src=`${URL}/img/moda-palas/board.webp`)
+            img.all-moda-second-left-left-image.clickable-image(src=`${URL}/img/moda-palas/board.webp` loading='lazy')
             .all-moda-second-left-left-bottom-wrapper
               .all-moda-second-left-left-bottom-text= __('Scroll down')
               svg.all-moda-second-left-left-bottom-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
                 path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
           .all-modas-econd-left-right-wrapper
-            img.all-moda-second-left-right-image.clickable-image(src=`${URL}/img/moda-palas/sunset.webp`)
+            img.all-moda-second-left-right-image.clickable-image(src=`${URL}/img/moda-palas/sunset.webp` loading='lazy')
             .all-modas-econd-left-right-emoji 🌇 🚋 🤝 👥
         .all-moda-second-right-wrapper
           .all-moda-second-right-left-wrapper
-            img.all-moda-second-right-left-image.clickable-image(src=`${URL}/img/moda-palas/people.webp`)
+            img.all-moda-second-right-left-image.clickable-image(src=`${URL}/img/moda-palas/people.webp` loading='lazy')
           .all-moda-second-right-right-wrapper
-            img.all-moda-second-right-right-image.clickable-image(src=`${URL}/img/moda-palas/people2.webp`)
+            img.all-moda-second-right-right-image.clickable-image(src=`${URL}/img/moda-palas/people2.webp` loading='lazy')
       .all-moda-third-wrapper
         .all-moda-third-left-wrapper
-          img.each-moda-third-left-image.clickable-image(src=`${URL}/img/moda-palas/tram.webp`)
-          img.each-moda-third-left-image.clickable-image(src=`${URL}/img/moda-palas/people4.webp`)
+          img.each-moda-third-left-image.clickable-image(src=`${URL}/img/moda-palas/tram.webp` loading='lazy')
+          img.each-moda-third-left-image.clickable-image(src=`${URL}/img/moda-palas/people4.webp` loading='lazy')
         .all-moda-third-right-wrapper
-          img.all-moda-third-right-image.clickable-image(src=`${URL}/img/moda-palas/people3.webp`)
+          img.all-moda-third-right-image.clickable-image(src=`${URL}/img/moda-palas/people3.webp` loading='lazy')
           .all-moda-third-right-text-wrapper
             .each-moda-third-right-text.each-small-text= __('node101\'ın kurucularından Mustafa Aksöz ve cryptograf Errol Drummond\'un organize ettiği "Moda Palas" davet yolu ile katılınabilen özel bir etkinliktir. Errol\'un, İstanbul\'un bohem merkezi Moda\'da boğaza nazır evinde düzenlenen etkinliğe talep çok yüksektir. Katılımcılar, gece boyunca blockchain\'deki en son teknolojilerin teknik detaylarına girerek fikir alışverişinde bulunur..')
             .each-moda-third-right-text.each-small-text= __('Moda Palas, "The Move Book"un yazarı The Move Guy olarak bilinen Damir Shamanaev, Polygon\'un Lead Developer\'ı Fedor Sakharov gibi uluslararası developerların yanı sıra ITU Blockchain, YTU Blockchain ve BuChain gibi önde gelen öğrenci kulüplerinden genç developerların da uğrak yeridir.')
@@ -661,7 +675,7 @@ block main
       .all-moda-fourth-wrapper.each-moda-third-right-text.each-small-text= __('Moda Palas, "The Move Book"un yazarı The Move Guy olarak bilinen Damir Shamanaev, Polygon\'un Lead Developer\'ı Fedor Sakharov gibi uluslararası developerların yanı sıra ITU Blockchain, YTU Blockchain ve BuChain gibi önde gelen öğrenci kulüplerinden genç developerların da uğrak yeridir.')
       .all-moda-footer-wrapper
         .all-moda-footer-left-wrapper
-          img.all-moda-footer-left-image.clickable-image(src=`${URL}/img/moda-palas/people5.webp`)
+          img.all-moda-footer-left-image.clickable-image(src=`${URL}/img/moda-palas/people5.webp` loading='lazy')
         .all-moda-footer-right-wrapper
           .all-moda-footer-right-text.each-small-text= __('Şu ana kadar birçok blockchain ekibinin oluşturulduğu Moda Palas\'tan çıkan bazı oluşumlar şu şekildedir: node101, Chainway, Eduisas. Türk Blockchain Geliştiricilerini bir araya getirmeye devam ediyoruz.')
           .all-moda-footer-right-button-wrapper

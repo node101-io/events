@@ -12,8 +12,6 @@ html(lang='tr')
     if includes
       if includes.meta
         meta(property='og:type' content='website')
-        if includes.meta.author
-          meta(name='author' content=includes.meta.author)
         if includes.meta.description
           meta(name='description' content=includes.meta.description)
         if includes.meta.image
@@ -26,9 +24,6 @@ html(lang='tr')
         if includes.meta.title
           meta(property='og:title' content=includes.meta.title)
         if includes.meta.twitter
-          mata(name='twitter:card' content='summary_large_image')
-          meta(name='twitter:site' content='@aktuel_katalogu')
-          meta(name='twitter:creator' content='@aktuel_katalogu')
           meta(name='twitter:title' content=includes.meta.title)
           meta(name='twitter:description' content=includes.meta.description)
           meta(name='twitter:image' content=includes.meta.image)

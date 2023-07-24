@@ -10,7 +10,7 @@ module.exports = (req, res) => {
       meta: {
         title: res.__('Blockchain Event Organizer Based in Turkey'),
         description: res.__('An event organizer based in Turkey that focuses on blockchain technology and cryptocurrencies.'),
-        image: '/img/meta/header.png',
+        image: '/img/meta/index.webp',
         twitter: true
       }
     },
