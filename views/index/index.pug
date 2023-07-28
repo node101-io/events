@@ -4,7 +4,7 @@ block main
     .events-slider-outer-wrapper
       .events-slider-wrapper
         a.each-event-slider-wrapper.each-event-slider-active(href='/cryptist')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` loading='lazy')
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1200w.webp` srcset=`${URL}/img/cryptist/main/main_1200w.webp 1200w, ${URL}/img/cryptist/main/main_800w.webp 800w, ${URL}/img/cryptist/main/main_600w.webp 600w, ${URL}/img/cryptist/main/main_400w.webp 400w` loading='lazy')
           h1.each-event-slider-text= __('CRYPTIST')
         a.each-event-slider-wrapper(href='/sui-move-workshop')
           img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main.webp` loading='lazy')
@@ -91,6 +91,10 @@ block main
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
         path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
+      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M1 1L12 11.5668V19.9474L1 31")
+      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
       .all-cryptist-first-wrapper
         .all-cryptist-first-left-wrapper
           .all-cryptist-first-left-title= __('CRYPTIST')
@@ -167,28 +171,29 @@ block main
           .all-cryptist-fourth-top-left-wrapper
             .all-cryptist-fourth-top-left-title.each-subtitle= __('TURKİYE\'NİN İLK VE EN BÜYÜK ZERO-KNOWLEDGE PROOF TOPLULUK ZİRVESİ')
             .all-cryptist-fourth-top-left-text.each-text-medium= __('Etkinlik, katılımcıların eşsiz İstanbul manzarası eşliğinde kahvelerini yudumlayıp, simitlerini ve poğaçalarını atıştırmaları ile başladı. Katılımcılar birbirleri ile ve de konuşmacılar ile sohbet ederek kaynaşmaya başladılar.')
-          svg.all-cryptist-fourth-top-right-logo(viewbox='0 0 76 94' xmlns='http://www.w3.org/2000/svg')
-            path(d='M34.7531 2.86992C34.7531 1.28491 36.0312 0 37.6078 0C39.1844 0 40.4625 1.28491 40.4625 2.86992V33.7871C40.4625 35.3721 39.1844 36.657 37.6078 36.657C36.0312 36.657 34.7531 35.3721 34.7531 33.7871V2.86992Z')
-            path(d='M42.0947 15.1628C42.0947 13.6062 43.3498 12.3444 44.8982 12.3444C46.4465 12.3444 47.7017 13.6062 47.7017 15.1628V45.0298C47.7017 46.5863 46.4465 47.8482 44.8982 47.8482C43.3498 47.8482 42.0947 46.5864 42.0947 45.0298V15.1628Z')
-            path(d='M49.385 36.1433C49.385 34.5867 50.6402 33.3248 52.1885 33.3248C53.7369 33.3248 54.992 34.5867 54.992 36.1433V67.1825C54.992 68.7391 53.7369 70.001 52.1885 70.001C50.6402 70.001 49.385 68.7391 49.385 67.1825V36.1433Z')
-            path(d='M20.0253 36.1433C20.0253 34.5867 21.2805 33.3248 22.8288 33.3248C24.3771 33.3248 25.6323 34.5867 25.6323 36.1433V67.1825C25.6323 68.7391 24.3771 70.001 22.8288 70.001C21.2805 70.001 20.0253 68.7391 20.0253 67.1825V36.1433Z')
-            path(d='M12.6399 48.8984C12.6399 47.3418 13.895 46.0799 15.4434 46.0799C16.9917 46.0799 18.2469 47.3418 18.2469 48.8984V73.7512C18.2469 75.3078 16.9917 76.5697 15.4434 76.5697C13.895 76.5697 12.6399 75.3078 12.6399 73.7512V48.8984Z')
-            path(d='M56.7585 48.8984C56.7585 47.3418 58.0137 46.0799 59.5621 46.0799C61.1104 46.0799 62.3656 47.3418 62.3656 48.8984V73.7512C62.3656 75.3078 61.1104 76.5696 59.5621 76.5696C58.0137 76.5696 56.7585 75.3078 56.7585 73.7512V48.8984Z')
-            path(d='M34.8043 49.2745C34.8043 47.7179 36.0595 46.456 37.6078 46.456C39.1562 46.456 40.4114 47.7179 40.4114 49.2745V73.6917C40.4114 75.2483 39.1562 76.5102 37.6078 76.5102C36.0595 76.5102 34.8043 75.2483 34.8043 73.6917V49.2745Z')
-            path(d='M27.3839 52.5393C27.3839 50.9827 28.6391 49.7208 30.1874 49.7208C31.7357 49.7208 32.9909 50.9827 32.9909 52.5393V60.9521C32.9909 62.5087 31.7357 63.7706 30.1874 63.7706C28.6391 63.7706 27.3839 62.5087 27.3839 60.9521V52.5393Z')
-            path(d='M42.0947 52.5393C42.0947 50.9827 43.3498 49.7208 44.8982 49.7208C46.4465 49.7208 47.7017 50.9827 47.7017 52.5393V60.9521C47.7017 62.5087 46.4465 63.7706 44.8982 63.7706C43.3498 63.7706 42.0947 62.5087 42.0947 60.9521V52.5393Z')
-            path(d='M64.132 66.5891C64.132 65.0325 65.3872 63.7706 66.9355 63.7706C68.4839 63.7706 69.739 65.0325 69.739 66.5891V67.1825C69.739 68.7391 68.4839 70.001 66.9355 70.001C65.3872 70.001 64.132 68.7391 64.132 67.1825V66.5891Z')
-            path(d='M5.2664 66.5891C5.2664 65.0325 6.52158 63.7706 8.06991 63.7706C9.61825 63.7706 10.8734 65.0325 10.8734 66.5891V67.1825C10.8734 68.7391 9.61825 70.001 8.06991 70.001C6.52158 70.001 5.2664 68.7391 5.2664 67.1825V66.5891Z')
-            path(d='M34.8043 41.2439C34.8043 39.6873 36.0595 38.4255 37.6078 38.4255C39.1562 38.4255 40.4114 39.6873 40.4114 41.2439V41.8373C40.4114 43.3939 39.1562 44.6558 37.6078 44.6558C36.0595 44.6558 34.8043 43.3939 34.8043 41.8373V41.2439Z')
-            path(d='M27.3839 15.1628C27.3839 13.6062 28.6391 12.3444 30.1874 12.3444C31.7357 12.3444 32.9909 13.6062 32.9909 15.1628V45.0298C32.9909 46.5863 31.7357 47.8482 30.1874 47.8482C28.6391 47.8482 27.3839 46.5864 27.3839 45.0298V15.1628Z')
-            path(d='M4.23279 94C6.55716 94 8.15975 92.7701 8.15975 90.79V90.6301H6.70396V90.79C6.70396 92.0568 5.90878 92.7209 4.24503 92.7209C2.32437 92.7209 1.39462 91.8108 1.39462 89.7569C1.39462 87.703 2.32437 86.7806 4.24503 86.7806C5.90878 86.7806 6.70396 87.4571 6.70396 88.7115V88.8837H8.15975V88.7115C8.15975 86.7437 6.54493 85.5138 4.23279 85.5138C1.68822 85.5138 0 87.1865 0 89.7569C0 92.3274 1.68822 94 4.23279 94Z')
-            path(d='M12.8398 93.877V90.6793H14.3446C15.3722 90.6793 15.7514 90.9499 16.1184 91.6017L17.4274 93.877H18.9444L17.5742 91.491C17.2806 90.9745 16.987 90.6055 16.3508 90.4334V90.3473C17.8923 90.2612 18.7853 89.4249 18.7853 88.0597C18.7853 86.5223 17.6354 85.6368 15.7759 85.6368H11.5186V93.877H12.8398ZM12.8398 86.8298H15.7636C16.8647 86.8298 17.4152 87.2357 17.4152 88.2442C17.4152 89.2773 16.8647 89.6585 15.7636 89.6585H12.8398V86.8298Z')
-            path(d='M26.3319 93.877V91.0606L29.9774 85.6368H28.3504L26.4297 88.5639L25.7569 89.6093H25.659L24.9739 88.5639L23.041 85.6368H21.4262L25.0229 91.036V93.877H26.3319Z')
-            path(d='M34.193 93.877V91.3927H36.8844C38.7072 91.3927 39.955 90.335 39.955 88.5147C39.955 86.6822 38.7072 85.6368 36.8844 85.6368H32.8718V93.877H34.193ZM36.7621 86.8298C37.9977 86.8298 38.6338 87.2972 38.6338 88.5147C38.6338 89.7323 37.9977 90.1997 36.7621 90.1997H34.193V86.8298H36.7621Z')
-            path(d='M47.204 93.877V86.8298H50.4215V85.6368H42.6654V86.8298H45.8951V93.877H47.204Z')
-            path(d='M54.9011 84.8989V83.3739H53.5799V84.8989H54.9011ZM54.9011 93.877V85.6368H53.5799V93.877H54.9011Z')
-            path(d='M61.9477 94C64.3699 94 65.3853 92.8439 65.3853 91.5894C65.3853 90.3842 64.5779 89.6339 62.9386 89.3388L60.9446 88.9944C59.9781 88.7853 59.5622 88.5516 59.5622 87.8383C59.5622 87.1004 60.1494 86.7314 61.6419 86.7314C63.3423 86.7314 63.9418 87.2357 63.9418 88.2442V88.4041H65.2508V88.3303C65.2508 86.7191 64.162 85.5138 61.7642 85.5138C59.2196 85.5138 58.241 86.7191 58.241 87.9121C58.241 89.265 59.2196 89.9045 60.602 90.1505L62.6083 90.4825C63.6482 90.6793 64.0641 90.9499 64.0641 91.6632C64.0641 92.4381 63.5136 92.7824 61.9477 92.7824C60.1494 92.7824 59.5744 92.2905 59.5744 91.3066V91.1098H58.2532V91.1836C58.2532 92.9177 59.501 94 61.9477 94Z')
-            path(d='M72.7826 93.877V86.8298H76V85.6368H68.2439V86.8298H71.4736V93.877H72.7826Z')
+          a.all-cryptist-fourth-top-right-logo(href='https://www.cryptist.org/' target='_blank')
+            svg(viewbox='0 0 76 94' xmlns='http://www.w3.org/2000/svg')
+              path(d='M34.7531 2.86992C34.7531 1.28491 36.0312 0 37.6078 0C39.1844 0 40.4625 1.28491 40.4625 2.86992V33.7871C40.4625 35.3721 39.1844 36.657 37.6078 36.657C36.0312 36.657 34.7531 35.3721 34.7531 33.7871V2.86992Z')
+              path(d='M42.0947 15.1628C42.0947 13.6062 43.3498 12.3444 44.8982 12.3444C46.4465 12.3444 47.7017 13.6062 47.7017 15.1628V45.0298C47.7017 46.5863 46.4465 47.8482 44.8982 47.8482C43.3498 47.8482 42.0947 46.5864 42.0947 45.0298V15.1628Z')
+              path(d='M49.385 36.1433C49.385 34.5867 50.6402 33.3248 52.1885 33.3248C53.7369 33.3248 54.992 34.5867 54.992 36.1433V67.1825C54.992 68.7391 53.7369 70.001 52.1885 70.001C50.6402 70.001 49.385 68.7391 49.385 67.1825V36.1433Z')
+              path(d='M20.0253 36.1433C20.0253 34.5867 21.2805 33.3248 22.8288 33.3248C24.3771 33.3248 25.6323 34.5867 25.6323 36.1433V67.1825C25.6323 68.7391 24.3771 70.001 22.8288 70.001C21.2805 70.001 20.0253 68.7391 20.0253 67.1825V36.1433Z')
+              path(d='M12.6399 48.8984C12.6399 47.3418 13.895 46.0799 15.4434 46.0799C16.9917 46.0799 18.2469 47.3418 18.2469 48.8984V73.7512C18.2469 75.3078 16.9917 76.5697 15.4434 76.5697C13.895 76.5697 12.6399 75.3078 12.6399 73.7512V48.8984Z')
+              path(d='M56.7585 48.8984C56.7585 47.3418 58.0137 46.0799 59.5621 46.0799C61.1104 46.0799 62.3656 47.3418 62.3656 48.8984V73.7512C62.3656 75.3078 61.1104 76.5696 59.5621 76.5696C58.0137 76.5696 56.7585 75.3078 56.7585 73.7512V48.8984Z')
+              path(d='M34.8043 49.2745C34.8043 47.7179 36.0595 46.456 37.6078 46.456C39.1562 46.456 40.4114 47.7179 40.4114 49.2745V73.6917C40.4114 75.2483 39.1562 76.5102 37.6078 76.5102C36.0595 76.5102 34.8043 75.2483 34.8043 73.6917V49.2745Z')
+              path(d='M27.3839 52.5393C27.3839 50.9827 28.6391 49.7208 30.1874 49.7208C31.7357 49.7208 32.9909 50.9827 32.9909 52.5393V60.9521C32.9909 62.5087 31.7357 63.7706 30.1874 63.7706C28.6391 63.7706 27.3839 62.5087 27.3839 60.9521V52.5393Z')
+              path(d='M42.0947 52.5393C42.0947 50.9827 43.3498 49.7208 44.8982 49.7208C46.4465 49.7208 47.7017 50.9827 47.7017 52.5393V60.9521C47.7017 62.5087 46.4465 63.7706 44.8982 63.7706C43.3498 63.7706 42.0947 62.5087 42.0947 60.9521V52.5393Z')
+              path(d='M64.132 66.5891C64.132 65.0325 65.3872 63.7706 66.9355 63.7706C68.4839 63.7706 69.739 65.0325 69.739 66.5891V67.1825C69.739 68.7391 68.4839 70.001 66.9355 70.001C65.3872 70.001 64.132 68.7391 64.132 67.1825V66.5891Z')
+              path(d='M5.2664 66.5891C5.2664 65.0325 6.52158 63.7706 8.06991 63.7706C9.61825 63.7706 10.8734 65.0325 10.8734 66.5891V67.1825C10.8734 68.7391 9.61825 70.001 8.06991 70.001C6.52158 70.001 5.2664 68.7391 5.2664 67.1825V66.5891Z')
+              path(d='M34.8043 41.2439C34.8043 39.6873 36.0595 38.4255 37.6078 38.4255C39.1562 38.4255 40.4114 39.6873 40.4114 41.2439V41.8373C40.4114 43.3939 39.1562 44.6558 37.6078 44.6558C36.0595 44.6558 34.8043 43.3939 34.8043 41.8373V41.2439Z')
+              path(d='M27.3839 15.1628C27.3839 13.6062 28.6391 12.3444 30.1874 12.3444C31.7357 12.3444 32.9909 13.6062 32.9909 15.1628V45.0298C32.9909 46.5863 31.7357 47.8482 30.1874 47.8482C28.6391 47.8482 27.3839 46.5864 27.3839 45.0298V15.1628Z')
+              path(d='M4.23279 94C6.55716 94 8.15975 92.7701 8.15975 90.79V90.6301H6.70396V90.79C6.70396 92.0568 5.90878 92.7209 4.24503 92.7209C2.32437 92.7209 1.39462 91.8108 1.39462 89.7569C1.39462 87.703 2.32437 86.7806 4.24503 86.7806C5.90878 86.7806 6.70396 87.4571 6.70396 88.7115V88.8837H8.15975V88.7115C8.15975 86.7437 6.54493 85.5138 4.23279 85.5138C1.68822 85.5138 0 87.1865 0 89.7569C0 92.3274 1.68822 94 4.23279 94Z')
+              path(d='M12.8398 93.877V90.6793H14.3446C15.3722 90.6793 15.7514 90.9499 16.1184 91.6017L17.4274 93.877H18.9444L17.5742 91.491C17.2806 90.9745 16.987 90.6055 16.3508 90.4334V90.3473C17.8923 90.2612 18.7853 89.4249 18.7853 88.0597C18.7853 86.5223 17.6354 85.6368 15.7759 85.6368H11.5186V93.877H12.8398ZM12.8398 86.8298H15.7636C16.8647 86.8298 17.4152 87.2357 17.4152 88.2442C17.4152 89.2773 16.8647 89.6585 15.7636 89.6585H12.8398V86.8298Z')
+              path(d='M26.3319 93.877V91.0606L29.9774 85.6368H28.3504L26.4297 88.5639L25.7569 89.6093H25.659L24.9739 88.5639L23.041 85.6368H21.4262L25.0229 91.036V93.877H26.3319Z')
+              path(d='M34.193 93.877V91.3927H36.8844C38.7072 91.3927 39.955 90.335 39.955 88.5147C39.955 86.6822 38.7072 85.6368 36.8844 85.6368H32.8718V93.877H34.193ZM36.7621 86.8298C37.9977 86.8298 38.6338 87.2972 38.6338 88.5147C38.6338 89.7323 37.9977 90.1997 36.7621 90.1997H34.193V86.8298H36.7621Z')
+              path(d='M47.204 93.877V86.8298H50.4215V85.6368H42.6654V86.8298H45.8951V93.877H47.204Z')
+              path(d='M54.9011 84.8989V83.3739H53.5799V84.8989H54.9011ZM54.9011 93.877V85.6368H53.5799V93.877H54.9011Z')
+              path(d='M61.9477 94C64.3699 94 65.3853 92.8439 65.3853 91.5894C65.3853 90.3842 64.5779 89.6339 62.9386 89.3388L60.9446 88.9944C59.9781 88.7853 59.5622 88.5516 59.5622 87.8383C59.5622 87.1004 60.1494 86.7314 61.6419 86.7314C63.3423 86.7314 63.9418 87.2357 63.9418 88.2442V88.4041H65.2508V88.3303C65.2508 86.7191 64.162 85.5138 61.7642 85.5138C59.2196 85.5138 58.241 86.7191 58.241 87.9121C58.241 89.265 59.2196 89.9045 60.602 90.1505L62.6083 90.4825C63.6482 90.6793 64.0641 90.9499 64.0641 91.6632C64.0641 92.4381 63.5136 92.7824 61.9477 92.7824C60.1494 92.7824 59.5744 92.2905 59.5744 91.3066V91.1098H58.2532V91.1836C58.2532 92.9177 59.501 94 61.9477 94Z')
+              path(d='M72.7826 93.877V86.8298H76V85.6368H68.2439V86.8298H71.4736V93.877H72.7826Z')
           img.all-cryptist-fourth-top-right-image.clickable-image(src=`${URL}/img/cryptist/building/building.webp` loading='lazy')
         .all-cryptist-fourth-bottom-wrapper
           img.all-cryptist-fourth-bottom-left-image.clickable-image(src=`${URL}/img/cryptist/people/people.webp` loading='lazy')
@@ -214,7 +219,8 @@ block main
               .all-cryptist-fifth-left-middle-author.each-text-small= __('Aytunç Sancar - Junior Developer at node101')
         .all-cryptist-fifth-right-wrapper
           img.all-cryptist-fifth-right-top-image.clickable-image(src=`${URL}/img/cryptist/speaker/speaker.webp` loading='lazy')
-          img.all-cryptist-fifth-right-logo(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
+          a.all-cryptist-fifth-right-logo(href='https://manta.network/' target='_blank')
+            img(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
       .all-cryptist-sixth-wrapper
         .all-cryptist-sixth-left-wrapper
           .all-cryptist-sixth-left-text.each-text-large
@@ -242,14 +248,16 @@ block main
               path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
           img.all-cryptist-seventh-left-image.clickable-image(src=`${URL}/img/cryptist/speaker4/speaker4.webp` loading='lazy')
           .all-cryptist-seventh-left-bottom-wrapper
-            img.all-cryptist-seventh-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
+            a.all-cryptist-seventh-left-bottom-logo(href='https://manta.network/' target='_blank')
+              img(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
             a.all-cryptist-seventh-left-bottom-button.each-url-button(href='https://youtu.be/gDaD8-9hP1M' target='_blank')
               .each-url-button-text= __('Video')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
         .all-cryptist-seventh-right-wrapper
           .all-cryptist-seventh-right-top-wrapper
-            img.all-cryptist-seventh-right-top-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
+            a.all-cryptist-seventh-right-top-logo(href='https://www.aleo.org/' target='_blank')
+              img(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
             a.all-cryptist-seventh-right-top-button.each-url-button(href='https://www.linkedin.com/in/anthonydiprinzio/' target='_blank')
               .each-url-button-text= __('Anthony DiPrinzio')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
@@ -275,7 +283,8 @@ block main
               .each-url-button-text= __('Video')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-            img.all-cryptist-eighth-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
+            a.all-cryptist-eighth-left-bottom-logo(href='https://o1labs.org/' target='_blank')
+              img(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
         .all-cryptist-eighth-right-wrapper
           .all-cryptist-eighth-right-text.each-text-large
             | #{__('O(1) Labs CEO\'su')}
@@ -301,14 +310,16 @@ block main
               .each-url-button-text= __('Video')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
                 path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          img.all-cryptist-ninth-left-bottom-logo(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
+          a.all-cryptist-ninth-left-bottom-logo(href='https://scroll.io/' target='_blank')
+            img(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
         .all-cryptist-ninth-right-wrapper
           .all-cryptist-ninth-right-text.each-text-large
             | #{__('Toghrul\'un katılımcılardan çok soru alan sunumu sonrası, Ethereum Foundation\'dan')}
             span #{__(' Kaan Uzdoğan, "Ethereum Rollup-Centric Roadmap" ')}
             | #{__('konulu sunumunu gerçekleştirdi.')}
           .all-cryptist-ninth-right-middle-wrapper
-            img.all-cryptist-ninth-right-middle-logo(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
+            a.all-cryptist-ninth-right-middle-logo(href='https://ethereum.foundation/' target='_blank')
+              img(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
             a.all-cryptist-ninth-right-middle-button.each-url-button(href='https://www.linkedin.com/in/kuzdogan/?originalSubdomain=de' target='_blank')
               .each-url-button-text= __('Kaan Uzdoğan')
               svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
@@ -365,6 +376,10 @@ block main
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
         path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
+      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M1 1L12 11.5668V19.9474L1 31")
+      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
       .all-sui-first-wrapper
         .all-sui-first-left-wrapper
           .all-sui-first-left-title= __('SUI MOVE WORKSHOP')
@@ -437,6 +452,10 @@ block main
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
         path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
+      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M1 1L12 11.5668V19.9474L1 31")
+      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
       .all-aleo-first-wrapper
         .all-aleo-first-emoji 🏫 🛫 🇹🇷 🤓
         .all-aleo-first-intro-wrapper
@@ -483,7 +502,8 @@ block main
               .each-aleo-first-left-event-stats-number 2
               .each-aleo-first-left-event-stats-text= __('Universities')
           .all-aleo-second-left-text.each-text-large= __('Ulaşım, konaklama, üniversite kulüpleri ile iletişim dahil olmak üzere tüm süreci node101 yürüttü. Türkiye\'nin en önemli yükseköğretim kurumlarından olan Boğaziçi Üniversitesi\'nde ve Orta Doğu Teknik Üniversitesi\'nde okuyan yazılımcı gençlerle Aleo takımından Errol Drummond ve Anthony DiPrinzio bir araya gelme fırsatı buldu.')
-          img.all-aleo-second-left-logo(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
+          a.all-aleo-second-left-logo(href='https://www.aleo.org', target='_blank')
+            img(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
         .all-aleo-second-right-wrapper
           img.all-aleo-second-right-image.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/hand.webp` loading='lazy')
       .all-aleo-third-wrapper
@@ -527,6 +547,10 @@ block main
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
         path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
+      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M1 1L12 11.5668V19.9474L1 31")
+      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
       .all-nym-first-wrapper
         .all-nym-first-left-wrapper
           .all-nym-first-left-title= __('NYM COMMUNITY GATHERING')
@@ -613,7 +637,8 @@ block main
           .all-nym-third-event-stats-text= __('Participants')
           .all-nym-third-text.each-text-small= __('Nişantaşı\'nda bir kafede gerçekleşen etkinliğe NYM\'nin Türk takipçilerinin özel ilgisi, ekibi oldukça memnun etti. Mix nodelar ve Privacy Credentials sistemlerinin nasıl çalıştığı hakkında şirketin COO\'su Alexis Roussel tarafından bir sunumlar bilgilendirilen Türk komünitesi sorduğu sorularlar projenin ilerleyen aşamalarında planlanan adımları öğrendi.')
         .all-nym-third-right-wrapper
-          img.all-nym-third-right-image.clickable-image(src=`${URL}/img/nym-community-gathering/nym-logo.webp` loading='lazy')
+          a.all-nym-third-right-image(href='https://nymtech.net/', target='_blank')
+            img(src=`${URL}/img/nym-community-gathering/nym-logo.webp` loading='lazy')
       .all-nym-footer-wrapper
         .all-nym-footer-left-wrapper
           .all-nym-footer-left-title= __('node101, Alexis Roussel ve Crypto Marina nun katıldığı etkinlik öncesi ve sonrası tüm süreci koordine etti.')
@@ -631,6 +656,10 @@ block main
       svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
         path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
         path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
+      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M1 1L12 11.5668V19.9474L1 31")
+      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
+        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
       .all-moda-first-wrapper
         .all-moda-first-title= __('MODA PALAS')
         .all-moda-first-event-type.each-text-small= __('Gathering')

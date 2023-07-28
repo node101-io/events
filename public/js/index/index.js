@@ -124,6 +124,13 @@ window.addEventListener('load', () => {
       clickableImageLayer.classList.remove('display-none');
       htmlElement.classList.add('disable-scroll');
     };
+
+    if (event.target.closest('.each-event-page-switch-button')) {
+      const isRightButton = event.target.closest('.each-event-page-switch-right-button');
+      const newRoute = ROUTES[(ROUTES.indexOf(window.location.pathname.split('/')[1]) + (isRightButton ? 1 : -1) + 5) % ROUTES.length];
+      history.pushState(null, null, newRoute);
+      renderContent(newRoute);
+    };
   });
 
   window.addEventListener('popstate', () => {

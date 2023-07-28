@@ -38,6 +38,7 @@
   --events-slider-wrapper-width: 200vh;
   --events-slider-wrapper-padding-top: calc(var(--box-padding) * 1.5);
   --events-slider-wrapper-padding-sides: calc(var(--box-padding) * 2.2);
+  --each-event-page-switch-button-distance: calc(var(--box-padding) * 2);
 }
 
 .become-visible {
@@ -545,8 +546,11 @@
 }
 
 .each-event-page-wrapper {
+  display: flex;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   height: 100vh;
   -ms-scroll-chaining: none;
   overscroll-behavior: contain;
@@ -561,11 +565,12 @@
 
 .each-event-page-inner-wrapper {
   position: relative;
-  margin: calc(var(--box-padding) * 2);
+  margin: calc(var(--box-padding) * 1.5);
   flex-direction: column;
   align-items: center;
-  width: calc(100vw - calc(var(--box-padding) * 4));
-  min-width: calc(100vw - calc(var(--box-padding) * 4));
+  width: calc(100% - calc(var(--box-padding) * 3));
+  min-width: calc(100% - calc(var(--box-padding) * 3));
+  overflow: clip;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -575,14 +580,34 @@
 }
 
 .each-event-page-close-button {
-  position: absolute;
-  top: calc(var(--box-padding));
-  left: calc(var(--box-padding));
+  position: fixed;
+  top: calc(var(--box-padding) * 2);
+  right: calc(var(--box-padding) * 2);
   width: 22px;
   min-width: 22px;
   height: auto;
   cursor: pointer;
   stroke: var(--text-color);
+}
+
+.each-event-page-switch-button {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  min-width: 12px;
+  height: auto;
+  cursor: pointer;
+  stroke: var(--text-color);
+  margin: auto 0;
+}
+
+.each-event-page-switch-right-button {
+  right: var(--each-event-page-switch-button-distance);
+}
+
+.each-event-page-switch-left-button {
+  left: var(--each-event-page-switch-button-distance);
 }
 
 .each-text-small {
@@ -653,7 +678,7 @@
 .clickable-image-big-close {
   position: absolute;
   top: calc(var(--box-padding));
-  left: calc(var(--box-padding));
+  right: calc(var(--box-padding));
   width: 22px;
   min-width: 22px;
   height: auto;
@@ -868,6 +893,7 @@
 @media only screen and (max-width: 600px) {
   :root {
     --each-team-member-wrapper-width: 170px;
+    --each-event-page-switch-button-distance: calc(var(--box-padding));
   }
 
   .all-content-motto-wrapper {
@@ -889,6 +915,11 @@
   .each-event-page-close-button {
     width: 16px;
     min-width: 16px;
+  }
+
+  .each-event-page-switch-button {
+    width: 10px;
+    min-width: 10px;
   }
 }
 
