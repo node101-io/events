@@ -156,7 +156,6 @@
   color: var(--text-color);
   max-width: 80%;
   font-size: 80px;
-  line-height: 1;
   font-weight: 600;
   letter-spacing: 5px;
   text-align: center;
@@ -164,7 +163,7 @@
   z-index: 1;
 }
 
-.each-event-slider-text:after {
+.each-event-slider-text::after {
   position: absolute;
   content: attr(data-text);
   top: 0;

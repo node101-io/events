@@ -52,6 +52,7 @@
 }
 
 #cryptist-slider-text::after {
+  display: inline-block;
   background: linear-gradient(123deg, #FFF 0%, rgba(158, 240, 240, 0.85) 71.35%, #FFF 100%);
   background-clip: text;
   -webkit-background-clip: text;
