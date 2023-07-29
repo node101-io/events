@@ -1,7 +1,6 @@
 :root {
   --all-spot-rectangle-amount: 20;
   --each-event-slider-rate: calc(2 / 4);
-  --each-event-slider-active-width: 1000px;
   --each-event-slider-bullet-color: rgba(43, 43, 43, 1);
   --spot-background-width: 80vw;
   --spot-background-rate: calc(29 / 66);
@@ -34,7 +33,6 @@
   --member-10-name-color: rgba(219, 240, 158, 1);
   --member-11-name-color: rgba(183, 183, 255, 1);
   --member-12-name-color: rgba(103, 255, 182, 1);
-  --all-footer-input-height: 40px;
   --events-slider-wrapper-width: 200vh;
   --events-slider-wrapper-padding-top: calc(var(--box-padding) * 1.5);
   --events-slider-wrapper-padding-sides: calc(var(--box-padding) * 2.2);
@@ -90,7 +88,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: calc(var(--events-slider-wrapper-padding-top) + var(--all-header-wrapper-height));
-  gap: calc(var(--each-event-slider-active-width) / 60);
+  gap: calc(var(--box-padding) * 0.75);
 }
 
 .events-slider-outer-wrapper-end {
@@ -154,6 +152,7 @@
 
 .each-event-slider-text {
   position: absolute;
+  display: inline-block;
   color: var(--text-color);
   max-width: 80%;
   font-size: 80px;
@@ -161,6 +160,29 @@
   font-weight: 600;
   letter-spacing: 5px;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.each-event-slider-text:after {
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: opacity 0.5s ease-out;
+  z-index: 2;
+  opacity: 0;
+}
+
+.each-event-slider-wrapper:hover>.each-event-slider-text::after {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1200px),
@@ -254,6 +276,7 @@
 .all-content-spot-wrapper {
   position: relative;
   left: 1vw;
+  /* not sure */
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -372,7 +395,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-animation: mottoLineAnimation 3s ease infinite;
-  animation: mottoLineAnimation 3s ease infinite;
+  animation: mottoLineAnimation 5s ease infinite;
 }
 
 @-webkit-keyframes mottoLineAnimation {
@@ -380,7 +403,7 @@
     background-position: 100% 50%;
   }
 
-  70% {
+  100% {
     background-position: 0% 50%;
   }
 }
@@ -390,7 +413,7 @@
     background-position: 100% 50%;
   }
 
-  70% {
+  100% {
     background-position: 0% 50%;
   }
 }
@@ -652,6 +675,11 @@
   display: flex !important;
   cursor: pointer;
   transition: transform 0.5s ease;
+
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: contain !important;
+  object-fit: contain !important;
 }
 
 .clickable-image:hover {
@@ -666,8 +694,6 @@
   min-height: unset !important;
   max-width: 80vw !important;
   max-height: 80vh !important;
-  max-width: unset !important;
-  max-height: unset !important;
   -o-object-fit: contain !important;
   object-fit: contain !important;
   margin: 0 !important;
@@ -707,6 +733,7 @@
 .each-url-button-text {
   color: var(--text-color);
   font-size: 16px;
+  transition: all 0.3s ease-in-out
 }
 
 .each-url-button-icon {
@@ -799,10 +826,6 @@
 @media only screen and (max-width: 900px) {
   :root {
     --all-content-motto-top-right-text-width: 300px;
-  }
-
-  .all-footer-title {
-    font-size: 26px;
   }
 
   .each-motto-line {

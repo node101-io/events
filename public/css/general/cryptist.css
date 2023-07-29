@@ -33,6 +33,29 @@
   font-size: 80px;
   font-weight: 600;
   letter-spacing: 5.28px;
+  background: linear-gradient(123deg, #FFF 0%, rgba(158, 240, 240, 0.85) 71.35%, #FFF 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: cryptistFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes cryptistFirstLeftTitleAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#cryptist-slider-text::after {
+  background: linear-gradient(123deg, #FFF 0%, rgba(158, 240, 240, 0.85) 71.35%, #FFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: cryptistFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
 }
 
 .all-cryptist-first-left-event-type {
@@ -65,7 +88,7 @@
 
 .all-cryptist-first-right-wrapper {
   display: flex;
-  justify-content: center;
+  align-items: center;
   width: 800px;
   min-width: 800px;
 }
@@ -73,8 +96,7 @@
 .all-cryptist-first-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-cryptist-second-wrapper {
@@ -120,8 +142,7 @@
 .all-cryptist-second-middle-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-cryptist-second-right-wrapper {
@@ -139,8 +160,7 @@
 .all-cryptist-second-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-cryptist-third-wrapper {
@@ -256,12 +276,11 @@
 .all-cryptist-fourth-top-right-image {
   position: relative;
   top: 100px;
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 400px;
   min-width: 400px;
   height: auto;
   margin-top: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-fourth-bottom-wrapper {
@@ -272,21 +291,19 @@
 }
 
 .all-cryptist-fourth-bottom-left-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 700px;
   min-width: 700px;
   height: auto;
   align-self: flex-end;
+  overflow: hidden;
 }
 
 .all-cryptist-fourth-bottom-right-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 640px;
   min-width: 640px;
   height: auto;
   align-self: flex-end;
+  overflow: hidden;
 }
 
 .all-cryptist-fifth-wrapper {
@@ -335,11 +352,10 @@
 }
 
 .all-cryptist-fifth-left-middle-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 400px;
   min-width: 400px;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-fifth-left-middle-quote-wrapper {
@@ -367,11 +383,10 @@
 }
 
 .all-cryptist-fifth-right-top-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 400px;
   min-width: 400px;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-fifth-right-logo {
@@ -432,11 +447,10 @@
 }
 
 .all-cryptist-sixth-right-bottom-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 100%;
   min-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-seventh-wrapper {
@@ -467,11 +481,10 @@
 }
 
 .all-cryptist-seventh-left-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 100%;
   min-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-seventh-left-bottom-wrapper {
@@ -524,11 +537,10 @@
 }
 
 .all-cryptist-seventh-right-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 100%;
   min-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-seventh-right-text span {
@@ -564,11 +576,10 @@
 }
 
 .all-cryptist-eighth-left-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 100%;
   min-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-eighth-left-bottom-wrapper {
@@ -626,12 +637,11 @@
 }
 
 .all-cryptist-eighth-right-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 580px;
   min-width: 580px;
   height: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-ninth-wrapper {
@@ -658,11 +668,10 @@
 }
 
 .all-cryptist-ninth-left-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 100%;
   min-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-ninth-left-text span {
@@ -731,12 +740,11 @@
 }
 
 .all-cryptist-ninth-right-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 440px;
   min-width: 440px;
   height: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-tenth-wrapper {
@@ -758,12 +766,11 @@
 }
 
 .all-cryptist-tenth-left-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 460px;
   min-width: 460px;
   height: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-tenth-left-title {
@@ -810,21 +817,19 @@
 }
 
 .all-cryptist-tenth-right-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 400px;
   min-width: 400px;
   height: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-tenth-right-second-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 100%;
   min-width: 100%;
   height: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-eleventh-wrapper {
@@ -846,21 +851,19 @@
 }
 
 .all-cryptist-eleventh-image-top {
-  -o-object-fit: contain;
-  object-fit: contain;
   height: 340px;
   min-height: 340px;
   width: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-eleventh-image-bottom {
-  -o-object-fit: contain;
-  object-fit: contain;
   width: 250px;
   min-width: 250px;
   height: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-eleventh-right-wrapper {
@@ -875,12 +878,11 @@
 }
 
 .all-cryptist-eleventh-right-image {
-  -o-object-fit: contain;
-  object-fit: contain;
   height: 340px;
   min-height: 340px;
   width: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .all-cryptist-eleventh-right-title {

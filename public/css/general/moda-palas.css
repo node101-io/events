@@ -14,6 +14,30 @@
   font-size: 80px;
   font-weight: 600;
   letter-spacing: 5.28px;
+  background: linear-gradient(146deg, #FF9654 3.33%, #FFF 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: modaFirstTitleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes modaFirstTitleAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#moda-slider-text::after {
+  background: linear-gradient(146deg, #FF9654 3.33%, #FFF 100%);
+  background-clip: text;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  animation: modaFirstTitleAnimation 2s ease-in-out infinite alternate;
 }
 
 .all-moda-first-event-type {
@@ -60,8 +84,7 @@
 .all-moda-second-left-left-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-moda-second-left-left-bottom-wrapper {
@@ -100,8 +123,7 @@
 .all-moda-second-left-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-modas-econd-left-right-emoji {
@@ -124,8 +146,7 @@
 .all-moda-second-right-left-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-moda-second-right-right-wrapper {
@@ -136,9 +157,8 @@
 .all-moda-second-right-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-bottom: auto;
+  overflow: hidden;
 }
 
 .all-moda-third-wrapper {
@@ -162,9 +182,8 @@
 .each-moda-third-left-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   z-index: 111;
+  overflow: hidden;
 }
 
 .all-moda-third-right-wrapper {
@@ -192,10 +211,9 @@
   width: 510px;
   min-width: 510px;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-left: auto;
   z-index: 111;
+  overflow: hidden;
 }
 
 .all-moda-third-title-first-row-wrapper {
@@ -273,8 +291,7 @@
 .all-moda-footer-left-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-moda-footer-right-wrapper {

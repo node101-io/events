@@ -59,7 +59,7 @@ window.addEventListener('load', () => {
       const targetRoute = event.currentTarget.getAttribute('href');
       if (targetRoute.startsWith('http') || targetRoute.startsWith('mailto')) return;
       event.preventDefault();
-      history.pushState(null, null, targetRoute);
+      history.pushState(null, null, targetRoute + window.location.search);
       renderContent(targetRoute.split('/')[1]);
     });
 
@@ -87,18 +87,22 @@ window.addEventListener('load', () => {
 
     for (let i = 0; i < eventsSliderWrappers.length; i++) {
       const sliderRect = eventsSliderWrappers[i].getBoundingClientRect();
+
       const absoluteValue = Math.abs((sliderRect.left + sliderRect.right) / windowInnerWidth - 1);
+      const headerButtonsToBeActive = allHeaderBottomWrapper.querySelectorAll(`a[href="/${ROUTES[i]}"]`);
+      const isCentered = sliderRect.left < windowInnerWidth / 2 && sliderRect.right > windowInnerWidth / 2;
 
       eventsSliderWrappers[i].style.transform = `scale(${1 - absoluteValue / 10})`;
       eventsSliderWrappers[i].style.opacity = 1 - absoluteValue / 2;
 
-      if (sliderRect.left < windowInnerWidth / 2 && sliderRect.right > windowInnerWidth / 2) {
-        document.querySelector('.each-event-slider-active').classList.remove('each-event-slider-active');
-        eventsSliderWrappers[i].classList.add('each-event-slider-active');
-        document.querySelector('.each-event-slider-bullet-filled').classList.remove('each-event-slider-bullet-filled');
-        eventsSliderBullets[i].classList.add('each-event-slider-bullet-filled');
+      eventsSliderBullets[i].classList.toggle('each-event-slider-bullet-filled', isCentered);
+      for (let j = 0; j < headerButtonsToBeActive.length; j++)
+        headerButtonsToBeActive[j].classList.toggle('each-all-header-button-active', isCentered);
+
+      if (isCentered) {
+
         sliderIndex = i;
-      }
+      };
     };
 
     eventsSliderWrapper.scrollTo(windowScrollY, 0);
@@ -110,7 +114,7 @@ window.addEventListener('load', () => {
     };
 
     if (event.target.classList.contains('each-event-page-wrapper') || event.target.closest('.each-event-page-close-button')) {
-      history.pushState(null, null, '/');
+      history.pushState(null, null, '/' + window.location.search);
       renderContent('');
     };
 
@@ -128,7 +132,7 @@ window.addEventListener('load', () => {
     if (event.target.closest('.each-event-page-switch-button')) {
       const isRightButton = event.target.closest('.each-event-page-switch-right-button');
       const newRoute = ROUTES[(ROUTES.indexOf(window.location.pathname.split('/')[1]) + (isRightButton ? 1 : -1) + 5) % ROUTES.length];
-      history.pushState(null, null, newRoute);
+      history.pushState(null, null, newRoute + window.location.search);
       renderContent(newRoute);
     };
   });

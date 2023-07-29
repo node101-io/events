@@ -52,6 +52,14 @@
   }
 }
 
+#sui-slider-text::after {
+  background: linear-gradient(30deg, var(--all-sui-first-left-title-first-color) 0%, var(--all-sui-first-left-title-second-color) 100%);
+  background-clip: text;
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  animation: allSuiFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+}
+
 .all-sui-first-left-event-type {
   display: flex;
   align-items: center;
@@ -97,9 +105,8 @@
 .all-sui-first-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-top: auto;
+  overflow: hidden;
 }
 
 .all-sui-second-wrapper {
@@ -149,8 +156,7 @@
 .all-sui-second-middle-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-sui-second-right-wrapper {
@@ -164,8 +170,7 @@
 .all-sui-second-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-sui-second-emoji {
@@ -217,9 +222,8 @@
   width: 360px;
   min-width: 360px;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-sui-fourth-left-text {
@@ -237,9 +241,8 @@
   width: 100%;
   min-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-top: auto;
+  overflow: hidden;
 }
 
 .all-sui-fifth-wrapper {
@@ -260,9 +263,8 @@
   width: 80%;
   min-width: 80%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-sui-fifth-left-quote-wrapper {
@@ -297,9 +299,8 @@
   width: 100%;
   min-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-top: calc(var(--box-padding) * 3);
+  overflow: hidden;
 }
 
 .all-sui-fifth-right-text {
@@ -390,8 +391,7 @@
   width: 100%;
   min-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1700px) {

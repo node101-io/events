@@ -46,6 +46,14 @@
   }
 }
 
+#nym-slider-text::after {
+  background: linear-gradient(60deg, var(--all-nym-first-left-title-first-color) 20%, var(--all-nym-first-left-title-second-color) 50%, var(--all-nym-first-left-title-first-color) 80%);
+  background-clip: text;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  animation: nymFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+}
+
 .all-nym-first-left-event-type {
   display: flex;
   align-items: center;
@@ -107,8 +115,7 @@
 .all-nym-first-right-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-nym-second-wrapper {
@@ -137,9 +144,9 @@
 
 .each-nym-second-image {
   width: 45%;
+  min-width: 45%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-nym-third-wrapper {
@@ -263,10 +270,9 @@
 .all-nym-footer-left-image {
   width: 55%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
   margin-top: calc(var(--box-padding) * 2);
   margin-left: auto;
+  overflow: hidden;
 }
 
 .all-nym-footer-right-wrapper {
@@ -279,15 +285,13 @@
 .all-nym-footer-right-top-image {
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 .all-nym-footer-right-bottom-image {
   width: 80%;
   height: auto;
-  -o-object-fit: contain;
-  object-fit: contain;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1500px) {
