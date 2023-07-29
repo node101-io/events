@@ -33,7 +33,18 @@
   font-size: 80px;
   font-weight: 600;
   line-height: 1.1;
+  -webkit-animation: nymFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
   animation: nymFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes nymFirstLeftTitleAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes nymFirstLeftTitleAnimation {
@@ -51,6 +62,7 @@
   background-clip: text;
   background-size: 200% 200%;
   -webkit-background-clip: text;
+  -webkit-animation: nymFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
   animation: nymFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
 }
 
@@ -74,29 +86,8 @@
 }
 
 .all-nym-first-left-bottom-wrapper {
-  display: flex;
-  align-items: bottom;
-  gap: calc(var(--box-padding) / 4);
-  margin-right: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  align-self: center;
   margin-top: calc(var(--box-padding) * 3);
-}
-
-.all-nym-first-left-bottom-text {
-  color: var(--text-color);
-  font-size: 16px;
-}
-
-.all-nym-first-left-bottom-icon {
-  position: relative;
-  top: -3px;
-  width: 18px;
-  min-width: 18px;
-  height: auto;
-  stroke: var(--text-color);
+  margin-right: auto;
 }
 
 .all-nym-first-right-wrapper {

@@ -34,7 +34,18 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0 auto;
+  -webkit-animation: allAleoFirstIntroTitleAnimation 2s ease-in-out infinite alternate;
   animation: allAleoFirstIntroTitleAnimation 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes allAleoFirstIntroTitleAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 @keyframes allAleoFirstIntroTitleAnimation {
@@ -52,6 +63,7 @@
   background-clip: text;
   background-size: 200% 200%;
   -webkit-background-clip: text;
+  -webkit-animation: allAleoFirstIntroTitleAnimation 2s ease-in-out infinite alternate;
   animation: allAleoFirstIntroTitleAnimation 2s ease-in-out infinite alternate;
 }
 
@@ -128,26 +140,7 @@
 }
 
 .all-aleo-first-bottom-wrapper {
-  display: flex;
-  align-items: bottom;
-  gap: calc(var(--box-padding) / 4);
   margin-right: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  align-self: center;
-}
-
-.all-aleo-first-bottom-text {
-  font-size: 14px;
-  color: var(--text-color);
-}
-
-.all-aleo-first-bottom-icon {
-  width: 14px;
-  min-width: 14px;
-  height: auto;
-  stroke: var(--text-color);
 }
 
 .all-aleo-second-wrapper {

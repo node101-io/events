@@ -387,6 +387,7 @@
 }
 
 .each-motto-line span {
+  display: inline-block;
   background: linear-gradient(-45deg, var(--all-content-motto-wrapper-span-color) 48%, #fff 50%, var(--all-content-motto-wrapper-span-color) 52%);
   background-size: 240% 240%;
   -webkit-background-clip: text;
@@ -426,7 +427,7 @@
   margin: 0 auto;
 }
 
-.all-content-motto-top-right-text:nth-child(odd) {
+#secondary-content-motto-top-right-text {
   display: none;
   margin: 0;
   margin-top: calc(var(--box-padding));
@@ -742,6 +743,39 @@
   transition: all 0.3s ease-in-out;
 }
 
+.each-scroll-down-button {
+  display: flex;
+  align-items: bottom;
+  gap: calc(var(--box-padding) / 4);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+  cursor: pointer;
+}
+
+.each-scroll-down-button-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.each-scroll-down-button-icon {
+  position: relative;
+  top: -3px;
+  width: 18px;
+  min-width: 18px;
+  height: auto;
+  stroke: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.each-scroll-down-button:hover>.each-scroll-down-button-icon {
+  transform: translateY(4px);
+}
+
 @media only screen and (max-width: 1700px) {
   :root {
     --each-team-member-wrapper-width: 180px;
@@ -873,11 +907,11 @@
     font-size: 32px;
   }
 
-  .all-content-motto-top-right-text:nth-child(even) {
+  #primary-content-motto-top-right-text {
     display: none;
   }
 
-  .all-content-motto-top-right-text:nth-child(odd) {
+  #secondary-content-motto-top-right-text {
     display: flex;
   }
 

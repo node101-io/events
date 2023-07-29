@@ -43,24 +43,15 @@ const renderContent = (route) => {
 window.addEventListener('load', () => {
   let sliderIndex = 0;
   let oldScrollY = 0;
-  const links = document.querySelectorAll('a');
-  const rootElement = document.querySelector(':root');
+
   const allHeaderBottomWrapper = document.querySelector('.all-header-bottom-wrapper');
-  const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
-  const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
-  const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
-  const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
   const clickableImageBig = document.querySelector('.clickable-image-big');
   const clickableImageLayer = document.querySelector('.clickable-image-layer');
-
-  for (let i = 0; i < links.length; i++)
-    links[i].addEventListener('click', (event) => {
-      const targetRoute = event.currentTarget.getAttribute('href');
-      if (targetRoute.startsWith('http') || targetRoute.startsWith('mailto')) return;
-      event.preventDefault();
-      history.pushState(null, null, targetRoute + window.location.search);
-      renderContent(targetRoute.split('/')[1]);
-    });
+  const eventsSliderBullets = document.querySelectorAll('.each-event-slider-bullet');
+  const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
+  const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
+  const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
+  const rootElement = document.querySelector(':root');
 
   new ResizeObserver(() => {
     rootElement.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px');
@@ -108,6 +99,15 @@ window.addEventListener('load', () => {
   });
 
   document.addEventListener('click', (event) => {
+    if (event.target.closest('a')) {
+      const targetRoute = event.target.closest('a').getAttribute('href');
+      if (!targetRoute.startsWith('http') && !targetRoute.startsWith('mailto')) {
+        event.preventDefault();
+        history.pushState(null, null, targetRoute + window.location.search);
+        renderContent(targetRoute.split('/')[1]);
+      };
+    };
+
     if (event.target.closest('.each-event-slider-bullet')) {
       window.scrollTo(0, (eventsSliderWrapper.scrollWidth - eventsSliderWrapper.offsetWidth) * (event.target.dataset.index / 4));
     };
@@ -131,6 +131,19 @@ window.addEventListener('load', () => {
       const newRoute = ROUTES[(ROUTES.indexOf(window.location.pathname.split('/')[1]) + (isRightButton ? 1 : -1) + 5) % ROUTES.length];
       history.pushState(null, null, newRoute + window.location.search);
       renderContent(newRoute);
+    };
+
+    if (event.target.closest('.each-scroll-down-button')) {
+      if (event.target.closest('.all-cryptist-second-left-wrapper'))
+        document.querySelector('.all-cryptist-fourth-wrapper').scrollIntoView({ behavior: 'smooth' });
+      else if (event.target.closest('.all-sui-second-left-wrapper'))
+        document.querySelector('.all-sui-third-wrapper').scrollIntoView({ behavior: 'smooth' });
+      else if (event.target.closest('.all-aleo-first-bottom-wrapper'))
+        document.querySelector('.all-aleo-second-wrapper').scrollIntoView({ behavior: 'smooth' });
+      else if (event.target.closest('.all-nym-first-left-bottom-wrapper'))
+        document.querySelector('.all-nym-second-wrapper').scrollIntoView({ behavior: 'smooth' });
+      else if (event.target.closest('.all-moda-second-left-left-bottom-wrapper'))
+        document.querySelector('.all-moda-third-wrapper').scrollIntoView({ behavior: 'smooth' });
     };
   });
 
