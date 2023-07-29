@@ -71,7 +71,6 @@
 .all-header-language-button-text {
 	color: var(--text-color);
 	font-size: 16px;
-	font-family: 'IBM Plex Sans', sans-serif;
 	text-transform: capitalize;
 }
 
