@@ -162,6 +162,7 @@
 }
 
 .all-moda-third-left-wrapper {
+  position: relative;
   width: 400px;
   min-width: 400px;
   display: flex;
@@ -175,6 +176,13 @@
   height: auto;
   z-index: 111;
   overflow: hidden;
+}
+
+.all-moda-third-left-info {
+  position: absolute;
+  top: 360px;
+  left: -20px;
+  width: calc(100vw - 1360px);
 }
 
 .all-moda-third-right-wrapper {
@@ -228,6 +236,8 @@
 
 .all-moda-third-title-second-row-wrapper {
   position: absolute;
+  width: max-content;
+  min-width: max-content;
   display: flex;
   top: 320px;
   right: 220px;
@@ -354,6 +364,12 @@
     gap: 190px;
   }
 
+  .all-moda-third-left-info {
+    top: 700px;
+    left: 0;
+    width: 320px;
+  }
+
   .all-moda-third-title-first-row-wrapper {
     top: 175px;
   }
@@ -400,6 +416,11 @@
     width: 290px;
     min-width: 290px;
     gap: 180px;
+  }
+
+  .all-moda-third-left-info {
+    top: 640px;
+    width: 290px;
   }
 
   .all-moda-third-title-first-row-wrapper {
@@ -476,6 +497,11 @@
     gap: 150px;
   }
 
+  .all-moda-third-left-info {
+    top: 560px;
+    width: 250px;
+  }
+
   .all-moda-third-title-first-row-wrapper {
     top: 144px;
   }
@@ -526,6 +552,11 @@
     width: 225px;
     min-width: 225px;
     gap: 135px;
+  }
+
+  .all-moda-third-left-info {
+    top: 520px;
+    width: 225px;
   }
 
   .all-moda-third-title-first-row-wrapper {
@@ -600,6 +631,11 @@
     min-width: 180px;
     gap: 100px;
     padding-top: 18px;
+  }
+
+  .all-moda-third-left-info {
+    top: 400px;
+    width: 180px;
   }
 
   .all-moda-third-title-first-row-wrapper {
@@ -710,6 +746,12 @@
   .all-moda-third-wrapper {
     gap: calc(var(--box-padding) * 2);
   }
+
+  .all-moda-third-left-info {
+    top: -10px;
+    left: 200px;
+    width: calc(100vw - 300px);
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -721,6 +763,12 @@
     width: 100%;
     min-width: 100%;
     gap: 85px;
+  }
+
+  .all-moda-third-left-info {
+    top: 0;
+    left: 0;
+    width: calc(100vw - 320px);
   }
 
   .each-moda-third-left-image {
@@ -805,5 +853,11 @@
 
   .all-moda-third-left-wrapper {
     gap: 81px;
+  }
+
+  .all-moda-third-left-info {
+    top: -30px;
+    left: 0;
+    width: calc(100vw - 100px);
   }
 }
