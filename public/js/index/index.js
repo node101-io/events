@@ -45,7 +45,6 @@ window.addEventListener('load', () => {
   let oldScrollY = 0;
   const links = document.querySelectorAll('a');
   const rootElement = document.querySelector(':root');
-  const htmlElement = document.querySelector('html');
   const allHeaderBottomWrapper = document.querySelector('.all-header-bottom-wrapper');
   const eventsSliderWrapper = document.querySelector('.events-slider-wrapper');
   const eventsSliderOuterWrapper = document.querySelector('.events-slider-outer-wrapper');
@@ -120,13 +119,11 @@ window.addEventListener('load', () => {
 
     if (event.target.closest('.clickable-image-layer') && !event.target.closest('.clickable-image-big')) {
       clickableImageLayer.classList.add('display-none');
-      htmlElement.classList.remove('disable-scroll');
     };
 
     if (event.target.closest('.clickable-image')) {
       clickableImageBig.src = event.target.src;
       clickableImageLayer.classList.remove('display-none');
-      htmlElement.classList.add('disable-scroll');
     };
 
     if (event.target.closest('.each-event-page-switch-button')) {

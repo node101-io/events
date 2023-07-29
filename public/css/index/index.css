@@ -275,8 +275,6 @@
 
 .all-content-spot-wrapper {
   position: relative;
-  left: 1vw;
-  /* not sure */
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -297,7 +295,7 @@
 
 .all-spot-rectangles-top-wrapper {
   position: absolute;
-  left: calc(100vw - var(--spot-background-width) - calc(var(--spot-background-width) / 800));
+  left: calc(100vw - var(--spot-background-width));
   display: flex;
 }
 
@@ -339,7 +337,7 @@
 .all-spot-rectangles-bottom-wrapper {
   position: absolute;
   left: calc(100vw - var(--spot-background-width) - var(--spot-background-width) / 800 - (var(--spot-background-width) / var(--all-spot-rectangle-amount) * 0.25) / 2);
-  bottom: calc(var(--spot-background-width) / -80);
+  bottom: calc(var(--spot-background-width) / -60);
   display: flex;
 }
 

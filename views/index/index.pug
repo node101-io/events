@@ -27,11 +27,11 @@ block main
     .all-content-spot-wrapper
       img.spot-background(src=`${URL}/img/istanbul.webp` loading='lazy')
       .all-spot-rectangles-top-wrapper
-        each height, index in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 22, 108, 203, 126, 140, 80, 108, 250, 89, 250, 22, 108]
+        each height, index in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 200]
           .each-spot-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;` loading='lazy')
           .each-spot-column
       .all-spot-rectangles-bottom-wrapper
-        each height, index in [482, 390, 326, 207, 53, 115, 128, 128, 292, 197, 114, 176, 147, 176, 147, 257, 168, 137, 167, 257, 20, 176, 72, 292, 197, 114, 176, 147, 176, 168, 137, 167, 257]
+        each height, index in [482, 390, 326, 207, 53, 115, 128, 128, 292, 197, 114, 176, 147, 176, 147, 257, 168, 137, 167, 257, 200]
           .each-spot-rectangle-bottom(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw; margin-top: -${height / 20}vw;` loading='lazy')
     .all-content-motto-wrapper
       .all-content-motto-top-wrapper
