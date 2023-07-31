@@ -24,8 +24,8 @@ if (cluster.isMaster) {
   const app = express();
   const server = http.createServer(app);
 
-  const URL = process.env.URL || 'http://localhost:3000'
   const PORT = process.env.PORT || 3000;
+  const URL = process.env.URL || `http://localhost:${PORT}`;
 
   const indexRouteController = require('./routes/indexRoute');
 
