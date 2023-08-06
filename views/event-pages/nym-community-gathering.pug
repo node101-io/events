@@ -1,8 +1,8 @@
 .each-event-page-wrapper.display-none.all-nym-community-gathering-wrapper
   .each-event-page-inner-wrapper.all-nym-community-gathering-inner-wrapper
-    img.each-event-page-close-button(src=`${URL}/img/icons/close-button.svg`)
-    img.each-event-page-switch-button.each-event-page-switch-right-button(src=`${URL}/img/icons/right-arrow.svg`)
-    img.each-event-page-switch-button.each-event-page-switch-left-button(src=`${URL}/img/icons/left-arrow.svg`)
+    img.each-event-page-close-button(src=`${URL}/img/icons/close-button.svg` loading='lazy' alt='close button')
+    img.each-event-page-switch-button.each-event-page-switch-right-button(src=`${URL}/img/icons/right-arrow.svg` loading='lazy' alt='right arrow')
+    img.each-event-page-switch-button.each-event-page-switch-left-button(src=`${URL}/img/icons/left-arrow.svg` loading='lazy' alt='left arrow')
     .all-nym-first-wrapper
       .all-nym-first-left-wrapper
         .all-nym-first-left-title= __('NYM COMMUNITY GATHERING')
@@ -10,11 +10,11 @@
         .all-nym-first-left-text.each-text-medium= __('The Internet is a medium where we scatter meaningful data at every click. But why do we distribute our private data on the Internet? NYM allows you to protect your data with unique solutions such as Mixnet and Privacy Credentials. The NYM team, which came to Istanbul, met at the gathering we organized with the anoNYMs in Turkey.')
         .all-nym-first-left-bottom-wrapper.each-scroll-down-button
           .each-scroll-down-button-text= __('Scroll down')
-          img.each-scroll-down-button-icon(src=`${URL}/img/icons/down-arrow.svg` loading='lazy')
+          img.each-scroll-down-button-icon(src=`${URL}/img/icons/down-arrow.svg` loading='lazy' alt='down arrow')
       .all-nym-first-right-wrapper
-        img.all-nym-first-right-emoji(src=`${URL}/img/nym-community-gathering/emojis.webp` loading='lazy')
+        img.all-nym-first-right-emoji(src=`${URL}/img/nym-community-gathering/emojis.webp` loading='lazy' alt='emojis')
         .all-nym-first-right-image
-          img.clickable-image(src=`${URL}/img/nym-community-gathering/people.webp` loading='lazy')
+          img.clickable-image(src=`${URL}/img/nym-community-gathering/people.webp` loading='lazy' alt='people')
     .all-nym-second-wrapper
       .each-nym-second-row-wrapper
         if lang == 'tr'
@@ -55,10 +55,10 @@
                 stop(stop-color='#F4711C')
                 stop(offset='1' stop-color='#F12E4F')
         .each-nym-second-image
-          img.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp` loading='lazy')
+          img.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp` loading='lazy' alt='collage image')
       .each-nym-second-row-wrapper
         .each-nym-second-image
-          img.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image2.webp` loading='lazy')
+          img.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image2.webp` loading='lazy' alt='collage image')
         if lang == 'tr'
           svg.each-nym-second-svg(viewbox='0 0 626 90' xmlns='http://www.w3.org/2000/svg')
             mask#path-1-outside-1_287_1935(maskunits='userSpaceOnUse' x='-0.0390625' y='0.797852')
@@ -111,7 +111,7 @@
         .all-nym-third-text.each-text-medium= __('The special attention of Turkish followers of NYM to the event, which took place in a cafe in Nişantaşı, greatly pleased the team. Informed by a presentation by the company\'s COO about how Mix nodes and Privacy Credentials systems work, the Turkish community asked questions and learned the planned steps in the later stages of the project.')
       .all-nym-third-right-wrapper
         a.all-nym-third-right-image(href='https://nymtech.net/' target='_blank' rel='nofollow')
-          img(src=`${URL}/img/nym-community-gathering/nym-logo.webp` loading='lazy')
+          img(src=`${URL}/img/nym-community-gathering/nym-logo.webp` loading='lazy' alt='nym logo')
     .all-nym-footer-wrapper
       .all-nym-footer-left-wrapper
         .all-nym-footer-left-title= __('node101 coordinated the whole process before and after the event attended by Alexis Roussel and Crypto Marina.')
@@ -121,9 +121,9 @@
             path(d='M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568' stroke-width='2')
         .all-nym-footer-left-button-border-bottom
         .all-nym-footer-left-image
-          img.clickable-image(src=`${URL}/img/nym-community-gathering/people5.webp` loading='lazy')
+          img.clickable-image(src=`${URL}/img/nym-community-gathering/people5.webp` loading='lazy' alt='people')
       .all-nym-footer-right-wrapper
         .all-nym-footer-right-top-image
-          img.clickable-image(src=`${URL}/img/nym-community-gathering/people6.webp` loading='lazy')
+          img.clickable-image(src=`${URL}/img/nym-community-gathering/people6.webp` loading='lazy' alt='people')
         .all-nym-footer-right-bottom-image
-          img.clickable-image(src=`${URL}/img/nym-community-gathering/people7.webp` loading='lazy')
+          img.clickable-image(src=`${URL}/img/nym-community-gathering/people7.webp` loading='lazy' alt='people')

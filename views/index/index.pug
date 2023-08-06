@@ -4,19 +4,19 @@ block main
     .events-slider-outer-wrapper
       .events-slider-wrapper
         a.each-event-slider-wrapper(href='/cryptist')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1400.webp` srcset=`${URL}/img/cryptist/main/main_1400.webp 1400w, ${URL}/img/cryptist/main/main_1000.webp 1000w, ${URL}/img/cryptist/main/main_600.webp 600w`)
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1400.webp` srcset=`${URL}/img/cryptist/main/main_1400.webp 1400w, ${URL}/img/cryptist/main/main_1000.webp 1000w, ${URL}/img/cryptist/main/main_600.webp 600w` alt='cryptist')
           .each-event-slider-text#cryptist-slider-text(data-text=__('CRYPTIST'))= __('CRYPTIST')
         a.each-event-slider-wrapper(href='/sui-move-workshop')
-          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main/main_1700.webp` srcset=`${URL}/img/sui-move-workshop/main/main_1700.webp 1700w, ${URL}/img/sui-move-workshop/main/main_1300.webp 1300w, ${URL}/img/sui-move-workshop/main/main_1000.webp 1000w`)
+          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main/main_1700.webp` srcset=`${URL}/img/sui-move-workshop/main/main_1700.webp 1700w, ${URL}/img/sui-move-workshop/main/main_1300.webp 1300w, ${URL}/img/sui-move-workshop/main/main_1000.webp 1000w` alt='sui move workshop')
           .each-event-slider-text#sui-slider-text(data-text=__('SUI MOVE WORKSHOP'))= __('SUI MOVE WORKSHOP')
         a.each-event-slider-wrapper(href='/aleo-tour-of-turkiye')
-          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp` srcset=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp 1850w, ${URL}/img/aleo-tour-of-turkiye/main/main_1400.webp 1400w, ${URL}/img/aleo-tour-of-turkiye/main/main_1000.webp 1000w`)
+          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp` srcset=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp 1850w, ${URL}/img/aleo-tour-of-turkiye/main/main_1400.webp 1400w, ${URL}/img/aleo-tour-of-turkiye/main/main_1000.webp 1000w` alt='aleo tour of turkiye')
           .each-event-slider-text#aleo-slider-text(data-text=__('ALEO - TOUR OF TURKIYE'))= __('ALEO - TOUR OF TURKIYE')
         a.each-event-slider-wrapper(href='/nym-community-gathering')
-          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/main/main_2000.webp` srcset=`${URL}/img/nym-community-gathering/main/main_2000.webp 2000w, ${URL}/img/nym-community-gathering/main/main_1400.webp 1400w, ${URL}/img/nym-community-gathering/main/main_1000.webp 1000w`)
+          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/main/main_2000.webp` srcset=`${URL}/img/nym-community-gathering/main/main_2000.webp 2000w, ${URL}/img/nym-community-gathering/main/main_1400.webp 1400w, ${URL}/img/nym-community-gathering/main/main_1000.webp 1000w` alt='nym community gathering')
           .each-event-slider-text#nym-slider-text(data-text=__('NYM COMMUNITY GATHERING'))= __('NYM COMMUNITY GATHERING')
         a.each-event-slider-wrapper(href='/moda-palas')
-          img.each-event-slider-image(src=`${URL}/img/moda-palas/main/main_1280.webp` srcset=`${URL}/img/moda-palas/main/main_1280.webp 1280w, ${URL}/img/moda-palas/main/main_800.webp 800w`)
+          img.each-event-slider-image(src=`${URL}/img/moda-palas/main/main_1280.webp` srcset=`${URL}/img/moda-palas/main/main_1280.webp 1280w, ${URL}/img/moda-palas/main/main_800.webp 800w` alt='moda palas')
           .each-event-slider-text#moda-slider-text(data-text=__('MODA PALAS'))= __('MODA PALAS')
       .events-slider-bullets-wrapper
         .each-event-slider-bullet.each-event-slider-bullet-filled(data-index=0)
@@ -25,7 +25,7 @@ block main
         .each-event-slider-bullet(data-index=3)
         .each-event-slider-bullet(data-index=4)
     .all-content-bridge-wrapper
-      img.bridge-background(src=`${URL}/img/bridge/bridge_2200.webp` srcset=`${URL}/img/bridge/bridge_2200.webp 2200w, ${URL}/img/bridge/bridge_1400.webp 1400w, ${URL}/img/bridge/bridge_1000.webp 1000w, ${URL}/img/bridge/bridge_600.webp 600w` loading='lazy')
+      img.bridge-background(src=`${URL}/img/bridge/bridge_2200.webp` srcset=`${URL}/img/bridge/bridge_2200.webp 2200w, ${URL}/img/bridge/bridge_1400.webp 1400w, ${URL}/img/bridge/bridge_1000.webp 1000w, ${URL}/img/bridge/bridge_600.webp 600w` loading='lazy' alt='bridge')
       .all-bridge-rectangles-top-wrapper
         each height, index in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 200]
           .each-bridge-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;`)
@@ -56,7 +56,7 @@ block main
           .each-team-members-column
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
                 .each-team-member-info-layer
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
@@ -65,7 +65,7 @@ block main
           .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
                 .each-team-member-info-layer
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
@@ -74,7 +74,7 @@ block main
           .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
                 .each-team-member-info-layer
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
@@ -83,13 +83,13 @@ block main
           .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
                 .each-team-member-info-layer
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
   .clickable-image-layer.display-none
-    img.clickable-image-big
-    img.clickable-image-big-close-button(src=`${URL}/img/icons/close-button.svg`)
+    img.clickable-image-big(alt='big image view')
+    img.clickable-image-big-close-button(src=`${URL}/img/icons/close-button.svg` alt='close button')
   include ../event-pages/cryptist.pug
   include ../event-pages/sui-move-workshop.pug
   include ../event-pages/aleo-tour-of-turkiye.pug
