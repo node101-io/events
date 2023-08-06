@@ -4,3 +4,4 @@ public/res/uploads/*
 utils/updateData.js
 data/*
 .DS_Store
+.vscode

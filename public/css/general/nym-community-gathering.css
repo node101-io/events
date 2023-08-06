@@ -14,7 +14,6 @@
   display: flex;
   gap: calc(var(--box-padding) * 3);
 }
-
 .all-nym-first-left-wrapper {
   width: 600px;
   min-width: 600px;
@@ -23,7 +22,6 @@
   gap: calc(var(--box-padding));
   z-index: 105;
 }
-
 .all-nym-first-left-title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -39,7 +37,6 @@
   -webkit-animation: nymFirstLeftTitleAnimation var(--all-nym-title-animation-duration) ease-in-out infinite alternate;
   animation: nymFirstLeftTitleAnimation var(--all-nym-title-animation-duration) ease-in-out infinite alternate;
 }
-
 @-webkit-keyframes nymFirstLeftTitleAnimation {
   0% {
     background-position: 100% 50%;
@@ -49,7 +46,6 @@
     background-position: 0% 50%;
   }
 }
-
 @keyframes nymFirstLeftTitleAnimation {
   0% {
     background-position: 100% 50%;
@@ -59,7 +55,6 @@
     background-position: 0% 50%;
   }
 }
-
 #nym-slider-text::after {
   background: linear-gradient(60deg, var(--all-nym-first-left-title-first-color) 20%, var(--all-nym-first-left-title-second-color) 50%, var(--all-nym-first-left-title-first-color) 80%);
   background-clip: text;
@@ -68,7 +63,6 @@
   -webkit-animation: nymFirstLeftTitleAnimation var(--all-nym-title-animation-duration) ease-in-out infinite alternate;
   animation: nymFirstLeftTitleAnimation var(--all-nym-title-animation-duration) ease-in-out infinite alternate;
 }
-
 .all-nym-first-left-event-type {
   display: flex;
   align-items: center;
@@ -82,17 +76,14 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-
 .all-nym-first-left-text {
   color: var(--text-color);
   width: 100%;
 }
-
 .all-nym-first-left-bottom-wrapper {
   margin-top: calc(var(--box-padding) * 3);
   margin-right: auto;
 }
-
 .all-nym-first-right-wrapper {
   width: auto;
   display: flex;
@@ -100,14 +91,12 @@
   gap: calc(var(--box-padding) * 0.5);
   margin-top: auto;
 }
-
 .all-nym-first-right-emoji {
   width: 100px;
   min-width: 100px;
   height: auto;
   margin-left: auto;
 }
-
 .all-nym-first-right-image {
   width: 100%;
   height: auto;
@@ -123,21 +112,18 @@
   margin-top: calc(var(--box-padding) * 6);
   margin-bottom: calc(var(--box-padding) * 2);
 }
-
 .each-nym-second-row-wrapper {
   width: 100%;
   display: flex;
   gap: calc(var(--box-padding) * 1.2);
   justify-content: space-between;
 }
-
 .each-nym-second-svg {
   width: auto;
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
 }
-
 .each-nym-second-image {
   width: 45%;
   min-width: 45%;
@@ -151,46 +137,39 @@
   gap: calc(var(--box-padding));
   margin-top: calc(var(--box-padding) * 4);
 }
-
 .all-nym-third-left-wrapper {
   width: 45%;
   min-width: 45%;
   display: flex;
   flex-direction: column;
 }
-
 .all-nym-third-event-stats-number {
   display: none;
   color: var(--text-color);
   font-size: 32px;
 }
-
 .all-nym-third-event-stats-text {
   display: none;
   color: var(--text-color-three);
   font-size: 14px;
 }
-
 .all-nym-third-text {
   width: 100%;
   color: var(--text-color);
   margin-top: calc(var(--box-padding) * 2);
   margin-bottom: calc(var(--box-padding));
 }
-
 .all-nym-third-right-wrapper {
   width: auto;
   display: flex;
   margin-left: auto;
   margin-top: auto;
 }
-
 .all-nym-third-right-image {
   width: 100px;
   min-width: 100px;
   height: auto;
 }
-
 .all-nym-third-right-image img {
   -o-object-fit: contain;
   object-fit: contain;
@@ -204,14 +183,12 @@
   gap: calc(var(--box-padding));
   margin-top: calc(var(--box-padding) * 4);
 }
-
 .all-nym-footer-left-wrapper {
   width: 45%;
   min-width: 45%;
   display: flex;
   flex-direction: column;
 }
-
 .all-nym-footer-left-title {
   color: var(--text-color);
   font-size: 28px;
@@ -219,7 +196,6 @@
   margin-top: calc(var(--box-padding));
   margin-bottom: calc(var(--box-padding) / 3);
 }
-
 .all-nym-footer-left-button {
   display: flex;
   text-decoration: none;
@@ -234,16 +210,13 @@
   margin-bottom: 14px;
   cursor: pointer;
 }
-
 .all-nym-footer-left-button:hover>.all-nym-footer-left-button-icon {
   transform: translate(2px, -2px);
 }
-
 .all-nym-footer-left-button:hover,
 .all-nym-footer-left-button:hover+.all-nym-footer-left-button-border-bottom {
   --all-nym-footer-left-button-border-color: rgba(241, 46, 79, 1);
 }
-
 .all-nym-footer-left-button-icon {
   display: flex;
   width: 16px;
@@ -252,7 +225,6 @@
   stroke: var(--all-nym-footer-left-button-color);
   transition: all 0.3s ease-in-out;
 }
-
 .all-nym-footer-left-button-border-bottom {
   display: flex;
   width: 100%;
@@ -262,7 +234,6 @@
   background: var(--all-nym-footer-left-button-border-color);
   transition: all 0.2s ease-in-out;
 }
-
 .all-nym-footer-left-image {
   width: 55%;
   height: auto;
@@ -270,20 +241,17 @@
   margin-left: auto;
   overflow: hidden;
 }
-
 .all-nym-footer-right-wrapper {
   width: auto;
   display: flex;
   flex-direction: column;
   gap: calc(var(--box-padding));
 }
-
 .all-nym-footer-right-top-image {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-
 .all-nym-footer-right-bottom-image {
   width: 80%;
   height: auto;
@@ -296,14 +264,12 @@
     min-width: 400px;
   }
 }
-
 @media only screen and (max-width: 1300px) {
   .all-nym-first-left-wrapper {
     width: 320px;
     min-width: 320px;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   .all-nym-first-wrapper {
     gap: calc(var(--box-padding));
@@ -313,7 +279,6 @@
     font-size: 70px;
   }
 }
-
 @media only screen and (max-width: 1100px) {
   .all-nym-first-left-title {
     font-size: 60px;
@@ -345,7 +310,6 @@
     min-width: 14px;
   }
 }
-
 @media only screen and (max-width: 1000px) {
   .all-nym-first-wrapper {
     flex-direction: column;
@@ -367,22 +331,20 @@
     margin-top: calc(var(--box-padding));
   }
 }
-
 @media only screen and (max-width: 1000px) {
   .all-nym-footer-right-wrapper {
     justify-content: center;
   }
 }
-
-@media only screen and (max-width: 900px) {}
-
+@media only screen and (max-width: 900px) {
+  
+}
 @media only screen and (max-width: 800px) {
   .all-nym-third-left-wrapper {
     width: 70%;
     min-width: 70%;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .all-nym-first-left-bottom-wrapper {
     gap: calc(var(--box-padding));
@@ -448,7 +410,6 @@
     gap: calc(var(--box-padding) * 2);
   }
 }
-
 @media only screen and (max-width: 600px) {
   .all-nym-first-left-title {
     font-size: 50px;
@@ -467,7 +428,6 @@
     font-size: 20px;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .all-nym-first-left-title {
     font-size: 40px;
@@ -484,7 +444,6 @@
     min-width: 100%;
   }
 }
-
 @media only screen and (max-width: 400px) {
   .all-nym-first-left-title {
     font-size: 30px;

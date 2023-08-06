@@ -26,7 +26,6 @@
 	flex-direction: column;
 	z-index: 80;
 }
-
 .all-header-top-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -39,13 +38,11 @@
 	background-color: var(--background-color);
 	z-index: 91;
 }
-
 .all-header-logo {
 	width: var(--all-header-logo-width);
 	min-width: var(--all-header-logo-width);
 	height: auto;
 }
-
 .all-header-language-button {
 	display: flex;
 	align-items: center;
@@ -55,22 +52,18 @@
 	border-radius: 5px;
 	transition: border 0.3s ease-in-out;
 }
-
 .all-header-language-button:hover {
 	border: 1px solid var(--border-color);
 }
-
 .all-header-language-button {
 	text-decoration: none;
 }
-
 .all-header-language-button-flag {
 	width: var(--all-header-language-button-flag-width);
 	min-width: var(--all-header-language-button-flag-width);
 	height: auto;
 	min-height: auto;
 }
-
 .all-header-language-button-text {
 	color: var(--text-color);
 	font-size: 16px;
@@ -93,17 +86,14 @@
 	transition: margin 0.3s ease-in-out;
 	z-index: 90;
 }
-
 .all-header-bottom-wrapper-shown {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
 .all-header-bottom-wrapper-hidden {
 	margin-top: calc(-1 * var(--all-header-bottom-wrapper-height));
 	margin-bottom: var(--all-header-bottom-wrapper-height);
 }
-
 .each-all-header-button {
 	position: relative;
 	text-decoration: none;
@@ -112,11 +102,9 @@
 	color: var(--text-color);
 	transition: transform 0.3s ease-in-out;
 }
-
 .secondary-each-all-header-button {
 	display: none;
 }
-
 .each-all-header-button-active {
 	transform: scale(1.05);
 }
@@ -131,14 +119,12 @@
 	margin-top: calc(var(--box-padding) * 6);
 	justify-content: space-between;
 }
-
 .all-contact-left-wrapper {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
 	min-width: 40%;
 }
-
 .all-contact-left-title {
 	display: flex;
 	color: var(--text-color);
@@ -146,7 +132,6 @@
 	line-height: 1.4;
 	margin-bottom: calc(var(--box-padding) * 0.4);
 }
-
 .all-contact-left-text {
 	display: flex;
 	color: var(--text-color);
@@ -154,30 +139,25 @@
 	line-height: 1.7;
 	letter-spacing: -0.4px;
 }
-
 .all-contact-right-wrapper {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 }
-
 .all-contact-right-subtitle {
 	display: flex;
 	color: var(--text-color);
 	font-size: 18px;
 }
-
 .all-contact-right-form {
 	display: flex;
 	flex-direction: column;
 }
-
 .all-contact-right-input-label {
 	color: var(--text-color);
 	font-size: 14px;
 	margin-top: calc(var(--box-padding) * 0.6);
 }
-
 .all-contact-right-input {
 	display: flex;
 	width: 100%;
@@ -190,7 +170,6 @@
 	font-size: 16px;
 	line-height: 1.5;
 }
-
 .all-contact-right-input-border-bottom {
 	display: flex;
 	width: 100%;
@@ -199,7 +178,6 @@
 	border: none;
 	background-image: linear-gradient(to right, var(--secondary-color), var(--third-color));
 }
-
 .all-contact-right-button {
 	display: flex;
 	align-items: center;
@@ -217,11 +195,9 @@
 	margin-top: calc(var(--box-padding) * 1.6);
 	cursor: pointer;
 }
-
 .all-contact-right-button:hover>.all-contact-right-button-icon {
 	transform: translate(2px, -2px);
 }
-
 .all-contact-right-button-icon {
 	display: flex;
 	width: 14px;
@@ -245,7 +221,6 @@
 	flex-direction: column;
 	gap: calc(var(--box-padding) * 2);
 }
-
 .all-footer-top-wrapper {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -260,7 +235,6 @@
 	justify-content: space-between;
 
 }
-
 .all-footer-top-left-wrapper {
 	height: auto;
 	min-height: auto;
@@ -269,18 +243,15 @@
 	display: flex;
 	gap: calc(var(--box-padding) * 3);
 }
-
 .each-footer-top-left-column {
 	display: flex;
 	flex-direction: column;
 }
-
 .each-footer-top-left-column-title {
 	color: var(--text-color);
 	font-size: 18px;
 	margin-bottom: calc(var(--box-padding));
 }
-
 .each-footer-top-left-column-button {
 	display: flex;
 	text-decoration: none;
@@ -292,7 +263,6 @@
 	margin-left: calc(var(--box-padding) * 0.4);
 	cursor: pointer;
 }
-
 .all-footer-right-wrapper {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -305,7 +275,6 @@
 	margin-top: auto;
 	flex-grow: 1;
 }
-
 .each-footer-right-button {
 	display: flex;
 	text-decoration: none;
@@ -320,18 +289,15 @@
 	margin-bottom: 10px;
 	cursor: pointer;
 }
-
 .each-footer-right-button:hover+.each-footer-right-button-border-bottom {
 	height: 3px;
 	min-height: 3px;
 	margin-top: -1px;
 	margin-bottom: -1px;
 }
-
 .each-footer-right-button:hover>.each-footer-right-button-icon {
 	transform: translate(2px, -2px);
 }
-
 .each-footer-right-button-icon {
 	display: flex;
 	width: 16px;
@@ -340,7 +306,6 @@
 	stroke: var(--text-color);
 	transition: all 0.3s ease-in-out;
 }
-
 .each-footer-right-button-border-bottom {
 	display: flex;
 	width: 100%;
@@ -350,7 +315,6 @@
 	background-image: linear-gradient(to right, var(--secondary-color), var(--third-color));
 	transition: all 0.2s ease-in-out;
 }
-
 .all-footer-bottom-wrapper {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -364,24 +328,20 @@
 	display: flex;
 	justify-content: space-between;
 }
-
 .all-footer-bottom-left-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: calc(var(--box-padding));
 }
-
 .all-footer-bottom-left-button {
 	display: flex;
 	text-decoration: none;
 	color: var(--text-color);
 	cursor: pointer;
 }
-
 .all-footer-bottom-left-bottom-text {
 	color: var(--text-color);
 }
-
 .all-footer-bottom-right-text {
 	color: var(--text-color);
 	margin-top: auto;
@@ -392,10 +352,9 @@
 		font-size: 16px;
 	}
 }
+@media only screen and (max-width: 1300px) {
 
-
-@media only screen and (max-width: 1300px) {}
-
+}
 @media only screen and (max-width: 1200px) {
 	.all-contact-left-title {
 		font-size: 30px;
@@ -405,9 +364,9 @@
 		gap: calc(var(--box-padding) * 2);
 	}
 }
+@media only screen and (max-width: 1100px) {
 
-@media only screen and (max-width: 1100px) {}
-
+}
 @media only screen and (max-width: 1000px) {
 	.all-contact-left-text {
 		font-size: 14px;
@@ -417,7 +376,6 @@
 		gap: calc(var(--box-padding));
 	}
 }
-
 @media only screen and (max-width: 900px) {
 	.each-all-header-button {
 		font-size: 16px;
@@ -427,15 +385,11 @@
 		font-size: 26px;
 	}
 }
-
-
 @media only screen and (max-width: 800px) {
 	.each-all-header-button {
 		font-size: 14px;
 	}
 }
-
-
 @media only screen and (max-width: 700px) {
 	:root {
 		--all-header-top-wrapper-height: 60px;
@@ -459,8 +413,6 @@
 		font-size: 22px;
 	}
 }
-
-
 @media only screen and (max-width: 600px) {
 	.main-each-all-header-button {
 		display: none;
@@ -484,8 +436,6 @@
 		min-width: 100%;
 	}
 }
-
-
 @media only screen and (max-width: 500px) {
 	.all-header-bottom-wrapper {
 		flex-wrap: wrap;
@@ -497,8 +447,6 @@
 		gap: calc(var(--box-padding));
 	}
 }
-
-
 @media only screen and (max-width: 400px) {
 	.each-all-header-button {
 		font-size: 12px;
