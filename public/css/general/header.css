@@ -4,14 +4,18 @@
 	--aleo-tour-of-turkiye-color: rgba(178, 178, 255, 1);
 	--nym-community-gathering-color: rgba(241, 46, 79, 1);
 	--moda-palas-color: rgba(161, 161, 161, 1);
+
 	--all-header-wrapper-height: calc(var(--all-header-top-wrapper-height) + var(--all-header-bottom-wrapper-height));
+
 	--all-header-top-wrapper-height: 80px;
-	--all-header-logo-width: 138px;
-	--all-header-logo-height: 24px;
-	--all-header-logo-color: rgba(254, 254, 254, 1);
-	--all-header-language-button-flag-width: 24px;
+
 	--all-header-bottom-wrapper-height: 50px;
 	--all-header-bottom-wrapper-color: rgba(54, 54, 181, 1);
+
+	--all-header-logo-width: 138px;
+	--all-header-logo-height: 24px;
+
+	--all-header-language-button-flag-width: 24px;
 }
 
 .all-header-wrapper {
@@ -40,7 +44,6 @@
 	width: var(--all-header-logo-width);
 	min-width: var(--all-header-logo-width);
 	height: auto;
-	fill: var(--all-header-logo-color);
 }
 
 .all-header-language-button {
@@ -484,11 +487,6 @@
 
 
 @media only screen and (max-width: 500px) {
-	.each-all-header-button {
-		font-size: 12px;
-		line-height: 1;
-	}
-
 	.all-header-bottom-wrapper {
 		flex-wrap: wrap;
 		row-gap: 0;
@@ -501,4 +499,9 @@
 }
 
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+	.each-all-header-button {
+		font-size: 12px;
+		line-height: 1;
+	}
+}

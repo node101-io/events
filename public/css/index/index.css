@@ -1,41 +1,24 @@
 :root {
-  --all-spot-rectangle-amount: 20;
-  --each-event-slider-rate: calc(2 / 4);
-  --each-event-slider-bullet-color: rgba(43, 43, 43, 1);
-  --spot-background-width: 80vw;
-  --spot-background-rate: calc(29 / 66);
-  --all-content-motto-wrapper-span-color: rgba(183, 183, 255, 1);
-  --all-content-motto-top-right-text-width: 520px;
-  --each-team-member-wrapper-width: 200px;
-  --each-team-member-wrapper-height: calc(var(--each-team-member-wrapper-width) * 3 / 2);
-  --each-team-member-info-layer-height: calc(var(--each-team-member-wrapper-height) * 3 / 10);
-  --member-1-background-color: rgba(215, 227, 178, 1);
-  --member-2-background-color: rgba(107, 214, 207, 1);
-  --member-3-background-color: rgba(97, 174, 255, 1);
-  --member-4-background-color: rgba(241, 203, 255, 1);
-  --member-5-background-color: rgba(137, 234, 255, 1);
-  --member-6-background-color: rgba(253, 145, 75, 1);
-  --member-7-background-color: rgba(155, 155, 255, 1);
-  --member-8-background-color: rgba(158, 240, 181, 1);
-  --member-9-background-color: rgba(215, 80, 80, 1);
-  --member-10-background-color: rgba(219, 240, 158, 1);
-  --member-11-background-color: rgba(183, 183, 255, 1);
-  --member-12-background-color: rgba(103, 255, 182, 1);
-  --member-1-name-color: rgba(218, 255, 158, 1);
-  --member-2-name-color: rgba(107, 214, 207, 1);
-  --member-3-name-color: rgba(153, 203, 255, 1);
-  --member-4-name-color: rgba(241, 203, 255, 1);
-  --member-5-name-color: rgba(137, 234, 255, 1);
-  --member-6-name-color: rgba(244, 113, 28, 1);
-  --member-7-name-color: rgba(138, 195, 255, 1);
-  --member-8-name-color: rgba(158, 240, 181, 1);
-  --member-9-name-color: rgba(215, 80, 80, 1);
-  --member-10-name-color: rgba(219, 240, 158, 1);
-  --member-11-name-color: rgba(183, 183, 255, 1);
-  --member-12-name-color: rgba(103, 255, 182, 1);
   --events-slider-wrapper-width: 200vh;
   --events-slider-wrapper-padding-top: calc(var(--box-padding) * 1.5);
   --events-slider-wrapper-padding-sides: calc(var(--box-padding) * 2.2);
+
+  --each-event-slider-rate: calc(2 / 4);
+  --each-event-slider-bullet-color: rgba(43, 43, 43, 1);
+
+  --all-bridge-rectangle-amount: 20;
+  --each-bridge-rectangle-animation-duration: 2s;
+  --bridge-background-width: 79vw;
+  --bridge-background-rate: calc(29 / 66);
+
+  --all-content-motto-wrapper-span-color: rgba(183, 183, 255, 1);
+  --all-content-motto-top-right-text-width: 520px;
+  --each-motto-line-span-animation-duration: 5s;
+
+  --each-team-member-wrapper-width: 200px;
+  --each-team-member-wrapper-height: calc(var(--each-team-member-wrapper-width) * 3 / 2);
+  --each-team-member-info-layer-height: calc(var(--each-team-member-wrapper-height) * 3 / 10);
+
   --each-event-page-switch-button-distance: calc(var(--box-padding) * 2);
 }
 
@@ -272,7 +255,7 @@
   background: var(--secondary-color);
 }
 
-.all-content-spot-wrapper {
+.all-content-bridge-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -282,9 +265,9 @@
   margin-top: calc(var(--events-slider-wrapper-width) - 100vw);
 }
 
-.spot-background {
-  width: var(--spot-background-width);
-  min-width: var(--spot-background-width);
+.bridge-background {
+  width: var(--bridge-background-width);
+  min-width: var(--bridge-background-width);
   height: auto;
   min-height: auto;
   -o-object-fit: contain;
@@ -292,18 +275,18 @@
   margin-left: auto;
 }
 
-.all-spot-rectangles-top-wrapper {
+.all-bridge-rectangles-top-wrapper {
   position: absolute;
-  left: calc(100vw - var(--spot-background-width));
+  left: calc(100vw - var(--bridge-background-width));
   display: flex;
 }
 
-.each-spot-rectangle-top {
-  width: calc(var(--spot-background-width) / var(--all-spot-rectangle-amount) * 0.75);
-  min-width: calc(var(--spot-background-width) / var(--all-spot-rectangle-amount) * 0.75);
+.each-bridge-rectangle-top {
+  width: calc(var(--bridge-background-width) / var(--all-bridge-rectangle-amount) * 0.75);
+  min-width: calc(var(--bridge-background-width) / var(--all-bridge-rectangle-amount) * 0.75);
   background: var(--background-color);
-  -webkit-animation: spotRectangleAnimation 2s ease-in-out infinite alternate;
-  animation: spotRectangleAnimation 2s ease-in-out infinite alternate;
+  -webkit-animation: spotRectangleAnimation var(--each-bridge-rectangle-animation-duration) ease-in-out infinite alternate;
+  animation: spotRectangleAnimation var(--each-bridge-rectangle-animation-duration) ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes spotRectangleAnimation {
@@ -312,7 +295,7 @@
   }
 
   100% {
-    transform: translateY(calc(var(--spot-background-width) / -80));
+    transform: translateY(calc(var(--bridge-background-width) / -80));
   }
 }
 
@@ -322,30 +305,30 @@
   }
 
   100% {
-    transform: translateY(calc(var(--spot-background-width) / -80));
+    transform: translateY(calc(var(--bridge-background-width) / -80));
   }
 }
 
-.each-spot-column {
-  width: calc(var(--spot-background-width) / var(--all-spot-rectangle-amount) * 0.25);
-  min-width: calc(var(--spot-background-width) / var(--all-spot-rectangle-amount) * 0.25);
-  height: calc(var(--spot-background-width) * var(--spot-background-rate));
+.each-bridge-column {
+  width: calc(var(--bridge-background-width) / var(--all-bridge-rectangle-amount) * 0.25);
+  min-width: calc(var(--bridge-background-width) / var(--all-bridge-rectangle-amount) * 0.25);
+  height: calc(var(--bridge-background-width) * var(--bridge-background-rate));
   background: var(--background-color);
 }
 
-.all-spot-rectangles-bottom-wrapper {
+.all-bridge-rectangles-bottom-wrapper {
   position: absolute;
-  left: calc(100vw - var(--spot-background-width) - var(--spot-background-width) / 800 - (var(--spot-background-width) / var(--all-spot-rectangle-amount) * 0.25) / 2);
-  bottom: calc(var(--spot-background-width) / -60);
+  left: calc(100vw - var(--bridge-background-width) - var(--bridge-background-width) / 800 - (var(--bridge-background-width) / var(--all-bridge-rectangle-amount) * 0.25) / 2);
+  bottom: calc(var(--bridge-background-width) / -60);
   display: flex;
 }
 
-.each-spot-rectangle-bottom {
-  width: calc(var(--spot-background-width) / var(--all-spot-rectangle-amount));
-  min-width: calc(var(--spot-background-width) / var(--all-spot-rectangle-amount));
+.each-bridge-rectangle-bottom {
+  width: calc(var(--bridge-background-width) / var(--all-bridge-rectangle-amount));
+  min-width: calc(var(--bridge-background-width) / var(--all-bridge-rectangle-amount));
   background: var(--background-color);
-  -webkit-animation: spotRectangleAnimation 2s ease-in-out infinite alternate;
-  animation: spotRectangleAnimation 2s ease-in-out infinite alternate;
+  -webkit-animation: spotRectangleAnimation var(--each-bridge-rectangle-animation-duration) ease-in-out infinite alternate;
+  animation: spotRectangleAnimation var(--each-bridge-rectangle-animation-duration) ease-in-out infinite alternate;
 }
 
 .all-content-motto-wrapper {
@@ -392,8 +375,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-animation: mottoLineAnimation 3s ease infinite;
-  animation: mottoLineAnimation 5s ease infinite;
+  -webkit-animation: mottoLineAnimation var(--each-motto-line-span-animation-duration) ease infinite;
+  animation: mottoLineAnimation var(--each-motto-line-span-animation-duration) ease infinite;
 }
 
 @-webkit-keyframes mottoLineAnimation {
@@ -608,7 +591,6 @@
   min-width: 22px;
   height: auto;
   cursor: pointer;
-  stroke: var(--text-color);
 }
 
 .each-event-page-switch-button {
@@ -619,7 +601,6 @@
   min-width: 12px;
   height: auto;
   cursor: pointer;
-  stroke: var(--text-color);
   margin: auto 0;
 }
 
@@ -661,8 +642,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
@@ -699,7 +680,7 @@
   z-index: 1000 !important;
 }
 
-.clickable-image-big-close {
+.clickable-image-big-close-button {
   position: absolute;
   top: calc(var(--box-padding));
   right: calc(var(--box-padding));
@@ -707,7 +688,6 @@
   min-width: 22px;
   height: auto;
   cursor: pointer;
-  stroke: var(--text-color);
 }
 
 .each-url-button {
@@ -767,7 +747,6 @@
   width: 18px;
   min-width: 18px;
   height: auto;
-  stroke: var(--text-color);
   transition: all 0.3s ease-in-out;
 }
 

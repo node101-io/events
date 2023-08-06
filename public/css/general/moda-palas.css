@@ -1,5 +1,7 @@
 :root {
   --all-moda-event-type-background: rgba(0, 124, 255, 1);
+
+  --all-moda-title-animation-duration: 2s;
 }
 
 .all-moda-first-wrapper {
@@ -19,8 +21,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-animation: modaFirstTitleAnimation 2s ease-in-out infinite alternate;
-  animation: modaFirstTitleAnimation 2s ease-in-out infinite alternate;
+  -webkit-animation: modaFirstTitleAnimation var(--all-moda-title-animation-duration) ease-in-out infinite alternate;
+  animation: modaFirstTitleAnimation var(--all-moda-title-animation-duration) ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes modaFirstTitleAnimation {
@@ -48,8 +50,8 @@
   background-clip: text;
   background-size: 200% 200%;
   -webkit-background-clip: text;
-  -webkit-animation: modaFirstTitleAnimation 2s ease-in-out infinite alternate;
-  animation: modaFirstTitleAnimation 2s ease-in-out infinite alternate;
+  -webkit-animation: modaFirstTitleAnimation var(--all-moda-title-animation-duration) ease-in-out infinite alternate;
+  animation: modaFirstTitleAnimation var(--all-moda-title-animation-duration) ease-in-out infinite alternate;
 }
 
 .all-moda-first-event-type {
@@ -103,7 +105,7 @@
   margin-right: auto;
 }
 
-.all-modas-econd-left-right-wrapper {
+.all-moda-second-left-right-wrapper {
   width: auto;
   height: auto;
   display: flex;
@@ -117,8 +119,10 @@
   overflow: hidden;
 }
 
-.all-modas-econd-left-right-emoji {
-  font-size: 28px;
+.all-moda-second-left-right-emoji {
+  width: 130px;
+  min-width: 130px;
+  height: auto;
   margin-left: auto;
 }
 
@@ -236,7 +240,11 @@
 
 .all-moda-third-title-second-row-wrapper {
   position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
   min-width: max-content;
   display: flex;
   top: 320px;
@@ -460,8 +468,9 @@
     gap: calc(var(--box-padding));
   }
 
-  .all-modas-econd-left-right-emoji {
-    font-size: 24px;
+  .all-moda-second-left-right-emoji {
+    width: 100px;
+    min-width: 100px;
   }
 }
 
@@ -608,7 +617,9 @@
     display: none !important;
   }
 
-  .all-modas-econd-left-right-emoji {
+  .all-moda-second-left-right-emoji {
+    width: 130px;
+    min-width: 130px;
     margin: 0;
   }
 

@@ -1,9 +1,12 @@
 history.scrollRestoration = 'manual';
 
-const ROUTES = ['cryptist', 'sui-move-workshop', 'aleo-tour-of-turkiye', 'nym-community-gathering', 'moda-palas'];
+let ROUTES = null;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+let sliderIndex = 0;
+let oldScrollY = 0;
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('become-visible');
       observer.unobserve(entry.target);
@@ -11,27 +14,24 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-const observeByClassNames = (classNames) => {
-  classNames.forEach((className) => {
-    document.querySelectorAll(className).forEach((entry) => observer.observe(entry))
+const observeByClassNames = classNames => {
+  classNames.forEach(className => {
+    document.querySelectorAll(className).forEach(entry => observer.observe(entry))
   });
 };
 
-const renderContent = (route) => {
+const renderContent = route => {
   for (let i = 0; i < ROUTES.length; i++)
     document.querySelector(`.all-${ROUTES[i]}-wrapper`).classList.toggle('display-none', ROUTES[i] != route);
 
   if (route == 'cryptist') {
-    createNumberIncreaseObserver('.each-cryptist-first-left-event-stats-number', ['150', '14', '7', '6'])
-      .observe(document.querySelector('.all-cryptist-first-left-event-stats-wrapper'));
+    createNumberIncreaseObserver(route);
     document.querySelector('.all-cryptist-wrapper').scrollTo(0, 0);
   } else if (route == 'sui-move-workshop') {
-    createNumberIncreaseObserver('.each-sui-first-left-event-stats-number', ['+40', '+10', '1'])
-      .observe(document.querySelector('.all-sui-first-left-event-stats-wrapper'));
+    createNumberIncreaseObserver(route);
     document.querySelector('.all-sui-move-workshop-wrapper').scrollTo(0, 0);
   } else if (route == 'aleo-tour-of-turkiye') {
-    createNumberIncreaseObserver('.each-aleo-first-left-event-stats-number', ['+200', '+3', '2'])
-      .observe(document.querySelector('.all-aleo-second-stats-wrapper'));
+    createNumberIncreaseObserver(route);
     document.querySelector('.all-aleo-tour-of-turkiye-wrapper').scrollTo(0, 0);
   } else if (route == 'nym-community-gathering') {
     document.querySelector('.all-nym-community-gathering-wrapper').scrollTo(0, 0);
@@ -41,9 +41,6 @@ const renderContent = (route) => {
 };
 
 window.addEventListener('load', () => {
-  let sliderIndex = 0;
-  let oldScrollY = 0;
-
   const allHeaderBottomWrapper = document.querySelector('.all-header-bottom-wrapper');
   const clickableImageBig = document.querySelector('.clickable-image-big');
   const clickableImageLayer = document.querySelector('.clickable-image-layer');
@@ -53,11 +50,13 @@ window.addEventListener('load', () => {
   const eventsSliderWrappers = document.querySelectorAll('.each-event-slider-wrapper');
   const rootElement = document.querySelector(':root');
 
+  ROUTES = JSON.parse(document.getElementById('routes').value);
+
   new ResizeObserver(() => {
     rootElement.style.setProperty('--events-slider-wrapper-width', eventsSliderWrapper.scrollWidth + 'px');
   }).observe(eventsSliderWrapper);
 
-  document.addEventListener("scroll", (event) => {
+  document.addEventListener('scroll', () => {
     const windowScrollY = window.scrollY;
     const scrollWidth = eventsSliderWrapper.scrollWidth;
     const windowInnerWidth = window.innerWidth;
@@ -89,16 +88,14 @@ window.addEventListener('load', () => {
       for (let j = 0; j < headerButtonsToBeActive.length; j++)
         headerButtonsToBeActive[j].classList.toggle('each-all-header-button-active', isCentered);
 
-      if (isCentered) {
-
+      if (isCentered)
         sliderIndex = i;
-      };
     };
 
     eventsSliderWrapper.scrollTo(windowScrollY, 0);
   });
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener('click', event => {
     if (event.target.closest('a')) {
       const targetRoute = event.target.closest('a').getAttribute('href');
       if (!targetRoute.startsWith('http') && !targetRoute.startsWith('mailto')) {

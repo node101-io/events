@@ -1,14 +1,22 @@
 :root {
+  --all-cryptist-title-animation-duration: 2s;
+
   --all-cryptist-first-left-event-type-background: rgba(255, 112, 17, 1);
-  --all-cryptist-fourth-top-right-logo-color: rgba(231, 231, 231, 1);
+
   --all-cryptist-fifth-left-top-text-span-color: rgba(183, 183, 255, 1);
+
   --all-cryptist-sixth-left-text-span-color: rgba(184, 234, 144, 1);
+
   --all-cryptist-seventh-left-text-span-color: rgba(255, 157, 157, 1);
   --all-cryptist-seventh-right-text-span-color: rgba(167, 167, 255, 1);
+
   --all-cryptist-eighth-right-text-span-color: rgba(183, 183, 255, 1);
+
   --all-cryptist-ninth-left-text-span-color: rgba(97, 214, 214, 1);
   --all-cryptist-ninth-right-text-span-color: rgba(255, 253, 195, 1);
+
   --all-cryptist-eleventh-right-location-color: rgba(158, 240, 240, 1);
+
   --each-cryptist-footer-button-border-bottom-color: rgba(158, 240, 240, 1);
 }
 
@@ -38,7 +46,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: cryptistFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+  -webkit-animation: cryptistFirstLeftTitleAnimation var(--all-cryptist-title-animation-duration) ease-in-out infinite alternate;
+  animation: cryptistFirstLeftTitleAnimation var(--all-cryptist-title-animation-duration) ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes cryptistFirstLeftTitleAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes cryptistFirstLeftTitleAnimation {
@@ -56,7 +75,8 @@
   background: linear-gradient(123deg, #FFF 0%, rgba(158, 240, 240, 0.85) 71.35%, #FFF 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  animation: cryptistFirstLeftTitleAnimation 2s ease-in-out infinite alternate;
+  -webkit-animation: cryptistFirstLeftTitleAnimation var(--all-cryptist-title-animation-duration) ease-in-out infinite alternate;
+  animation: cryptistFirstLeftTitleAnimation var(--all-cryptist-title-animation-duration) ease-in-out infinite alternate;
 }
 
 .all-cryptist-first-left-event-type {
@@ -154,7 +174,9 @@
 }
 
 .all-cryptist-third-emoji {
-  font-size: 36px;
+  width: 200px;
+  min-width: 200px;
+  height: auto;
 }
 
 .all-cryptist-third-text {
@@ -246,7 +268,6 @@
   width: 76px;
   min-width: 76px;
   height: auto;
-  fill: var(--all-cryptist-fourth-top-right-logo-color);
   margin-top: auto;
 }
 
@@ -1737,7 +1758,8 @@
 
 @media only screen and (max-width: 800px) {
   .all-cryptist-third-emoji {
-    font-size: 28px;
+    width: 160px;
+    min-width: 160px;
   }
 
   .all-cryptist-second-right-wrapper {

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yunus Gürlek",
+  "author": "Necip Baha Sağıroğlu",
   "license": "MIT",
   "dependencies": {
     "cluster": "^0.7.7",

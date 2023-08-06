@@ -4,9 +4,12 @@
   --all-sui-first-left-event-type-background: rgba(105, 41, 196, 1);
   --each-sui-first-left-event-stats-number-first-color: rgba(183, 218, 255, 1);
   --each-sui-first-left-event-stats-number-second-color: rgba(157, 205, 255, 1);
+
   --all-sui-third-top-text-first-color: rgba(190, 222, 255, 1);
   --all-sui-third-top-text-second-color: rgba(132, 192, 255, 1);
+
   --all-sui-fifth-left-quote-color: rgba(176, 215, 255, 1);
+
   --each-sui-footer-left-button-border-bottom-color: rgba(76, 163, 255, 1);
 }
 
@@ -153,7 +156,7 @@
 .all-sui-second-right-wrapper {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--box-padding));
+  gap: calc(var(--box-padding) * 1.2);
   width: 600px;
   min-width: 600px;
 }
@@ -165,7 +168,9 @@
 }
 
 .all-sui-second-emoji {
-  font-size: 30px;
+  width: 180px;
+  min-width: 180px;
+  height: auto;
 }
 
 .all-sui-third-wrapper {

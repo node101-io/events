@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     get: (searchParams, prop) => searchParams.get(prop)
   });
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener('click', event => {
     if (event.target.closest('.all-header-language-button')) {
       const target = event.target.closest('.all-header-language-button');
       console.log(target);

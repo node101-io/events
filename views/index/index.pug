@@ -4,19 +4,19 @@ block main
     .events-slider-outer-wrapper
       .events-slider-wrapper
         a.each-event-slider-wrapper(href='/cryptist')
-          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1400.webp` srcset=`${URL}/img/cryptist/main/main_1400.webp 1400w, ${URL}/img/cryptist/main/main_1000.webp 1000w, ${URL}/img/cryptist/main/main_600.webp 600w` loading='lazy')
+          img.each-event-slider-image(src=`${URL}/img/cryptist/main/main_1400.webp` srcset=`${URL}/img/cryptist/main/main_1400.webp 1400w, ${URL}/img/cryptist/main/main_1000.webp 1000w, ${URL}/img/cryptist/main/main_600.webp 600w`)
           .each-event-slider-text#cryptist-slider-text(data-text=__('CRYPTIST'))= __('CRYPTIST')
         a.each-event-slider-wrapper(href='/sui-move-workshop')
-          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main/main_2000.webp` srcset=`${URL}/img/sui-move-workshop/main/main_2000.webp 2000w, ${URL}/img/sui-move-workshop/main/main_1400.webp 1400w, ${URL}/img/sui-move-workshop/main/main_1000.webp 1000w` loading='lazy')
+          img.each-event-slider-image(src=`${URL}/img/sui-move-workshop/main/main_2000.webp` srcset=`${URL}/img/sui-move-workshop/main/main_2000.webp 2000w, ${URL}/img/sui-move-workshop/main/main_1400.webp 1400w, ${URL}/img/sui-move-workshop/main/main_1000.webp 1000w`)
           .each-event-slider-text#sui-slider-text(data-text=__('SUI MOVE WORKSHOP'))= __('SUI MOVE WORKSHOP')
         a.each-event-slider-wrapper(href='/aleo-tour-of-turkiye')
-          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp` srcset=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp 1850w, ${URL}/img/aleo-tour-of-turkiye/main/main_1400.webp 1400w, ${URL}/img/aleo-tour-of-turkiye/main/main_1000.webp 1000w` loading='lazy')
+          img.each-event-slider-image(src=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp` srcset=`${URL}/img/aleo-tour-of-turkiye/main/main_1850.webp 1850w, ${URL}/img/aleo-tour-of-turkiye/main/main_1400.webp 1400w, ${URL}/img/aleo-tour-of-turkiye/main/main_1000.webp 1000w`)
           .each-event-slider-text#aleo-slider-text(data-text=__('ALEO - TOUR OF TURKIYE'))= __('ALEO - TOUR OF TURKIYE')
         a.each-event-slider-wrapper(href='/nym-community-gathering')
-          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/main/main_2000.webp` srcset=`${URL}/img/nym-community-gathering/main/main_2000.webp 2000w, ${URL}/img/nym-community-gathering/main/main_1400.webp 1400w, ${URL}/img/nym-community-gathering/main/main_1000.webp 1000w` loading='lazy')
+          img.each-event-slider-image(src=`${URL}/img/nym-community-gathering/main/main_2000.webp` srcset=`${URL}/img/nym-community-gathering/main/main_2000.webp 2000w, ${URL}/img/nym-community-gathering/main/main_1400.webp 1400w, ${URL}/img/nym-community-gathering/main/main_1000.webp 1000w`)
           .each-event-slider-text#nym-slider-text(data-text=__('NYM COMMUNITY GATHERING'))= __('NYM COMMUNITY GATHERING')
         a.each-event-slider-wrapper(href='/moda-palas')
-          img.each-event-slider-image(src=`${URL}/img/moda-palas/main/main_1280.webp` srcset=`${URL}/img/moda-palas/main/main_1280.webp 1280w, ${URL}/img/moda-palas/main/main_800.webp 800w` loading='lazy')
+          img.each-event-slider-image(src=`${URL}/img/moda-palas/main/main_1280.webp` srcset=`${URL}/img/moda-palas/main/main_1280.webp 1280w, ${URL}/img/moda-palas/main/main_800.webp 800w`)
           .each-event-slider-text#moda-slider-text(data-text=__('MODA PALAS'))= __('MODA PALAS')
       .events-slider-bullets-wrapper
         .each-event-slider-bullet.each-event-slider-bullet-filled(data-index=0)
@@ -24,22 +24,22 @@ block main
         .each-event-slider-bullet(data-index=2)
         .each-event-slider-bullet(data-index=3)
         .each-event-slider-bullet(data-index=4)
-    .all-content-spot-wrapper
-      img.spot-background(src=`${URL}/img/bridge/bridge_2200.webp` srcset=`${URL}/img/bridge/bridge_2200.webp 2200w, ${URL}/img/bridge/bridge_1400.webp 1400w, ${URL}/img/bridge/bridge_1000.webp 1000w, ${URL}/img/bridge/bridge_600.webp 600w` loading='lazy')
-      .all-spot-rectangles-top-wrapper
+    .all-content-bridge-wrapper
+      img.bridge-background(src=`${URL}/img/bridge/bridge_2200.webp` srcset=`${URL}/img/bridge/bridge_2200.webp 2200w, ${URL}/img/bridge/bridge_1400.webp 1400w, ${URL}/img/bridge/bridge_1000.webp 1000w, ${URL}/img/bridge/bridge_600.webp 600w` loading='lazy')
+      .all-bridge-rectangles-top-wrapper
         each height, index in [80, 20, 80, 50, 108, 138, 200, 88, 58, 126, 140, 80, 108, 80, 250, 212, 126, 250, 89, 250, 200]
-          .each-spot-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;` loading='lazy')
-          .each-spot-column
-      .all-spot-rectangles-bottom-wrapper
+          .each-bridge-rectangle-top(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw;`)
+          .each-bridge-column
+      .all-bridge-rectangles-bottom-wrapper
         each height, index in [482, 390, 326, 207, 53, 115, 128, 128, 292, 197, 114, 176, 147, 176, 147, 257, 168, 137, 167, 257, 200]
-          .each-spot-rectangle-bottom(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw; margin-top: -${height / 20}vw;` loading='lazy')
+          .each-bridge-rectangle-bottom(style=`animation-delay: ${index * -0.3}s; height: ${height / 20}vw; margin-top: -${height / 20}vw;`)
     .all-content-motto-wrapper
       .all-content-motto-top-wrapper
         .all-content-motto-top-left-wrapper
           if lang == 'en'
             .each-motto-line= __('THE BRIDGE THAT')
             .each-motto-line= __('LEADS YOU')
-          else if lang == 'tr'
+          else
             .each-motto-line
               span= __('TÜRK EKOSİSTEMİNE')
             .each-motto-line= __('UZANAN KÖPRÜ')
@@ -49,749 +49,50 @@ block main
           span= __('THE TURKISH ECOSYSTEM')
       .all-content-motto-top-right-text#secondary-content-motto-top-right-text= __('Istanbul connects two continents like node101 connects Turkish blockchain enthusiasts to the world. We enable you to reach university student clubs, blockchain communities, and developers that drive the ecosystem.')
     .all-content-team-wrapper
-      .all-content-team-title= __('PARTNER YOU NEED')
+      .all-content-team-title= __('THE PARTNER YOU NEED')
       .all-content-team-text= __('node101 is an Istanbul based proof of stake validator that produces user-friendly solutions to the problems of the decentralized internet. In addition to the technical solutions and pain-point solver products it offers to blockchain projects, it organizes gatherings, summits, and workshops that feed the Turkish developer ecosystem. Moreover, It provides content to the ecosystem with blog posts, podcast episodes, and video content published on Library node101.') 
       .all-content-team-members-wrapper
-        each column in member_columns
+        each column in MEMBER_COLUMNS_IN_FIVE
           .each-team-members-column
             each member in column
-              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+              .each-team-member-wrapper(style=`background: ${member.background_color};`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
+                  .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-secondary-wrapper
-        each column, index in member_secondary_columns
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};` loading='lazy')
+        each column, index in MEMBER_COLUMNS_IN_FOUR
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
-              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+              .each-team-member-wrapper(style=`background: ${member.background_color};`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
+                  .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-tertiary-wrapper
-        each column, index in member_tertiary_columns
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};` loading='lazy')
+        each column, index in MEMBER_COLUMNS_IN_THREE
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
-              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+              .each-team-member-wrapper(style=`background: ${member.background_color};`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
+                  .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-quaternary-wrapper
-        each column, index in member_quaternary_columns
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};` loading='lazy')
+        each column, index in MEMBER_COLUMNS_IN_TWO
+          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
-              .each-team-member-wrapper(style=`background: var(--member-${member.id}-background-color);`)
+              .each-team-member-wrapper(style=`background: ${member.background_color};`)
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}`)
                 .each-team-member-info-layer
-                  .each-team-member-name(style=`color: var(--member-${member.id}-name-color);` loading='lazy') #{member.name}
+                  .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
   .clickable-image-layer.display-none
-    img.clickable-image-big(loading='lazy')
-    svg.clickable-image-big-close(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
-      path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
-      path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-  .each-event-page-wrapper.display-none.all-cryptist-wrapper
-    .each-event-page-inner-wrapper.all-cryptist-inner-wrapper
-      svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
-        path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
-        path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M1 1L12 11.5668V19.9474L1 31")
-      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
-      .all-cryptist-first-wrapper
-        .all-cryptist-first-left-wrapper
-          .all-cryptist-first-left-title= __('CRYPTIST')
-          .all-cryptist-first-left-event-type.each-text-small= __('Summit')
-          .all-cryptist-first-left-event-text.each-text-medium= __('CryptIst aims to introduce the exciting opportunities offered by Zero-Knowledge Proof to young developers. The event, which hosted talented young developers in the country, was held in the inspiring atmosphere of Istanbul, the meeting point of East and West.')
-          .all-cryptist-first-left-event-stats-wrapper
-            .each-cryptist-first-left-event-stats
-              .each-cryptist-first-left-event-stats-number 0
-              .each-cryptist-first-left-event-stats-text.each-text-small= __('Participants')
-            .each-cryptist-first-left-event-stats
-              .each-cryptist-first-left-event-stats-number 0
-              .each-cryptist-first-left-event-stats-text.each-text-small= __('Speakers')
-            .each-cryptist-first-left-event-stats
-              .each-cryptist-first-left-event-stats-number 0
-              .each-cryptist-first-left-event-stats-text.each-text-small= __('Sponsors')
-            .each-cryptist-first-left-event-stats
-              .each-cryptist-first-left-event-stats-number 0
-              .each-cryptist-first-left-event-stats-text.each-text-small= __('Partners')
-        .all-cryptist-first-right-wrapper
-          .all-cryptist-first-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker9/speaker9.webp` loading='lazy')
-      .all-cryptist-second-wrapper
-        .all-cryptist-second-left-wrapper.each-scroll-down-button
-          .each-scroll-down-button-text= __('Scroll down')
-          svg.each-scroll-down-button-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
-            path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
-        .all-cryptist-second-middle-wrapper
-          .all-cryptist-second-middle-image
-            img.clickable-image(src=`${URL}/img/cryptist/hand/hand_300w.webp` loading='lazy')
-        .all-cryptist-second-right-wrapper
-          a.all-cryptist-second-right-button.each-url-button(href='https://youtu.be/qzWwVLtQsyg' target='_blank')
-            .each-url-button-text Video
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-second-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/damir_mustafa/damir_mustafa_700w.webp` loading='lazy')
-      .all-cryptist-third-wrapper
-        .all-cryptist-third-emoji 🔒 🙈 🙉 🧐
-        .all-cryptist-third-text.each-text-medium
-          | #{__('CryptIst hosted many international names who developed Zero-knowledge Proof technology. Among these names, Emre Tekişalp, Toghrul Maharramov, Anthony Diprinzio, Kaan Uzdoğan, Todd Norton, and Albiona Hoti stood out. CryptIst, organized under the leadership of Mustafa Aksöz, Errol Drummond, and Murat Karademir, has been sponsored by the leading projects of the blockchain industry.')}
-          br
-          | #{__('The summit was supported by blockchain student clubs, zero-knowledge newsletters, and node101 as partners.')}
-      .all-cryptist-sponsors-wrapper
-        a(href='https://www.aleo.org/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
-        a(href='https://ethereum.foundation/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
-        a(href='https://dydx.foundation/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/dydx.webp` loading='lazy')
-        a(href='https://ventures.paribu.com/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/paribu-ventures.webp` loading='lazy')
-        a(href='https://manta.network/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
-        a(href='https://o1labs.org/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
-        a(href='https://scroll.io/' target='_blank')
-          img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
-      .all-cryptist-sponsors-secondary-wrapper
-        .each-cryptist-sponsors-secondary-row
-          a(href='https://www.aleo.org/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
-          a(href='https://ethereum.foundation/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
-          a(href='https://dydx.foundation/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/dydx.webp` loading='lazy')
-          a(href='https://ventures.paribu.com/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/paribu-ventures.webp` loading='lazy')
-        .each-cryptist-sponsors-secondary-row
-          a(href='https://manta.network/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
-          a(href='https://o1labs.org/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
-          a(href='https://scroll.io/' target='_blank')
-            img.each-cryptist-sponsor(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
-      .all-cryptist-fourth-wrapper
-        .all-cryptist-fourth-top-wrapper
-          .all-cryptist-fourth-top-left-wrapper
-            .all-cryptist-fourth-top-left-title.each-subtitle= __('A ZERO-KNOWLEDGE COMMUNITY EVENT IN İSTANBUL WITH CRYPTO NATIVES')
-            .all-cryptist-fourth-top-left-text.each-text-medium= __('The event started with the participants sipping their coffee, accompanied by the unique Istanbul view, and snacking on "Simit" and "Poğaça" some of the most famous snacks of Turkish cuisine. At the same time, the participants were socializing by chatting with each other and the speakers.')
-          a.all-cryptist-fourth-top-right-logo(href='https://www.cryptist.org/' target='_blank')
-            svg(viewbox='0 0 76 94' xmlns='http://www.w3.org/2000/svg')
-              path(d='M34.7531 2.86992C34.7531 1.28491 36.0312 0 37.6078 0C39.1844 0 40.4625 1.28491 40.4625 2.86992V33.7871C40.4625 35.3721 39.1844 36.657 37.6078 36.657C36.0312 36.657 34.7531 35.3721 34.7531 33.7871V2.86992Z')
-              path(d='M42.0947 15.1628C42.0947 13.6062 43.3498 12.3444 44.8982 12.3444C46.4465 12.3444 47.7017 13.6062 47.7017 15.1628V45.0298C47.7017 46.5863 46.4465 47.8482 44.8982 47.8482C43.3498 47.8482 42.0947 46.5864 42.0947 45.0298V15.1628Z')
-              path(d='M49.385 36.1433C49.385 34.5867 50.6402 33.3248 52.1885 33.3248C53.7369 33.3248 54.992 34.5867 54.992 36.1433V67.1825C54.992 68.7391 53.7369 70.001 52.1885 70.001C50.6402 70.001 49.385 68.7391 49.385 67.1825V36.1433Z')
-              path(d='M20.0253 36.1433C20.0253 34.5867 21.2805 33.3248 22.8288 33.3248C24.3771 33.3248 25.6323 34.5867 25.6323 36.1433V67.1825C25.6323 68.7391 24.3771 70.001 22.8288 70.001C21.2805 70.001 20.0253 68.7391 20.0253 67.1825V36.1433Z')
-              path(d='M12.6399 48.8984C12.6399 47.3418 13.895 46.0799 15.4434 46.0799C16.9917 46.0799 18.2469 47.3418 18.2469 48.8984V73.7512C18.2469 75.3078 16.9917 76.5697 15.4434 76.5697C13.895 76.5697 12.6399 75.3078 12.6399 73.7512V48.8984Z')
-              path(d='M56.7585 48.8984C56.7585 47.3418 58.0137 46.0799 59.5621 46.0799C61.1104 46.0799 62.3656 47.3418 62.3656 48.8984V73.7512C62.3656 75.3078 61.1104 76.5696 59.5621 76.5696C58.0137 76.5696 56.7585 75.3078 56.7585 73.7512V48.8984Z')
-              path(d='M34.8043 49.2745C34.8043 47.7179 36.0595 46.456 37.6078 46.456C39.1562 46.456 40.4114 47.7179 40.4114 49.2745V73.6917C40.4114 75.2483 39.1562 76.5102 37.6078 76.5102C36.0595 76.5102 34.8043 75.2483 34.8043 73.6917V49.2745Z')
-              path(d='M27.3839 52.5393C27.3839 50.9827 28.6391 49.7208 30.1874 49.7208C31.7357 49.7208 32.9909 50.9827 32.9909 52.5393V60.9521C32.9909 62.5087 31.7357 63.7706 30.1874 63.7706C28.6391 63.7706 27.3839 62.5087 27.3839 60.9521V52.5393Z')
-              path(d='M42.0947 52.5393C42.0947 50.9827 43.3498 49.7208 44.8982 49.7208C46.4465 49.7208 47.7017 50.9827 47.7017 52.5393V60.9521C47.7017 62.5087 46.4465 63.7706 44.8982 63.7706C43.3498 63.7706 42.0947 62.5087 42.0947 60.9521V52.5393Z')
-              path(d='M64.132 66.5891C64.132 65.0325 65.3872 63.7706 66.9355 63.7706C68.4839 63.7706 69.739 65.0325 69.739 66.5891V67.1825C69.739 68.7391 68.4839 70.001 66.9355 70.001C65.3872 70.001 64.132 68.7391 64.132 67.1825V66.5891Z')
-              path(d='M5.2664 66.5891C5.2664 65.0325 6.52158 63.7706 8.06991 63.7706C9.61825 63.7706 10.8734 65.0325 10.8734 66.5891V67.1825C10.8734 68.7391 9.61825 70.001 8.06991 70.001C6.52158 70.001 5.2664 68.7391 5.2664 67.1825V66.5891Z')
-              path(d='M34.8043 41.2439C34.8043 39.6873 36.0595 38.4255 37.6078 38.4255C39.1562 38.4255 40.4114 39.6873 40.4114 41.2439V41.8373C40.4114 43.3939 39.1562 44.6558 37.6078 44.6558C36.0595 44.6558 34.8043 43.3939 34.8043 41.8373V41.2439Z')
-              path(d='M27.3839 15.1628C27.3839 13.6062 28.6391 12.3444 30.1874 12.3444C31.7357 12.3444 32.9909 13.6062 32.9909 15.1628V45.0298C32.9909 46.5863 31.7357 47.8482 30.1874 47.8482C28.6391 47.8482 27.3839 46.5864 27.3839 45.0298V15.1628Z')
-              path(d='M4.23279 94C6.55716 94 8.15975 92.7701 8.15975 90.79V90.6301H6.70396V90.79C6.70396 92.0568 5.90878 92.7209 4.24503 92.7209C2.32437 92.7209 1.39462 91.8108 1.39462 89.7569C1.39462 87.703 2.32437 86.7806 4.24503 86.7806C5.90878 86.7806 6.70396 87.4571 6.70396 88.7115V88.8837H8.15975V88.7115C8.15975 86.7437 6.54493 85.5138 4.23279 85.5138C1.68822 85.5138 0 87.1865 0 89.7569C0 92.3274 1.68822 94 4.23279 94Z')
-              path(d='M12.8398 93.877V90.6793H14.3446C15.3722 90.6793 15.7514 90.9499 16.1184 91.6017L17.4274 93.877H18.9444L17.5742 91.491C17.2806 90.9745 16.987 90.6055 16.3508 90.4334V90.3473C17.8923 90.2612 18.7853 89.4249 18.7853 88.0597C18.7853 86.5223 17.6354 85.6368 15.7759 85.6368H11.5186V93.877H12.8398ZM12.8398 86.8298H15.7636C16.8647 86.8298 17.4152 87.2357 17.4152 88.2442C17.4152 89.2773 16.8647 89.6585 15.7636 89.6585H12.8398V86.8298Z')
-              path(d='M26.3319 93.877V91.0606L29.9774 85.6368H28.3504L26.4297 88.5639L25.7569 89.6093H25.659L24.9739 88.5639L23.041 85.6368H21.4262L25.0229 91.036V93.877H26.3319Z')
-              path(d='M34.193 93.877V91.3927H36.8844C38.7072 91.3927 39.955 90.335 39.955 88.5147C39.955 86.6822 38.7072 85.6368 36.8844 85.6368H32.8718V93.877H34.193ZM36.7621 86.8298C37.9977 86.8298 38.6338 87.2972 38.6338 88.5147C38.6338 89.7323 37.9977 90.1997 36.7621 90.1997H34.193V86.8298H36.7621Z')
-              path(d='M47.204 93.877V86.8298H50.4215V85.6368H42.6654V86.8298H45.8951V93.877H47.204Z')
-              path(d='M54.9011 84.8989V83.3739H53.5799V84.8989H54.9011ZM54.9011 93.877V85.6368H53.5799V93.877H54.9011Z')
-              path(d='M61.9477 94C64.3699 94 65.3853 92.8439 65.3853 91.5894C65.3853 90.3842 64.5779 89.6339 62.9386 89.3388L60.9446 88.9944C59.9781 88.7853 59.5622 88.5516 59.5622 87.8383C59.5622 87.1004 60.1494 86.7314 61.6419 86.7314C63.3423 86.7314 63.9418 87.2357 63.9418 88.2442V88.4041H65.2508V88.3303C65.2508 86.7191 64.162 85.5138 61.7642 85.5138C59.2196 85.5138 58.241 86.7191 58.241 87.9121C58.241 89.265 59.2196 89.9045 60.602 90.1505L62.6083 90.4825C63.6482 90.6793 64.0641 90.9499 64.0641 91.6632C64.0641 92.4381 63.5136 92.7824 61.9477 92.7824C60.1494 92.7824 59.5744 92.2905 59.5744 91.3066V91.1098H58.2532V91.1836C58.2532 92.9177 59.501 94 61.9477 94Z')
-              path(d='M72.7826 93.877V86.8298H76V85.6368H68.2439V86.8298H71.4736V93.877H72.7826Z')
-          .all-cryptist-fourth-top-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/building/building.webp` loading='lazy')
-        .all-cryptist-fourth-bottom-wrapper
-          .all-cryptist-fourth-bottom-left-image
-            img.clickable-image(src=`${URL}/img/cryptist/people/people.webp` loading='lazy')
-          .all-cryptist-fourth-bottom-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/people2/people2.webp` loading='lazy')
-      .all-cryptist-fifth-wrapper
-        .all-cryptist-fifth-left-wrapper
-          a.all-cryptist-fifth-left-top-button.each-url-button(href='https://github.com/GhostOfGauss' target='_blank')
-            .each-url-button-text Todd Norton
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-fifth-left-top-text.each-text-medium
-            | #{__('Errol Drummond, Murat Karademir, and Mustafa Aksöz made opening speeches, and the event officially started. Afterward, it is continued with Manta Network\'s ZK Cryptographer Todd Norton\'s presentation titled')}
-            span #{__(' "SNARKs, ZKPs, and Other Things The NSA Doesn\'t Want You to Know About".')} 
-            | #{__('cryptist-fifth-left-turkish-text')}
-          a.all-cryptist-fifth-left-top-second-button.each-url-button(href='https://youtu.be/HH-3jTgIpVU' target='_blank')
-            .each-url-button-text Video
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-fifth-left-middle-wrapper
-            .all-cryptist-fifth-left-middle-image
-              img.clickable-image(src=`${URL}/img/cryptist/people3/people3.webp` loading='lazy')
-            .all-cryptist-fifth-left-middle-quote-wrapper
-              .all-cryptist-fifth-left-middle-quote.each-text-small= __('"Todd Norton brought me Zero-Knowledge Proof and Blockchain philosophy with his presentation, like Prometheus, who brought Fire from the Olympians to humans."')
-              .all-cryptist-fifth-left-middle-author.each-text-small= __('Aytunç Sancar - Junior Developer at node101')
-        .all-cryptist-fifth-right-wrapper
-          .all-cryptist-fifth-right-top-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker/speaker.webp` loading='lazy')
-          a.all-cryptist-fifth-right-logo(href='https://manta.network/' target='_blank')
-            img(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
-      .all-cryptist-sixth-wrapper
-        .all-cryptist-sixth-left-wrapper
-          .all-cryptist-sixth-left-text.each-text-medium
-            | #{__('With her presentation titled')}
-            span #{__(' "Getting into Web3 as a Developer", ')}
-            | #{__('Eda Aktürk addressed young people who have not yet produced products in the web3 field and have not mastered web3 languages.')}
-          a.all-cryptist-sixth-left-button.each-url-button(href='https://youtu.be/VnuujVIJoHI' target='_blank')
-            .each-url-button-text Video
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-        .all-cryptist-sixth-right-wrapper
-          a.all-cryptist-sixth-right-button.each-url-button(href='https://www.linkedin.com/in/eda-akturk-a9624b105/' target='_blank')
-            .each-url-button-text Eda Aktürk
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-sixth-right-bottom-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker2/speaker2.webp` loading='lazy')
-      .all-cryptist-seventh-wrapper
-        .all-cryptist-seventh-left-wrapper
-          .all-cryptist-seventh-left-text.each-text-medium
-            | #{__('Subsequently, Albiona Hoti from Manta Network wrote code with the participants in her interactive presentation titled')}
-            span #{__(' "Private Everything: On-chain Privacy Demo with Manta Network\'s Dolphin Testnet".')}
-            | #{__('cryptist-seventh-left-turkish-text')}
-          a.all-cryptist-seventh-left-button.each-url-button(href='https://www.linkedin.com/in/albionahoti/' target='_blank')
-            .each-url-button-text Albiona Hoti
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-seventh-left-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker4/speaker4.webp` loading='lazy')
-          .all-cryptist-seventh-left-bottom-wrapper
-            a.all-cryptist-seventh-left-bottom-logo(href='https://manta.network/' target='_blank')
-              img(src=`${URL}/img/cryptist/sponsors/manta-network.webp` loading='lazy')
-            a.all-cryptist-seventh-left-bottom-button.each-url-button(href='https://youtu.be/gDaD8-9hP1M' target='_blank')
-              .each-url-button-text Video
-              svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-        .all-cryptist-seventh-right-wrapper
-          .all-cryptist-seventh-right-top-wrapper
-            a.all-cryptist-seventh-right-top-logo(href='https://www.aleo.org/' target='_blank')
-              img(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
-            a.all-cryptist-seventh-right-top-button.each-url-button(href='https://www.linkedin.com/in/anthonydiprinzio/' target='_blank')
-              .each-url-button-text Anthony DiPrinzio
-              svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-seventh-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker5/speaker5.webp` loading='lazy')
-          .all-cryptist-seventh-right-text.each-text-medium
-            | #{__('Anthony DiPrinzio of Aleo came with the presentation titled ')}
-            span #{__(' "Use Cases for Private Applications on Web3: Where is the Real Value?". ')}
-            | #{__('He evaluated the concepts of privacy and web3 with his presentation.')}
-          a.all-cryptist-seventh-right-button.each-url-button(href='https://youtu.be/7a4bkE14ZWw' target='_blank')
-            .each-url-button-text Video
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-      .all-cryptist-eighth-wrapper
-        .all-cryptist-eighth-left-wrapper
-          a.all-cryptist-eighth-left-button.each-url-button(href='https://www.linkedin.com/in/emretekisalp/' target='_blank')
-            .each-url-button-text Emre Tekişalp
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-eighth-left-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker6/speaker6.webp` loading='lazy')
-          .all-cryptist-eighth-left-bottom-wrapper
-            a.all-cryptist-eighth-left-bottom-button.each-url-button(href='https://youtu.be/OXA41DVsYsc' target='_blank')
-              .each-url-button-text Video
-              svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-            a.all-cryptist-eighth-left-bottom-logo(href='https://o1labs.org/' target='_blank')
-              img(src=`${URL}/img/cryptist/sponsors/o1-labs.webp` loading='lazy')
-        .all-cryptist-eighth-right-wrapper
-          .all-cryptist-eighth-right-text.each-text-medium
-            | #{__('Emre Tekişalp, CEO of O(1) Labs, with his presentation titled')}
-            span #{__(' "ZK and Web3 Mass Adoption (and it\'s not just about scalability)", ')}
-            | #{__('informed the young participants how O(1) labs aim to solve problems scaling zk universe. Also, Emre talked about his memories of his homeland, Türkiye, and how young developers could develop their careers internationally.')}
-          .all-cryptist-eighth-right-quote-wrapper
-            .all-cryptist-eighth-right-quote.each-text-small= __('"Emre\'s presentation introduced me to Mina. And, CryptIst introduced me to Emre"')
-            .all-cryptist-eighth-right-quote-author.each-text-small= __('Yasin Berk Yeşilyurt - Mina Community Builder')
-          .all-cryptist-eighth-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/people4/people4.webp` loading='lazy')
-      .all-cryptist-ninth-wrapper
-        .all-cryptist-ninth-left-wrapper
-          a.all-cryptist-ninth-left-button.each-url-button(href='https://twitter.com/toghrulmaharram' target='_blank')
-            .each-url-button-text Toghrul Maharramov
-            svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-ninth-left-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker7/speaker7.webp` loading='lazy')
-          .all-cryptist-ninth-left-text.each-text-medium
-            | #{__('The presentation titled')}
-            span #{__(' "Zero-Knowledge Proofs in the World of Rollups" ')}
-            | #{__('by Toghrul Maharramov from Scroll, one of the most exciting projects of the last period, brought up the place of zk-rollups in the future of blockchain.')}
-          .all-cryptist-ninth-left-bottom-wrapper
-            a.all-cryptist-ninth-left-bottom-button.each-url-button(href='https://youtu.be/vbXauYMXTi0' target='_blank')
-              .each-url-button-text Video
-              svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          a.all-cryptist-ninth-left-bottom-logo(href='https://scroll.io/' target='_blank')
-            img(src=`${URL}/img/cryptist/sponsors/scroll.webp` loading='lazy')
-        .all-cryptist-ninth-right-wrapper
-          .all-cryptist-ninth-right-text.each-text-medium
-            | #{__('After Toghrul\'s presentation, which received many questions from the participants, Kaan Uzdogan from the Ethereum Foundation made his presentation on')}
-            span #{__(' "Ethereum Rollup-Centric Roadmap".')}
-            | #{__('cryptist-ninth-right-turkish-text')}
-          .all-cryptist-ninth-right-middle-wrapper
-            a.all-cryptist-ninth-right-middle-logo(href='https://ethereum.foundation/' target='_blank')
-              img(src=`${URL}/img/cryptist/sponsors/ethereum-foundation.webp` loading='lazy')
-            a.all-cryptist-ninth-right-middle-button.each-url-button(href='https://www.linkedin.com/in/kuzdogan/?originalSubdomain=de' target='_blank')
-              .each-url-button-text Kaan Uzdoğan
-              svg.each-url-button-icon(viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.656854 13.6295L11.9224 3.00289M1.54723 1.42543L10.1732 1.25373L13.5258 4.60629L13.5484 13.4266")
-          .all-cryptist-ninth-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/speaker8/speaker8.webp` loading='lazy')
-      .all-cryptist-tenth-wrapper
-        .all-cryptist-tenth-left-wrapper
-          .all-cryptist-tenth-left-image
-            img.clickable-image(src=`${URL}/img/cryptist/people5/people5.webp` loading='lazy')
-          .all-cryptist-tenth-left-title.each-subtitle= __('Afterparty')
-          .all-cryptist-tenth-left-text.each-text-medium= __('The afterparty at "iguru Galata", one of the coolest and most popular nightclubs of the last period and located just below the Galata Tower, was organized under the sponsorship of Manta Netwok. During the night where iguru\'s famous cocktails were enjoyed, the participants, who learned the depths of the zero-knowledge universe all day long, had the opportunity to mingle with each other and with the speakers.')
-          a.all-cryptist-tenth-left-location-wrapper(href='https://goo.gl/maps/6FwWb8GY7xkfAkNF7' target='_blank')
-            svg.all-cryptist-tenth-left-location-icon(viewbox='0 0 14 18' xmlns='http://www.w3.org/2000/svg')
-              path(d='M6.87501 10.25C6.25694 10.25 5.65275 10.0667 5.13885 9.72334C4.62495 9.37996 4.22441 8.8919 3.98788 8.32089C3.75136 7.74987 3.68947 7.12153 3.81005 6.51534C3.93063 5.90915 4.22826 5.35233 4.6653 4.91529C5.10234 4.47825 5.65916 4.18062 6.26535 4.06005C6.87154 3.93947 7.49987 4.00135 8.07089 4.23788C8.64191 4.4744 9.12997 4.87494 9.47335 5.38884C9.81673 5.90275 10 6.50693 10 7.125C9.99906 7.95351 9.66952 8.74782 9.08367 9.33367C8.49783 9.91951 7.70352 10.2491 6.87501 10.25ZM6.87501 5.25C6.50417 5.25 6.14165 5.35997 5.83331 5.56599C5.52497 5.77202 5.28465 6.06486 5.14273 6.40747C5.00082 6.75008 4.96369 7.12708 5.03603 7.49079C5.10838 7.85451 5.28696 8.1886 5.54918 8.45083C5.8114 8.71305 6.1455 8.89163 6.50921 8.96397C6.87293 9.03632 7.24993 8.99919 7.59254 8.85727C7.93515 8.71536 8.22799 8.47504 8.43401 8.16669C8.64004 7.85835 8.75001 7.49584 8.75001 7.125C8.74946 6.62789 8.55174 6.15129 8.20023 5.79978C7.84872 5.44827 7.37212 5.25055 6.87501 5.25Z')
-              path(d='M6.87501 17.75L1.60282 11.5321C1.57288 11.4964 1.38519 11.2499 1.38519 11.2499C0.484508 10.0636 -0.00210416 8.6145 6.83948e-06 7.125C6.83948e-06 5.30164 0.724335 3.55295 2.01365 2.26364C3.30296 0.974328 5.05164 0.25 6.87501 0.25C8.69837 0.25 10.4471 0.974328 11.7364 2.26364C13.0257 3.55295 13.75 5.30164 13.75 7.125C13.7522 8.61389 13.266 10.0624 12.3658 11.2483L12.3648 11.2499C12.3648 11.2499 12.1773 11.4964 12.1494 11.5295L6.87501 17.75ZM2.38282 10.4969C2.38282 10.4969 2.52869 10.6895 2.56194 10.7309L6.87501 15.8174L11.1938 10.7237C11.2212 10.6892 11.368 10.4951 11.368 10.4951C12.1038 9.5258 12.5014 8.34195 12.5 7.125C12.5 5.63316 11.9074 4.20242 10.8525 3.14752C9.79759 2.09263 8.36685 1.5 6.87501 1.5C5.38316 1.5 3.95242 2.09263 2.89753 3.14752C1.84264 4.20242 1.25001 5.63316 1.25001 7.125C1.24862 8.34261 1.64656 9.52708 2.38282 10.4969Z')
-            .all-cryptist-tenth-left-location-text.each-text-small= __('Bereketzade, Galata Kulesi Sk. No: 10, 34420 Beyoğlu/İstanbul')
-        .all-cryptist-tenth-right-wrapper
-          .all-cryptist-tenth-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/iguru/iguru.webp` loading='lazy')
-          .all-cryptist-tenth-right-second-image
-            img.clickable-image(src=`${URL}/img/cryptist/people6/people6.webp` loading='lazy')
-      .all-cryptist-eleventh-wrapper
-        .all-cryptist-eleventh-left-wrapper
-          .all-cryptist-eleventh-image-top
-            img.clickable-image(src=`${URL}/img/cryptist/galata/galata.webp` loading='lazy')
-          .all-cryptist-eleventh-image-bottom
-            img.clickable-image(src=`${URL}/img/cryptist/robot-hand/robot-hand.webp` loading='lazy')
-        .all-cryptist-eleventh-right-wrapper
-          .all-cryptist-eleventh-right-image
-            img.clickable-image(src=`${URL}/img/cryptist/galata-inside/galata-inside.webp` loading='lazy')
-          .all-cryptist-eleventh-right-title.each-subtitle= __('Salt Galata')
-          .all-cryptist-eleventh-right-text.each-text-medium= __('Salt Galata, one of the most popular venues in Istanbul, hosted the one-day event. The unique view of the Golden Horn and the Bosphorus offered the participants an unforgettable experience.')
-          a.all-cryptist-eleventh-right-location-wrapper(href='https://goo.gl/maps/Djrco8hEHtUhzuFt5' target='_blank')
-            svg.all-cryptist-eleventh-right-location-icon(viewbox='0 0 14 18' xmlns='http://www.w3.org/2000/svg')
-              path(d='M6.87501 10.25C6.25694 10.25 5.65275 10.0667 5.13885 9.72334C4.62495 9.37996 4.22441 8.8919 3.98788 8.32089C3.75136 7.74987 3.68947 7.12153 3.81005 6.51534C3.93063 5.90915 4.22826 5.35233 4.6653 4.91529C5.10234 4.47825 5.65916 4.18062 6.26535 4.06005C6.87154 3.93947 7.49987 4.00135 8.07089 4.23788C8.64191 4.4744 9.12997 4.87494 9.47335 5.38884C9.81673 5.90275 10 6.50693 10 7.125C9.99906 7.95351 9.66952 8.74782 9.08367 9.33367C8.49783 9.91951 7.70352 10.2491 6.87501 10.25ZM6.87501 5.25C6.50417 5.25 6.14165 5.35997 5.83331 5.56599C5.52497 5.77202 5.28465 6.06486 5.14273 6.40747C5.00082 6.75008 4.96369 7.12708 5.03603 7.49079C5.10838 7.85451 5.28696 8.1886 5.54918 8.45083C5.8114 8.71305 6.1455 8.89163 6.50921 8.96397C6.87293 9.03632 7.24993 8.99919 7.59254 8.85727C7.93515 8.71536 8.22799 8.47504 8.43401 8.16669C8.64004 7.85835 8.75001 7.49584 8.75001 7.125C8.74946 6.62789 8.55174 6.15129 8.20023 5.79978C7.84872 5.44827 7.37212 5.25055 6.87501 5.25Z')
-              path(d='M6.87501 17.75L1.60282 11.5321C1.57288 11.4964 1.38519 11.2499 1.38519 11.2499C0.484508 10.0636 -0.00210416 8.6145 6.83948e-06 7.125C6.83948e-06 5.30164 0.724335 3.55295 2.01365 2.26364C3.30296 0.974328 5.05164 0.25 6.87501 0.25C8.69837 0.25 10.4471 0.974328 11.7364 2.26364C13.0257 3.55295 13.75 5.30164 13.75 7.125C13.7522 8.61389 13.266 10.0624 12.3658 11.2483L12.3648 11.2499C12.3648 11.2499 12.1773 11.4964 12.1494 11.5295L6.87501 17.75ZM2.38282 10.4969C2.38282 10.4969 2.52869 10.6895 2.56194 10.7309L6.87501 15.8174L11.1938 10.7237C11.2212 10.6892 11.368 10.4951 11.368 10.4951C12.1038 9.5258 12.5014 8.34195 12.5 7.125C12.5 5.63316 11.9074 4.20242 10.8525 3.14752C9.79759 2.09263 8.36685 1.5 6.87501 1.5C5.38316 1.5 3.95242 2.09263 2.89753 3.14752C1.84264 4.20242 1.25001 5.63316 1.25001 7.125C1.24862 8.34261 1.64656 9.52708 2.38282 10.4969Z')
-            .all-cryptist-eleventh-right-location-text.each-text-small= __('Azapkapı, Bankalar Cd. No:11, 34420 Beyoğlu/İstanbul')
-      .all-cryptist-footer-wrapper
-        .all-cryptist-footer-title.each-subtitle= __('THE FUTURE OF ZERO-KNOWLEDGE PROOF IS TALKED IN ISTANBUL')
-        .all-cryptist-footer-buttons-wrapper
-          .each-cryptist-footer-button-column
-            a.each-cryptist-footer-button(href='https://t.me/node101', target='_blank') Telegram
-              svg.each-cryptist-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-cryptist-footer-button-border-bottom
-            a.each-cryptist-footer-button(href='https://twitter.com/node_101', target='_blank') Twitter
-              svg.each-cryptist-footer-button-icon(viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-cryptist-footer-button-border-bottom
-          .each-cryptist-footer-button-column
-            a.each-cryptist-footer-button(href='https://node101.io', target='_blank')= __('Website')
-              svg.each-cryptist-footer-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-cryptist-footer-button-border-bottom
-            a.each-cryptist-footer-button(href='mailto: hello@node101.io' target='_blank')= __('Email')
-              .each-cryptist-footer-button-secondary-text hello@node101.io
-            .each-cryptist-footer-button-border-bottom
-  .each-event-page-wrapper.display-none.all-sui-move-workshop-wrapper
-    .each-event-page-inner-wrapper.all-sui-move-workshop-inner-wrapper
-      svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
-        path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
-        path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M1 1L12 11.5668V19.9474L1 31")
-      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
-      .all-sui-first-wrapper
-        .all-sui-first-left-wrapper
-          .all-sui-first-left-title= __('SUI MOVE WORKSHOP')
-          .all-sui-first-left-event-type.each-text-small= __('Workshop')
-          .all-sui-first-left-event-text.each-text-medium= __('Sui Move Language Workshops continue to be popular among young developers, with its fantastic tutor Damir Shamanaev, the author of the book "The Move Book" which introduced the Move language to the world, and one of the core team members that built the Sui project.')
-          .all-sui-first-left-event-stats-wrapper
-            .each-sui-first-left-event-stats
-              .each-sui-first-left-event-stats-number +40
-              .each-sui-first-left-event-stats-text.each-text-small= __('Participants')
-            .each-sui-first-left-event-stats
-              .each-sui-first-left-event-stats-number +10
-              .each-sui-first-left-event-stats-text.each-text-small= __('Case Study')
-            .each-sui-first-left-event-stats
-              .each-sui-first-left-event-stats-number 1
-              .each-sui-first-left-event-stats-text.each-text-small= __('Educator')
-        .all-sui-first-right-wrapper
-          .all-sui-first-right-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/people.webp` loading='lazy')
-      .all-sui-second-wrapper
-        .all-sui-second-left-wrapper.each-scroll-down-button
-          .each-scroll-down-button-text= __('Scroll down')
-          svg.each-scroll-down-button-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
-            path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
-        .all-sui-second-middle-wrapper
-          .all-sui-second-middle-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/laptop.webp` loading='lazy')
-        .all-sui-second-right-wrapper
-          .all-sui-second-right-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/code-snippet.webp` loading='lazy')
-          .all-sui-second-emoji 💧 👨‍💻 🌊 🏃‍♀️ 
-      .all-sui-third-wrapper
-        .all-sui-third-top-text= __('Move is a new generation web3 software language where more secure, flexible, and verifiable blockchain products can be written. The number of projects produced with Move is increasing day by day.')
-        .all-sui-third-bottom-text.each-text-medium= __('With Sui Move Language Workshops, we aimed to attract the attention of young software developers living in Istanbul to this new software language and to support them in developing projects on it.')
-        a.all-sui-third-button.each-url-button(href='https://github.com/MystenLabs/sui', target='_blank')
-          .each-url-button-text GitHub
-          svg.each-url-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-      .all-sui-fourth-wrapper
-        .all-sui-fourth-left-wrapper
-          .all-sui-fourth-left-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/building.webp` loading='lazy')
-          .all-sui-fourth-left-text.each-text-medium= __('University blockchain clubs, students, individual developers and software developers show interest in workshops held in the city\'s favorite web3 hubs.')
-        .all-sui-fourth-right-wrapper
-          .all-sui-fourth-right-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/building2.webp` loading='lazy')
-      .all-sui-fifth-wrapper
-        .all-sui-fifth-left-wrapper
-          .all-sui-fifth-left-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/laptop2.webp` loading='lazy')
-          .all-sui-fifth-left-quote-wrapper
-            .all-sui-fifth-left-quote-text.each-text-small= __('"Damir\'s devoted efforts inspired us to translate \'The Move Book\' into Turkish."')
-            .all-sui-fifth-left-quote-author.each-text-small= __('Kerem Kaya - YTU Blockchain')
-        .all-sui-fifth-right-wrapper
-          .all-sui-fifth-right-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/people2.webp` loading='lazy')
-          .all-sui-fifth-right-text.each-text-medium= __('Coffee-tea and snacks are served during the Sui Move Language Workshops, which are held for one whole day every month. With the workshops held under the creative atmosphere of the Lunapark, the participants get the chance to learn, produce, and meet each other.')
-      .all-sui-footer-wrapper
-        .all-sui-footer-left-wrapper
-          .all-sui-footer-left-text= __('Join our Telegram group to be informed about SUI Move Language Workshop events!')
-          .all-sui-footer-left-buttons-wrapper
-            a.each-sui-footer-left-button(href='https://t.me/node101', target='_blank') Telegram
-              svg.each-sui-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-sui-footer-left-button-border-bottom
-            a.each-sui-footer-left-button(href='https://twitter.com/node_101', target='_blank') Twitter
-              svg.each-sui-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-sui-footer-left-button-border-bottom
-            a.each-sui-footer-left-button(href='https://drive.google.com/drive/folders/11wJEDC4n0ZyaGz5Q1dUkABXsYMipmnIF?usp=drive_link', target='_blank')= __('Media')
-              svg.each-sui-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-sui-footer-left-button-border-bottom
-        .all-sui-footer-right-wrapper
-          .all-sui-footer-right-image
-            img.clickable-image(src=`${URL}/img/sui-move-workshop/code-snippet2.webp` loading='lazy')
-  .each-event-page-wrapper.display-none.all-aleo-tour-of-turkiye-wrapper
-    .each-event-page-inner-wrapper.all-aleo-tour-of-turkiye-inner-wrapper
-      svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
-        path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
-        path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M1 1L12 11.5668V19.9474L1 31")
-      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
-      .all-aleo-first-wrapper
-        .all-aleo-first-emoji 🏫 🛫 🇹🇷 🤓
-        .all-aleo-first-intro-wrapper
-          .all-aleo-first-intro-title= __('ALEO - TOUR OF TURKIYE')
-          .all-aleo-first-intro-event-type.each-text-small= __('Tour')
-          .all-aleo-first-intro-text.each-text-medium= __('Aleo is a platform for blockchain applications using Zero-Knowledge Proof technology. In order to produce more Zero-Knowledge Proof-based products, the attention of the best young developers should be drawn to this area. Aware of this necessity, the Aleo team met with university students in Istanbul, Ankara, and Izmir and gave seminars and workshops through our "Tour of Turkey" process.')
-          .all-aleo-first-intro-team-wrapper
-            .each-aleo-first-intro-team-member-wrapper
-              .each-aleo-first-intro-team-member-image
-                img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/errol.webp` loading='lazy')
-              a.each-aleo-first-intro-team-member-name-button-wrapper(href='https://www.linkedin.com/in/errol-drummond-354b8885/?originalSubdomain=tr', target='_blank')
-                .each-aleo-first-intro-team-member-name-button-text.each-text-large Errol Drummond
-                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-              .each-aleo-first-intro-team-member-title.each-text-small= __('ZK Educator, Aleo')
-            .each-aleo-first-intro-team-member-wrapper
-              .each-aleo-first-intro-team-member-image
-                img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/anthony.webp` loading='lazy')
-              a.each-aleo-first-intro-team-member-name-button-wrapper(href='https://www.linkedin.com/in/anthonydiprinzio/', target='_blank')
-                .each-aleo-first-intro-team-member-name-button-text.each-text-large Anthony DiPrinzio
-                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-              .each-aleo-first-intro-team-member-title.each-text-small= __('Head of Growth, Aleo')
-            .each-aleo-first-intro-team-member-wrapper
-              .each-aleo-first-intro-team-member-image
-                img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/mustafa.webp` loading='lazy')
-              a.each-aleo-first-intro-team-member-name-button-wrapper(href='https://twitter.com/mechul_eth', target='_blank')
-                .each-aleo-first-intro-team-member-name-button-text.each-text-large Mustafa Aksöz
-                svg.each-aleo-first-intro-team-member-name-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                  path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-              .each-aleo-first-intro-team-member-title.each-text-small= __('Co-Founder, node101')
-        .all-aleo-first-bottom-wrapper.each-scroll-down-button
-          .each-scroll-down-button-text(href='https://www.youtube.com/watch?v=ZQ0QG5J0Xr8', target='_blank')= __('Scroll down')
-          svg.each-scroll-down-button-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
-            path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355" stroke-width="1")
-      .all-aleo-second-wrapper
-        .all-aleo-second-left-wrapper
-          .all-aleo-second-left-title= __('TURKEY\'S MOST TALENTED YOUNG SOFTWARE DEVELOPERS SHOULD FOCUS ON WEB3')
-          .all-aleo-second-stats-wrapper
-            .each-aleo-first-left-event-stats
-              .each-aleo-first-left-event-stats-number +200
-              .each-aleo-first-left-event-stats-text= __('Participants')
-            .each-aleo-first-left-event-stats
-              .each-aleo-first-left-event-stats-number +3
-              .each-aleo-first-left-event-stats-text= __('Cities')
-            .each-aleo-first-left-event-stats
-              .each-aleo-first-left-event-stats-number 2
-              .each-aleo-first-left-event-stats-text= __('Universities')
-          .all-aleo-second-left-text.each-text-medium= __('node101 handled the entire process, including transportation, accommodation, and communication with university clubs. Errol Drummond and Anthony DiPrinzio from the Aleo team had the opportunity to meet with young software developers studying at Boğaziçi University and Middle East Technical University, some of the most critical higher education institutions in Turkey.')
-          a.all-aleo-second-left-logo(href='https://www.aleo.org', target='_blank')
-            img(src=`${URL}/img/cryptist/sponsors/aleo.webp` loading='lazy')
-        .all-aleo-second-right-wrapper
-          .all-aleo-second-right-image
-            img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/hand.webp` loading='lazy')
-      .all-aleo-third-wrapper
-        .all-aleo-third-left-wrapper
-          .all-aleo-third-left-image
-            img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/bogazici.webp` loading='lazy')
-        .all-aleo-third-right-wrapper
-          .all-aleo-third-right-title= __('BOGAZICI UNIVERSITY - İSTANBUL')
-          .all-aleo-third-right-text.each-text-medium= __('Bogazici University is one of the oldest educational institutions in the country, located on the most beautiful hill of the Bosphorus in Istanbul, the economic and cultural capital of Turkey. The university, the first educational institution to be opened abroad with the encouragement of the United States, has provided education since 1863. Therefore, the meeting held at the school, which stands out with its competitiveness in engineering, software, business, and economics, was trendy among the students.')
-          .all-aleo-third-right-inner-wrapper
-            .all-aleo-third-right-inner-image
-              img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/class.webp` loading='lazy')
-            .all-aleo-third-right-inner-text.each-text-medium= __('In the Aleo meeting, which was attended by BUchain, one of the pioneers of Blockchain research and development efforts at Boğaziçi University, there was an intense conversation about the solution proposals brought by Zero-Knowledge Proof technology.')
-      .all-aleo-fourth-wrapper
-        .all-aleo-fourth-left-wrapper
-          .all-aleo-fourth-left-title= __('MIDDLE EAST TECHNICAL UNIVERSITY - ANKARA')
-          .all-aleo-fourth-left-text.each-text-medium= __('Middle East Technical University (METU), located in the capital Ankara, is the country\'s leading technical university. Founded by the United Nations in 1956, the university aims to train young people who will participate in developing Middle Eastern countries. Participation in the meeting we held at the school, which is famous for its engineers and software developers, was more than expected.')
-          .all-aleo-fourth-left-image
-            img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/class2.webp` loading='lazy')
-        .all-aleo-fourth-right-wrapper
-          .all-aleo-fourth-right-top-image
-            img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu.webp` loading='lazy')
-          .all-aleo-fourth-right-bottom-image
-            img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/odtu2.webp` loading='lazy')
-          .all-aleo-fourth-right-text.each-text-medium= __('At the meeting where the solutions offered by Aleo for the expansion of the Zero-Knowledge Proof universe were evaluated, the interest and knowledge of the young people on the subject pleased the Aleo team.')
-      .all-aleo-fifth-wrapper
-        .all-aleo-fifth-title= __('İZMİR')
-        .all-aleo-fifth-text.each-text-medium= __('After the university meetings held in Istanbul and Ankara, we came together with the Aleo Turkish community in Izmir, the "Pearl of the Aegean", one of the country\'s most important gateways to the West. In this meeting, we discussed the latest issues that Aleo is working on and the milestones that are planned to be overcome. Along the road, together with the Aleo team, we visited essential ruins and natural wonders such as Sapanca Lake, Abant Lake, Ephesus Ancient City, and Troy Ancient City.')
-        .all-aleo-fifth-top-image
-          img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir.webp` loading='lazy')
-        .all-aleo-fifth-bottom-image
-          img.clickable-image(src=`${URL}/img/aleo-tour-of-turkiye/izmir2.webp` loading='lazy')
-      .all-aleo-footer-wrapper
-        a.each-aleo-footer-left-button(href='https://www.metu.edu.tr/tr', target='_blank')= __('Middle East Technical University')
-          svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-aleo-footer-left-button-border-bottom
-        a.each-aleo-footer-left-button(href='https://www.boun.edu.tr/en-US/Index', target='_blank')= __('Bogazici University')
-          svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-aleo-footer-left-button-border-bottom
-        a.each-aleo-footer-left-button(href='https://drive.google.com/drive/folders/1sTHu_vyXq_EYtOSJi1aYAk90OGaEAkzz?usp=drive_link', target='_blank')= __('Media')
-          svg.each-aleo-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-            path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-        .each-aleo-footer-left-button-border-bottom
-  .each-event-page-wrapper.display-none.all-nym-community-gathering-wrapper
-    .each-event-page-inner-wrapper.all-nym-community-gathering-inner-wrapper
-      svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
-        path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
-        path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M1 1L12 11.5668V19.9474L1 31")
-      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
-      .all-nym-first-wrapper
-        .all-nym-first-left-wrapper
-          .all-nym-first-left-title= __('NYM COMMUNITY GATHERING')
-          .all-nym-first-left-event-type= __('Gathering')
-          .all-nym-first-left-text.each-text-medium= __('The Internet is a medium where we scatter meaningful data at every click. But why do we distribute our private data on the Internet? NYM allows you to protect your data with unique solutions such as Mixnet and Privacy Credentials. The NYM team, which came to Istanbul, met at the gathering we organized with the anoNYMs in Turkey.')
-          .all-nym-first-left-bottom-wrapper.each-scroll-down-button
-            .each-scroll-down-button-text= __('Scroll down')
-            svg.each-scroll-down-button-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
-              path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
-        .all-nym-first-right-wrapper
-          .all-nym-first-right-emoji 🥂 🥳 🤝
-          .all-nym-first-right-image
-            img.clickable-image(src=`${URL}/img/nym-community-gathering/people.webp` loading='lazy')
-      .all-nym-second-wrapper
-        .each-nym-second-row-wrapper
-          if lang == 'tr'
-            svg.each-nym-second-svg(viewbox='0 0 699 113' xmlns='http://www.w3.org/2000/svg')
-              mask#path-1-outside-1_296_1588(maskunits='userSpaceOnUse' x='0.432617' y='0.810059')
-                rect(fill='white' x='0.432617' y='0.810059' width='699' height='112')
-                path(d='M59.8109 84.8972V8.40182H68.535V86.6865H51.4222L11.1568 10.303V86.6865H2.43262V8.40182H19.5454L59.8109 84.8972Z')
-                path(d='M150.38 8.40182L120.628 59.5105V78.7462H135.952V86.6865H96.6929V78.7462H111.904V59.5105L82.2644 8.40182H92.5545L116.602 50.8992L140.537 8.40182H150.38Z')
-                path(d='M243.347 8.40182V86.6865H234.958V10.5267L211.47 86.6865H196.035L172.547 10.1912V86.6865H164.158V8.40182H180.6L203.865 84.1143L227.129 8.40182H243.347Z')
-                path(d='M269.161 2.81006C271.771 2.81006 273.896 3.89113 275.537 6.05329C277.177 8.14088 277.997 10.7504 277.997 13.8818C277.997 21.412 274.381 27.1529 267.148 31.1044L263.01 26.4073C266.291 24.6179 268.565 22.5304 269.832 20.1445C271.1 17.6842 271.398 15.5593 270.727 13.7699C269.012 14.3664 267.334 14.18 265.694 13.2107C264.054 12.2415 263.233 10.7131 263.233 8.6255C263.233 6.98525 263.793 5.60594 264.911 4.48759C266.104 3.36924 267.521 2.81006 269.161 2.81006Z')
-                path(d='M302.379 86.6865H293.99V3.92842H302.379V86.6865Z')
-                path(d='M349.816 28.9795C358.54 28.9795 365.699 32.0736 371.291 38.2618C376.958 44.3755 379.456 51.943 378.785 60.9644H329.013C329.609 66.6307 331.883 71.2905 335.835 74.9438C339.862 78.5225 344.746 80.3119 350.487 80.3119C354.887 80.3119 358.801 79.2308 362.231 77.0687C365.662 74.9065 368.271 71.9615 370.061 68.2337L377.219 71.2533C374.833 76.2486 371.291 80.2746 366.594 83.3315C361.896 86.3137 356.49 87.8049 350.376 87.8049C341.95 87.8049 334.866 85.009 329.124 79.4172C323.457 73.7509 320.624 66.7426 320.624 58.3922C320.624 50.0418 323.42 43.0708 329.013 37.479C334.605 31.8127 341.54 28.9795 349.816 28.9795ZM349.816 36.4725C344.671 36.4725 340.197 38.1127 336.395 41.3932C332.592 44.6737 330.206 48.8862 329.236 54.0306H370.285C369.464 48.9608 367.153 44.7856 363.35 41.5051C359.622 38.15 355.11 36.4725 349.816 36.4725Z')
-                path(d='M445.24 37.7027H432.49V30.0979H445.24V9.85568L453.629 7.28347V30.0979H470.854V37.7027H453.629V67.4509C453.629 71.626 454.524 74.6083 456.313 76.3977C458.103 78.187 461.048 79.0817 465.15 79.0817H470.854V86.6865H465.15C458.364 86.6865 453.331 85.0836 450.05 81.8776C446.844 78.6717 445.24 73.7509 445.24 67.1154V37.7027Z')
-                path(d='M510.827 28.9795C517.24 28.9795 522.46 30.6943 526.486 34.1239C530.513 37.479 532.526 42.2134 532.526 48.327V86.6865H524.137V71.2533C520.334 82.2877 512.952 87.8049 501.991 87.8049C496.846 87.8049 492.633 86.3883 489.352 83.5551C486.146 80.722 484.543 76.9569 484.543 72.2598C484.543 67.1899 486.37 63.2757 490.024 60.5171C493.752 57.7585 498.561 56.0809 504.452 55.4845L517.091 54.0306C521.789 53.5833 524.137 51.4211 524.137 47.5442C524.137 44.04 522.907 41.2814 520.446 39.2684C517.986 37.2553 514.742 36.2488 510.715 36.2488C506.689 36.2488 503.222 37.2553 500.314 39.2684C497.406 41.2814 495.43 44.3755 494.386 48.5507L486.221 46.314C487.563 40.7222 490.434 36.4352 494.833 33.4529C499.307 30.4707 504.638 28.9795 510.827 28.9795ZM504.116 80.7593C509.858 80.7593 514.63 78.8581 518.433 75.0557C522.236 71.1787 524.137 66.668 524.137 61.5236V56.8265C523.093 59.0632 520.558 60.4052 516.532 60.8526L504.34 62.1946C500.91 62.6419 498.151 63.6857 496.063 65.326C493.976 66.8917 492.932 69.0538 492.932 71.8124C492.932 74.4965 493.938 76.6586 495.952 78.2989C498.039 79.9391 500.761 80.7593 504.116 80.7593Z')
-                path(d='M581.9 28.9795C588.536 28.9795 593.98 31.2908 598.23 35.9133C602.555 40.5358 604.717 46.3513 604.717 53.3596V86.6865H596.328V54.3661C596.328 49.3708 594.688 45.1956 591.407 41.8406C588.126 38.411 584.062 36.6962 579.216 36.6962C573.921 36.6962 569.559 38.3737 566.129 41.7287C562.699 45.0838 560.984 49.2963 560.984 54.3661V86.6865H552.596V30.0979H560.984V44.6365C562.55 39.8648 565.197 36.0624 568.926 33.2293C572.654 30.3961 576.979 28.9795 581.9 28.9795Z')
-                path(d='M633.109 86.6865H624.721V30.0979H633.109V86.6865Z')
-                path(d='M696.541 71.1414C696.541 75.6148 694.64 79.38 690.837 82.4368C687.109 85.4936 682.262 87.2457 676.297 87.693C681.367 90.3025 683.902 93.9558 683.902 98.6529C683.902 101.859 682.597 104.58 679.988 106.817C677.378 109.054 673.724 110.172 669.026 110.172C667.013 110.172 664.925 109.911 662.763 109.389L663.434 102.343C664.851 102.642 666.267 102.791 667.684 102.791C670.294 102.791 672.27 102.194 673.612 101.001C675.029 99.8085 675.737 98.2801 675.737 96.4162C675.737 93.2103 674.06 90.3025 670.704 87.693C665.037 87.3203 660.414 85.7546 656.835 82.996C653.256 80.1628 651.056 76.5095 650.236 72.0361L658.736 70.3586C659.929 77.2924 664.813 80.7593 673.389 80.7593C677.713 80.7593 681.218 79.9018 683.902 78.187C686.661 76.3977 688.041 74.1237 688.041 71.3651C688.041 68.5319 686.773 66.3698 684.238 64.8786C681.777 63.3875 678.795 62.3437 675.29 61.7473C671.785 61.0762 668.243 60.368 664.664 59.6224C661.16 58.8023 658.14 57.2366 655.605 54.9253C653.144 52.614 651.914 49.4454 651.914 45.4193C651.914 40.6477 653.927 36.7334 657.953 33.6766C661.98 30.5452 667.125 28.9795 673.389 28.9795C679.503 28.9795 684.499 30.3961 688.376 33.2293C692.254 36.0624 694.64 39.9021 695.535 44.7483L687.146 46.4258C685.878 39.5666 681.292 36.137 673.389 36.137C669.586 36.137 666.454 36.9571 663.993 38.5974C661.533 40.2376 660.302 42.3998 660.302 45.0838C660.302 47.6933 661.533 49.7063 663.993 51.1229C666.528 52.4649 669.548 53.4342 673.053 54.0306C676.632 54.6271 680.174 55.3726 683.679 56.2673C687.258 57.0875 690.278 58.7277 692.738 61.1881C695.274 63.6485 696.541 66.9662 696.541 71.1414Z')
-              path(d='M59.8109 84.8972V8.40182H68.535V86.6865H51.4222L11.1568 10.303V86.6865H2.43262V8.40182H19.5454L59.8109 84.8972Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M150.38 8.40182L120.628 59.5105V78.7462H135.952V86.6865H96.6929V78.7462H111.904V59.5105L82.2644 8.40182H92.5545L116.602 50.8992L140.537 8.40182H150.38Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M243.347 8.40182V86.6865H234.958V10.5267L211.47 86.6865H196.035L172.547 10.1912V86.6865H164.158V8.40182H180.6L203.865 84.1143L227.129 8.40182H243.347Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M269.161 2.81006C271.771 2.81006 273.896 3.89113 275.537 6.05329C277.177 8.14088 277.997 10.7504 277.997 13.8818C277.997 21.412 274.381 27.1529 267.148 31.1044L263.01 26.4073C266.291 24.6179 268.565 22.5304 269.832 20.1445C271.1 17.6842 271.398 15.5593 270.727 13.7699C269.012 14.3664 267.334 14.18 265.694 13.2107C264.054 12.2415 263.233 10.7131 263.233 8.6255C263.233 6.98525 263.793 5.60594 264.911 4.48759C266.104 3.36924 267.521 2.81006 269.161 2.81006Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M302.379 86.6865H293.99V3.92842H302.379V86.6865Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M349.816 28.9795C358.54 28.9795 365.699 32.0736 371.291 38.2618C376.958 44.3755 379.456 51.943 378.785 60.9644H329.013C329.609 66.6307 331.883 71.2905 335.835 74.9438C339.862 78.5225 344.746 80.3119 350.487 80.3119C354.887 80.3119 358.801 79.2308 362.231 77.0687C365.662 74.9065 368.271 71.9615 370.061 68.2337L377.219 71.2533C374.833 76.2486 371.291 80.2746 366.594 83.3315C361.896 86.3137 356.49 87.8049 350.376 87.8049C341.95 87.8049 334.866 85.009 329.124 79.4172C323.457 73.7509 320.624 66.7426 320.624 58.3922C320.624 50.0418 323.42 43.0708 329.013 37.479C334.605 31.8127 341.54 28.9795 349.816 28.9795ZM349.816 36.4725C344.671 36.4725 340.197 38.1127 336.395 41.3932C332.592 44.6737 330.206 48.8862 329.236 54.0306H370.285C369.464 48.9608 367.153 44.7856 363.35 41.5051C359.622 38.15 355.11 36.4725 349.816 36.4725Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M445.24 37.7027H432.49V30.0979H445.24V9.85568L453.629 7.28347V30.0979H470.854V37.7027H453.629V67.4509C453.629 71.626 454.524 74.6083 456.313 76.3977C458.103 78.187 461.048 79.0817 465.15 79.0817H470.854V86.6865H465.15C458.364 86.6865 453.331 85.0836 450.05 81.8776C446.844 78.6717 445.24 73.7509 445.24 67.1154V37.7027Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M510.827 28.9795C517.24 28.9795 522.46 30.6943 526.486 34.1239C530.513 37.479 532.526 42.2134 532.526 48.327V86.6865H524.137V71.2533C520.334 82.2877 512.952 87.8049 501.991 87.8049C496.846 87.8049 492.633 86.3883 489.352 83.5551C486.146 80.722 484.543 76.9569 484.543 72.2598C484.543 67.1899 486.37 63.2757 490.024 60.5171C493.752 57.7585 498.561 56.0809 504.452 55.4845L517.091 54.0306C521.789 53.5833 524.137 51.4211 524.137 47.5442C524.137 44.04 522.907 41.2814 520.446 39.2684C517.986 37.2553 514.742 36.2488 510.715 36.2488C506.689 36.2488 503.222 37.2553 500.314 39.2684C497.406 41.2814 495.43 44.3755 494.386 48.5507L486.221 46.314C487.563 40.7222 490.434 36.4352 494.833 33.4529C499.307 30.4707 504.638 28.9795 510.827 28.9795ZM504.116 80.7593C509.858 80.7593 514.63 78.8581 518.433 75.0557C522.236 71.1787 524.137 66.668 524.137 61.5236V56.8265C523.093 59.0632 520.558 60.4052 516.532 60.8526L504.34 62.1946C500.91 62.6419 498.151 63.6857 496.063 65.326C493.976 66.8917 492.932 69.0538 492.932 71.8124C492.932 74.4965 493.938 76.6586 495.952 78.2989C498.039 79.9391 500.761 80.7593 504.116 80.7593Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M581.9 28.9795C588.536 28.9795 593.98 31.2908 598.23 35.9133C602.555 40.5358 604.717 46.3513 604.717 53.3596V86.6865H596.328V54.3661C596.328 49.3708 594.688 45.1956 591.407 41.8406C588.126 38.411 584.062 36.6962 579.216 36.6962C573.921 36.6962 569.559 38.3737 566.129 41.7287C562.699 45.0838 560.984 49.2963 560.984 54.3661V86.6865H552.596V30.0979H560.984V44.6365C562.55 39.8648 565.197 36.0624 568.926 33.2293C572.654 30.3961 576.979 28.9795 581.9 28.9795Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M633.109 86.6865H624.721V30.0979H633.109V86.6865Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              path(d='M696.541 71.1414C696.541 75.6148 694.64 79.38 690.837 82.4368C687.109 85.4936 682.262 87.2457 676.297 87.693C681.367 90.3025 683.902 93.9558 683.902 98.6529C683.902 101.859 682.597 104.58 679.988 106.817C677.378 109.054 673.724 110.172 669.026 110.172C667.013 110.172 664.925 109.911 662.763 109.389L663.434 102.343C664.851 102.642 666.267 102.791 667.684 102.791C670.294 102.791 672.27 102.194 673.612 101.001C675.029 99.8085 675.737 98.2801 675.737 96.4162C675.737 93.2103 674.06 90.3025 670.704 87.693C665.037 87.3203 660.414 85.7546 656.835 82.996C653.256 80.1628 651.056 76.5095 650.236 72.0361L658.736 70.3586C659.929 77.2924 664.813 80.7593 673.389 80.7593C677.713 80.7593 681.218 79.9018 683.902 78.187C686.661 76.3977 688.041 74.1237 688.041 71.3651C688.041 68.5319 686.773 66.3698 684.238 64.8786C681.777 63.3875 678.795 62.3437 675.29 61.7473C671.785 61.0762 668.243 60.368 664.664 59.6224C661.16 58.8023 658.14 57.2366 655.605 54.9253C653.144 52.614 651.914 49.4454 651.914 45.4193C651.914 40.6477 653.927 36.7334 657.953 33.6766C661.98 30.5452 667.125 28.9795 673.389 28.9795C679.503 28.9795 684.499 30.3961 688.376 33.2293C692.254 36.0624 694.64 39.9021 695.535 44.7483L687.146 46.4258C685.878 39.5666 681.292 36.137 673.389 36.137C669.586 36.137 666.454 36.9571 663.993 38.5974C661.533 40.2376 660.302 42.3998 660.302 45.0838C660.302 47.6933 661.533 49.7063 663.993 51.1229C666.528 52.4649 669.548 53.4342 673.053 54.0306C676.632 54.6271 680.174 55.3726 683.679 56.2673C687.258 57.0875 690.278 58.7277 692.738 61.1881C695.274 63.6485 696.541 66.9662 696.541 71.1414Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_296_1588)')
-              defs
-                lineargradient#paint0(x1='-432.459' y1='-98.3761' x2='469.107' y2='32.8417' gradientunits='userSpaceOnUse')
-                  stop(stop-color='#F4711C')
-                  stop(offset='1' stop-color='#F12E4F')
-          else
-            svg.each-nym-second-svg(viewbox='0 0 618 88' xmlns='http://www.w3.org/2000/svg')
-              path(d="M85.64 1.99999H86.64V0.999994H85.64V1.99999ZM85.64 86V87H86.64V86H85.64ZM76.64 86H75.64V87H76.64V86ZM76.64 4.27999H77.64L75.6844 3.98532L76.64 4.27999ZM51.44 86V87H52.1781L52.3956 86.2947L51.44 86ZM34.88 86L33.924 86.2935L34.1409 87H34.88V86ZM9.68 3.92L10.636 3.6265L8.68 3.92H9.68ZM9.68 86V87H10.68V86H9.68ZM0.68 86H-0.32V87H0.68V86ZM0.68 1.99999V0.999994H-0.32V1.99999H0.68ZM18.32 1.99999L19.2759 1.70631L19.0589 0.999994H18.32V1.99999ZM43.28 83.24L42.3241 83.5337L43.28 86.645L44.2359 83.5337L43.28 83.24ZM68.24 1.99999V0.999994H67.5011L67.2841 1.70631L68.24 1.99999ZM84.64 1.99999V86H86.64V1.99999H84.64ZM85.64 85H76.64V87H85.64V85ZM77.64 86V4.27999H75.64V86H77.64ZM75.6844 3.98532L50.4844 85.7053L52.3956 86.2947L77.5956 4.57467L75.6844 3.98532ZM51.44 85H34.88V87H51.44V85ZM35.836 85.7065L10.636 3.6265L8.72404 4.21349L33.924 86.2935L35.836 85.7065ZM8.68 3.92V86H10.68V3.92H8.68ZM9.68 85H0.68V87H9.68V85ZM1.68 86V1.99999H-0.32V86.68ZM0.68 2.99999H18.32V0.999994H0.68V2.99999ZM17.3641 2.29368L42.3241 83.5337L44.2359 82.9463L19.2759 1.70631L17.3641 2.29368ZM44.2359 83.5337L69.1959 2.29368L67.2841 1.70631L42.3241 82.9463L44.2359 83.5337ZM68.24 2.99999H85.64V0.999994H68.24V2.99999ZM159.656 34.04L158.914 34.7105L158.922 34.7198L159.656 34.04ZM167.696 58.4V59.4H168.624L168.693 58.4742L167.696 58.4ZM114.296 58.4V57.4H113.185L113.301 58.5047L114.296 58.4ZM121.616 73.4L120.937 74.1343L120.944 74.1409L120.951 74.1474L121.616 73.4ZM158.336 66.2L158.724 65.2786L157.846 64.9083L157.434 65.7673L158.336 66.2ZM166.016 69.44L166.918 69.871L167.369 68.9258L166.404 68.5186L166.016 69.44ZM154.616 82.4L155.152 83.2443L155.161 83.2381L154.616 82.4ZM114.416 78.2L113.708 78.9072L113.718 78.9163L114.416 78.2ZM114.296 33.2L115.003 33.9071L115.007 33.9024L114.296 33.2ZM122.216 37.4L121.562 36.6428L121.562 36.6428L122.216 37.4ZM114.536 50.96L113.553 50.7748L113.33 51.96H114.536V50.96ZM158.576 50.96V51.96H159.75L159.563 50.8003L158.576 50.96ZM151.136 37.52L150.467 38.2633L150.474 38.2703L150.482 38.2772L151.136 37.52ZM136.616 25.08C145.708 25.08 153.113 28.2909 158.914 34.7104L160.398 33.3696C154.198 26.5091 146.244 23.08 136.616 23.08V25.08ZM158.922 34.7198C164.796 41.0574 167.4 48.8965 166.698 58.3258L168.693 58.4742C169.432 48.5435 166.675 40.1426 160.389 33.3602L158.922 34.7198ZM167.696 57.4H114.296V59.4H167.696V57.4ZM113.301 58.5047C113.965 64.8105 116.508 70.0394 120.937 74.1343L122.294 72.6657C118.244 68.9206 115.906 64.1495 115.29 58.2953L113.301 58.5047ZM120.951 74.1474C125.467 78.1614 130.948 80.16 137.336 80.16V78.16C131.403 78.16 126.404 76.3186 122.28 72.6526L120.951 74.1474ZM137.336 80.16C142.228 80.16 146.616 78.9551 150.469 76.5259L149.402 74.8341C145.896 77.0449 141.884 78.16 137.336 78.16V80.16ZM150.469 76.5259C154.311 74.1035 157.237 70.7988 159.237 66.6327L157.434 65.7673C155.594 69.6012 152.92 72.6165 149.402 74.8341L150.469 76.5259ZM157.947 67.1214L165.627 70.3614L166.404 68.5186L158.724 65.2786L157.947 67.1214ZM165.113 69.009C162.634 74.2009 158.958 78.3809 154.07 81.5619L155.161 83.2381C160.353 79.8591 164.278 75.3991 166.918 69.871L165.113 69.009ZM154.08 81.5558C149.216 84.6441 143.605 86.2 137.216 86.2V88.2C143.946 88.2 149.936 86.5559 155.152 83.2442L154.08 81.5558ZM137.216 86.2C128.421 86.2 121.076 83.2917 115.113 77.4837L113.718 78.9163C120.075 85.1083 127.93 88.2 137.216 88.2V86.2ZM115.123 77.4929C109.239 71.609 106.296 64.3472 106.296 55.64H104.296C104.296 64.8528 107.432 72.631 113.709 78.9071L115.123 77.4929ZM106.296 55.64C106.296 46.9287 109.202 39.7082 115.003 33.9071L113.589 32.4929C107.39 38.6918 104.296 46.4313 104.296 55.64H106.296ZM115.007 33.9024C120.811 28.0211 127.991 25.08 136.616 25.08V23.08C127.48 23.08 119.78 26.2189 113.584 32.4976L115.007 33.9024ZM136.616 31.12C130.862 31.12 125.829 32.962 121.562 36.6428L122.869 38.1572C126.762 34.7979 131.329 33.12 136.616 33.12V31.12ZM121.562 36.6428C117.303 40.3173 114.633 45.0426 113.553 50.7748L115.518 51.1451C116.518 45.8374 118.968 41.5226 122.869 38.1572L121.562 36.6428ZM114.536 51.96H158.576V49.96H114.536V51.96ZM159.563 50.8003C158.646 45.1338 156.051 40.4403 151.789 36.7628L150.482 38.2772C154.38 41.6397 156.745 45.9062 157.588 51.1197L159.563 50.8003ZM151.805 36.7767C147.61 33.0017 142.528 31.12 136.616 31.12V33.12C142.064 33.12 146.661 34.8383 150.467 38.2633L151.805 36.7767ZM238.078 34.04L237.335 34.7105L237.344 34.7198L238.078 34.04ZM246.118 58.4V59.4H247.046L247.115 58.4742L246.118 58.4ZM192.718 58.4V57.4H191.607L191.723 58.5047L192.718 58.4ZM200.038 73.4L199.359 74.1343L199.366 74.1409L199.373 74.1474L200.038 73.4ZM236.758 66.2L237.146 65.2786L236.268 64.9083L235.856 65.7673L236.758 66.2ZM244.438 69.44L245.34 69.871L245.791 68.9258L244.826 68.5186L244.438 69.44ZM233.038 82.4L233.574 83.2443L233.583 83.2381L233.038 82.4ZM192.838 78.2L192.13 78.9072L192.14 78.9163L192.838 78.2ZM192.718 33.2L193.425 33.9071L193.429 33.9024L192.718 33.2ZM200.638 37.4L199.984 36.6428L199.984 36.6428L200.638 37.4ZM192.958 50.96L191.975 50.7748L191.752 51.96H192.958V50.96ZM236.998 50.96V51.96H238.172L237.985 50.8003L236.998 50.96ZM229.558 37.52L228.889 38.2633L228.896 38.2703L228.904 38.2772L229.558 37.52ZM215.038 25.08C224.129 25.08 231.535 28.2909 237.336 34.7104L238.819 33.3696C232.62 26.5091 224.666 23.08 215.038 23.08V25.08ZM237.344 34.7198C243.218 41.0574 245.822 48.8965 245.12 58.3258L247.115 58.4742C247.853 48.5435 245.097 40.1426 238.811 33.3602L237.344 34.7198ZM246.118 57.4H192.718V59.4H246.118V57.4ZM191.723 58.5047C192.387 64.8105 194.929 70.0394 199.359 74.1343L200.716 72.6657C196.666 68.9206 194.328 64.1495 193.712 58.2953L191.723 58.5047ZM199.373 74.1474C203.889 78.1614 209.37 80.16 215.758 80.16V78.16C209.825 78.16 204.826 76.3186 200.702 72.6526L199.373 74.1474ZM215.758 80.16C220.65 80.16 225.038 78.9551 228.891 76.5259L227.824 74.8341C224.317 77.0449 220.305 78.16 215.758 78.16V80.16ZM228.891 76.5259C232.733 74.1035 235.659 70.7988 237.659 66.6327L235.856 65.7673C234.016 69.6012 231.342 72.6165 227.824 74.8341L228.891 76.5259ZM236.369 67.1214L244.049 70.3614L244.826 68.5186L237.146 65.2786L236.369 67.1214ZM243.535 69.009C241.055 74.2009 237.38 78.3809 232.492 81.5619L233.583 83.2381C238.775 79.8591 242.7 75.3991 245.34 69.871L243.535 69.009ZM232.501 81.5558C227.637 84.6441 222.027 86.2 215.638 86.2V88.2C222.368 88.2 228.358 86.5559 233.574 83.2442L232.501 81.5558ZM215.638 86.2C206.843 86.2 199.498 83.2917 193.535 77.4837L192.14 78.9163C198.497 85.1083 206.352 88.2 215.638 88.2V86.2ZM193.545 77.4929C187.661 71.609 184.718 64.3472 184.718 55.64H182.718C182.718 64.8528 185.854 72.631 192.13 78.9071L193.545 77.4929ZM184.718 55.64C184.718 46.9287 187.623 39.7082 193.425 33.9071L192.01 32.4929C185.812 38.6918 182.718 46.4313 182.718 55.64H184.718ZM193.429 33.9024C199.233 28.0211 206.413 25.08 215.038 25.08V23.08C205.902 23.08 198.202 26.2189 192.006 32.4976L193.429 33.9024ZM215.038 31.12C209.284 31.12 204.251 32.962 199.984 36.6428L201.291 38.1572C205.184 34.7979 209.751 33.12 215.038 33.12V31.12ZM199.984 36.6428C195.725 40.3173 193.055 45.0426 191.975 50.7748L193.94 51.1451C194.94 45.8374 197.39 41.5226 201.291 38.1572L199.984 36.6428ZM192.958 51.96H236.998V49.96H192.958V51.96ZM237.985 50.8003C237.068 45.1338 234.473 40.4403 230.211 36.7628L228.904 38.2772C232.802 41.6397 235.167 45.9062 236.01 51.1197L237.985 50.8003ZM230.226 36.7767C226.032 33.0017 220.95 31.12 215.038 31.12V33.12C220.485 33.12 225.083 34.8383 228.889 38.2633L230.226 36.7767ZM271.31 33.44H272.31V32.44H271.31V33.44ZM257.63 33.44H256.63V34.44H257.63V33.44ZM257.63 25.28V24.28H256.63V25.28H257.63ZM271.31 25.28V26.28H272.31V25.28H271.31ZM271.31 3.56L271.017 2.60394L270.31 2.8207V3.56H271.31ZM280.31 0.799995H281.31V-0.552637L280.017 -0.156059L280.31 0.799995ZM280.31 25.28H279.31V26.28H280.31V25.28ZM298.79 25.28H299.79V24.28H298.79V25.28ZM298.79 33.44V34.44H299.79V33.44H298.79ZM280.31 33.44V32.44H279.31V33.44H280.31ZM283.19 74.96L283.897 74.2529L283.897 74.2529L283.19 74.96ZM298.79 77.84H299.79V76.84H298.79V77.84ZM298.79 86V87H299.79V86H298.79ZM276.47 80.84L275.763 81.5472L275.771 81.5552L276.47 80.84ZM271.31 32.44H257.63V34.44H271.31V32.44ZM258.63 33.44V25.28H256.63V33.44H258.63ZM257.63 26.28H271.31V24.28H257.63V26.28ZM272.31 25.28V3.56H270.31V25.28H272.31ZM271.603 4.51605L280.603 1.75605L280.017 -0.156059L271.017 2.60394L271.603 4.51605ZM279.31 0.799995V25.28H281.31V0.799995H279.31ZM280.31 26.28H298.79V24.28H280.31V26.28ZM297.79 25.28V33.44H299.79V25.28H297.79ZM298.79 32.44H280.31V34.44H298.79V32.44ZM279.31 33.44V65.36H281.31V33.44H279.31ZM279.31 65.36C279.31 69.9415 280.285 73.469 282.483 75.6671L283.897 74.2529C282.255 72.611 281.31 69.7385 281.31 65.36H279.31ZM282.483 75.6671C284.678 77.8625 288.162 78.84 292.67 78.84V76.84C288.378 76.84 285.542 75.8975 283.897 74.2529L282.483 75.6671ZM292.67 78.84H298.79V76.84H292.67V78.84ZM297.79 77.84V86H299.79V77.84H297.79ZM298.79 85H292.67V87H298.79V85ZM292.67 85C285.527 85 280.429 83.3108 277.169 80.1248L275.771 81.5552C279.551 85.2492 285.253 87 292.67 87V85ZM277.177 80.1329C273.996 76.9523 272.31 71.9775 272.31 65H270.31C270.31 72.2625 272.064 77.8477 275.763 81.5471L277.177 80.1329ZM272.31 65V33.44H270.31V65H272.31ZM421.303 84.08L420.418 84.5457L422.303 84.08H421.303ZM421.303 1.99999V0.999994H420.303V1.99999H421.303ZM430.663 1.99999H431.663V0.999994H430.663V1.99999ZM430.663 86V87H431.663V86H430.663ZM412.303 86L411.418 86.4663L411.699 87H412.303V86ZM369.103 4.04L369.987 3.57372L368.103 4.04H369.103ZM369.103 86V87H370.103V86H369.103ZM359.743 86H358.743V87H359.743V86ZM359.743 1.99999V0.999994H358.743V1.99999H359.743ZM378.103 1.99999L378.987 1.53425L378.706 0.999994H378.103V1.99999ZM422.303 84.08V1.99999H420.303V84.08H422.303ZM421.303 2.99999H430.663V0.999994H421.303V2.99999ZM429.663 1.99999V86H431.663V1.99999H429.663ZM430.663 85H412.303V87H430.663V85ZM413.187 85.5337L369.987 3.57372L368.218 4.50628L411.418 86.4663L413.187 85.5337ZM368.103 4.04V86H370.103V4.04H368.103ZM369.103 85H359.743V87H369.103V85ZM360.743 86V1.99999H358.743V86H360.743ZM359.743 2.99999H378.103V0.999994H359.743V2.99999ZM377.218 2.46574L420.418 84.5457L422.187 83.6143L378.987 1.53425L377.218 2.46574ZM517.873 1.99999L518.737 2.50304L519.612 0.999994H517.873V1.99999ZM485.953 56.84L485.088 56.337L484.953 56.5702V56.84H485.953ZM485.953 77.48H484.953V78.48H485.953V77.48ZM502.393 77.48H503.393V76.48H502.393V77.48ZM502.393 86V87H503.393V86H502.393ZM460.273 86H459.273V87H460.273V86ZM460.273 77.48V76.48H459.273V77.48H460.273ZM476.593 77.48V78.48H477.593V77.48H476.593ZM476.593 56.84H477.593V56.571L477.458 56.3384L476.593 56.84ZM444.793 1.99999V0.999994H443.057L443.927 2.50163L444.793 1.99999ZM455.833 1.99999L456.703 1.50756L456.416 0.999994H455.833V1.99999ZM481.633 47.6L480.762 48.0924L481.635 49.6343L482.504 48.0907L481.633 47.6ZM507.313 1.99999V0.999994H506.728L506.441 1.5093L507.313 1.99999ZM517.008 1.49695L485.088 56.337L486.817 57.343L518.737 2.50304L517.008 1.49695ZM484.953 56.84V77.48H486.953V56.84H484.953ZM485.953 78.48H502.393V76.48H485.953V78.48ZM501.393 77.48V86H503.393V77.48H501.393ZM502.393 85H460.273V87H502.393V85ZM461.273 86V77.48H459.273V86H461.273ZM460.273 78.48H476.593V76.48H460.273V78.48ZM477.593 77.48V56.84H475.593V77.48H477.593ZM477.458 56.3384L445.658 1.49836L443.927 2.50163L475.727 57.3416L477.458 56.3384ZM444.793 2.99999H455.833V0.999994H444.793V2.99999ZM454.962 2.49243L480.762 48.0924L482.503 47.1076L456.703 1.50756L454.962 2.49243ZM482.504 48.0907L508.184 2.49069L506.441 1.5093L480.761 47.1093L482.504 48.0907ZM507.313 2.99999H517.873V0.999994H507.313V2.99999ZM617.015 1.99999H618.015V0.999994H617.015V1.99999ZM617.015 86V87H618.015V86H617.015ZM608.015 86H607.015V87H608.015V86ZM608.015 4.27999H609.015L607.059 3.98532L608.015 4.27999ZM582.815 86V87H583.553L583.771 86.2947L582.815 86ZM566.255 86L565.299 86.2935L565.516 87H566.255V86ZM541.055 3.92L542.011 3.6265L540.055 3.92H541.055ZM541.055 86V87H542.055V86H541.055ZM532.055 86H531.055V87H532.055V86ZM532.055 1.99999V0.999994H531.055V1.99999H532.055ZM549.695 1.99999L550.651 1.70631L550.434 0.999994H549.695V1.99999ZM574.655 83.24L573.699 83.5337L574.655 86.645L575.611 83.5337L574.655 83.24ZM599.615 1.99999V0.999994H598.876L598.659 1.70631L599.615 1.99999ZM616.015 1.99999V86H618.015V1.99999H616.015ZM617.015 85H608.015V87H617.015V85ZM609.015 86V4.27999H607.015V86H609.015ZM607.059 3.98532L581.859 85.7053L583.771 86.2947L608.971 4.57467L607.059 3.98532ZM582.815 85H566.255V87H582.815V85ZM567.211 85.7065L542.011 3.6265L540.099 4.21349L565.299 86.2935L567.211 85.7065ZM540.055 3.92V86H542.055V3.92H540.055ZM541.055 85H532.055V87H541.055V85ZM533.055 86V1.99999H531.055V86H533.055ZM532.055 2.99999H549.695V0.999994H532.055V2.99999ZM548.739 2.29368L573.699 83.5337L575.611 82.9463L550.651 1.70631L548.739 2.29368ZM575.611 83.5337L600.571 2.29368L598.659 1.70631L573.699 82.9463L575.611 83.5337ZM599.615 2.99999H617.015V0.999994H599.615V2.99999Z" fill='url(#paint0)')
-              defs
-                lineargradient#paint0(x1='-112.666' y1='-31.0544' x2='746.821' y2='-26.2774' gradientunits='userSpaceOnUse')
-                  stop(stop-color='#F4711C')
-                  stop(offset='1' stop-color='#F12E4F')
-          .each-nym-second-image
-            img.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image.webp` loading='lazy')
-        .each-nym-second-row-wrapper
-          .each-nym-second-image
-            img.clickable-image(src=`${URL}/img/nym-community-gathering/collage-image2.webp` loading='lazy')
-          
-          if lang == 'tr'
-            svg.each-nym-second-svg(viewbox='0 0 626 90' xmlns='http://www.w3.org/2000/svg')
-              mask#path-1-outside-1_287_1935(maskunits='userSpaceOnUse' x='-0.0390625' y='0.797852')
-                rect(fill='white' x='-0.0390625' y='0.797852' width='626' height='89')
-                path(d='M80.017 85.1187H70.6498L62.5093 64.4272H20.1341L11.9936 85.1187H2.96094L33.8503 7.24762H49.1277L80.017 85.1187ZM41.3217 10.14L23.1449 56.5289H59.4985L41.3217 10.14Z')
-                path(d='M117.904 27.7166C124.52 27.7166 129.947 30.0156 134.185 34.6137C138.497 39.2118 140.653 44.9965 140.653 51.9679V85.1187H132.289V52.9691C132.289 48.0001 130.654 43.847 127.383 40.5097C124.111 37.0982 120.06 35.3924 115.228 35.3924C109.949 35.3924 105.6 37.0611 102.18 40.3984C98.7606 43.7358 97.0508 47.926 97.0508 52.9691V85.1187H88.6872V28.829H97.0508V43.2908C98.6119 38.5444 101.251 34.7621 104.968 31.9439C108.685 29.1257 112.997 27.7166 117.904 27.7166Z')
-                path(d='M160.708 77.8878C155.058 72.2514 152.233 65.2801 152.233 56.9739C152.233 48.6676 155.058 41.7334 160.708 36.1712C166.432 30.5348 173.495 27.7166 181.895 27.7166C190.296 27.7166 197.321 30.5348 202.971 36.1712C208.696 41.7334 211.558 48.6676 211.558 56.9739C211.558 65.2801 208.696 72.2514 202.971 77.8878C197.321 83.45 190.296 86.2311 181.895 86.2311C173.495 86.2311 166.432 83.45 160.708 77.8878ZM166.841 41.7334C162.826 45.8123 160.819 50.8925 160.819 56.9739C160.819 63.0552 162.826 68.1724 166.841 72.3256C170.93 76.4045 175.948 78.444 181.895 78.444C187.917 78.444 192.935 76.4045 196.95 72.3256C200.964 68.2466 202.971 63.1294 202.971 56.9739C202.971 50.8183 200.964 45.7011 196.95 41.6221C192.935 37.5432 187.917 35.5037 181.895 35.5037C175.948 35.5037 170.93 37.5802 166.841 41.7334Z')
-                path(d='M280.821 83.3388V7.24762H289.519V85.1187H272.458L232.313 9.13878V85.1187H223.615V7.24762H240.676L280.821 83.3388Z')
-                path(d='M364.986 7.24762L335.324 58.0863V77.2203H350.601V85.1187H311.46V77.2203H326.626V58.0863L297.074 7.24762H307.334L331.309 49.5205L355.173 7.24762H364.986Z')
-                path(d='M451.542 7.24762V85.1187H443.178V9.36126L419.76 85.1187H404.372L380.954 9.02753V85.1187H372.59V7.24762H388.983L412.178 82.5601L435.372 7.24762H451.542Z')
-                path(d='M524.539 52.0791L551.302 85.1187H540.486L518.852 58.1975L508.258 69.4332V85.1187H499.895V2.79785H508.258V58.5313L535.69 28.829H546.396L524.539 52.0791Z')
-                path(d='M579.927 27.7166C586.321 27.7166 591.525 29.4223 595.539 32.8338C599.554 36.1712 601.561 40.8805 601.561 46.9619V85.1187H593.198V69.767C589.406 80.7431 582.046 86.2311 571.118 86.2311C565.988 86.2311 561.788 84.822 558.517 82.0038C555.32 79.1856 553.722 75.4404 553.722 70.7682C553.722 65.7251 555.543 61.8315 559.186 59.0875C562.903 56.3435 567.698 54.6748 573.571 54.0815L586.172 52.6353C590.856 52.1903 593.198 50.0396 593.198 46.1831C593.198 42.6975 591.971 39.9535 589.518 37.9511C587.064 35.9487 583.831 34.9475 579.816 34.9475C575.802 34.9475 572.345 35.9487 569.445 37.9511C566.546 39.9535 564.576 43.0312 563.535 47.1843L555.394 44.9595C556.733 39.3972 559.595 35.1329 563.981 32.1664C568.442 29.1998 573.757 27.7166 579.927 27.7166ZM573.237 79.2227C578.961 79.2227 583.719 77.3316 587.51 73.5493C591.302 69.6928 593.198 65.2059 593.198 60.0887V55.4164C592.157 57.6413 589.629 58.9762 585.615 59.4212L573.46 60.7562C570.04 61.2011 567.289 62.2394 565.208 63.871C563.126 65.4284 562.085 67.5791 562.085 70.3232C562.085 72.993 563.089 75.1438 565.096 76.7753C567.178 78.4069 569.891 79.2227 573.237 79.2227Z')
-                path(d='M623.801 85.1187H615.438V2.79785H623.801V85.1187Z')
-              path(d='M80.017 85.1187H70.6498L62.5093 64.4272H20.1341L11.9936 85.1187H2.96094L33.8503 7.24762H49.1277L80.017 85.1187ZM41.3217 10.14L23.1449 56.5289H59.4985L41.3217 10.14Z' fill='url(#paint0)')
-              path(d='M117.904 27.7166C124.52 27.7166 129.947 30.0156 134.185 34.6137C138.497 39.2118 140.653 44.9965 140.653 51.9679V85.1187H132.289V52.9691C132.289 48.0001 130.654 43.847 127.383 40.5097C124.111 37.0982 120.06 35.3924 115.228 35.3924C109.949 35.3924 105.6 37.0611 102.18 40.3984C98.7606 43.7358 97.0508 47.926 97.0508 52.9691V85.1187H88.6872V28.829H97.0508V43.2908C98.6119 38.5444 101.251 34.7621 104.968 31.9439C108.685 29.1257 112.997 27.7166 117.904 27.7166Z' fill='url(#paint0)')
-              path(d='M160.708 77.8878C155.058 72.2514 152.233 65.2801 152.233 56.9739C152.233 48.6676 155.058 41.7334 160.708 36.1712C166.432 30.5348 173.495 27.7166 181.895 27.7166C190.296 27.7166 197.321 30.5348 202.971 36.1712C208.696 41.7334 211.558 48.6676 211.558 56.9739C211.558 65.2801 208.696 72.2514 202.971 77.8878C197.321 83.45 190.296 86.2311 181.895 86.2311C173.495 86.2311 166.432 83.45 160.708 77.8878ZM166.841 41.7334C162.826 45.8123 160.819 50.8925 160.819 56.9739C160.819 63.0552 162.826 68.1724 166.841 72.3256C170.93 76.4045 175.948 78.444 181.895 78.444C187.917 78.444 192.935 76.4045 196.95 72.3256C200.964 68.2466 202.971 63.1294 202.971 56.9739C202.971 50.8183 200.964 45.7011 196.95 41.6221C192.935 37.5432 187.917 35.5037 181.895 35.5037C175.948 35.5037 170.93 37.5802 166.841 41.7334Z' fill='url(#paint0)')
-              path(d='M280.821 83.3388V7.24762H289.519V85.1187H272.458L232.313 9.13878V85.1187H223.615V7.24762H240.676L280.821 83.3388Z' fill='url(#paint0)')
-              path(d='M364.986 7.24762L335.324 58.0863V77.2203H350.601V85.1187H311.46V77.2203H326.626V58.0863L297.074 7.24762H307.334L331.309 49.5205L355.173 7.24762H364.986Z' fill='url(#paint0)')
-              path(d='M451.542 7.24762V85.1187H443.178V9.36126L419.76 85.1187H404.372L380.954 9.02753V85.1187H372.59V7.24762H388.983L412.178 82.5601L435.372 7.24762H451.542Z' fill='url(#paint0)')
-              path(d='M524.539 52.0791L551.302 85.1187H540.486L518.852 58.1975L508.258 69.4332V85.1187H499.895V2.79785H508.258V58.5313L535.69 28.829H546.396L524.539 52.0791Z' fill='url(#paint0)')
-              path(d='M579.927 27.7166C586.321 27.7166 591.525 29.4223 595.539 32.8338C599.554 36.1712 601.561 40.8805 601.561 46.9619V85.1187H593.198V69.767C589.406 80.7431 582.046 86.2311 571.118 86.2311C565.988 86.2311 561.788 84.822 558.517 82.0038C555.32 79.1856 553.722 75.4404 553.722 70.7682C553.722 65.7251 555.543 61.8315 559.186 59.0875C562.903 56.3435 567.698 54.6748 573.571 54.0815L586.172 52.6353C590.856 52.1903 593.198 50.0396 593.198 46.1831C593.198 42.6975 591.971 39.9535 589.518 37.9511C587.064 35.9487 583.831 34.9475 579.816 34.9475C575.802 34.9475 572.345 35.9487 569.445 37.9511C566.546 39.9535 564.576 43.0312 563.535 47.1843L555.394 44.9595C556.733 39.3972 559.595 35.1329 563.981 32.1664C568.442 29.1998 573.757 27.7166 579.927 27.7166ZM573.237 79.2227C578.961 79.2227 583.719 77.3316 587.51 73.5493C591.302 69.6928 593.198 65.2059 593.198 60.0887V55.4164C592.157 57.6413 589.629 58.9762 585.615 59.4212L573.46 60.7562C570.04 61.2011 567.289 62.2394 565.208 63.871C563.126 65.4284 562.085 67.5791 562.085 70.3232C562.085 72.993 563.089 75.1438 565.096 76.7753C567.178 78.4069 569.891 79.2227 573.237 79.2227Z' fill='url(#paint0)')
-              path(d='M623.801 85.1187H615.438V2.79785H623.801V85.1187Z' fill='url(#paint0)')
-              path(d='M80.017 85.1187H70.6498L62.5093 64.4272H20.1341L11.9936 85.1187H2.96094L33.8503 7.24762H49.1277L80.017 85.1187ZM41.3217 10.14L23.1449 56.5289H59.4985L41.3217 10.14Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M117.904 27.7166C124.52 27.7166 129.947 30.0156 134.185 34.6137C138.497 39.2118 140.653 44.9965 140.653 51.9679V85.1187H132.289V52.9691C132.289 48.0001 130.654 43.847 127.383 40.5097C124.111 37.0982 120.06 35.3924 115.228 35.3924C109.949 35.3924 105.6 37.0611 102.18 40.3984C98.7606 43.7358 97.0508 47.926 97.0508 52.9691V85.1187H88.6872V28.829H97.0508V43.2908C98.6119 38.5444 101.251 34.7621 104.968 31.9439C108.685 29.1257 112.997 27.7166 117.904 27.7166Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M160.708 77.8878C155.058 72.2514 152.233 65.2801 152.233 56.9739C152.233 48.6676 155.058 41.7334 160.708 36.1712C166.432 30.5348 173.495 27.7166 181.895 27.7166C190.296 27.7166 197.321 30.5348 202.971 36.1712C208.696 41.7334 211.558 48.6676 211.558 56.9739C211.558 65.2801 208.696 72.2514 202.971 77.8878C197.321 83.45 190.296 86.2311 181.895 86.2311C173.495 86.2311 166.432 83.45 160.708 77.8878ZM166.841 41.7334C162.826 45.8123 160.819 50.8925 160.819 56.9739C160.819 63.0552 162.826 68.1724 166.841 72.3256C170.93 76.4045 175.948 78.444 181.895 78.444C187.917 78.444 192.935 76.4045 196.95 72.3256C200.964 68.2466 202.971 63.1294 202.971 56.9739C202.971 50.8183 200.964 45.7011 196.95 41.6221C192.935 37.5432 187.917 35.5037 181.895 35.5037C175.948 35.5037 170.93 37.5802 166.841 41.7334Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M280.821 83.3388V7.24762H289.519V85.1187H272.458L232.313 9.13878V85.1187H223.615V7.24762H240.676L280.821 83.3388Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M364.986 7.24762L335.324 58.0863V77.2203H350.601V85.1187H311.46V77.2203H326.626V58.0863L297.074 7.24762H307.334L331.309 49.5205L355.173 7.24762H364.986Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M451.542 7.24762V85.1187H443.178V9.36126L419.76 85.1187H404.372L380.954 9.02753V85.1187H372.59V7.24762H388.983L412.178 82.5601L435.372 7.24762H451.542Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M524.539 52.0791L551.302 85.1187H540.486L518.852 58.1975L508.258 69.4332V85.1187H499.895V2.79785H508.258V58.5313L535.69 28.829H546.396L524.539 52.0791Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M579.927 27.7166C586.321 27.7166 591.525 29.4223 595.539 32.8338C599.554 36.1712 601.561 40.8805 601.561 46.9619V85.1187H593.198V69.767C589.406 80.7431 582.046 86.2311 571.118 86.2311C565.988 86.2311 561.788 84.822 558.517 82.0038C555.32 79.1856 553.722 75.4404 553.722 70.7682C553.722 65.7251 555.543 61.8315 559.186 59.0875C562.903 56.3435 567.698 54.6748 573.571 54.0815L586.172 52.6353C590.856 52.1903 593.198 50.0396 593.198 46.1831C593.198 42.6975 591.971 39.9535 589.518 37.9511C587.064 35.9487 583.831 34.9475 579.816 34.9475C575.802 34.9475 572.345 35.9487 569.445 37.9511C566.546 39.9535 564.576 43.0312 563.535 47.1843L555.394 44.9595C556.733 39.3972 559.595 35.1329 563.981 32.1664C568.442 29.1998 573.757 27.7166 579.927 27.7166ZM573.237 79.2227C578.961 79.2227 583.719 77.3316 587.51 73.5493C591.302 69.6928 593.198 65.2059 593.198 60.0887V55.4164C592.157 57.6413 589.629 58.9762 585.615 59.4212L573.46 60.7562C570.04 61.2011 567.289 62.2394 565.208 63.871C563.126 65.4284 562.085 67.5791 562.085 70.3232C562.085 72.993 563.089 75.1438 565.096 76.7753C567.178 78.4069 569.891 79.2227 573.237 79.2227Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              path(d='M623.801 85.1187H615.438V2.79785H623.801V85.1187Z' stroke='url(#paint0)' stroke-width='4' mask='url(#path-1-outside-1_287_1935)')
-              defs
-                lineargradient#paint0(x1='-57.16' y1='-29.1984' x2='365.166' y2='126.142' gradientunits='userSpaceOnUse')
-                  stop(stop-color='#F4711C')
-                  stop(offset='1' stop-color='#F12E4F')
-          else
-            svg.each-nym-second-svg(viewbox='0 0 758 110' fill='none' xmlns='http://www.w3.org/2000/svg')
-              path(d='M0.12 64.4L9.48 62.48C10.28 67.68 12.56 71.72 16.32 74.6C20.16 77.4 25.2 78.8 31.44 78.8C37.36 78.8 42.16 77.44 45.84 74.72C49.52 72 51.36 68.52 51.36 64.28C51.36 61.16 50.44 58.52 48.6 56.36C46.84 54.2 44.52 52.52 41.64 51.32C38.76 50.12 35.56 49.08 32.04 48.2C28.6 47.24 25.12 46.2 21.6 45.08C18.08 43.88 14.88 42.48 12 40.88C9.12 39.28 6.76 37 4.92 34.04C3.16 31.08 2.28 27.52 2.28 23.36C2.28 16.88 4.92 11.52 10.2 7.28C15.56 2.96 22.28 0.799995 30.36 0.799995C38.44 0.799995 45.12 2.92 50.4 7.16C55.76 11.4 58.96 16.88 60 23.6L50.52 25.52C49.8 20.64 47.6 16.68 43.92 13.64C40.32 10.6 35.76 9.08 30.24 9.08C24.88 9.08 20.48 10.4 17.04 13.04C13.6 15.68 11.88 19 11.88 23C11.88 26.04 12.76 28.6 14.52 30.68C16.36 32.68 18.72 34.24 21.6 35.36C24.48 36.4 27.68 37.4 31.2 38.36C34.72 39.24 38.2 40.28 41.64 41.48C45.16 42.6 48.36 44 51.24 45.68C54.12 47.36 56.44 49.76 58.2 52.88C60.04 55.92 60.96 59.64 60.96 64.04C60.96 70.76 58.12 76.32 52.44 80.72C46.76 85.04 39.68 87.2 31.2 87.2C22.64 87.2 15.56 85.16 9.96 81.08C4.36 77 1.08 71.44 0.12 64.4ZM81.6928 33.44H68.0128V25.28H81.6928V3.56L90.6928 0.799995V25.28H109.173V33.44H90.6928V65.36C90.6928 69.84 91.6528 73.04 93.5728 74.96C95.4928 76.88 98.6528 77.84 103.053 77.84H109.173V86H103.053C95.7728 86 90.3728 84.28 86.8528 80.84C83.4128 77.4 81.6928 72.12 81.6928 65V33.44ZM145.46 24.08C152.34 24.08 157.94 25.92 162.26 29.6C166.58 33.2 168.74 38.28 168.74 44.84V86H159.74V69.44C155.66 81.28 147.74 87.2 135.98 87.2C130.46 87.2 125.94 85.68 122.42 82.64C118.98 79.6 117.26 75.56 117.26 70.52C117.26 65.08 119.22 60.88 123.14 57.92C127.14 54.96 132.3 53.16 138.62 52.52L152.18 50.96C157.22 50.48 159.74 48.16 159.74 44C159.74 40.24 158.42 37.28 155.78 35.12C153.14 32.96 149.66 31.88 145.34 31.88C141.02 31.88 137.3 32.96 134.18 35.12C131.06 37.28 128.94 40.6 127.82 45.08L119.06 42.68C120.5 36.68 123.58 32.08 128.3 28.88C133.1 25.68 138.82 24.08 145.46 24.08ZM138.26 79.64C144.42 79.64 149.54 77.6 153.62 73.52C157.7 69.36 159.74 64.52 159.74 59V53.96C158.62 56.36 155.9 57.8 151.58 58.28L138.5 59.72C134.82 60.2 131.86 61.32 129.62 63.08C127.38 64.76 126.26 67.08 126.26 70.04C126.26 72.92 127.34 75.24 129.5 77C131.74 78.76 134.66 79.64 138.26 79.64ZM205.669 83.36L227.149 25.28H236.389L204.949 110H195.709L204.709 86H197.629L174.949 25.28H184.789L205.669 83.36ZM357.389 86H347.309L338.549 63.68H292.949L284.189 86H274.469L307.709 1.99999H324.149L357.389 86ZM315.749 5.12L296.189 55.16H335.309L315.749 5.12ZM398.159 24.08C405.279 24.08 411.119 26.56 415.679 31.52C420.319 36.48 422.639 42.72 422.639 50.24V86H413.639V51.32C413.639 45.96 411.879 41.48 408.359 37.88C404.839 34.2 400.479 32.36 395.279 32.36C389.599 32.36 384.919 34.16 381.239 37.76C377.559 41.36 375.719 45.88 375.719 51.32V86H366.719V25.28H375.719V40.88C377.399 35.76 380.239 31.68 384.239 28.64C388.239 25.6 392.879 24.08 398.159 24.08ZM444.22 78.2C438.14 72.12 435.1 64.6 435.1 55.64C435.1 46.68 438.14 39.2 444.22 33.2C450.38 27.12 457.98 24.08 467.02 24.08C476.06 24.08 483.62 27.12 489.7 33.2C495.86 39.2 498.94 46.68 498.94 55.64C498.94 64.6 495.86 72.12 489.7 78.2C483.62 84.2 476.06 87.2 467.02 87.2C457.98 87.2 450.38 84.2 444.22 78.2ZM450.82 39.2C446.5 43.6 444.34 49.08 444.34 55.64C444.34 62.2 446.5 67.72 450.82 72.2C455.22 76.6 460.62 78.8 467.02 78.8C473.5 78.8 478.9 76.6 483.22 72.2C487.54 67.8 489.7 62.28 489.7 55.64C489.7 49 487.54 43.48 483.22 39.08C478.9 34.68 473.5 32.48 467.02 32.48C460.62 32.48 455.22 34.72 450.82 39.2ZM573.474 84.08V1.99999H582.834V86H564.474L521.274 4.04V86H511.914V1.99999H530.274L573.474 84.08ZM664.044 1.99999L632.124 56.84V77.48H648.564V86H606.444V77.48H622.764V56.84L590.964 1.99999H602.004L627.804 47.6L653.484 1.99999H664.044ZM757.187 1.99999V86H748.187V4.27999L722.987 86H706.427L681.227 3.92V86H672.227V1.99999H689.867L714.827 83.24L739.787 1.99999H757.187Z' fill='url(#paint0)')
-              defs
-                lineargradient#paint0(x1='-80.7589' y1='-68.9224' x2='473.091' y2='84.2311' gradientunits='userSpaceOnUse')
-                  stop(stop-color='#F4711C')
-                  stop(offset='1' stop-color='#F12E4F')
-                lineargradient#paint1(x1='-80.7589' y1='-68.9224' x2='473.091' y2='84.2311' gradientunits='userSpaceOnUse')
-                  stop(stop-color='#F4711C')
-                  stop(offset='1' stop-color='#F12E4F')
-      .all-nym-third-wrapper
-        .all-nym-third-left-wrapper
-          .all-nym-third-event-stats-number +30
-          .all-nym-third-event-stats-text= __('Participants')
-          .all-nym-third-text.each-text-medium= __('The special attention of Turkish followers of NYM to the event, which took place in a cafe in Nişantaşı, greatly pleased the team. Informed by a presentation by the company\'s COO about how Mix nodes and Privacy Credentials systems work, the Turkish community asked questions and learned the planned steps in the later stages of the project.')
-        .all-nym-third-right-wrapper
-          a.all-nym-third-right-image(href='https://nymtech.net/', target='_blank')
-            img(src=`${URL}/img/nym-community-gathering/nym-logo.webp` loading='lazy')
-      .all-nym-footer-wrapper
-        .all-nym-footer-left-wrapper
-          .all-nym-footer-left-title= __('node101 coordinated the whole process before and after the event attended by Alexis Roussel and Crypto Marina.')
-          .all-nym-footer-left-text.each-text-medium= __('Unlike a simple gathering, we accompanied the NYM team with meetings with various names from the Turkish developer community.')
-          a.all-nym-footer-left-button(href='https://drive.google.com/drive/folders/1FzpUhUctPiGqFgaEiBGxdZn40199ryWS?usp=drive_link', target='_blank')= __('Media')
-            svg.all-nym-footer-left-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-              path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-          .all-nym-footer-left-button-border-bottom
-          .all-nym-footer-left-image
-            img.clickable-image(src=`${URL}/img/nym-community-gathering/people5.webp` loading='lazy')
-        .all-nym-footer-right-wrapper
-          .all-nym-footer-right-top-image
-            img.clickable-image(src=`${URL}/img/nym-community-gathering/people6.webp` loading='lazy')
-          .all-nym-footer-right-bottom-image
-            img.clickable-image(src=`${URL}/img/nym-community-gathering/people7.webp` loading='lazy')
-  .each-event-page-wrapper.display-none.all-moda-palas-wrapper
-    .each-event-page-inner-wrapper.all-moda-palas-inner-wrapper
-      svg.each-event-page-close-button(viewBox='0 0 28 26' stroke-width='2' xmlns='http://www.w3.org/2000/svg')
-        path(d="M27.1001 1L15.2365 13L12.8637 13L1.0001 0.999998")
-        path(d="M1 25L12.8636 13L15.2364 13L27.1 25")
-      svg.each-event-page-switch-button.each-event-page-switch-right-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M1 1L12 11.5668V19.9474L1 31")
-      svg.each-event-page-switch-button.each-event-page-switch-left-button(viewBox="0 0 13 32" xmlns="http://www.w3.org/2000/svg")
-        path(d="M12 31L0.999998 20.4332L0.999998 12.0526L12 1")
-      .all-moda-first-wrapper
-        .all-moda-first-title= __('MODA PALAS')
-        .all-moda-first-event-type.each-text-small= __('Gathering')
-        .all-moda-first-text.each-text-medium= __('Blockchain is a rapidly developing technology. Therefore, with these meetings, we discuss the most up-to-date developments, where the developers who build the Blockchain ecosystem living in Istanbul come together monthly.')
-      .all-moda-second-wrapper
-        .all-moda-second-left-wrapper
-          .all-moda-second-left-left-wrapper
-            .all-moda-second-left-left-image
-              img.clickable-image(src=`${URL}/img/moda-palas/board.webp` loading='lazy')
-            .all-moda-second-left-left-bottom-wrapper.each-scroll-down-button
-              .each-scroll-down-button-text= __('Scroll down')
-              svg.each-scroll-down-button-icon(viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg")
-                path(d="M9.03239 -3.48275e-07L9.03239 16M17 10.1355L11.3644 16L6.89474 16L1 10.1355")
-          .all-modas-econd-left-right-wrapper
-            .all-moda-second-left-right-image
-              img.clickable-image(src=`${URL}/img/moda-palas/sunset.webp` loading='lazy')
-            .all-modas-econd-left-right-emoji 🌇 🚋 🤝 👥
-        .all-moda-second-right-wrapper
-          .all-moda-second-right-left-wrapper
-            .all-moda-second-right-left-image
-              img.clickable-image(src=`${URL}/img/moda-palas/people.webp` loading='lazy')
-          .all-moda-second-right-right-wrapper
-            .all-moda-second-right-right-image
-              img.clickable-image(src=`${URL}/img/moda-palas/people2.webp` loading='lazy')
-      .all-moda-third-wrapper
-        .all-moda-third-left-wrapper
-          if lang == 'en'
-            .all-moda-third-left-info.each-text-small= __('* "Moda" means "Fashion" in Turkish and is the event place\'s neighborhood.')
-          .each-moda-third-left-image
-            img.clickable-image(src=`${URL}/img/moda-palas/tram.webp` loading='lazy')
-          .each-moda-third-left-image
-            img.clickable-image(src=`${URL}/img/moda-palas/people4.webp` loading='lazy')
-        .all-moda-third-right-wrapper
-          .all-moda-third-right-image
-            img.clickable-image(src=`${URL}/img/moda-palas/people3.webp` loading='lazy')
-          .all-moda-third-right-text-wrapper
-            .each-moda-third-right-text.each-text-medium= __('Organized by Mustafa Aksöz, co-founder of node101, and cryptographer Errol Drummond, "Moda Palas" is a unique event that can be attended by invitation. The event is held at Errol\'s house overlooking the Bosphorus in Moda, the bohemian center of Istanbul. Participants exchange ideas throughout the night by delving into the technical details of the latest technologies in the blockchain.')
-            .each-moda-third-right-text.each-text-medium= __('Moda Palas is frequently visited by international developers such as Damir Shamanaev known as The Move Guy, Polygon\'s Lead Developer Fedor Sakharov, as well as young developers from leading student clubs such as ITU Blockchain, YTU Blockchain, and BuChain.')
-        .all-moda-third-title-first-row-wrapper
-          .each-moda-third-title-first-row-part= __('F')
-          .each-moda-third-title-first-row-part= __('OLL')
-          .each-moda-third-title-first-row-part= __('OW THE')
-        .all-moda-third-title-second-row-wrapper
-          .each-moda-third-title-second-row-part= __('"MODA')
-          .each-moda-third-title-second-row-part= __('" O')
-          .each-moda-third-title-second-row-part= __('F THE')
-        .all-moda-third-title-third-row-wrapper
-          .each-moda-third-title-third-row-part= __('E')
-          .each-moda-third-title-third-row-part= __('C')
-          .each-moda-third-title-third-row-part= __('OSYSTEM')
-      .all-moda-fourth-wrapper.each-moda-third-right-text.each-text-medium= __('Moda Palas is frequently visited by international developers such as Damir Shamanaev known as The Move Guy, Polygon\'s Lead Developer Fedor Sakharov, as well as young developers from leading student clubs such as ITU Blockchain, YTU Blockchain, and BuChain.')
-      .all-moda-footer-wrapper
-        .all-moda-footer-left-wrapper
-          .all-moda-footer-left-image
-            img.clickable-image(src=`${URL}/img/moda-palas/people5.webp` loading='lazy')
-        .all-moda-footer-right-wrapper
-          .all-moda-footer-right-text.each-text-medium= __('Some people from Moda Palas have formed teams so far, which are as follows: node101, Chainway, and Eduisas. We continue to bring Turkish Blockchain Developers together.')
-          .all-moda-footer-right-button-wrapper
-            a.each-moda-footer-right-button(href='https://drive.google.com/drive/folders/169GHQgfF4viQ6Vi9GmWGiBy8EwxdPVIP?usp=drive_link', target='_blank')= __('Media')
-              svg.each-moda-footer-right-button-icon(viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg")
-                path(d="M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568" stroke-width="2")
-            .each-moda-footer-right-button-border-bottom
+    img.clickable-image-big
+    img.clickable-image-big-close-button(src=`${URL}/img/icons/close-button.svg`)
+  include ../event-pages/cryptist.pug
+  include ../event-pages/sui-move-workshop.pug
+  include ../event-pages/aleo-tour-of-turkiye.pug
+  include ../event-pages/nym-community-gathering.pug
+  include ../event-pages/moda-palas.pug
+  input.display-none#routes(value=ROUTES)
