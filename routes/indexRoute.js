@@ -11,6 +11,8 @@ const modaGetController = require('../controllers/moda-palas/get');
 const nymGetController = require('../controllers/nym-community-gathering/get');
 const suiGetController = require('../controllers/sui-move-workshop/get');
 
+const contactPostController = require('../controllers/contact/post');
+
 router.get(
   '/',
     generateConstantData,
@@ -40,6 +42,11 @@ router.get(
   '/sui-move-workshop',
     generateConstantData,
     suiGetController
+);
+
+router.post(
+  '/contact',
+    contactPostController
 );
 
 module.exports = router;

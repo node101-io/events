@@ -1,9 +1,10 @@
-let QUERY;
-
 window.addEventListener('load', () => {
-  QUERY = new Proxy(new URLSearchParams(window.location.search), {
+  const QUERY = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop)
   });
+
+  const contactEmailInput = document.getElementById('all-contact-right-email-input');
+  const contactMessageInput = document.getElementById('all-contact-right-message-input');
 
   document.addEventListener('click', event => {
     if (event.target.closest('.all-header-language-button')) {
@@ -20,6 +21,21 @@ window.addEventListener('load', () => {
       url = `${url}lang=${lang}`;
 
       window.location.href = url;
+    };
+
+    if (event.target.closest('#contact-button')) {
+      serverRequest('/contact', 'POST', {
+        sender: contactEmailInput.value,
+        message: contactMessageInput.value
+      }, res => {       
+        console.log(res);
+        if (!res.success) {
+          alert('Error');
+          return;
+        }
+
+        alert('Success');
+      });
     };
   });
 });

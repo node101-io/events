@@ -1,10 +1,10 @@
+const bodyParser = require('body-parser');
 const cluster = require('cluster');
 const dotenv = require('dotenv');
 const express = require('express');
 const favicon = require('serve-favicon');
 const http = require('http');
 const i18n = require('i18n');
-const mongoose = require('mongoose');
 const path = require('path');
 
 dotenv.config({ path: path.join(__dirname, '.env') });
@@ -26,6 +26,8 @@ if (cluster.isMaster) {
 
   const PORT = process.env.PORT || 3000;
   const URL = process.env.URL || `http://localhost:${PORT}`;
+  const MAX_SERVER_UPLOAD_LIMIT = 52428800;
+  const MAX_SERVER_PARAMETER_LIMIT = 50000;
 
   const indexRouteController = require('./routes/indexRoute');
 
@@ -41,6 +43,12 @@ if (cluster.isMaster) {
 
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+  app.use(bodyParser.json({ limit: MAX_SERVER_UPLOAD_LIMIT }));
+  app.use(bodyParser.urlencoded({
+    extended: true,
+    limit: MAX_SERVER_UPLOAD_LIMIT,
+    parameter: MAX_SERVER_PARAMETER_LIMIT
+  }));
   app.use(i18n.init);
 
   app.use((req, res, next) => {
