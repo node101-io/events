@@ -20,17 +20,37 @@ module.exports = (req, res) => {
     return res.end();
   }
 
-  fetch(`https://api.elasticemail.com/v2/email/send?apiKey=${ELASTIC_EMAIL_API_KEY}&from=${data.sender.trim()}&bodyText=${data.message.trim()}&charset=utf-8&isTransactional=true&to=${TARGET_EMAIL}`, {
+  fetch(`https://api.elasticemail.com/v2/email/send?apiKey=${ELASTIC_EMAIL_API_KEY}&bodyText=${data.message}&charset=utf-8&isTransactional=true&to=${TARGET_EMAIL}&from=${data.sender.trim()}&subject=Contact%20From%20${data.sender.trim()}`, {
     method: 'POST'
   })
-    .then(data => data.json())
-    .then(data => {
-      res.write(JSON.stringify({ success: data.success }));
+    .then(response => response.json())
+    .then(response => {
+      if (response.success) {       
+        fetch(`https://api.elasticemail.com/v2/email/send?apiKey=${ELASTIC_EMAIL_API_KEY}&isTransactional=true&charset=utf-8&to=${data.sender.trim()}&template=contact&merge_message=${data.message}&from=${TARGET_EMAIL}&subject=Thanks%20for%20Reaching%20Out%20to%20Us!`, {
+          method: 'POST'
+        })
+          .then(response_2 => response_2.json())
+          .then(response_2 => {
+            if (response_2.success)
+              res.write(JSON.stringify({ success: true }));
+
+            res.write(JSON.stringify({ success: false, error: '1' }));
+          })
+          .catch(err => {
+            console.log(err);
+            res.write(JSON.stringify({ success: false, error: '2' }));
+          });
+        
+        res.end();
+        return;
+      }
+      console.log(response);
+      res.write(JSON.stringify({ success: false, error: '3' }));
       return res.end();
     })
     .catch(err => {
       console.log(err);
-      res.write(JSON.stringify({ success: false, error: 'network_error' }));
+      res.write(JSON.stringify({ success: false, error: '4' }));
       return res.end();
     });
 };
