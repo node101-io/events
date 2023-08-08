@@ -12,7 +12,6 @@ function createNumberIncreaseObserver(route) {
 
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry.target);
         increaseNumbers(statsElements);
         observer.unobserve(entry.target);
       }

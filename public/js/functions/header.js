@@ -28,7 +28,6 @@ window.addEventListener('load', () => {
         sender: contactEmailInput.value,
         message: contactMessageInput.value
       }, res => {       
-        console.log(res);
         if (!res.success) {
           alert('Error');
           return;

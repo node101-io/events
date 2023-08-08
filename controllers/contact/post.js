@@ -34,23 +34,20 @@ module.exports = (req, res) => {
             if (response_2.success)
               res.write(JSON.stringify({ success: true }));
 
-            res.write(JSON.stringify({ success: false, error: '1' }));
+            res.write(JSON.stringify({ success: false, error: 1 }));
           })
           .catch(err => {
-            console.log(err);
-            res.write(JSON.stringify({ success: false, error: '2' }));
+            res.write(JSON.stringify({ success: false, error: err }));
           });
         
         res.end();
         return;
       }
-      console.log(response);
       res.write(JSON.stringify({ success: false, error: '3' }));
       return res.end();
     })
     .catch(err => {
-      console.log(err);
-      res.write(JSON.stringify({ success: false, error: '4' }));
+      res.write(JSON.stringify({ success: false, error: err }));
       return res.end();
     });
 };
