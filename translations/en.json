@@ -70,7 +70,7 @@
 	"Azapkapı, Bankalar Cd. No:11, 34420 Beyoğlu/İstanbul": "Azapkapı, Bankalar Cd. No:11, 34420 Beyoğlu/İstanbul",
 	"THE FUTURE OF ZERO-KNOWLEDGE PROOF IS TALKED IN ISTANBUL": "THE FUTURE OF ZERO-KNOWLEDGE PROOF IS TALKED IN ISTANBUL",
 	"Website": "Website",
-	"Email": "Email",
+	"E-mail": "E-mail",
 	"Workshop": "Workshop",
 	"Sui Move Language Workshops continue to be popular among young developers, with its fantastic tutor Damir Shamanaev, the author of the book \"The Move Book\" which introduced the Move language to the world, and one of the core team members that built the Sui project.": "Sui Move Language Workshops continue to be popular among young developers, with its fantastic tutor Damir Shamanaev, the author of the book \"The Move Book\" which introduced the Move language to the world, and one of the core team members that built the Sui project.",
 	"Case Study": "Case Study",
@@ -114,7 +114,7 @@
 	"Do you want to organize an event with node101?": "Do you want to organize an event with node101?",
 	"node101 can help you organize your dream web3 event! Contact us!": "node101 can help you organize your dream web3 event! Contact us!",
 	"Contact Us": "Contact Us",
-	"Email:": "Email:",
+	"E-mail:": "E-mail:",
 	"Message:": "Message:",
 	"Submit": "Submit",
 	"Community": "Community",
@@ -143,5 +143,8 @@
 	"* \"Moda\" means \"Fashion\" in Turkish and is the event place's neighborhood.": "* \"Moda\" means \"Fashion\" in Turkish and is the event place's neighborhood.",
 	"Video": "Video",
 	"SUI": "SUI",
-	"ALEO": "ALEO"
+	"ALEO": "ALEO",
+	"Successful": "Successful",
+	"An error occurred.": "An error occurred.",
+	"Name:": "Name:"
 }

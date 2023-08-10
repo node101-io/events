@@ -3,8 +3,12 @@ window.addEventListener('load', () => {
     get: (searchParams, prop) => searchParams.get(prop)
   });
 
-  const contactEmailInput = document.getElementById('all-contact-right-email-input');
-  const contactMessageInput = document.getElementById('all-contact-right-message-input');
+  const contactEmailInput = document.getElementById('contact-email-input');
+  const contactNameInput = document.getElementById('contact-name-input');
+  const contactMessageInput = document.getElementById('contact-message-input');
+
+  const contactSuccessMessage = document.getElementById('contact-success-message');
+  const contactErrorMessage = document.getElementById('contact-error-message');
 
   document.addEventListener('click', event => {
     if (event.target.closest('.all-header-language-button')) {
@@ -26,14 +30,19 @@ window.addEventListener('load', () => {
     if (event.target.closest('#contact-button')) {
       serverRequest('/contact', 'POST', {
         sender: contactEmailInput.value,
+        name: contactNameInput.value,
         message: contactMessageInput.value
       }, res => {       
-        if (!res.success) {
-          alert('Error');
-          return;
+        console.log(res);
+        
+        if (res.success) {
+          contactEmailInput.value = '';
+          contactNameInput.value = '';
+          contactMessageInput.value = '';
         }
 
-        alert('Success');
+        contactSuccessMessage.classList.toggle('display-none', !res.success);
+        contactErrorMessage.classList.toggle('display-none', res.success);
       });
     };
   });

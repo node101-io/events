@@ -30,15 +30,24 @@ block content
       .all-contact-right-wrapper
         .all-contact-right-subtitle= __('Contact Us')
         form.all-contact-right-form
-          label.all-contact-right-input-label(for='all-contact-right-email-input')= __('Email:')
-          input.all-contact-right-input#all-contact-right-email-input(type='email')
+          label.all-contact-right-input-label(for='contact-email-input')= __('E-mail:')
+          input.all-contact-right-input#contact-email-input(type='email')
           .all-contact-right-input-border-bottom
-          label.all-contact-right-input-label(for='all-contact-right-message-input')= __('Message:')
-          textarea.all-contact-right-input#all-contact-right-message-input(oninput='this.style.height = 0; this.style.height = this.scrollHeight + \'px\'', rows='1')
+          label.all-contact-right-input-label(for='contact-name-input')= __('Name:')
+          input.all-contact-right-input#contact-name-input(type='name')
           .all-contact-right-input-border-bottom
-          .all-contact-right-button#contact-button= __('Submit')
-            svg.all-contact-right-button-icon(viewBox='0 0 20 21' xmlns='http://www.w3.org/2000/svg')
-              path(d='M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568' stroke-width='2')
+          label.all-contact-right-input-label(for='contact-message-input')= __('Message:')
+          textarea.all-contact-right-input#contact-message-input(oninput='this.style.height = 0; this.style.height = this.scrollHeight + \'px\'', rows='1')
+          .all-contact-right-input-border-bottom
+          .all-contact-right-bottom-wrapper
+            .all-contact-right-button#contact-button= __('Submit')
+              svg.all-contact-right-button-icon(viewBox='0 0 20 21' xmlns='http://www.w3.org/2000/svg')
+                path(d='M0.962123 19.4183L16.0943 3.41552M2.70586 1.8657L13.7991 1.24516L18.1983 5.40501L18.4536 16.7568' stroke-width='2')
+            .all-contact-right-success-message.display-none#contact-success-message
+              svg.all-contact-right-success-message-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 10')
+                path(d='M5.17957 9.10348L0.679565 4.60348L1.38657 3.89648L5.17957 7.68898L11.9726 0.896484L12.6796 1.60348L5.17957 9.10348Z' fill='#687BFA')
+              .all-contact-right-success-message-text.each-text-small=__('Successful')
+            .all-contact-right-error-message.each-text-small.display-none#contact-error-message= __('An error occurred.')
     .all-footer-wrapper
       .all-footer-top-wrapper
         .all-footer-top-left-wrapper

@@ -16,6 +16,10 @@
 	--all-header-logo-height: 24px;
 
 	--all-header-language-button-flag-width: 24px;
+
+	--all-contact-right-input-height: 40px;
+	--all-contact-right-success-message-color: rgba(104, 123, 250, 1);
+	--all-contact-right-error-message-color: rgba(215, 80, 80, 1);
 }
 
 .all-header-wrapper {
@@ -124,6 +128,7 @@
 	flex-direction: column;
 	width: 40%;
 	min-width: 40%;
+	margin: auto 0;
 }
 .all-contact-left-title {
 	display: flex;
@@ -170,6 +175,10 @@
 	font-size: 16px;
 	line-height: 1.5;
 }
+.all-contact-right-form textarea {
+	min-height: calc(var(--all-contact-right-input-height) * 3) !important;
+	max-height: calc(var(--all-contact-right-input-height) * 8) !important;
+}
 .all-contact-right-input-border-bottom {
 	display: flex;
 	width: 100%;
@@ -177,6 +186,11 @@
 	min-height: 1px;
 	border: none;
 	background-image: linear-gradient(to right, var(--secondary-color), var(--third-color));
+}
+.all-contact-right-bottom-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .all-contact-right-button {
 	display: flex;
@@ -205,6 +219,22 @@
 	height: auto;
 	stroke: var(--third-color);
 	transition: transform 0.3s ease-in-out;
+}
+.all-contact-right-success-message {
+	display: flex;
+}
+.all-contact-right-success-message-icon {
+	width: 14px;
+	min-width: 14px;
+	height: auto;
+	fill: var(--all-contact-right-success-message-color);
+}
+.all-contact-right-success-message-text {
+	color: var(--all-contact-right-success-message-color) !important;
+}
+.all-contact-right-error-message {
+	margin-top: auto;
+	color: var(--all-contact-right-error-message-color) !important;
 }
 
 .all-footer-wrapper {
@@ -407,6 +437,7 @@
 	.all-contact-left-wrapper {
 		width: 100%;
 		min-width: 100%;
+		margin: 0;
 	}
 
 	.all-contact-left-title {

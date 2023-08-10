@@ -70,7 +70,7 @@
 	"Azapkapı, Bankalar Cd. No:11, 34420 Beyoğlu/İstanbul": "Azapkapı, Bankalar Cd. No:11, 34420 Beyoğlu/İstanbul",
 	"THE FUTURE OF ZERO-KNOWLEDGE PROOF IS TALKED IN ISTANBUL": "ZERO-KNOWLEDGE PROOF'UN GELECEĞİ İSTANBUL'DA KONUŞULUR",
 	"Website": "Web Sitesi",
-	"Email": "E-posta",
+	"E-mail": "E-posta",
 	"Workshop": "Atölye",
 	"Sui Move Language Workshops continue to be popular among young developers, with its fantastic tutor Damir Shamanaev, the author of the book \"The Move Book\" which introduced the Move language to the world, and one of the core team members that built the Sui project.": "Move dilini dünyaya tanıtan \"The Move Book\" kitabının yazarı ve Sui projesini inşa eden çekirdek ekipte yer alan Damir Shamanaev'in öğreticisi olduğu, aylık olarak düzenlediğimiz workshoplar rağbet görmeye devam ediyor.",
 	"Case Study": "Vaka Çalışması",
@@ -123,7 +123,7 @@
 	"Do you want to organize an event with node101?": "node101 ile bir etkinlik mi düzenlemek istiyorsunuz?",
 	"node101 can help you organize your dream web3 event! Contact us!": "node101, hayalinizdeki web3 etkinliğini düzenlemenize yardımcı olabilir! Bize ulaşın!",
 	"Contact Us": "Bize Ulaşın",
-	"Email:": "Eposta:",
+	"E-mail:": "Eposta:",
 	"Message:": "Mesaj:",
 	"Submit": "Gönder",
 	"Community": "Topluluk",
@@ -139,5 +139,8 @@
 	"": "",
 	"TÜRK EKOSİSTEMİNE": "TÜRK EKOSİSTEMİNE",
 	"UZANAN KÖPRÜ": "UZANAN KÖPRÜ",
-	"NYM Topluluk Buluşması": "NYM Topluluk Buluşması"
+	"NYM Topluluk Buluşması": "NYM Topluluk Buluşması",
+	"SUI": "SUI",
+	"ALEO": "ALEO",
+	"Video": "Video"
 }
