@@ -59,7 +59,7 @@ block main
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
                 .each-team-member-info-layer(class=`${member.note ? 'each-team-member-info-layer-with-note' : ''}`)
                   if member.note
-                    .each-team-member-note #{member.note}
+                    .each-team-member-note= __(member.note)
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-secondary-wrapper
@@ -70,7 +70,7 @@ block main
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
                 .each-team-member-info-layer(class=`${member.note ? 'each-team-member-info-layer-with-note' : ''}`)
                   if member.note
-                    .each-team-member-note #{member.note}
+                    .each-team-member-note= __(member.note)
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-tertiary-wrapper
@@ -81,7 +81,7 @@ block main
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
                 .each-team-member-info-layer
                   if member.note
-                    .each-team-member-note #{member.note}
+                    .each-team-member-note= __(member.note)
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-quaternary-wrapper
@@ -92,7 +92,7 @@ block main
                 img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
                 .each-team-member-info-layer
                   if member.note
-                    .each-team-member-note #{member.note}
+                    .each-team-member-note= __(member.note)
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
   .clickable-image-layer.display-none
