@@ -30,18 +30,18 @@ const MEMBERS = {
     name_color: 'rgba(153, 203, 255, 1)',
     background_color: 'rgba(97, 174, 255, 1)',
   },
-  mutlu: {
-    id: 4,
-    name: 'Mutlu Mutludağ',
-    title: 'Writer',
-    image: 'mutlu.webp',
-    name_color: 'rgba(241, 203, 255, 1)',
-    background_color: 'rgba(241, 203, 255, 1)',
-  },
+  // mutlu: {
+  //   id: 4,
+  //   name: 'Mutlu Mutludağ',
+  //   title: 'Writer',
+  //   image: 'mutlu.webp',
+  //   name_color: 'rgba(241, 203, 255, 1)',
+  //   background_color: 'rgba(241, 203, 255, 1)',
+  // },
   yakup: {
     id: 5,
     name: 'Yakup Altay',
-    title: 'Social Media',
+    title: 'Developer',
     image: 'yakup.webp',
     name_color: 'rgba(137, 234, 255, 1)',
     background_color: 'rgba(137, 234, 255, 1)',
@@ -54,14 +54,14 @@ const MEMBERS = {
     name_color: 'rgba(244, 113, 28, 1)',
     background_color: 'rgba(253, 145, 75, 1)',
   },
-  aytunc: {
-    id: 7,
-    name: 'Aytunç Sancar',
-    title: 'Developer',
-    image: 'aytunc.webp',
-    name_color: 'rgba(138, 195, 255, 1)',
-    background_color: 'rgba(155, 155, 255, 1)',
-  },
+  // aytunc: {
+  //   id: 7,
+  //   name: 'Aytunç Sancar',
+  //   title: 'Developer',
+  //   image: 'aytunc.webp',
+  //   name_color: 'rgba(138, 195, 255, 1)',
+  //   background_color: 'rgba(155, 155, 255, 1)',
+  // },
   yunus: {
     id: 8,
     name: 'Yunus Gürlek',
@@ -101,32 +101,33 @@ const MEMBERS = {
     image: 'anthony.webp',
     name_color: 'rgba(103, 255, 182, 1)',
     background_color: 'rgba(103, 255, 182, 1)',
+    note: 'You\'ll always be remembered.'
   }
 };
-const MEMBER_COLUMNS_IN_FIVE = [
-  [
-    MEMBERS.aleyna,
-    MEMBERS.necip,
-  ],
-  [
-    MEMBERS.akin,
-    MEMBERS.mutlu,
-    MEMBERS.yakup,
-  ],
-  [
-    MEMBERS.mete,
-    MEMBERS.aytunc,
-  ],
-  [
-    MEMBERS.yunus,
-    MEMBERS.damir,
-    MEMBERS.erol,
-  ],
-  [
-    MEMBERS.mustafa,
-    MEMBERS.anthony,
-  ],
-];
+// const MEMBER_COLUMNS_IN_FIVE = [
+//   [
+//     MEMBERS.aleyna,
+//     MEMBERS.necip,
+//   ],
+//   [
+//     MEMBERS.akin,
+//     // MEMBERS.mutlu,
+//     MEMBERS.yakup,
+//   ],
+//   [
+//     MEMBERS.mete,
+//     // MEMBERS.aytunc,
+//   ],
+//   [
+//     MEMBERS.yunus,
+//     MEMBERS.damir,
+//     MEMBERS.erol,
+//   ],
+//   [
+//     MEMBERS.mustafa,
+//     MEMBERS.anthony,
+//   ],
+// ];
 const MEMBER_COLUMNS_IN_FOUR = [
   [
     MEMBERS.mustafa,
@@ -135,37 +136,37 @@ const MEMBER_COLUMNS_IN_FOUR = [
   ],
   [
     MEMBERS.akin,
-    MEMBERS.mutlu,
+    // MEMBERS.mutlu,
     MEMBERS.yakup,
   ],
   [
+    MEMBERS.yunus,
     MEMBERS.mete,
-    MEMBERS.aytunc,
-    MEMBERS.anthony,
+    // MEMBERS.aytunc,
+    MEMBERS.erol,
   ],
   [
-    MEMBERS.yunus,
     MEMBERS.damir,
-    MEMBERS.erol,
+    MEMBERS.anthony,
   ],
 ];
 const MEMBER_COLUMNS_IN_THREE = [
   [
     MEMBERS.mustafa,
-    MEMBERS.yunus,
     MEMBERS.aleyna,
     MEMBERS.necip,
   ],
   [
+    MEMBERS.yunus,
     MEMBERS.akin,
     MEMBERS.damir,
-    MEMBERS.mutlu,
+    // MEMBERS.mutlu,
     MEMBERS.yakup,
   ],
   [
     MEMBERS.mete,
     MEMBERS.erol,
-    MEMBERS.aytunc,
+    // MEMBERS.aytunc,
     MEMBERS.anthony,
   ],
 ];
@@ -176,14 +177,14 @@ const MEMBER_COLUMNS_IN_TWO = [
     MEMBERS.aleyna,
     MEMBERS.necip,
     MEMBERS.yakup,
-    MEMBERS.mutlu,
+    // MEMBERS.mutlu,
   ],
   [
     MEMBERS.mete,
     MEMBERS.yunus,
     MEMBERS.damir,
     MEMBERS.erol,
-    MEMBERS.aytunc,
+    // MEMBERS.aytunc,
     MEMBERS.anthony,
   ],
 ];
@@ -222,7 +223,7 @@ module.exports = (req, res, next) => {
   res.locals.query_lang = query_language;
   res.locals.lang = language;
 
-  res.locals.MEMBER_COLUMNS_IN_FIVE = MEMBER_COLUMNS_IN_FIVE;
+  // res.locals.MEMBER_COLUMNS_IN_FIVE = MEMBER_COLUMNS_IN_FIVE;
   res.locals.MEMBER_COLUMNS_IN_FOUR = MEMBER_COLUMNS_IN_FOUR;
   res.locals.MEMBER_COLUMNS_IN_THREE = MEMBER_COLUMNS_IN_THREE;
   res.locals.MEMBER_COLUMNS_IN_TWO = MEMBER_COLUMNS_IN_TWO;

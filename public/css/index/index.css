@@ -507,6 +507,15 @@
   justify-content: center;
   z-index: 100;
 }
+.each-team-member-info-layer-with-note {
+  height: calc(var(--each-team-member-info-layer-height) * 1.3);
+  min-height: calc(var(--each-team-member-info-layer-height) * 1.3);
+}
+.each-team-member-note {
+  color: var(--text-color);
+  font-size: calc(var(--each-team-member-wrapper-width) / 15);
+  margin-bottom: calc(var(--each-team-member-wrapper-width) / 15);
+}
 .each-team-member-name {
   display: flex;
   font-size: calc(var(--each-team-member-wrapper-width) / 12);

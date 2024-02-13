@@ -52,30 +52,36 @@ block main
       .all-content-team-title= __('THE PARTNER YOU NEED')
       .all-content-team-text= __('node101 is an Istanbul based proof of stake validator that produces user-friendly solutions to the problems of the decentralized internet. In addition to the technical solutions and pain-point solver products it offers to blockchain projects, it organizes gatherings, summits, and workshops that feed the Turkish developer ecosystem. Moreover, It provides content to the ecosystem with blog posts, podcast episodes, and video content published on Library node101.') 
       .all-content-team-members-wrapper
-        each column in MEMBER_COLUMNS_IN_FIVE
+        each column in MEMBER_COLUMNS_IN_FOUR
           .each-team-members-column
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
-                .each-team-member-info-layer
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
+                .each-team-member-info-layer(class=`${member.note ? 'each-team-member-info-layer-with-note' : ''}`)
+                  if member.note
+                    .each-team-member-note #{member.note}
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-secondary-wrapper
         each column, index in MEMBER_COLUMNS_IN_FOUR
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+          .each-team-members-column
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
-                .each-team-member-info-layer
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
+                .each-team-member-info-layer(class=`${member.note ? 'each-team-member-info-layer-with-note' : ''}`)
+                  if member.note
+                    .each-team-member-note #{member.note}
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-tertiary-wrapper
         each column, index in MEMBER_COLUMNS_IN_THREE
-          .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
+          .each-team-members-column
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
                 .each-team-member-info-layer
+                  if member.note
+                    .each-team-member-note #{member.note}
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
       .all-content-team-members-quaternary-wrapper
@@ -83,8 +89,10 @@ block main
           .each-team-members-column(style=`margin-top: ${index % 2 ? '0px' : '240px'};`)
             each member in column
               .each-team-member-wrapper(style=`background: ${member.background_color};`)
-                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}`)
+                img.each-team-member-image(src=`${URL}/img/team/${member.image}` alt=`${member.name}` style=`${member.name == 'Anthony DiPrinzio' ? 'filter: grayscale(100%); -webkit-filter: grayscale(100%);' : ''}`)
                 .each-team-member-info-layer
+                  if member.note
+                    .each-team-member-note #{member.note}
                   .each-team-member-name(style=`color: ${member.name_color};`) #{member.name}
                   .each-team-member-title= __(member.title)
   .clickable-image-layer.display-none
